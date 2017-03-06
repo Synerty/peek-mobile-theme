@@ -1,0 +1,30 @@
+peek-main-title{
+
+  $section_font_size: 0.8em;
+
+  > .container-fluid{
+    background-color: $white;
+    height: $navigation_header_height;// main header height being set
+    @include box-shadow;
+    text-transform: $font_transform;
+    padding-right: 0px;
+    padding-left: 0px;
+    overflow: hidden;
+  }
+
+  h2{
+    font-size :$section_font_size;
+    height: $navigation_header_height; //setting height to default header naviation height
+    line-height: $navigation_header_height; // line height to bring text in center of header navigation
+  }
+
+  .btn{
+    text-transform: $font_transform;
+    height: $navigation_header_height; //setting height to default header naviation height
+    background-color: red;
+    font-size:$section_font_size;
+    line-height: $general_font_size - 4px;
+    padding:8px;
+  }
+
+}

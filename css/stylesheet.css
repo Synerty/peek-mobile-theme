@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Play");
+h1, h2, h3, h4, h5 {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-radius: 0px;
+  border-color: transparent;
+  background-color: transparent;
+  font-family: "Play", sans-serif; }
+
+button,
+.btn {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-radius: 0px;
+  border-color: transparent;
+  background-color: transparent;
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#28aae1, #1b1464);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#28aae1, #1b1464);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#28aae1, #1b1464);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#28aae1, #1b1464);
+  /* Standard syntax */
+  background-size: 100%;
+  cursor: pointer;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1rem 1.5rem;
+  position: relative;
+  z-index: 100; }
+  button:before,
+  .btn:before {
+    background: red;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0e4962, #100c3a);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0e4962, #100c3a);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0e4962, #100c3a);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0e4962, #100c3a);
+    /* Standard syntax */
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 0.45s; }
+  button:hover,
+  .btn:hover {
+    color: #ffffff; }
+    button:hover:before,
+    .btn:hover:before {
+      opacity: 1; }
+
+peek-main-title > .container-fluid {
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.18);
+  text-transform: uppercase;
+  padding-right: 0px;
+  padding-left: 0px;
+  overflow: hidden; }
+
+peek-main-title h2 {
+  font-size: 0.8em;
+  height: 40px;
+  line-height: 40px; }
+
+peek-main-title .btn {
+  text-transform: uppercase;
+  height: 40px;
+  background-color: red;
+  font-size: 0.8em;
+  line-height: 12px;
+  padding: 8px; }
+
+body {
+  font-size: 16px;
+  background-color: #fafafa; }

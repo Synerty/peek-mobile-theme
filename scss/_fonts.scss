@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+h1,h2,h3,h4,h5{
+  @include nuke;
+  font-family: $fonts_special;
+}

@@ -1,0 +1,43 @@
+@mixin nuke{
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-radius: 0px;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+@mixin box-shadow{
+	box-shadow  : 2px 3px 14px rgba(0,0,0,.18);
+}
+
+//gradients
+@mixin gradient-radial($color_base,$color_faded) {
+  background-color: $color_base;
+  background: $color_base; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, $color_base, $color_faded); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, $color_base, $color_faded); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, $color_base, $color_faded); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, $color_base, $color_faded); /* Standard syntax */
+}
+
+@mixin gradient-linear($color_base,$color_faded) {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($color_base, $color_faded); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($color_base, $color_faded); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($color_base, $color_faded); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($color_base, $color_faded); /* Standard syntax */
+}
+
+//fade overlay
+@mixin rollover-opacity($fade-up-to){
+  //requires link-rollout
+  opacity: $fade-up-to;
+  @include rollover;
+}
+
+@mixin rollover {
+  transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -webkit-transition: all .35s ease;
+}
