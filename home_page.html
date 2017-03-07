@@ -48,15 +48,21 @@
                         <div _ngcontent-vob-4="" class="col-xs-8 col-md-8 text-center menu-title">
                             <h2 _ngcontent-vob-4="" class="menu-title">Peek Home</h2>
                         </div>
-                        <span _ngcontent-vob-4="" class="col-xs-2 col-md-2">
+                        <span _ngcontent-vob-4="" class="col-xs-2 col-md-2 text-right">
             <!--template bindings={
   "ng-reflect-ng-for-of": "[object Object]"
-}--><button _ngcontent-vob-4="" class="btn pull-right right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
+}-->
+<div class="btn-group" role="group" aria-label="">
+  <button _ngcontent-vob-4="" class="btn pull-right right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
+  <button _ngcontent-vob-4="" class="btn pull-right right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
+</div>
+
         </span>
 
                     </div>
                 </div>
             </peek-main-title>
+
             <div class="container-fluid">
                 <router-outlet></router-outlet>
                 <peek-main-home _nghost-vob-5="">
@@ -90,6 +96,17 @@
                     </div>
                 </peek-main-home>
             </div>
+
+            <peek-main-footer>
+              <div class="container-fluid">
+                  <div _ngcontent-vob-5="" class="row">
+                    <div _ngcontent-vob-5="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 home-icon">
+                      Footer
+                    </div>
+                  </div>
+              </div>
+            <peek-main-footer>
+
         </peek-main-app>
 
     </body>
