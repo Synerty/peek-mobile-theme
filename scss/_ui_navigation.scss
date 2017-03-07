@@ -2,6 +2,9 @@
 peek-main-title{
 
   $section_font_size: 0.8em;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
 
   > .container-fluid{
     background-color: $white;
@@ -19,6 +22,7 @@ peek-main-title{
     line-height: $navigation_header_height; // line height to bring text in center of header navigation
   }
 
+  //normal button
   .btn{
     text-transform: $font_transform;
     height: $navigation_header_height; //setting height to default header naviation height
@@ -26,6 +30,15 @@ peek-main-title{
     font-size:$section_font_size;
     line-height: $general_font_size - 4px;
     padding:8px;
+  }
+  //button group
+
+  .btn-group{
+    &>.btn{
+      &:first-child{
+        border-left: 1px solid $brand_compliment;
+      }
+    }
   }
 
 }

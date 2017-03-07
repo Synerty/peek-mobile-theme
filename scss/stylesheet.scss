@@ -7,8 +7,20 @@
 @import '_ui_forms';
 @import '_ui_tables';
 
+@import '_home';
+@import '_footer';
 
-body{
+body,
+html{
   font-size: $general_font_size;
   background-color: $general_background_color;
+  color: $font_colour_default;
+  @include gradient-linear($brand,$brand_compliment);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+img{
+  width: 100%;
 }

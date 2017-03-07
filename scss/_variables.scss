@@ -2,6 +2,7 @@
 $grey: #cccccc;
 $white: #ffffff;
 $brand : #28aae1;
+$brand_compliment: #1b1464;
 
 //general
 $general_font_size: 16px;
@@ -15,6 +16,7 @@ $general_border_radius: 4px;
 //fonts
 $fonts_special:'Play', sans-serif;
 $font_transform: uppercase;
+$font_colour_default: darken($grey,50%);
 
 //header
 $navigation_header_height: 40px;

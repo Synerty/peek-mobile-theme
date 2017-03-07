@@ -1,8 +1,8 @@
 button,
 .btn{
-  
+
   @include nuke;
-  @include gradient-linear($brand, #1b1464);
+  @include gradient-linear($brand, $brand_compliment);
   background-size: 100%;
   cursor: pointer;
   color: $white;
@@ -13,7 +13,7 @@ button,
   z-index: 100;
 
   &:before {
-    @include gradient-linear(darken($brand,30%),darken(#1b1464,10%) );
+    @include gradient-linear(darken($brand,30%),darken($brand_compliment,10%) );
     content: '';
     display: block;
     height: 100%;

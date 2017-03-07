@@ -63,28 +63,84 @@ button,
     .btn:hover:before {
       opacity: 1; }
 
-peek-main-title > .container-fluid {
-  background-color: #ffffff;
-  height: 40px;
-  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.18);
-  text-transform: uppercase;
-  padding-right: 0px;
-  padding-left: 0px;
-  overflow: hidden; }
+peek-main-title {
+  position: absolute;
+  width: 100%;
+  z-index: 999; }
+  peek-main-title > .container-fluid {
+    background-color: #ffffff;
+    height: 40px;
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.18);
+    text-transform: uppercase;
+    padding-right: 0px;
+    padding-left: 0px;
+    overflow: hidden; }
+  peek-main-title h2 {
+    font-size: 0.8em;
+    height: 40px;
+    line-height: 40px; }
+  peek-main-title .btn {
+    text-transform: uppercase;
+    height: 40px;
+    background-color: red;
+    font-size: 0.8em;
+    line-height: 12px;
+    padding: 8px; }
+  peek-main-title .btn-group > .btn:first-child {
+    border-left: 1px solid #1b1464; }
 
-peek-main-title h2 {
-  font-size: 0.8em;
-  height: 40px;
-  line-height: 40px; }
+peek-main-home > .container-fluid {
+  padding-top: 45px;
+  padding-bottom: 55px; }
 
-peek-main-title .btn {
-  text-transform: uppercase;
-  height: 40px;
-  background-color: red;
-  font-size: 0.8em;
-  line-height: 12px;
-  padding: 8px; }
+peek-main-home .home-icon {
+  padding: 5px; }
+  peek-main-home .home-icon a {
+    display: block;
+    background-image: url("../images/button_home_background.png");
+    background-repeat: repeat;
+    padding: 15px;
+    border-radius: 6px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.18);
+    transition: 0.45s; }
+    peek-main-home .home-icon a img {
+      padding: 15px 30px; }
+    peek-main-home .home-icon a:hover {
+      text-decoration: none;
+      box-shadow: 0px 0px 0px transparent; }
 
-body {
+peek-main-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px; }
+  peek-main-footer > div {
+    background-color: #ffffff;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.18); }
+
+body,
+html {
   font-size: 16px;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  color: #4d4c4c;
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#28aae1, #1b1464);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#28aae1, #1b1464);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#28aae1, #1b1464);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#28aae1, #1b1464);
+  /* Standard syntax */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%; }
+
+img {
+  width: 100%; }

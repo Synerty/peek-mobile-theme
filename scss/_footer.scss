@@ -1,0 +1,14 @@
+peek-main-footer{
+  $section_font_size: 0.8em;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+
+  > div{
+    background-color: $white;
+    font-size: $section_font_size;
+    text-transform: $font_transform;
+    padding: $general_padding - 5px;
+    @include box-shadow;
+  }
+}
