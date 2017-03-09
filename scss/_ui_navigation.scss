@@ -13,32 +13,65 @@ peek-main-title{
     text-transform: $font_transform;
     padding-right: 0px;
     padding-left: 0px;
-    overflow: hidden;
-  }
 
-  h2{
-    font-size :$section_font_size;
-    height: $navigation_header_height; //setting height to default header naviation height
-    line-height: $navigation_header_height; // line height to bring text in center of header navigation
   }
 
   //normal button
   .btn{
     text-transform: $font_transform;
     height: $navigation_header_height; //setting height to default header naviation height
-    background-color: red;
+    background-color: $brand;
     font-size:$section_font_size;
     line-height: $general_font_size - 4px;
     padding:8px;
+    width: 100%;
   }
-  //button group
 
+  //button group
   .btn-group{
+    width: 100%;
     &>.btn{
+      width: 50%;
       &:first-child{
         border-left: 1px solid $brand_compliment;
       }
     }
   }
 
+  .menu-bar{
+
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+
+    & > div{
+      display: table-cell;
+    }
+
+    .left{
+      background-color: red;
+      width: 60px;
+    }
+
+    .right{
+      background-color: red;
+      width: 115px;
+    }
+
+    .menu-title{
+
+      h2{
+        font-size :$section_font_size;
+        height: $navigation_header_height; //setting height to default header naviation height
+        line-height: $navigation_header_height; // line height to bring text in center of header navigation
+        padding: 0px $general_padding;
+        overflow: hidden;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+    }
+
+  }
 }

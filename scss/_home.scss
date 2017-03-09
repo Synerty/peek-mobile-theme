@@ -5,12 +5,15 @@ peek-main-home{
     padding-top: $navigation_header_height + 5px;
     padding-bottom: $navigation_header_height + $general_padding;
 
+    > .row{
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+
   }
 
   //home page buttons
-
   .home-icon{
-
       padding: 5px;
 
     a{
@@ -34,8 +37,8 @@ peek-main-home{
           @include no-shadow;
       }
 
-    }
+      }
 
-  }
+    }
 
 }

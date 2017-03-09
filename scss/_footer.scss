@@ -5,10 +5,21 @@ peek-main-footer{
   bottom: 0px;
 
   > div{
+
     background-color: $white;
-    font-size: $section_font_size;
     text-transform: $font_transform;
-    padding: $general_padding - 5px;
     @include box-shadow;
+
+    h2{
+      font-size :$section_font_size;
+      height: $navigation_header_height; //setting height to default header naviation height
+      line-height: $navigation_header_height; // line height to bring text in center of header navigation
+      overflow: hidden;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
   }
+
 }

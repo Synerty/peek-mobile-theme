@@ -73,25 +73,49 @@ peek-main-title {
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.18);
     text-transform: uppercase;
     padding-right: 0px;
-    padding-left: 0px;
-    overflow: hidden; }
-  peek-main-title h2 {
-    font-size: 0.8em;
-    height: 40px;
-    line-height: 40px; }
+    padding-left: 0px; }
   peek-main-title .btn {
     text-transform: uppercase;
     height: 40px;
-    background-color: red;
+    background-color: #28aae1;
     font-size: 0.8em;
     line-height: 12px;
-    padding: 8px; }
-  peek-main-title .btn-group > .btn:first-child {
-    border-left: 1px solid #1b1464; }
+    padding: 8px;
+    width: 100%; }
+  peek-main-title .btn-group {
+    width: 100%; }
+    peek-main-title .btn-group > .btn {
+      width: 50%; }
+      peek-main-title .btn-group > .btn:first-child {
+        border-left: 1px solid #1b1464; }
+  peek-main-title .menu-bar {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    peek-main-title .menu-bar > div {
+      display: table-cell; }
+    peek-main-title .menu-bar .left {
+      background-color: red;
+      width: 60px; }
+    peek-main-title .menu-bar .right {
+      background-color: red;
+      width: 115px; }
+    peek-main-title .menu-bar .menu-title h2 {
+      font-size: 0.8em;
+      height: 40px;
+      line-height: 40px;
+      padding: 0px 15px;
+      overflow: hidden;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
 
 peek-main-home > .container-fluid {
   padding-top: 45px;
   padding-bottom: 55px; }
+  peek-main-home > .container-fluid > .row {
+    margin-right: -10px;
+    margin-left: -10px; }
 
 peek-main-home .home-icon {
   padding: 5px; }
@@ -118,10 +142,16 @@ peek-main-footer {
   bottom: 0px; }
   peek-main-footer > div {
     background-color: #ffffff;
-    font-size: 0.8em;
     text-transform: uppercase;
-    padding: 10px;
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.18); }
+    peek-main-footer > div h2 {
+      font-size: 0.8em;
+      height: 40px;
+      line-height: 40px;
+      overflow: hidden;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
 
 body,
 html {
@@ -140,7 +170,13 @@ html {
   /* Standard syntax */
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 100%; }
+  height: 100%;
+  background-image: url("../images/home_background.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 img {
   width: 100%; }
+
+*:focus {
+  outline: none !important; }
