@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Peek Documentation</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+
+
+    <style media="screen">
+
+      html,body{
+        font-size: 18px;
+        color: #353535;
+        background-image: none;
+      }
+
+    .menu li{
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        text-transform: capitalize;
+      }
+      .menu li:after{
+        width: 0px;
+        height: 0px;
+      }
+
+      ul.menu > li{
+        text-transform: uppercase;
+      }
+
+      ul.menu > li > a {
+          display: block;
+          padding: 5px 0px;
+      }
+
+      ul > li > ul{
+        padding-left: 15px;
+        margin: 0px;
+      }
+
+      ul > li > ul a{
+        color: #353535;
+        display: block;
+        padding: 5px 0px;
+      }
+
+      .documentation h1, .documentation h2,.documentation h3{
+        padding: 20px 0px;
+        margin: 0px 0px 20px 0px;
+        font-family: 'Play', sans-serif;
+        color: #353535;
+      }
+
+      .menu{
+        font-family: 'Play', sans-serif;
+        padding-top: 30px;
+      }
+
+      h1.title {
+        font-size: 60px;
+        color: #282c34;
+
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: -3px;
+      }
+
+      .code{
+        display: block;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .code button.btn{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        border-radius: 0px 4px 0px 4px;
+        font-size: 0.8em;
+        background-image: none;
+        font-weight: bold;
+      }
+
+      .btn{
+        background-color: #03b6ed;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      .btn:hover{
+        background-image: none;
+        background-color: #353535;
+        color: white;
+        background-image: none;
+      }
+
+      .code{
+        display: block;
+        padding: 20px;
+        margin: 20px 0px;
+        color: #333;
+        word-break: break-all;
+        word-wrap: break-word;
+        background-color: #282c34;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 0.9em;
+        color: white
+      }
+
+      xmp{
+        padding: 0px;
+        margin: 0px;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+      }
+
+      .display-sample{
+        display: block;
+        padding: 0px;
+        margin: 20px 0px;
+      }
+
+      .display-sample h1,
+      .display-sample h2,
+      .display-sample h3{
+        margin: 0px;
+      }
+
+      peek-main-title,
+      peek-main-footer{
+        position: relative;
+      }
+
+      .home-page{
+        width: 100%;
+        height:667px;
+        margin: 20px auto;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="row" id="Top-Navigation">
+        <div class="col-sm-3">
+          <ul class="menu">
+            <li><a href="#main-navigation">Main navigation</a></li>
+            <li><a href="#footer">Footer</a></li>
+            <li>
+              <a href="#home-page">Home Page</a>
+              <ul>
+                <li><a href="#background">Background</a></li>
+                <li>App Buttons</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+
+          <h1 class="title">Peek App Documentation</h1>
+
+<!-- content start -->
+
+<!-- Top Navigation start -->
+<div id="main-navigation">
+  <h1>Main Navigation</h1>
+
+    The top navigation is not designed with conventional Bootstrap elements as it is designed to only expand the title section while the buttons on the left and the right remain a fixed size throught a screen resize. Apply the following code sample to get the main navigation to display on your page.
+    <br/><br/>
+    Display:
+
+<div class="display-sample">
+  <peek-main-title _nghost-vob-4="">
+   <div _ngcontent-vob-4="" class="container-fluid">
+    <div _ngcontent-vob-4="" class="menu-bar">
+     <div _ngcontent-vob-4="" class="left">
+      <button _ngcontent-vob-4="" class="btn left-button " ng-reflect-router-link="/">Home</button>
+     </div>
+     <div _ngcontent-vob-4="" class="menu-title">
+      <h2 _ngcontent-vob-4="">Peek Title</h2>
+     </div>
+     <div _ngcontent-vob-4="" class="right">
+      <div class="btn-group" role="group" aria-label="">
+       <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
+       <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </peek-main-title>
+</div>
+
+Code sample:
+<div class="code">
+<xmp id="top-navigation"><peek-main-title _nghost-vob-4="">
+ <div _ngcontent-vob-4="" class="container-fluid">
+  <div _ngcontent-vob-4="" class="menu-bar">
+   <div _ngcontent-vob-4="" class="left">
+    <button _ngcontent-vob-4="" class="btn left-button " ng-reflect-router-link="/">Home</button>
+   </div>
+   <div _ngcontent-vob-4="" class="menu-title">
+    <h2 _ngcontent-vob-4="">Peek Title</h2>
+   </div>
+   <div _ngcontent-vob-4="" class="right">
+    <div class="btn-group" role="group" aria-label="">
+     <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
+     <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
+    </div>
+   </div>
+  </div>
+ </div>
+</peek-main-title>
+</xmp>
+<button class="btn" data-clipboard-target="#top-navigation">copy</button>
+</div>
+
+</div>
+<!-- Top Navigation end -->
+
+<!-- Footer start -->
+<div id="footer">
+  <h1>Footer</h1>
+  Use the following code just before the closing of <xmp></peek-main-app></xmp> sample to display the footer.
+
+  Display:
+    <div class="display-sample">
+      <peek-main-footer>
+        <div class="container-fluid">
+            <div _ngcontent-vob-5="" class="row">
+              <div _ngcontent-vob-5="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h2>Offline, xxx minutes</h2>
+              </div>
+            </div>
+        </div>
+      </peek-main-footer>
+    </div>
+
+    Code sample:
+    <div class="code">
+<xmp id="footercode"><peek-main-footer>
+  <div class="container-fluid">
+    <div _ngcontent-vob-5="" class="row">
+      <div _ngcontent-vob-5="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+        <h2>
+          Offline, xxx minutes
+        </h2>
+      </div>
+    </div>
+  </div>
+</peek-main-footer>
+</xmp>
+<button class="btn" data-clipboard-target="#footercode">copy</button>
+    </div>
+
+
+</div>
+<!-- Footer end -->
+
+<!-- Home page start -->
+<div id="home-page">
+  <h1>Home Page</h1>
+  <h2 id="background">Background</h2>
+  The home page background will look different to the backgrounds on subsiquent pages. The main idea of having the home page look different is it make it look a bit more impressiv and welcoming.
+
+  Apply the class 'home-page' to the page body if you would like this background to display.
+  <br/><br/>
+
+  <div class="row">
+    <div class="col-sm-6">
+      Display:
+      <div class="home-page"></div>
+    </div>
+    <div class="col-sm-6">
+      Code sample:
+      <div class="code">
+        <xmp id="homecode"><body class="home-page">...</body>
+        </xmp>
+        <button class="btn" data-clipboard-target="#homecode">copy</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- content end -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Clipboard JavaScript -->
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.6.0/dist/clipboard.min.js"></script>
+
+    <script type="text/javascript">
+      new Clipboard('.btn');
+    </script>
+  </body>
+</html>
