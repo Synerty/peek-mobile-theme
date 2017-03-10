@@ -9,24 +9,34 @@
 
 @import '_home';
 @import '_footer';
+@import '_content';
 
 body,
 html{
   font-size: $general_font_size;
-  background-color: $general_background_color;
   color: $font_colour_default;
-  @include gradient-linear($brand,$brand_compliment);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   height: 100%;
-  background-image: url('../images/home_background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-
 }
 
 img{
-  width: 100%;
+  max-width: 100%;
+}
+
+ul,
+li{
+  text-align: left;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul{
+  margin: $general_padding 0px;
+}
+
+hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 *:focus {outline:none!important;}

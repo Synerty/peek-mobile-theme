@@ -1,13 +1,14 @@
 peek-main-footer{
   $section_font_size: 0.8em;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0px;
+  z-index: 999;
 
   > div{
 
     background-color: $white;
-    text-transform: $font_transform;
+
     @include box-shadow;
 
     h2{

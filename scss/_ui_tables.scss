@@ -1,0 +1,12 @@
+.table,
+table{
+
+  &>thead>tr>th{
+    background-color: $brand;
+    color: $white;
+    font-family: $fonts_special;
+    border-bottom: 0px;
+    font-size: 1.2em;
+  }
+
+}

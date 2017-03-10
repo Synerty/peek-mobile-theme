@@ -2,7 +2,7 @@
 peek-main-title{
 
   $section_font_size: 0.8em;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 999;
 
@@ -25,17 +25,16 @@ peek-main-title{
     line-height: $general_font_size - 4px;
     padding:8px;
     width: 100%;
+    font-family: $fonts_special;
   }
 
   //button group
   .btn-group{
     width: 100%;
     &>.btn{
-      width: 50%;
-      &:first-child{
-        border-left: 1px solid $brand_compliment;
-      }
+        width: 50%;
     }
+
   }
 
   .menu-bar{
@@ -49,12 +48,11 @@ peek-main-title{
     }
 
     .left{
-      background-color: red;
       width: 60px;
     }
 
     .right{
-      background-color: red;
+      text-align: right;
       width: 115px;
     }
 
@@ -75,3 +73,19 @@ peek-main-title{
 
   }
 }
+
+
+//general navgation elements
+
+  //button groups
+  .btn-group{
+    &>.btn{
+      &:first-child{
+        border-right: 1px solid $brand_compliment;
+      }
+
+    }
+    .btn+.btn{
+      margin-left: 0px;
+    }
+  }

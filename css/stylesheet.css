@@ -8,6 +8,20 @@ h1, h2, h3, h4, h5 {
   background-color: transparent;
   font-family: "Play", sans-serif; }
 
+h1 {
+  margin-bottom: 30px;
+  padding: 30px 0px 0px 0px; }
+  h1:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 15%;
+    border-bottom: 3px solid #26abe2;
+    padding-bottom: 15px; }
+
+.text-center h1:after {
+  margin: 0px auto; }
+
 button,
 .btn {
   padding: 0px;
@@ -31,9 +45,11 @@ button,
   color: #ffffff;
   display: inline-block;
   font-size: 1em;
-  padding: 1rem 1.5rem;
+  padding: 10px 15px;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  font-family: "Play", sans-serif;
+  text-transform: uppercase; }
   button:before,
   .btn:before {
     background: red;
@@ -62,9 +78,13 @@ button,
     button:hover:before,
     .btn:hover:before {
       opacity: 1; }
+  button:focus, button:visited,
+  .btn:focus,
+  .btn:visited {
+    color: #ffffff; }
 
 peek-main-title {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 999; }
   peek-main-title > .container-fluid {
@@ -81,13 +101,12 @@ peek-main-title {
     font-size: 0.8em;
     line-height: 12px;
     padding: 8px;
-    width: 100%; }
+    width: 100%;
+    font-family: "Play", sans-serif; }
   peek-main-title .btn-group {
     width: 100%; }
     peek-main-title .btn-group > .btn {
       width: 50%; }
-      peek-main-title .btn-group > .btn:first-child {
-        border-left: 1px solid #1b1464; }
   peek-main-title .menu-bar {
     display: table;
     width: 100%;
@@ -95,10 +114,9 @@ peek-main-title {
     peek-main-title .menu-bar > div {
       display: table-cell; }
     peek-main-title .menu-bar .left {
-      background-color: red;
       width: 60px; }
     peek-main-title .menu-bar .right {
-      background-color: red;
+      text-align: right;
       width: 115px; }
     peek-main-title .menu-bar .menu-title h2 {
       font-size: 0.8em;
@@ -110,6 +128,45 @@ peek-main-title {
       overflow: hidden;
       text-overflow: ellipsis; }
 
+.btn-group > .btn:first-child {
+  border-right: 1px solid #1b1464; }
+
+.btn-group .btn + .btn {
+  margin-left: 0px; }
+
+peek-information > .container-fluid {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+  peek-information > .container-fluid > .row {
+    margin-right: -10px;
+    margin-left: -10px; }
+
+peek-information .navigation-information {
+  border-bottom: 2px solid #28aae1; }
+  peek-information .navigation-information .form-group {
+    padding-top: 0px;
+    margin-bottom: 0px; }
+
+peek-information .form-group {
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
+.table > thead > tr > th,
+table > thead > tr > th {
+  background-color: #28aae1;
+  color: #ffffff;
+  font-family: "Play", sans-serif;
+  border-bottom: 0px;
+  font-size: 1.2em; }
+
+.home-page {
+  background-image: url("../images/home_background.png");
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 peek-main-home > .container-fluid {
   padding-top: 45px;
   padding-bottom: 55px; }
@@ -118,7 +175,8 @@ peek-main-home > .container-fluid {
     margin-left: -10px; }
 
 peek-main-home .home-icon {
-  padding: 5px; }
+  padding: 5px;
+  font-family: "Play", sans-serif; }
   peek-main-home .home-icon a {
     display: block;
     background-image: url("../images/button_home_background.png");
@@ -137,12 +195,12 @@ peek-main-home .home-icon {
       box-shadow: 0px 0px 0px transparent; }
 
 peek-main-footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  bottom: 0px; }
+  bottom: 0px;
+  z-index: 999; }
   peek-main-footer > div {
     background-color: #ffffff;
-    text-transform: uppercase;
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.18); }
     peek-main-footer > div h2 {
       font-size: 0.8em;
@@ -156,27 +214,25 @@ peek-main-footer {
 body,
 html {
   font-size: 16px;
-  background-color: #fafafa;
   color: #4d4c4c;
-  background: red;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#28aae1, #1b1464);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#28aae1, #1b1464);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#28aae1, #1b1464);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#28aae1, #1b1464);
-  /* Standard syntax */
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100%;
-  background-image: url("../images/home_background.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  height: 100%; }
 
 img {
-  width: 100%; }
+  max-width: 100%; }
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+  padding: 0px;
+  margin: 0px; }
+
+ul {
+  margin: 15px 0px; }
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px; }
 
 *:focus {
   outline: none !important; }

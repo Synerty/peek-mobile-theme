@@ -8,9 +8,11 @@ button,
   color: $white;
   display: inline-block;
   font-size:1em;
-  padding: 1rem 1.5rem;
+  padding: 10px 15px;
   position: relative;
   z-index: 100;
+  font-family: $fonts_special;
+  text-transform: $font_transform;
 
   &:before {
     @include gradient-linear(darken($brand,30%),darken($brand_compliment,10%) );
@@ -30,6 +32,11 @@ button,
     &:before {
       opacity: 1;
     }
+  }
+
+  &:focus,
+  &:visited{
+    color: $white;
   }
 
 }

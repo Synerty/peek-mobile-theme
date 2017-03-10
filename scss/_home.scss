@@ -1,3 +1,11 @@
+.home-page{
+  background-image: url('../images/home_background.png');
+  background-repeat: no-repeat;
+  background-color: $general_background_color;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 peek-main-home{
 
   //adjusting for fixed header and footer
@@ -14,7 +22,9 @@ peek-main-home{
 
   //home page buttons
   .home-icon{
-      padding: 5px;
+
+    padding: 5px;
+    font-family: $fonts_special;
 
     a{
       display: block;
