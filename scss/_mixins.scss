@@ -7,9 +7,22 @@
   background-color: transparent;
 }
 
-@mixin box-shadow{
-	box-shadow  : 2px 3px 14px rgba(0,0,0,.18);
+@mixin button-settings{
+  @include gradient-linear($brand, $brand_compliment);
+  color: $white;
+  font-size:1em;
+  font-family: $fonts_special;
+  text-transform: $font_transform;
 }
+
+@mixin box-shadow{
+	box-shadow  : 2px 3px 14px rgba(0,0,0,.35);
+}
+
+@mixin inner-shadow($opacity){
+  box-shadow  : inset 2px 3px 24px rgba(0,0,0,$opacity);
+}
+
 @mixin no-shadow{
 	box-shadow  : 0px 0px 0px rgba(0,0,0,.0);
 }

@@ -2,17 +2,13 @@ button,
 .btn{
 
   @include nuke;
-  @include gradient-linear($brand, $brand_compliment);
+  @include button-settings;
   background-size: 100%;
   cursor: pointer;
-  color: $white;
   display: inline-block;
-  font-size:1em;
   padding: 10px 15px;
   position: relative;
   z-index: 100;
-  font-family: $fonts_special;
-  text-transform: $font_transform;
 
   &:before {
     @include gradient-linear(darken($brand,30%),darken($brand_compliment,10%) );
@@ -39,4 +35,18 @@ button,
     color: $white;
   }
 
+}
+
+
+//button groups
+.btn-group{
+  &>.btn{
+    &:first-child{
+      border-right: 1px solid $brand_compliment;
+    }
+
+  }
+  .btn+.btn{
+    margin-left: 0px;
+  }
 }

@@ -1,17 +1,5 @@
 peek-information{
 
-  //adjusting for fixed header and footer
-  >.container-fluid{
-    padding-top: $navigation_header_height + $general_padding;
-    padding-bottom: $navigation_header_height + $general_padding;
-
-    > .row{
-      margin-right: -10px;
-      margin-left: -10px;
-    }
-
-  }
-
   .navigation-information{
     border-bottom: 2px solid $brand;
 

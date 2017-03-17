@@ -9,7 +9,6 @@
         <!--<base href="/">-->
         <base href=".">
 
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -36,63 +35,61 @@
                             <!--template bindings={ "ng-reflect-ng-for-of": ""}-->
                         </div>
                         <div _ngcontent-vob-4="" class="menu-title">
-                            <h2 _ngcontent-vob-4="">Peek Home Peek Home Peek Home Peek Home Peek Home Peek Home Peek Home Peek Home Peek Home Peek Home Peek Home Peek Home </h2>
+                            <h2 _ngcontent-vob-4="">Peek Home</h2>
                         </div>
                         <div _ngcontent-vob-4="" class="right">
-                          <!--template bindings={"ng-reflect-ng-for-of": "[object Object]"}-->
-                          <div class="btn-group" role="group" aria-label="">
-                            <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
-                            <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
-
-                          </div>
+                            <!--template bindings={"ng-reflect-ng-for-of": "[object Object]"}-->
+                            <div class="btn-group" role="group" aria-label="">
+                                <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
+                                <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </peek-main-title>
 
-
-                <router-outlet></router-outlet>
-                <peek-main-home _nghost-vob-5="">
-                    <div _ngcontent-vob-5="" class="container-fluid">
-                        <!--template bindings={"ng-reflect-ng-if": null}-->
-                        <div _ngcontent-vob-5="" class="row">
-                            <!--template bindings={"ng-reflect-ng-for-of": "[object Object],[object Object],[object Object]"}-->
-                            <div _ngcontent-vob-5="" class="col-lg-2 col-md-3 col-sm-4 col-xs-6 home-icon">
-                              <a _ngcontent-vob-5="" ng-reflect-router-link="/peek_plugin_noop" ng-reflect-href="/peek_plugin_noop" href="http://localhost:4200/peek_plugin_noop">
+            <router-outlet></router-outlet>
+            <peek-main-home _nghost-vob-5="">
+                <div _ngcontent-vob-5="" class="container-fluid">
+                    <!--template bindings={"ng-reflect-ng-if": null}-->
+                    <div _ngcontent-vob-5="" class="row">
+                        <!--template bindings={"ng-reflect-ng-for-of": "[object Object],[object Object],[object Object]"}-->
+                        <div _ngcontent-vob-5="" class="col-lg-2 col-md-3 col-sm-4 col-xs-6 home-icon">
+                            <a _ngcontent-vob-5="" ng-reflect-router-link="/peek_plugin_noop" ng-reflect-href="/peek_plugin_noop" href="http://localhost:4200/peek_plugin_noop">
                                 <img _ngcontent-vob-5="" ng-reflect-src="images/testing_noop.png" src="images/testing_noop.png">
                                 <p _ngcontent-vob-5="" class="text-center">Testing Noop</p>
-                              </a>
-                            </div>
-
-                            <div _ngcontent-vob-5="" class="col-lg-2 col-md-3 col-sm-4 col-xs-6 home-icon">
-                              <a _ngcontent-vob-5="" ng-reflect-router-link="/peek_plugin_pof_field_switching" ng-reflect-href="/peek_plugin_pof_field_switching" href="http://localhost:4200/peek_plugin_pof_field_switching">
-                                      <img _ngcontent-vob-5="" ng-reflect-src="images/field_switching.png" src="images/field_switching.png">
-                                      <p _ngcontent-vob-5="" class="text-center">Field Switching</p>
-                              </a>
-                            </div>
-
-                            <div _ngcontent-vob-5="" class="col-lg-2 col-md-3 col-sm-4 col-xs-6 home-icon">
-                              <a _ngcontent-vob-5="" ng-reflect-router-link="/peek_plugin_user" ng-reflect-href="/peek_plugin_user" href="http://localhost:4200/peek_plugin_user">
-                                      <img _ngcontent-vob-5="" ng-reflect-src="images/login_logout.png" src="images/login_logout.png">
-                                      <p _ngcontent-vob-5="" class="text-center">Login / Logout</p>
-                              </a>
-                            </div>
-
+                            </a>
                         </div>
+
+                        <div _ngcontent-vob-5="" class="col-lg-2 col-md-3 col-sm-4 col-xs-6 home-icon">
+                            <a _ngcontent-vob-5="" ng-reflect-router-link="/peek_plugin_pof_field_switching" ng-reflect-href="/peek_plugin_pof_field_switching" href="http://localhost:4200/peek_plugin_pof_field_switching">
+                                <img _ngcontent-vob-5="" ng-reflect-src="images/field_switching.png" src="images/field_switching.png">
+                                <p _ngcontent-vob-5="" class="text-center">Field Switching</p>
+                            </a>
+                        </div>
+
+                        <div _ngcontent-vob-5="" class="col-lg-2 col-md-3 col-sm-4 col-xs-6 home-icon">
+                            <a _ngcontent-vob-5="" ng-reflect-router-link="/peek_plugin_user" ng-reflect-href="/peek_plugin_user" href="http://localhost:4200/peek_plugin_user">
+                                <img _ngcontent-vob-5="" ng-reflect-src="images/login_logout.png" src="images/login_logout.png">
+                                <p _ngcontent-vob-5="" class="text-center">Login / Logout</p>
+                            </a>
+                        </div>
+
                     </div>
-                </peek-main-home>
+                </div>
+            </peek-main-home>
 
 
             <peek-main-footer>
-              <div class="container-fluid">
-                  <div _ngcontent-vob-5="" class="row">
-                    <div _ngcontent-vob-5="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                      <h2>
+                <div class="container-fluid">
+                    <div _ngcontent-vob-5="" class="row">
+                        <div _ngcontent-vob-5="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <h2>
                         Offline, xxx minutes
                       </h2>
+                        </div>
                     </div>
-                  </div>
-              </div>
+                </div>
             </peek-main-footer>
 
         </peek-main-app>

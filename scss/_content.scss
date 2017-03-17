@@ -1,5 +1,112 @@
 peek-information{
 
-  //defined in peek ui forms
+  //adjusting for fixed header and footer
+  >.container-fluid{
+    padding-top: $navigation_header_height + $general_padding;
+    padding-bottom: $navigation_header_height + $general_padding;
+
+    > .row{
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+  }
+
+  //user status
+
+  .glyphicon{
+    &.large{
+      font-size: 6em;
+      padding:0.5em;
+      border-radius: 50%;
+      overflow: hidden;
+      color: $white;
+      background-image: url('../images/home_background.png');
+      background-size: 400%;
+      background-position: top center;
+      @include inner-shadow(0.55);
+    }
+  }
 
 }
+
+//tabed content
+
+  //nav tabs active lists
+  .tab-content{
+    border-top: 1px solid $brand;
+  }
+
+.tab-pane{
+
+    .table{
+      &>tbody{
+        &>tr{
+          &>td{
+            border-top: 0px;
+            border-bottom: 1px solid $brand;
+            position: relative;
+            padding: $general_padding $general_padding $general_padding 0px;
+          }
+        }
+      }
+    }
+
+
+    .icon{
+      position: absolute;
+      width: 45px;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      padding: $general_padding 0px $general_padding $general_padding;
+      font-size: 1.3em;
+
+      .glyphicon{
+        color: $brand;
+        padding-right: $general_padding - 10px;
+      }
+
+    }
+
+    .activity{
+      margin-right: 10px;
+      margin-left: 45px;
+      font-size: 0.9rem;
+
+      .time{
+        font-size: 0.7rem;
+        border-bottom: 1px solid $grey;
+        padding: 5px 0px;
+        margin-bottom: 5px;
+      }
+
+      button{
+        font-size: 0.8em;
+        padding: $general_padding - 10px;
+        margin-right: 0px;
+      }
+    }
+
+    .read-more{
+      position: absolute;
+      background-color: $grey;
+      font-size: 0.6em;
+      width: 20px;
+      right:0px;
+      top:0px;
+      height: 100%;
+      background-image: url('../images/icon_more.png');
+      background-position: center center;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+
+      &:hover{
+        background-color: $brand;
+        cursor: pointer;
+      }
+
+
+    }
+
+  }

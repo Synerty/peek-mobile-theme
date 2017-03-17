@@ -18,11 +18,11 @@
 
     <style media="screen">
 
-      html,body{
-        font-size: 18px;
-        color: #353535;
-        background-image: none;
-      }
+    html,body{
+      font-size: 18px;
+      color: #353535;
+      background-image: none;
+    }
 
     .menu li{
         padding: 0px;
@@ -67,14 +67,30 @@
         padding-top: 30px;
       }
 
-      h1.title {
+      h1.document.title {
         font-size: 60px;
         color: #282c34;
-
         font-weight: bold;
         text-transform: capitalize;
         letter-spacing: -3px;
       }
+
+      .document{
+        padding: 10px 0px
+      }
+
+      h1.document{
+        margin-bottom: 0px;
+      }
+
+      h1.document:after{
+        border: 0px;
+      }
+
+      h2.document{
+        color: #26abe2;
+      }
+
 
       .code{
         display: block;
@@ -147,7 +163,6 @@
         width: 100%;
         height:667px;
         margin: 20px auto;
-
       }
 
     </style>
@@ -158,15 +173,21 @@
 
     <div class="container">
 
-      <div class="row" id="Top-Navigation">
+      <div class="row">
         <div class="col-sm-3">
-          <ul class="menu">
+          <ul class="menu" data-spy="affix" data-offset-top="0" data-offset-bottom="100">
             <li><a href="#main-navigation">Main navigation</a></li>
             <li><a href="#footer">Footer</a></li>
             <li>
-              <a href="#home-page">Home Page</a>
+              <a href="#pages">Pages</a>
               <ul>
-                <li><a href="#background">Background</a></li>
+                <li><li><a href="#generalcontent">General Content</a></li>
+                <li>
+                  <a href="#homepage">Home page</a>
+                  <ul>
+                    <li><a href="#homepagebackground">Background</a></li>
+                  </ul>
+                </li>
                 <li>App Buttons</li>
               </ul>
             </li>
@@ -174,66 +195,61 @@
         </div>
         <div class="col-sm-9">
 
-          <h1 class="title">Peek App Documentation</h1>
+          <h1 class="title document">Peek App Documentation</h1>
 
 <!-- content start -->
 
 <!-- Top Navigation start -->
 <div id="main-navigation">
-  <h1>Main Navigation</h1>
-
+  <h1 class="document">Main Navigation</h1>
     The top navigation is not designed with conventional Bootstrap elements as it is designed to only expand the title section while the buttons on the left and the right remain a fixed size throught a screen resize. Apply the following code sample to get the main navigation to display on your page.
     <br/><br/>
     Display:
-
-<div class="display-sample">
-  <peek-main-title _nghost-vob-4="">
-   <div _ngcontent-vob-4="" class="container-fluid">
-    <div _ngcontent-vob-4="" class="menu-bar">
-     <div _ngcontent-vob-4="" class="left">
-      <button _ngcontent-vob-4="" class="btn left-button " ng-reflect-router-link="/">Home</button>
-     </div>
-     <div _ngcontent-vob-4="" class="menu-title">
-      <h2 _ngcontent-vob-4="">Peek Title</h2>
-     </div>
-     <div _ngcontent-vob-4="" class="right">
-      <div class="btn-group" role="group" aria-label="">
-       <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
-       <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
-      </div>
-     </div>
+    <div class="display-sample">
+      <peek-main-title _nghost-vob-4="">
+       <div class="container-fluid">
+        <div class="menu-bar">
+         <div class="left">
+          <button class="btn left-button " ng-reflect-router-link="/">Home</button>
+         </div>
+         <div class="menu-title">
+          <h2>Peek Title</h2>
+         </div>
+         <div class="right">
+          <div class="btn-group" role="group" aria-label="">
+           <button class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
+           <button class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
+          </div>
+         </div>
+        </div>
+       </div>
+      </peek-main-title>
     </div>
-   </div>
-  </peek-main-title>
-</div>
-
-Code sample:
-<div class="code">
+    Code sample:
+    <div class="code">
 <xmp id="top-navigation"><peek-main-title _nghost-vob-4="">
- <div _ngcontent-vob-4="" class="container-fluid">
-  <div _ngcontent-vob-4="" class="menu-bar">
-   <div _ngcontent-vob-4="" class="left">
-    <button _ngcontent-vob-4="" class="btn left-button " ng-reflect-router-link="/">Home</button>
+ <div class="container-fluid">
+  <div class="menu-bar">
+   <div class="left">
+    <button class="btn left-button">Home</button>
    </div>
-   <div _ngcontent-vob-4="" class="menu-title">
-    <h2 _ngcontent-vob-4="">Peek Title</h2>
+   <div class="menu-title">
+    <h2>Peek Title</h2>
    </div>
-   <div _ngcontent-vob-4="" class="right">
+   <div class="right">
     <div class="btn-group" role="group" aria-label="">
-     <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
-     <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
+     <button class="btn right-button">Tasks</button>
+     <button class="btn right-button">User</button>
     </div>
    </div>
   </div>
  </div>
-</peek-main-title>
-</xmp>
-<button class="btn" data-clipboard-target="#top-navigation">copy</button>
-</div>
-
+</peek-main-title></xmp>
+    <button class="btn" data-clipboard-target="#top-navigation">copy</button>
+    </div>
 </div>
 <!-- Top Navigation end -->
-
+<hr>
 <!-- Footer start -->
 <div id="footer">
   <h1>Footer</h1>
@@ -243,8 +259,8 @@ Code sample:
     <div class="display-sample">
       <peek-main-footer>
         <div class="container-fluid">
-            <div _ngcontent-vob-5="" class="row">
-              <div _ngcontent-vob-5="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <h2>Offline, xxx minutes</h2>
               </div>
             </div>
@@ -256,27 +272,37 @@ Code sample:
     <div class="code">
 <xmp id="footercode"><peek-main-footer>
   <div class="container-fluid">
-    <div _ngcontent-vob-5="" class="row">
-      <div _ngcontent-vob-5="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-        <h2>
-          Offline, xxx minutes
-        </h2>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2>Offline, xxx minutes</h2>
       </div>
     </div>
   </div>
 </peek-main-footer>
 </xmp>
-<button class="btn" data-clipboard-target="#footercode">copy</button>
+      <button class="btn" data-clipboard-target="#footercode">copy</button>
     </div>
-
-
 </div>
 <!-- Footer end -->
-
+<hr>
 <!-- Home page start -->
-<div id="home-page">
-  <h1>Home Page</h1>
-  <h2 id="background">Background</h2>
+<div id="page">
+  <h1 >Page</h1>
+
+  <!-- General content start -->
+  <h2 class="document" id="generalcontent">General content</h2>
+  All general content other than the home page, that come right after the menu title must be enclosed with the following tags.
+
+  Code sample:
+  <div class="code">
+    <xmp id="generalcontentcode"><peek-information> ... </peek-information></xmp>
+    <button class="btn" data-clipboard-target="#generalcontentcode">copy</button>
+  </div>
+
+  <!-- General content end -->
+
+  <h2 class="document" id="homepage">Home Page</h2>
+  <h3 class="document" id="homepagebackground">Background</h3>
   The home page background will look different to the backgrounds on subsiquent pages. The main idea of having the home page look different is it make it look a bit more impressiv and welcoming.
 
   Apply the class 'home-page' to the page body if you would like this background to display.
@@ -298,12 +324,74 @@ Code sample:
   </div>
 
 </div>
-<!-- content end -->
+<!-- Home page end -->
+<!-- Tabed Lists -->
+<div class="tables and tabs">
+  <h1 class="document">Tabs</h1>
+  <h2 class="document">Tabed Information list</h1>
+    The following code should be used to list information on a tabbed list page
+
+    Display:
+      <div class="display-sample">
+        <plugin-active-task>
+          <table class="table table-striped">
+              <tbody>
+                  <tr>
+                      <td class="bg-success">
+                        <div class="icon">
+                          <span class="glyphicon glyphicon-comment"></span>
+                        </div>
+                        <div class="activity">
+                          <h4>New Message</h4>
+                          <div class="time">13 hours ago 20:03 05-Mar</div>
+                          You have a new message
+                          <div class="button">
+                            <button type="button" name="button">button1</button>
+                            <button type="button" name="button">button2</button>
+                            <button type="button" name="button">button3</button>
+                            <button type="button" name="button">button4</button>
+                            <button type="button" name="button">button5</button>
+                            <button type="button" name="button">button6</button>
+                          </div>
+                        </div>
+                        <a class="read-more"></a>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+        </plugin-active-task>
+      </div>
+
+    Code sample:
+    <div class="code">
+<xmp id="tabedinformationlist"><tr>
+  <td class="bg-success">
+    <div class="icon">
+      <span class="glyphicon glyphicon-comment"></span>
+    </div>
+    <div class="activity">
+      <h4>New Message</h4>
+      <div class="time">13 hours ago 20:03 05-Mar</div>
+      You have a new message
+      <div class="button">
+        <button type="button" name="button">button1</button>
+      </div>
+    </div>
+    <a class="read-more"></a>
+  </td>
+</tr></xmp>
+      <button class="btn" data-clipboard-target="#tabedinformationlist">copy</button>
+    </div>
+
+</div>
+<!-- Tabed Lists -->
+
+
 
         </div>
 
       </div>
-
+      <div class="footer"></div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -315,6 +403,8 @@ Code sample:
 
     <script type="text/javascript">
       new Clipboard('.btn');
+
+
     </script>
   </body>
 </html>
