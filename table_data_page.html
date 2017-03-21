@@ -41,20 +41,24 @@
      </div>
     </peek-main-title>
 
-<peek-information>
+<peek-table-data>
 
 <div class="container-fluid">
     <router-outlet></router-outlet><peek-plugin-pof-field-switching-job-op-list>
     <div class="row navigation-information">
-      <div class="form-group col-xs-12">
-          <button class="btn">My Jobs</button>
-          <button class="btn">&lt; Job J-5102-C</button>
-      </div>
+
+        <div class="col-xs-12" >
+          <div class="btn-group" role="group" aria-label="">
+            <button class="btn">My Jobs</button>
+            <button class="btn">&lt; Job J-5102-C</button>
+          </div>
+        </div>
+
     </div>
 
 <div class="row">
 
-        <table class="table">
+        <table class="table table-striped">
             <thead>
             <tr>
                 <th class="text-center">Item</th>
@@ -127,7 +131,7 @@
 </peek-plugin-pof-field-switching-job-op-list>
 </div>
 
-</peek-information>
+</peek-table-data>
 
 <peek-main-footer>
   <div class="container-fluid">

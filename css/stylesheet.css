@@ -22,6 +22,21 @@ h1 {
 .text-center h1:after {
   margin: 0px auto; }
 
+.table > thead > tr > th,
+table > thead > tr > th {
+  background-color: #999999;
+  color: #ffffff;
+  font-family: "Play", sans-serif;
+  border-bottom: 0px;
+  font-size: 1.2em; }
+
+.table td,
+table td {
+  color: #000000; }
+
+.tab-content {
+  border-top: 1px solid #999999; }
+
 button,
 .btn {
   padding: 0px;
@@ -83,11 +98,17 @@ button,
   .btn:visited {
     color: #ffffff; }
 
-.btn-group > .btn:first-child {
-  border-right: 1px solid #1a8cbc; }
-
-.btn-group .btn + .btn {
-  margin-left: 0px; }
+.btn-group {
+  padding: 15px 0px; }
+  .btn-group > .btn {
+    border-right: 1px solid #1a8cbc; }
+    .btn-group > .btn:first-child {
+      border-radius: 4px 0px 0px 4px; }
+    .btn-group > .btn:last-child {
+      border-radius: 0px 4px 4px 0px;
+      border-right: 0px none #1a8cbc; }
+  .btn-group .btn + .btn {
+    margin-left: 0px; }
 
 peek-main-title {
   position: fixed;
@@ -110,18 +131,21 @@ peek-main-title {
     width: 100%;
     font-family: "Play", sans-serif; }
   peek-main-title .btn-group {
-    width: 100%; }
+    width: 100%;
+    padding: 0px; }
     peek-main-title .btn-group > .btn {
       width: 50%; }
+      peek-main-title .btn-group > .btn:first-child, peek-main-title .btn-group > .btn:last-child {
+        border-radius: 0px; }
   peek-main-title .menu-bar {
     display: table;
     width: 100%;
     table-layout: fixed; }
     peek-main-title .menu-bar > div {
       display: table-cell; }
-    peek-main-title .menu-bar .left {
+    peek-main-title .menu-bar .menu-bar-left {
       width: 60px; }
-    peek-main-title .menu-bar .right {
+    peek-main-title .menu-bar .menu-bar-right {
       text-align: right;
       width: 115px; }
     peek-main-title .menu-bar .menu-title h2 {
@@ -156,6 +180,8 @@ peek-main-title {
         font-size: 1em;
         font-family: "Play", sans-serif;
         text-transform: uppercase;
+        background-image: none;
+        background: #999999;
         border-color: #28aae1;
         border: 0px;
         font-size: 0.8em;
@@ -174,24 +200,22 @@ peek-main-title {
         padding: 10px;
         margin-top: 4px; }
 
-peek-information .navigation-information {
-  border-bottom: 2px solid #28aae1; }
-  peek-information .navigation-information .form-group {
-    padding-top: 0px;
-    margin-bottom: 0px; }
-
-peek-information .form-group {
-  margin-bottom: 0px;
-  padding-bottom: 15px;
-  padding-top: 15px; }
-
-.table > thead > tr > th,
-table > thead > tr > th {
-  background-color: #28aae1;
-  color: #ffffff;
-  font-family: "Play", sans-serif;
-  border-bottom: 0px;
-  font-size: 1.2em; }
+peek-main-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 999; }
+  peek-main-footer > div {
+    background-color: #ffffff;
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
+    peek-main-footer > div h2 {
+      font-size: 0.8em;
+      height: 40px;
+      line-height: 40px;
+      overflow: hidden;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
 
 .home-page {
   background-image: url("../images/home_background.png");
@@ -227,51 +251,20 @@ peek-main-home .home-icon {
       text-decoration: none;
       box-shadow: 0px 0px 0px transparent; }
 
-peek-main-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-  z-index: 999; }
-  peek-main-footer > div {
-    background-color: #ffffff;
-    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
-    peek-main-footer > div h2 {
-      font-size: 0.8em;
-      height: 40px;
-      line-height: 40px;
-      overflow: hidden;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-
-peek-information > .container-fluid {
+plugin-active-task > .container-fluid {
   padding-top: 55px;
   padding-bottom: 55px; }
-  peek-information > .container-fluid > .row {
+  plugin-active-task > .container-fluid > .row {
     margin-right: -15px;
     margin-left: -15px; }
 
-peek-information .glyphicon.large {
-  font-size: 6em;
-  padding: 0.5em;
-  border-radius: 50%;
-  overflow: hidden;
-  color: #ffffff;
-  background-image: url("../images/home_background.png");
-  background-size: 400%;
-  background-position: top center;
-  box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.55); }
-
-.tab-content {
-  border-top: 1px solid #28aae1; }
-
-.tab-pane .table > tbody > tr > td {
+plugin-active-task-task-list .table > tbody > tr > td {
   border-top: 0px;
-  border-bottom: 1px solid #28aae1;
+  border-bottom: 1px solid #999999;
   position: relative;
-  padding: 15px 15px 15px 0px; }
+  padding: 15px 20px 15px 0px; }
 
-.tab-pane .icon {
+plugin-active-task-task-list .task-icon {
   position: absolute;
   width: 45px;
   height: 100%;
@@ -279,25 +272,46 @@ peek-information .glyphicon.large {
   top: 0px;
   padding: 15px 0px 15px 15px;
   font-size: 1.3em; }
-  .tab-pane .icon .glyphicon {
+  plugin-active-task-task-list .task-icon .fa {
     color: #28aae1;
     padding-right: 5px; }
 
-.tab-pane .activity {
+plugin-active-task-task-list .task-activity {
   margin-right: 10px;
   margin-left: 45px;
   font-size: 0.9rem; }
-  .tab-pane .activity .time {
+  plugin-active-task-task-list .task-activity .task-tite {
+    padding-bottom: 10px;
+    color: #000000;
+    font-size: 1.1rem; }
+  plugin-active-task-task-list .task-activity .task-time {
     font-size: 0.7rem;
-    border-bottom: 1px solid #cccccc;
+    float: right;
     padding: 5px 0px;
-    margin-bottom: 5px; }
-  .tab-pane .activity button {
-    font-size: 0.8em;
-    padding: 5px;
-    margin-right: 0px; }
+    margin-bottom: 5px;
+    display: block; }
+  plugin-active-task-task-list .task-activity .task-buttons {
+    border-top: 1px solid #cccccc;
+    display: block;
+    overflow: hidden;
+    width: 100%; }
+  plugin-active-task-task-list .task-activity button,
+  plugin-active-task-task-list .task-activity .btn {
+    font-size: 0.9em;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+    background-image: none;
+    background-color: #b3b2b2; }
+    plugin-active-task-task-list .task-activity button:before,
+    plugin-active-task-task-list .task-activity .btn:before {
+      background-image: none;
+      background-color: #807f7f; }
+    plugin-active-task-task-list .task-activity button:hover,
+    plugin-active-task-task-list .task-activity .btn:hover {
+      background-image: none;
+      background-color: #b3b2b2; }
 
-.tab-pane .read-more {
+plugin-active-task-task-list .task-read-more {
   position: absolute;
   background-color: #cccccc;
   font-size: 0.6em;
@@ -309,9 +323,113 @@ peek-information .glyphicon.large {
   background-position: center center;
   background-size: 100% auto;
   background-repeat: no-repeat; }
-  .tab-pane .read-more:hover {
+  plugin-active-task-task-list .task-read-more:hover {
     background-color: #28aae1;
     cursor: pointer; }
+
+plugin-active-task-activity-list .table > tbody > tr > td {
+  border-top: 0px;
+  border-bottom: 1px solid #999999;
+  position: relative;
+  padding: 15px 30px 15px 15px; }
+
+plugin-active-task-activity-list .activity-tite {
+  padding-bottom: 10px;
+  color: #000000;
+  font-size: 1.1rem; }
+
+plugin-active-task-activity-list .activity-time {
+  font-size: 0.7rem;
+  float: right;
+  padding: 5px 0px;
+  margin-bottom: 5px;
+  display: block; }
+
+plugin-active-task-activity-list .activity-buttons {
+  border-top: 1px solid #cccccc;
+  display: block;
+  overflow: hidden;
+  width: 100%; }
+
+plugin-active-task-activity-list .task-read-more {
+  position: absolute;
+  background-color: #cccccc;
+  font-size: 0.6em;
+  width: 20px;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  background-image: url("../images/icon_more.png");
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+  plugin-active-task-activity-list .task-read-more:hover {
+    background-color: #28aae1;
+    cursor: pointer; }
+
+peek-information > .container-fluid {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+  peek-information > .container-fluid > .row {
+    margin-right: -15px;
+    margin-left: -15px; }
+
+peek-information .information-icon {
+  background-image: url("../images/home_background.png"); }
+
+peek-information .fa.large {
+  font-size: 6em;
+  border-radius: 8px;
+  vertical-align: middle;
+  color: #ffffff;
+  background-image: url("../images/home_background.png");
+  background-size: 400%;
+  background-position: top center;
+  box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
+  position: relative;
+  display: inline-block;
+  width: 136px;
+  height: 136px;
+  line-height: 136px; }
+
+peek-information .icon {
+  background-image: url("../images/home_background.png");
+  background-size: 400%;
+  background-position: top center;
+  box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+  width: 136px;
+  height: 136px; }
+  peek-information .icon img {
+    max-height: 100%; }
+
+peek-form-data > .container-fluid {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+  peek-form-data > .container-fluid > .row {
+    margin-right: -15px;
+    margin-left: -15px; }
+
+peek-form-data .navigation-information {
+  border-bottom: 1px solid #999999; }
+  peek-form-data .navigation-information .form-group {
+    padding-top: 0px;
+    margin-bottom: 0px; }
+
+peek-form-data .form-group {
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #000000; }
+
+peek-table-data > .container-fluid {
+  padding-top: 40px;
+  padding-bottom: 55px; }
+  peek-table-data > .container-fluid > .row {
+    margin-right: -15px;
+    margin-left: -15px; }
 
 body,
 html {

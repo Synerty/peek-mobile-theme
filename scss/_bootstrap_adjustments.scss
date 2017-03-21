@@ -1,0 +1,114 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+h1,h2,h3,h4,h5{
+  @include nuke;
+  font-family: $fonts_special;
+}
+
+h1{
+  margin-bottom: $general_padding * 2;
+  padding: ($general_padding * 2) 0px 0px 0px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 15%;
+    border-bottom: 3px solid #26abe2;
+    padding-bottom: $general_padding;
+  }
+
+}
+
+.text-center{
+    h1{
+      &:after {
+        margin: 0px auto;
+      }
+  }
+}
+
+//table
+.table,
+table{
+  &>thead>tr>th{
+    background-color: darken($grey,20%);
+    color: $white;
+    font-family: $fonts_special;
+    border-bottom: 0px;
+    font-size: 1.2em;
+  }
+
+  td{
+      color: $black;
+  }
+
+}
+
+//nav tabs active lists
+.tab-content{
+  border-top: 1px solid darken($grey,20%);
+}
+
+button,
+.btn{
+
+  @include nuke;
+  @include button-settings;
+  background-size: 100%;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 100;
+
+  &:before {
+    @include gradient-linear(darken($brand,30%),darken($brand_compliment,10%) );
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 0.45s;
+  }
+
+  &:hover {
+    color: $white;
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:focus,
+  &:visited{
+    color: $white;
+  }
+
+}
+
+//button groups
+.btn-group{
+
+  padding:$general_padding 0px;
+
+  &>.btn{
+    border-right: 1px solid $brand_compliment;
+
+    &:first-child{
+      border-radius: $general_border_radius 0px 0px $general_border_radius;
+    }
+
+    &:last-child{
+      border-radius: 0px $general_border_radius $general_border_radius 0px;
+      border-right: 0px none $brand_compliment;
+    }
+
+  }
+  .btn+.btn{
+    margin-left: 0px;
+  }
+}

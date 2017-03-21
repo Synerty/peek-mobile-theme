@@ -1,15 +1,16 @@
 @import '_variables';
 @import '_mixins';
-@import '_fonts';
+@import '_bootstrap_adjustments';
 
-@import '_ui_buttons';
-@import '_ui_navigation';
-@import '_ui_forms';
-@import '_ui_tables';
-
-@import '_home';
+@import '_navigation';
 @import '_footer';
-@import '_content';
+
+//pages
+@import '_home';
+@import '_activity_task';
+@import '_information';
+@import '_form_data';
+@import '_table_data';
 
 body,
 html{

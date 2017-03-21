@@ -31,8 +31,15 @@ peek-main-title{
   //button group
   .btn-group{
     width: 100%;
+    padding: 0px;
     &>.btn{
         width: 50%;
+
+        &:first-child,
+        &:last-child{
+          border-radius: 0px;
+        }
+
     }
 
   }
@@ -47,11 +54,11 @@ peek-main-title{
       display: table-cell;
     }
 
-    .left{
+    .menu-bar-left{
       width: 60px;
     }
 
-    .right{
+    .menu-bar-right{
       text-align: right;
       width: 115px;
     }
@@ -76,8 +83,10 @@ peek-main-title{
 
 //navigation tabs
 .nav{
+
   $section_font_size: 0.8em;
   margin: 0px;
+
   &.nav-tabs{
     border-bottom: 0px solid $brand;
 
@@ -88,6 +97,8 @@ peek-main-title{
         & > a{
           border-radius: 0px 0px 0 0;
           @include button-settings;
+          background-image:none;
+          background: darken($grey,20%);
           border-color: $brand;
           border: 0px;
           font-size:$section_font_size;

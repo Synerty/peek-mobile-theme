@@ -1,0 +1,31 @@
+peek-form-data{
+
+  >.container-fluid{
+    padding-top: $navigation_header_height + $general_padding;
+    padding-bottom: $navigation_header_height + $general_padding;
+
+    > .row{
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+  }
+
+  .navigation-information{
+    border-bottom: 1px solid darken($grey,20%);
+
+    .form-group{
+      padding-top: 0px;
+      margin-bottom: 0px;
+    }
+
+  }
+
+  .form-group{
+    margin-bottom: 0px;
+    padding-bottom: $general_padding;
+    padding-top: $general_padding;
+    color: $black;
+  }
+
+}

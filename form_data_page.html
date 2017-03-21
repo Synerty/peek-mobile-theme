@@ -39,7 +39,7 @@
      </div>
     </peek-main-title>
 
-<peek-information>
+<peek-form-data>
 <div class="container-fluid">
     <router-outlet></router-outlet><peek-plugin-pof-field-switching-job-op _nghost-vob-18="">
 
@@ -49,9 +49,11 @@
 <!--template bindings={"ng-reflect-ng-if": "true"}-->
 <div _ngcontent-vob-18="" class="row navigation-information">
     <div _ngcontent-vob-18="" class="form-group col-xs-12">
-        <button _ngcontent-vob-18="" class="btn">My Jobs</button>
-        <button _ngcontent-vob-18="" class="btn">Job</button>
-        <button _ngcontent-vob-18="" class="btn">Operations</button>
+        <div class="btn-group pull-left" role="group" aria-label="">
+          <button _ngcontent-vob-18="" class="btn">My Jobs</button>
+          <button _ngcontent-vob-18="" class="btn">Job</button>
+          <button _ngcontent-vob-18="" class="btn">Operations</button>
+        </div>
         <div class="btn-group pull-right" role="group" aria-label="">
           <button _ngcontent-vob-18="" class="btn">&lt;</button>
           <button _ngcontent-vob-18="" class="btn">&gt;</button>
@@ -61,14 +63,14 @@
 </div>
 
 <div _ngcontent-vob-18="" class="row">
-    <div _ngcontent-vob-18="" class="form-group col-xs-5">
-        <h5 _ngcontent-vob-18="" class="text-muted">Item</h5>
-        <h3 _ngcontent-vob-18="">#3</h3>
-    </div>
-    <div _ngcontent-vob-18="" class="form-group col-xs-7">
-        <h5 _ngcontent-vob-18="" class="text-muted">State</h5>
-        <h3 _ngcontent-vob-18="">Confirmed</h3>
-    </div>
+  <div _ngcontent-vob-18="" class="form-group col-xs-5">
+      <h5 _ngcontent-vob-18="" class="text-muted">Item</h5>
+      <h3 _ngcontent-vob-18="">#3</h3>
+  </div>
+  <div _ngcontent-vob-18="" class="form-group col-xs-7">
+      <h5 _ngcontent-vob-18="" class="text-muted">State</h5>
+      <h3 _ngcontent-vob-18="">Confirmed</h3>
+  </div>
 </div>
 
 
@@ -173,7 +175,7 @@
 
 </peek-plugin-pof-field-switching-job-op>
 
-</peek-information>
+</peek-form-data>
 
 </div>
 

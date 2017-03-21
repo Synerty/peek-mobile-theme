@@ -16,6 +16,9 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+        <!--font awesome-->
+        <script src="https://use.fontawesome.com/b4d291589e.js"></script>
+
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -49,13 +52,13 @@
                 </div>
             </peek-main-title>
 
-            <peek-information>
+            <plugin-active-task>
                 <div class="container-fluid">
                   <div class="row">
 
 
                     <router-outlet></router-outlet>
-                    <plugin-active-task>
+
                         <div>
 
                             <ul class="nav nav-tabs" role="tablist">
@@ -72,20 +75,22 @@
                                 <div class="tab-pane active" id="activeTaskTasks" role="tabpanel">
                                     <plugin-active-task-task-list>
 
-
                                         <table class="table table-striped">
                                             <tbody>
                                                 <tr>
                                                     <td class="bg-success">
-                                                            <div class="icon">
-                                                              <span class="glyphicon glyphicon-comment"></span>
+                                                            <div class="task-icon">
+                                                              <i class="fa fa-comment" aria-hidden="true"></i>
                                                             </div>
-                                                            <div class="activity">
-                                                              <h4>New Message</h4>
-                                                              <div class="time">13 hours ago 20:03 05-Mar</div>
-                                                              You have a new message
+                                                            <div class="task-activity">
 
-                                                              <div class="button">
+                                                              <div class="task-tite">New Message New Message New Message New Message</div>
+
+                                                              You have a new message You have a new message You have a new message You have a new message
+
+                                                              <div class="task-time">13 hours ago 20:03 05-Mar</div>
+
+                                                              <div class="task-buttons">
                                                                 <button type="button" name="button">button1</button>
                                                                 <button type="button" name="button">button2</button>
                                                                 <button type="button" name="button">button3</button>
@@ -93,85 +98,91 @@
                                                                 <button type="button" name="button">button5</button>
                                                                 <button type="button" name="button">button6</button>
                                                               </div>
-
                                                             </div>
-                                                            <div class="read-more">
-                                                            </div>
+                                                            <div class="task-read-more"></div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                   <td class="bg-success">
-                                                    <div class="icon">
-                                                      <span class="glyphicon glyphicon-unchecked"></span>
+                                                    <div class="task-icon">
+                                                      <i class="fa fa-check-square-o" aria-hidden="true"></i>
                                                     </div>
-                                                    <div class="activity">
-                                                      <h4>Task</h4>
-                                                      <div class="time">13 hours ago 20:03 05-Mar</div>
+                                                    <div class="task-activity">
+                                                      <div class="task-tite">Task</div>
+                                                      You have a new message You have a new message You have a new message You have a new message
 
-                                                      <div class="button">
+                                                      <div class="task-time">13 hours ago 20:03 05-Mar</div>
+
+                                                      <div class="task-buttons">
                                                         <button type="button" name="button">button1</button>
                                                         <button type="button" name="button">button1</button>
                                                       </div>
+
                                                     </div>
-                                                    <div class="read-more">
+                                                    <div class="task-read-more">
                                                     </div>
                                                   </td>
                                                 </tr>
 
                                                 <tr>
                                                   <td class="bg-danger">
-                                                    <div class="icon">
-                                                      <span class="glyphicon glyphicon-check"></span>
+                                                    <div class="task-icon">
+                                                      <i class="fa fa-check-square-o" aria-hidden="true"></i>
                                                     </div>
-                                                    <div class="activity">
-                                                      <h4>Task</h4>
-                                                      <div class="time">13 hours ago 20:03 05-Mar</div>
+                                                    <div class="task-activity">
+                                                      <div class="task-tite">Task</div>
+                                                      You have a new message You have a new message You have a new message You have a new message
+                                                      You have a new message You have a new message You have a new message You have a new message
 
-                                                      <div class="button">
+                                                      <div class="task-time">13 hours ago 20:03 05-Mar</div>
+
+                                                      <div class="task-buttons">
                                                         <button type="button" name="button">button1</button>
                                                         <button type="button" name="button">button1</button>
                                                       </div>
                                                     </div>
-                                                    <div class="read-more">
-                                                    </div>
+
                                                   </td>
                                                 </tr>
 
                                                 <tr>
                                                   <td>
-                                                    <div class="icon">
-                                                      <span class="glyphicon glyphicon-check"></span>
+                                                    <div class="task-icon">
+                                                      <i class="fa fa-square-o" aria-hidden="true"></i>
                                                     </div>
-                                                    <div class="activity">
-                                                      <h4>Spam IT</h4>
-                                                      <div class="time">13 hours ago 20:03 05-Mar</div>
+                                                    <div class="task-activity">
+                                                      <div class="task-tite">Spam IT</div>
 
-                                                      <div class="button">
+                                                      You have a new message You have a new message You have a new message You have a new message
+
+                                                      <div class="task-time">13 hours ago 20:03 05-Mar</div>
+
+                                                      <div class="task-buttons">
                                                         <button type="button" name="button">button1</button>
                                                         <button type="button" name="button">button1</button>
                                                         <button type="button" name="button">button1</button>
                                                       </div>
                                                     </div>
-                                                    <div class="read-more">
+                                                    <div class="task-read-more">
                                                     </div>
                                                   </td>
                                                 </tr>
 
                                                 <tr>
                                                   <td class="bg-success">
-                                                    <div class="icon"></div>
-                                                    <div class="activity">
-                                                      <h4>Spam IT</h4>
-                                                      <div class="time">13 hours ago 20:03 05-Mar</div>
-                                                      <div class="button">
-                                                      </div>
+                                                    <div class="task-icon"></div>
+                                                    <div class="task-activity">
+                                                      <div class="task-tite">Spam IT</div>
+                                                      You have a new message You have a new message You have a new message You have a new message
+                                                      You have a new message You have a new message You have a new message You have a new message
+
+                                                      <div class="task-time">13 hours ago 20:03 05-Mar</div>
                                                     </div>
-                                                    <a class="read-more">
+                                                    <a class="task-read-more">
                                                     </a>
                                                   </td>
                                                 </tr>
-
 
                                             </tbody>
                                         </table>
@@ -182,51 +193,37 @@
                                     <plugin-active-task-activity-list>
                                         <table class="table table-striped">
                                             <tbody>
-<tr>
-  <td class="bg-success">
-    <div class="icon">
-      <span class="glyphicon glyphicon-comment"></span>
-    </div>
-    <div class="activity">
-      <h4>This happened</h4>
-      <div class="time">13 hours ago 20:03 05-Mar</div>
-      A message came for uoi
-      <div class="button">
-        <button type="button" name="button">button1</button>
-      </div>
-    </div>
-    <a class="read-more"></a>
-  </td>
-</tr>
-<tr>
-  <td class="bg-success">
-    <div class="icon">
-      <span class="glyphicon glyphicon-duplicate"></span>
-    </div>
-    <div class="activity">
-      <h4>Test Activity</h4>
-      <div class="time">YEAH</div>
+                                              <tr>
+                                                <td>
+                                                  <div class="activity-list">
+                                                    <div class="activity-tite">This happened</div>
+                                                    <div class="activity-time">13 hours ago 20:03 05-Mar</div>
+                                                    A message came for uoi
+                                                  </div>
+                                                  <a class="activity-read-more"></a>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="bg-success">
 
-      <div class="button">
-        <button type="button" name="button">button1</button>
-        <button type="button" name="button">button2</button>
-        <button type="button" name="button">button3</button>
-      </div>
-    </div>
-    <a class="read-more"></a>
-  </td>
-</tr>
+                                                  <div class="task-activity">
+                                                    <div class="activity-tite">Test Activity</div>
+                                                    <div class="task-time">YEAH</div>
+
+                                                  </div>
+                                                  <a class="task-read-more"></a>
+                                                </td>
+                                              </tr>
                                             </tbody>
                                         </table>
                                     </plugin-active-task-activity-list>
                                 </div>
                             </div>
                         </div>
-                    </plugin-active-task>
                 </div>
               </div>
 
-            </peek-information>
+            </plugin-active-task>
 
             <peek-main-footer>
                 <div class="container-fluid">
@@ -239,10 +236,6 @@
                     </div>
                 </div>
             </peek-main-footer>
-
         </peek-main-app>
-
-
     </body>
-
 </html>

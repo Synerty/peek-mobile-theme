@@ -179,16 +179,19 @@
             <li><a href="#main-navigation">Main navigation</a></li>
             <li><a href="#footer">Footer</a></li>
             <li>
-              <a href="#pages">Pages</a>
+              <a href="#pages">Page</a>
               <ul>
-                <li><li><a href="#generalcontent">General Content</a></li>
                 <li>
-                  <a href="#homepage">Home page</a>
-                  <ul>
-                    <li><a href="#homepagebackground">Background</a></li>
-                  </ul>
-                </li>
-                <li>App Buttons</li>
+                  <li>
+                    <a href="#homepage">Home page</a>
+                    <ul>
+                      <li><a href="#homepagebackground">Background</a></li>
+                      <li><a href="#homepagebuttons">Buttons</a></li>
+                    </ul>
+                  </li>
+                  <li>Information Page</li>
+                  <li>Form Page</li>
+                  <li>Table Page</li>
               </ul>
             </li>
           </ul>
@@ -204,39 +207,41 @@
   <h1 class="document">Main Navigation</h1>
     The top navigation is not designed with conventional Bootstrap elements as it is designed to only expand the title section while the buttons on the left and the right remain a fixed size throught a screen resize. Apply the following code sample to get the main navigation to display on your page.
     <br/><br/>
-    Display:
-    <div class="display-sample">
-      <peek-main-title _nghost-vob-4="">
-       <div class="container-fluid">
-        <div class="menu-bar">
-         <div class="left">
-          <button class="btn left-button " ng-reflect-router-link="/">Home</button>
-         </div>
-         <div class="menu-title">
-          <h2>Peek Title</h2>
-         </div>
-         <div class="right">
-          <div class="btn-group" role="group" aria-label="">
-           <button class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
-           <button class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
+    Display sample:
+    <div class="display-sample"><peek-main-title >
+  <div _ngcontent-vob-4="" class="container-fluid">
+      <div _ngcontent-vob-4="" class="menu-bar">
+          <div _ngcontent-vob-4="" class="menu-bar-left">
+              <button _ngcontent-vob-4="" class="btn left-button " ng-reflect-router-link="/">Home</button>
+              <!--template bindings={ "ng-reflect-ng-for-of": ""}-->
           </div>
-         </div>
-        </div>
-       </div>
-      </peek-main-title>
+          <div _ngcontent-vob-4="" class="menu-title">
+              <h2 _ngcontent-vob-4="">Peek Home</h2>
+          </div>
+          <div _ngcontent-vob-4="" class="menu-bar-right">
+              <!--template bindings={"ng-reflect-ng-for-of": "[object Object]"}-->
+              <div class="btn-group" role="group" aria-label="">
+                  <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
+                  <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</peek-main-title>
+
     </div>
     Code sample:
     <div class="code">
-<xmp id="top-navigation"><peek-main-title _nghost-vob-4="">
+<xmp id="top-navigation"><peek-main-title>
  <div class="container-fluid">
   <div class="menu-bar">
-   <div class="left">
+   <div class="menu-bar-left">
     <button class="btn left-button">Home</button>
    </div>
    <div class="menu-title">
     <h2>Peek Title</h2>
    </div>
-   <div class="right">
+   <div class="menu-bar-right">
     <div class="btn-group" role="group" aria-label="">
      <button class="btn right-button">Tasks</button>
      <button class="btn right-button">User</button>
@@ -253,9 +258,9 @@
 <!-- Footer start -->
 <div id="footer">
   <h1>Footer</h1>
-  Use the following code just before the closing of <xmp></peek-main-app></xmp> sample to display the footer.
-
-  Display:
+  Use the following code just before the closing of the main app.
+  <br/><br/>
+  Display sample:
     <div class="display-sample">
       <peek-main-footer>
         <div class="container-fluid">
@@ -286,20 +291,8 @@
 <!-- Footer end -->
 <hr>
 <!-- Home page start -->
-<div id="page">
-  <h1 >Page</h1>
-
-  <!-- General content start -->
-  <h2 class="document" id="generalcontent">General content</h2>
-  All general content other than the home page, that come right after the menu title must be enclosed with the following tags.
-
-  Code sample:
-  <div class="code">
-    <xmp id="generalcontentcode"><peek-information> ... </peek-information></xmp>
-    <button class="btn" data-clipboard-target="#generalcontentcode">copy</button>
-  </div>
-
-  <!-- General content end -->
+<div id="pages">
+  <h1>Pages</h1>
 
   <h2 class="document" id="homepage">Home Page</h2>
   <h3 class="document" id="homepagebackground">Background</h3>
@@ -322,6 +315,41 @@
       </div>
     </div>
   </div>
+  <hr>
+  <h3 class="document" id="homepagebackground">Buttons</h3>
+  Buttons that represent apps on the home page are not using fontawesome. They are a combination of an image and text.
+  <br/><br/>
+
+  <div class="row">
+    <div class="col-md-4">
+      Display Sample:
+      <div class="display-sample">
+        <peek-main-home>
+          <div class="home-icon">
+              <a href="http://localhost:4200/peek_plugin_noop">
+                  <img _ngcontent-vob-5="" src="../images/home_testing_noop.png">
+                  <p class="text-center">Testing Noop</p>
+              </a>
+          </div>
+        </peek-main-home>
+      </div>
+    </div>
+    <div class="col-md-8">
+      Code sample:
+      <div class="code">
+        <xmp id="buttoncode"><a href="">
+<img src="../images/testing_noop.png">
+  <p class="text-center">Testing Noop</p>
+</a>
+        </xmp>
+        <button class="btn" data-clipboard-target="#buttoncode">copy</button>
+      </div>
+    </div>
+  </div>
+
+
+<br/>
+
 
 </div>
 <!-- Home page end -->
