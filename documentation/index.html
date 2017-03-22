@@ -24,6 +24,21 @@
       background-image: none;
     }
 
+    .document-left{
+      position: fixed;
+      width: 300px;
+      background-color: #eeeeee;
+      height: 100%;
+      overflow-x: scroll;
+    }
+
+    .document-right{
+      margin-left: 300px;
+      background-color: white;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
     .document-menu li{
         padding: 0px;
         margin: 0px;
@@ -63,7 +78,7 @@
 
       .document-menu{
         font-family: 'Play', sans-serif;
-        padding-top: 30px;
+
       }
 
 
@@ -147,7 +162,7 @@
         display: block;
         padding: 0px;
         margin: 10px 0px;
-        overflow: hidden;
+        width: 100%;
       }
 
       .display-sample h1,
@@ -158,7 +173,7 @@
 
       peek-main-title,
       peek-main-footer{
-        position: relative;
+        position: static;
       }
 
       .home-page{
@@ -181,19 +196,19 @@
         margin-bottom: 20px;
         width: 100%;
       }
-
+      .home-icon{
+        width: 300px;
+      }
     </style>
 
   </head>
 
   <body>
 
-    <div class="container">
 
-      <div class="row">
-        <div class="col-sm-3">
+        <div class="document-left">
 
-          <ul class="document-menu" data-spy="affix" data-offset-top="0" data-offset-bottom="100">
+          <ul class="document-menu">
             <li class="document-logo">
                 <div class="document-title">Peek</div>
                 <div class="document-subtitle">Documentation<div/>
@@ -241,7 +256,7 @@
           </ul>
 
         </div>
-        <div class="col-sm-9">
+        <div class="document-right">
 
           <h1 class="title document">Peek App Documentation</h1>
 
@@ -250,11 +265,16 @@
 <!-- Top Navigation start -->
 <div id="main-navigation">
   <h1 class="document">Main Navigation</h1>
-    The top navigation is not designed with conventional Bootstrap elements as it is designed to only expand the title section while the buttons on the left and the right remain a fixed size throught a screen resize. Apply the following code sample to get the main navigation to display on your page.
-    <br/><br/>
+  The top navigation is not designed with conventional Bootstrap elements.<br/>
+  The buttons on the left and the right remain a fixed size throught a responsive lifecycle.<br/>
+  The centralized title remains a single line and truncates a "..." if the line exceeds the minimum screen width.<br/>
+  The title has a fixed width of 40px.<br/>
+  The header is fixed to the top of the page.<br/>
+
+    <br/>
     Display sample:
-    <div class="display-sample"><peek-main-title >
-  <div _ngcontent-vob-4="" class="container-fluid">
+<div class="display-sample"><peek-main-title >
+  <div class="container-fluid">
       <div _ngcontent-vob-4="" class="menu-bar">
           <div _ngcontent-vob-4="" class="menu-bar-left">
               <button _ngcontent-vob-4="" class="btn left-button " ng-reflect-router-link="/">Home</button>
@@ -273,8 +293,8 @@
       </div>
   </div>
 </peek-main-title>
+</div>
 
-    </div>
     Code sample:
     <div class="code">
 <xmp id="top-navigation"><peek-main-title>
@@ -303,14 +323,17 @@
 <!-- Footer start -->
 <div id="footer">
   <h1 class="document">Footer</h1>
-  Use the following code just before the closing of the main app.
+The footer is fixed at the bottom.<br/>
+Text is always centered in the footer.<br/>
+The text remains a single line and truncates a "..." if the line exceeds the minimum screen width.
+
   <br/><br/>
   Display sample:
     <div class="display-sample">
       <peek-main-footer>
         <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+              <div class="col-xs-12 text-center">
                 <h2>Offline, xxx minutes</h2>
               </div>
             </div>
@@ -341,55 +364,58 @@
 
   <h2 class="document" id="homepage">Home Page</h2>
   <h3 class="document" id="homepagebackground">Background</h3>
-  The home page background will look different to the backgrounds on subsiquent pages. The main idea of having the home page look different is it make it look a bit more impressiv and welcoming.
-
-  Apply the class 'home-page' to the page body if you would like this background to display.
+  Homepage background is unique and different to other pages.<br/>
+  The background requires a call on the body tag.
   <br/><br/>
 
-  <div class="row">
-    <div class="col-sm-6">
-      Display:
-      <div class="home-page"></div>
-    </div>
-    <div class="col-sm-6">
-      Code sample:
-      <div class="code">
-        <xmp id="homecode"><body class="home-page">...</body>
-        </xmp>
-        <button class="btn" data-clipboard-target="#homecode">copy</button>
+  Display:
+  <div class="home-page"></div>
+
+  Code:
+  <div class="code">
+    <xmp id="homecode"><body class="home-page">...</body>
+    </xmp>
+    <button class="btn" data-clipboard-target="#homecode">copy</button>
+  </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+
+      </div>
+      <div class="col-sm-6">
+
       </div>
     </div>
-  </div>
+
+
   <hr>
   <h3 class="document" id="homepagebackground">Buttons</h3>
-  Buttons that represent apps on the home page are not using fontawesome. They are a combination of an image and text.
+  Buttons on the home page strictly use images.<br/>
+  Font Awesome icons can not be used.<br/>
+  Buttons responsively wrap.
+
   <br/><br/>
 
-  <div class="row">
-    <div class="col-md-4">
-      Display Sample:
-      <div class="display-sample">
-        <peek-main-home>
-          <div class="home-icon">
-              <a href="http://localhost:4200/peek_plugin_noop">
-                  <img _ngcontent-vob-5="" src="../images/home_testing_noop.png">
-                  <p class="text-center">Testing Noop</p>
-              </a>
-          </div>
-        </peek-main-home>
+  Display Sample:
+  <div class="display-sample">
+    <peek-main-home>
+      <div class="home-icon">
+          <a href="http://localhost:4200/peek_plugin_noop">
+              <img _ngcontent-vob-5="" src="../images/home_testing_noop.png">
+              <p class="text-center">Testing Noop</p>
+          </a>
       </div>
-    </div>
-    <div class="col-md-8">
-      Code sample:
-      <div class="code">
-        <xmp id="buttoncode"><a href="">
+    </peek-main-home>
+  </div>
+
+  Code sample:
+  <div class="code">
+    <xmp id="buttoncode"><a href="">
 <img src="../images/testing_noop.png">
-  <p class="text-center">Testing Noop</p>
+<p class="text-center">Testing Noop</p>
 </a>
-        </xmp>
-        <button class="btn" data-clipboard-target="#buttoncode">copy</button>
-      </div>
-    </div>
+    </xmp>
+    <button class="btn" data-clipboard-target="#buttoncode">copy</button>
   </div>
 
 </div>
@@ -399,11 +425,14 @@
 <div id="informationpage">
   <h1 class="document">Information Page</h1>
   <h2 class="document" id="informationicon">Icon</h2>
-  Icons can be created by using a custom image or by using a standard FontAwesome font.
+Icons can be created by using an image or font awesome font.<br/>
+Images and font awesome icons have their own respective code snippets.<br/>
+Backgrounds are identical.
+
   <br/><br/>
-  <div class="row">
-    <div class="col-md-4">
-      Image Sample Display:
+
+
+      Image display:
       <div class="display-sample">
         <peek-information>
           <div class="information-icon-large">
@@ -412,42 +441,40 @@
         </peek-information>
       </div>
 
-      Font Awesome Sample Display:
+      Image code:
+      <div class="code"><xmp id="imagedisplaycode"><div class="information-icon-large">
+ <img src="images/field_switching.png">
+</div></xmp>
+<button class="btn" data-clipboard-target="#imagedisplaycode">copy</button>
+      </div>
+
+      Font Awesome display:
       <div class="display-sample">
         <peek-information>
           <i class="fa fa-user information-icon-large" aria-hidden="true"></i>
         </peek-information>
       </div>
-    </div>
-    <div class="col-md-8">
-      Image code sample:
-      <div class="code">
-        <xmp id="tabedinformationlist"><div class="information-icon-large">
- <img src="images/field_switching.png">
-</div>
-        </xmp>
 
+      Font awesome code:
+      <div class="code">
+        <xmp id="fontawesomecode"><i class="fa fa-user information-icon-large" aria-hidden="true"></i></xmp>
+        <button class="btn" data-clipboard-target="#fontawesomecode">copy</button>
       </div>
 
-              Font awesome code sample:
-              <div class="code">
-                <xmp id="tabedinformationlist"><i class="fa fa-user information-icon-large" aria-hidden="true"></i></xmp>
-                </div>
-    </div>
-  </div>
+
 </div>
 <!-- Information page end -->
 
 <!-- Form page start -->
 <div id="formpage">
   <h1 class="document">Form Page</h1>
-  Most of the elements in the Form Pages use the standard bootstrap elements that have been styled to fit into the PEEK theme.
+  All of the elements in the Form Pages use the standard bootstrap classes.
 
   <h2 class="document" id="buttongroups">Button Groups</h2>
 
   Display:
   <div class="display-sample">
-    <div class="btn-group pull-left" role="group" aria-label="">
+    <div class="btn-group" role="group" aria-label="">
       <button _ngcontent-vob-18="" class="btn">My Jobs</button>
       <button _ngcontent-vob-18="" class="btn">Job</button>
       <button _ngcontent-vob-18="" class="btn">Operations</button>
@@ -456,10 +483,10 @@
 
   Code:
   <div class="code">
-  <xmp id="buttongroup"><div class="btn-group pull-left" role="group" aria-label="">
-<button class="btn">My Jobs</button>
-<button class="btn">Job</button>
-<button class="btn">Operations</button>
+  <xmp id="buttongroup"><div class="btn-group" role="group" aria-label="">
+ <button class="btn">My Jobs</button>
+ <button class="btn">Job</button>
+ <button class="btn">Operations</button>
 </div></xmp>
 <button class="btn" data-clipboard-target="#buttongroup">copy</button>
 </div>
@@ -469,7 +496,7 @@
 <!-- Table pagestart -->
 <div id="tablepage">
   <h1 class="document">Table Pages</h1>
-  Most of the elements in the Form Pages use the standard bootstrap elements that have been styled to fit into the PEEK theme.
+  All of the elements in the Table Pages use the standard bootstrap classes.
 
   <h2 id="tableheader" class="document">Header</h2>
 
@@ -489,7 +516,7 @@
 
   Code:
   <div class="code">
-<xmp id="tabedinformationlist"><table class="table table-striped">
+<xmp id="tabeheader"><table class="table table-striped">
   <thead>
     <tr>
       <th class="text-center">Item</th>
@@ -499,6 +526,7 @@
     </tr>
   </thead>
 </table></xmp>
+<button class="btn" data-clipboard-target="#tabeheader">copy</button>
   </div>
 
 
@@ -509,8 +537,8 @@
 <div id="activitytask">
   <h1 class="document">Activity Task</h1>
   <h2 id="tasklist" class="document">Task list</h1>
-    The following code should be used to list information on the task list tab
-
+    Code specific only to task list
+    <br/><br/>
     Display:
       <div class="display-sample">
 <plugin-active-task-task-list>
@@ -541,7 +569,7 @@
 
     Code:
     <div class="code">
-<xmp id="tasklist"><plugin-active-task-task-list>
+<xmp id="tasklistcode"><plugin-active-task-task-list>
   <table class="table table-striped">
     <tbody>
       <tr>
@@ -565,11 +593,13 @@
     </tbody>
   </table>
 </plugin-active-task-task-list></xmp>
-      <button class="btn" data-clipboard-target="#tasklist">copy</button>
+      <button class="btn" data-clipboard-target="#tasklistcode">copy</button>
     </div>
 
 
     <h2 id="activitylist" class="document">Activity List</h2>
+    Code specific only to Activity List.
+    <br/><Br/>
     Display:
     <div class="display-sample">
       <plugin-active-task-activity-list>
@@ -591,7 +621,7 @@
     </div>
     Code:
     <div class="code">
-    <xmp id="activitylist"><plugin-active-task-activity-list>
+    <xmp id="activitylistcode"><plugin-active-task-activity-list>
   <table class="table table-striped">
     <tbody>
       <tr>
@@ -607,7 +637,7 @@
     </tbody>
   </table>
 </plugin-active-task-activity-list></xmp>
-    <button class="btn" data-clipboard-target="#activitylist">copy</button>
+    <button class="btn" data-clipboard-target="#activitylistcode">copy</button>
     </div>
 
 
@@ -619,8 +649,6 @@
         </div>
 
       </div>
-      <div class="footer"></div>
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
