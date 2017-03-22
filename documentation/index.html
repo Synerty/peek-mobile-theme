@@ -24,22 +24,23 @@
       background-image: none;
     }
 
-    .menu li{
+    .document-menu li{
         padding: 0px;
         margin: 0px;
         list-style: none;
         text-transform: capitalize;
       }
-      .menu li:after{
+
+      .document-menu li:after{
         width: 0px;
         height: 0px;
       }
 
-      ul.menu > li{
+      ul.document-menu > li{
         text-transform: uppercase;
       }
 
-      ul.menu > li > a {
+      ul.document-menu > li > a {
           display: block;
           padding: 5px 0px;
       }
@@ -62,10 +63,11 @@
         color: #353535;
       }
 
-      .menu{
+      .document-menu{
         font-family: 'Play', sans-serif;
         padding-top: 30px;
       }
+
 
       h1.document.title {
         font-size: 60px;
@@ -146,6 +148,7 @@
         display: block;
         padding: 0px;
         margin: 20px 0px;
+        overflow: hidden;
       }
 
       .display-sample h1,
@@ -164,6 +167,21 @@
         height:667px;
         margin: 20px auto;
       }
+      .document-logo .document-title{
+        font-size: 3em;
+        font-weight: bold;
+        color: #28aae1;
+        line-height: normal;
+      }
+      .document-logo .document-subtitle{
+        font-size: 1em;
+        font-weight: bold;
+        line-height: normal;
+
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+      }
 
     </style>
 
@@ -175,7 +193,12 @@
 
       <div class="row">
         <div class="col-sm-3">
-          <ul class="menu" data-spy="affix" data-offset-top="0" data-offset-bottom="100">
+
+          <ul class="document-menu" data-spy="affix" data-offset-top="0" data-offset-bottom="100">
+            <li class="document-logo">
+                <div class="document-title">Peek</div>
+                <div class="document-subtitle">Documentation<div/>
+            </li>
             <li><a href="#main-navigation">Main navigation</a></li>
             <li><a href="#footer">Footer</a></li>
             <li>
@@ -189,12 +212,20 @@
                       <li><a href="#homepagebuttons">Buttons</a></li>
                     </ul>
                   </li>
-                  <li>Information Page</li>
-                  <li>Form Page</li>
-                  <li>Table Page</li>
+                  <li>
+                    <a href="#informationpage">Information Page</a>
+                    <ul>
+                      <li><a href="#informationicon">Icon</a></li>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li><a href="#formpage">Form</a></li>
+                  <li><a href="#tablepage">Table</a></li>
+                  <li><a href="#activitytask">Activity Tash</a></li>
               </ul>
             </li>
           </ul>
+
         </div>
         <div class="col-sm-9">
 
@@ -347,72 +378,227 @@
     </div>
   </div>
 
+</div>
+<!-- Home page end -->
 
-<br/>
+<!-- Information page start -->
+<div id="informationpage">
+  <h1 class="document">Information Page</h1>
+  <h2 class="document" id="informationicon">Icon</h2>
+  Icons can be created by using a custom image or by using a standard FontAwesome font.
+  <br/><br/>
+  <div class="row">
+    <div class="col-md-4">
+      Image Sample Display:
+      <div class="display-sample">
+        <peek-information>
+          <div class="information-icon-large">
+           <img src="../images/field_switching.png">
+          </div>
+        </peek-information>
+      </div>
+
+      Font Awesome Sample Display:
+      <div class="display-sample">
+        <peek-information>
+          <i class="fa fa-user information-icon-large" aria-hidden="true"></i>
+        </peek-information>
+      </div>
+    </div>
+    <div class="col-md-8">
+      Image code sample:
+      <div class="code">
+        <xmp id="tabedinformationlist"><div class="information-icon-large">
+ <img src="images/field_switching.png">
+</div>
+        </xmp>
+
+      </div>
+
+              Font awesome code sample:
+              <div class="code">
+                <xmp id="tabedinformationlist"><i class="fa fa-user information-icon-large" aria-hidden="true"></i></xmp>
+                </div>
+    </div>
+  </div>
+</div>
+<!-- Information page end -->
+
+<!-- Form page start -->
+<div id="formpage">
+  <h1 class="document">Form Page</h1>
+  Most of the elements in the Form Pages use the standard bootstrap elements that have been styled to fit into the PEEK theme.
+
+  <h2 class="document">Button Groups</h2>
+
+  Display:
+  <div class="display-sample">
+    <div class="btn-group pull-left" role="group" aria-label="">
+      <button _ngcontent-vob-18="" class="btn">My Jobs</button>
+      <button _ngcontent-vob-18="" class="btn">Job</button>
+      <button _ngcontent-vob-18="" class="btn">Operations</button>
+    </div>
+  </div>
+
+  Code:
+  <div class="code">
+  <xmp id="buttongroup"><div class="btn-group pull-left" role="group" aria-label="">
+<button class="btn">My Jobs</button>
+<button class="btn">Job</button>
+<button class="btn">Operations</button>
+</div></xmp>
+<button class="btn" data-clipboard-target="#buttongroup">copy</button>
+</div>
+</div>
+<!-- Form page end -->
+
+<!-- Table pagestart -->
+<div id="tablepage">
+  <h1 class="document">Table Pages</h1>
+  Most of the elements in the Form Pages use the standard bootstrap elements that have been styled to fit into the PEEK theme.
+
+  <h2 class="document">Header</h2>
+
+  Display:
+  <div class="display-sample">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="text-center">Item</th>
+          <th>State</th>
+          <th>Location</th>
+          <th>Circuit / Details</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  Code:
+  <div class="code">
+<xmp id="tabedinformationlist"><table class="table table-striped">
+  <thead>
+    <tr>
+      <th class="text-center">Item</th>
+      <th>State</th>
+      <th>Location</th>
+      <th>Circuit / Details</th>
+    </tr>
+  </thead>
+</table></xmp>
+  </div>
 
 
 </div>
-<!-- Home page end -->
-<!-- Tabed Lists -->
-<div class="tables and tabs">
-  <h1 class="document">Tabs</h1>
-  <h2 class="document">Tabed Information list</h1>
-    The following code should be used to list information on a tabbed list page
+<!-- Table pageend -->
+
+<!-- Activity Task Start -->
+<div id="activitytask">
+  <h1 class="document">Activity Task</h1>
+  <h2 id="tasklist" class="document">Task list</h1>
+    The following code should be used to list information on the task list tab
 
     Display:
       <div class="display-sample">
-        <plugin-active-task>
+<plugin-active-task-task-list>
+    <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td>
+              <div class="task-icon">
+                  <i class="fa fa-comment" aria-hidden="true"></i>
+              </div>
+              <div class="task-activity">
+                <div class="task-tite">Spam IT</div>
+                You have a new message
+                <div class="task-time">13 hours ago 20:03 05-Mar</div>
+                <div class="task-buttons">
+                  <button type="button" name="button">button1</button>
+                  <button type="button" name="button">button1</button>
+                  <button type="button" name="button">button1</button>
+                </div>
+              </div>
+              <div class="task-read-more"></div>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+  </plugin-active-task-task-list>
+      </div>
+
+    Code:
+    <div class="code">
+<xmp id="tasklist"><plugin-active-task-task-list>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>
+          <div class="task-icon">
+              <i class="fa fa-comment" aria-hidden="true"></i>
+          </div>
+          <div class="task-activity">
+            <div class="task-tite">Spam IT</div>
+            You have a new message
+            <div class="task-time">13 hours ago 20:03 05-Mar</div>
+            <div class="task-buttons">
+              <button type="button" name="button">button1</button>
+              <button type="button" name="button">button1</button>
+              <button type="button" name="button">button1</button>
+            </div>
+          </div>
+          <div class="task-read-more"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</plugin-active-task-task-list></xmp>
+      <button class="btn" data-clipboard-target="#tasklist">copy</button>
+    </div>
+
+
+    <h2 id="activitylist" class="document">Activity List</h2>
+    Display:
+    <div class="display-sample">
+      <plugin-active-task-activity-list>
           <table class="table table-striped">
               <tbody>
-                  <tr>
-                      <td class="bg-success">
-                        <div class="icon">
-                          <span class="glyphicon glyphicon-comment"></span>
-                        </div>
-                        <div class="activity">
-                          <h4>New Message</h4>
-                          <div class="time">13 hours ago 20:03 05-Mar</div>
-                          You have a new message
-                          <div class="button">
-                            <button type="button" name="button">button1</button>
-                            <button type="button" name="button">button2</button>
-                            <button type="button" name="button">button3</button>
-                            <button type="button" name="button">button4</button>
-                            <button type="button" name="button">button5</button>
-                            <button type="button" name="button">button6</button>
-                          </div>
-                        </div>
-                        <a class="read-more"></a>
-                      </td>
-                  </tr>
+                <tr>
+                  <td>
+                    <div class="activity-list">
+                      <div class="activity-tite">This happened</div>
+                      <div class="activity-time">13 hours ago 20:03 05-Mar</div>
+                      A message came for uoi
+                    </div>
+                    <a class="activity-read-more"></a>
+                  </td>
+                </tr>
               </tbody>
           </table>
-        </plugin-active-task>
-      </div>
-
-    Code sample:
+      </plugin-active-task-activity-list>
+    </div>
+    Code:
     <div class="code">
-<xmp id="tabedinformationlist"><tr>
-  <td class="bg-success">
-    <div class="icon">
-      <span class="glyphicon glyphicon-comment"></span>
+    <xmp id="activitylist"><plugin-active-task-activity-list>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>
+          <div class="activity-list">
+            <div class="activity-tite">This happened</div>
+            <div class="activity-time">13 hours ago 20:03 05-Mar</div>
+            A message came for uoi
+          </div>
+          <a class="activity-read-more"></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</plugin-active-task-activity-list></xmp>
+    <button class="btn" data-clipboard-target="#activitylist">copy</button>
     </div>
-    <div class="activity">
-      <h4>New Message</h4>
-      <div class="time">13 hours ago 20:03 05-Mar</div>
-      You have a new message
-      <div class="button">
-        <button type="button" name="button">button1</button>
-      </div>
-    </div>
-    <a class="read-more"></a>
-  </td>
-</tr></xmp>
-      <button class="btn" data-clipboard-target="#tabedinformationlist">copy</button>
-    </div>
+
 
 </div>
-<!-- Tabed Lists -->
+<!-- Activity Task End -->
 
 
 
@@ -429,10 +615,12 @@
     <!-- Clipboard JavaScript -->
     <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.6.0/dist/clipboard.min.js"></script>
 
+    <!--font awesome-->
+    <script src="https://use.fontawesome.com/b4d291589e.js"></script>
+
+
     <script type="text/javascript">
       new Clipboard('.btn');
-
-
     </script>
   </body>
 </html>

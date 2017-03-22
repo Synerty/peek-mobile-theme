@@ -13,11 +13,11 @@ peek-information{
   }
   .information-icon{
     background-image: url('../images/home_background.png');
-
   }
+
   //icon
   .fa{
-    &.large{
+    &.information-icon-large{
       font-size: 6em;
       //padding: ($general_padding*2)($general_padding*3);
       border-radius: $general_border_radius*2;
@@ -33,10 +33,12 @@ peek-information{
       width: 136px;
       height: 136px;
       line-height: 136px;
+      padding: 0px;
+      text-align: center;
     }
   }
 
-  .icon{
+  .information-icon-large{
     background-image: url('../images/home_background.png');
     background-size: 400%;
     background-position: top center;
@@ -46,7 +48,7 @@ peek-information{
     border-radius: $general_border_radius*2;
     width: 136px;
     height: 136px;
-
+    text-align: center;
     img{
       max-height: 100%;
     }

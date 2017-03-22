@@ -377,7 +377,7 @@ peek-information > .container-fluid {
 peek-information .information-icon {
   background-image: url("../images/home_background.png"); }
 
-peek-information .fa.large {
+peek-information .fa.information-icon-large {
   font-size: 6em;
   border-radius: 8px;
   vertical-align: middle;
@@ -390,9 +390,11 @@ peek-information .fa.large {
   display: inline-block;
   width: 136px;
   height: 136px;
-  line-height: 136px; }
+  line-height: 136px;
+  padding: 0px;
+  text-align: center; }
 
-peek-information .icon {
+peek-information .information-icon-large {
   background-image: url("../images/home_background.png");
   background-size: 400%;
   background-position: top center;
@@ -401,8 +403,9 @@ peek-information .icon {
   padding: 20px;
   border-radius: 8px;
   width: 136px;
-  height: 136px; }
-  peek-information .icon img {
+  height: 136px;
+  text-align: center; }
+  peek-information .information-icon-large img {
     max-height: 100%; }
 
 peek-form-data > .container-fluid {
@@ -443,10 +446,7 @@ img {
 
 ul,
 li {
-  text-align: left;
-  list-style: none;
-  padding: 0px;
-  margin: 0px; }
+  text-align: left; }
 
 ul {
   margin: 15px 0px; }
