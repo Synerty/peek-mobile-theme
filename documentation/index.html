@@ -36,10 +36,6 @@
         height: 0px;
       }
 
-      ul.document-menu > li{
-        text-transform: uppercase;
-      }
-
       ul.document-menu > li > a {
           display: block;
           padding: 5px 0px;
@@ -56,7 +52,9 @@
         padding: 5px 0px;
       }
 
-      .documentation h1, .documentation h2,.documentation h3{
+      .documentation h1,
+      .documentation h2,
+      .documentation h3{
         padding: 20px 0px;
         margin: 0px 0px 20px 0px;
         font-family: 'Play', sans-serif;
@@ -75,6 +73,7 @@
         font-weight: bold;
         text-transform: capitalize;
         letter-spacing: -3px;
+        border-top: 0px;
       }
 
       .document{
@@ -83,6 +82,8 @@
 
       h1.document{
         margin-bottom: 0px;
+        border-top: 2px solid #cccccc;
+
       }
 
       h1.document:after{
@@ -95,6 +96,17 @@
 
 
       .code{
+        display: block;
+        padding: 20px;
+        margin: 10px 0px;
+        color: #ffffff;
+        word-break: break-all;
+        word-wrap: break-word;
+        background-color: #282c34;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 0.9em;
+        color: white
         display: block;
         overflow: hidden;
         position: relative;
@@ -123,19 +135,6 @@
         background-image: none;
       }
 
-      .code{
-        display: block;
-        padding: 20px;
-        margin: 20px 0px;
-        color: #333;
-        word-break: break-all;
-        word-wrap: break-word;
-        background-color: #282c34;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 0.9em;
-        color: white
-      }
 
       xmp{
         padding: 0px;
@@ -147,7 +146,7 @@
       .display-sample{
         display: block;
         padding: 0px;
-        margin: 20px 0px;
+        margin: 10px 0px;
         overflow: hidden;
       }
 
@@ -219,9 +218,24 @@
                       <li></li>
                     </ul>
                   </li>
-                  <li><a href="#formpage">Form</a></li>
-                  <li><a href="#tablepage">Table</a></li>
-                  <li><a href="#activitytask">Activity Tash</a></li>
+                  <li>
+                    <a href="#formpage">Form</a>
+                    <ul>
+                      <li><a href="#buttongroups">Button Groups</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#tablepage">Table</a>
+                    <ul>
+                      <li><a href="#tableheader">Header</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#activitytask">Activity Tash</a>
+                    <ul>
+                      <li><a href="#tasklist">Task List</a></li>
+                      <li><a href="#activitylist">Activity List</a></li>
+                    </ul>
+                  </li>
               </ul>
             </li>
           </ul>
@@ -285,10 +299,10 @@
     </div>
 </div>
 <!-- Top Navigation end -->
-<hr>
+
 <!-- Footer start -->
 <div id="footer">
-  <h1>Footer</h1>
+  <h1 class="document">Footer</h1>
   Use the following code just before the closing of the main app.
   <br/><br/>
   Display sample:
@@ -323,7 +337,7 @@
 <hr>
 <!-- Home page start -->
 <div id="pages">
-  <h1>Pages</h1>
+  <h1 class="document">Pages</h1>
 
   <h2 class="document" id="homepage">Home Page</h2>
   <h3 class="document" id="homepagebackground">Background</h3>
@@ -429,7 +443,7 @@
   <h1 class="document">Form Page</h1>
   Most of the elements in the Form Pages use the standard bootstrap elements that have been styled to fit into the PEEK theme.
 
-  <h2 class="document">Button Groups</h2>
+  <h2 class="document" id="buttongroups">Button Groups</h2>
 
   Display:
   <div class="display-sample">
@@ -457,7 +471,7 @@
   <h1 class="document">Table Pages</h1>
   Most of the elements in the Form Pages use the standard bootstrap elements that have been styled to fit into the PEEK theme.
 
-  <h2 class="document">Header</h2>
+  <h2 id="tableheader" class="document">Header</h2>
 
   Display:
   <div class="display-sample">
