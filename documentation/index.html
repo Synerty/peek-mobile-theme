@@ -81,7 +81,6 @@
 
       }
 
-
       h1.document.title {
         font-size: 60px;
         color: #282c34;
@@ -108,7 +107,6 @@
       h2.document{
         color: #26abe2;
       }
-
 
       .code{
         display: block;
@@ -171,8 +169,8 @@
         margin: 0px;
       }
 
-      peek-main-title,
-      peek-main-footer{
+      .peek-main-title,
+      .peek-main-footer{
         position: static;
       }
 
@@ -237,6 +235,7 @@
                     <a href="#formpage">Form</a>
                     <ul>
                       <li><a href="#buttongroups">Button Groups</a></li>
+                      <li><a href="#formrow">Form Row</a></li>
                     </ul>
                   </li>
                   <li>
@@ -273,7 +272,7 @@
 
     <br/>
     Display sample:
-<div class="display-sample"><peek-main-title >
+<div class="display-sample"><peek-main-title class="peek-main-title">
   <div class="container-fluid">
       <div _ngcontent-vob-4="" class="menu-bar">
           <div _ngcontent-vob-4="" class="menu-bar-left">
@@ -297,7 +296,7 @@
 
     Code sample:
     <div class="code">
-<xmp id="top-navigation"><peek-main-title>
+<xmp id="top-navigation"><peek-main-title class="peek-main-title">
  <div class="container-fluid">
   <div class="menu-bar">
    <div class="menu-bar-left">
@@ -330,24 +329,24 @@ The text remains a single line and truncates a "..." if the line exceeds the min
   <br/><br/>
   Display sample:
     <div class="display-sample">
-      <peek-main-footer>
-        <div class="container-fluid">
-            <div class="row">
-              <div class="col-xs-12 text-center">
-                <h2>Offline, xxx minutes</h2>
+      <peek-main-footer class="peek-main-footer">
+          <div class="container-fluid">
+              <div  class="row">
+                  <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                      <h2 class="h2">Offline, xxx minutes</h2>
+                  </div>
               </div>
-            </div>
-        </div>
+          </div>
       </peek-main-footer>
     </div>
 
     Code sample:
     <div class="code">
-<xmp id="footercode"><peek-main-footer>
+<xmp id="footercode"><peek-main-footer class="peek-main-footer">
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h2>Offline, xxx minutes</h2>
+        <h2 class="h2">Offline, xxx minutes</h2>
       </div>
     </div>
   </div>
@@ -434,7 +433,7 @@ Backgrounds are identical.
 
       Image display:
       <div class="display-sample">
-        <peek-information>
+        <peek-information class="peek-information">
           <div class="information-icon-large">
            <img src="../images/field_switching.png">
           </div>
@@ -450,7 +449,7 @@ Backgrounds are identical.
 
       Font Awesome display:
       <div class="display-sample">
-        <peek-information>
+        <peek-information class="peek-information">
           <i class="fa fa-user information-icon-large" aria-hidden="true"></i>
         </peek-information>
       </div>
@@ -490,6 +489,36 @@ Backgrounds are identical.
 </div></xmp>
 <button class="btn" data-clipboard-target="#buttongroup">copy</button>
 </div>
+
+<h2 class="document" id="formrow">Form row</h2>
+
+Display:
+<div class="row">
+  <div class="form-group col-xs-5">
+      <h5 class="h5 text-muted">Item</h5>
+      <h3 class="h3">#3</h3>
+  </div>
+  <div class="form-group col-xs-7">
+      <h5 class="h5 text-muted">State</h5>
+      <h3 class="h3">Confirmed</h3>
+  </div>
+</div>
+
+Code:
+<div class="code">
+  <xmp id="formrow"><div class="row">
+  <div class="form-group col-xs-5">
+      <h5 class="h5 text-muted">Item</h5>
+      <h3 class="h3">#3</h3>
+  </div>
+  <div class="form-group col-xs-7">
+      <h5 class="h5 text-muted">State</h5>
+      <h3 class="h3">Confirmed</h3>
+  </div>
+</div></xmp>
+  <button class="btn" data-clipboard-target="#formrow">copy</button>
+</div>
+
 </div>
 <!-- Form page end -->
 
@@ -541,11 +570,11 @@ Backgrounds are identical.
     <br/><br/>
     Display:
       <div class="display-sample">
-<plugin-active-task-task-list>
+<plugin-active-task-task-list class="plugin-active-task-task-list">
     <table class="table table-striped">
         <tbody>
           <tr>
-            <td>
+            <td class="td">
               <div class="task-icon">
                   <i class="fa fa-comment" aria-hidden="true"></i>
               </div>
@@ -569,11 +598,11 @@ Backgrounds are identical.
 
     Code:
     <div class="code">
-<xmp id="tasklistcode"><plugin-active-task-task-list>
+<xmp id="tasklistcode"><plugin-active-task-task-list class="plugin-active-task-task-list">
   <table class="table table-striped">
     <tbody>
       <tr>
-        <td>
+        <td class="td">
           <div class="task-icon">
               <i class="fa fa-comment" aria-hidden="true"></i>
           </div>
@@ -602,11 +631,11 @@ Backgrounds are identical.
     <br/><Br/>
     Display:
     <div class="display-sample">
-      <plugin-active-task-activity-list>
+      <plugin-active-task-activity-list class="plugin-active-task-activity-list">
           <table class="table table-striped">
               <tbody>
                 <tr>
-                  <td>
+                  <td class="td">
                     <div class="activity-list">
                       <div class="activity-tite">This happened</div>
                       <div class="activity-time">13 hours ago 20:03 05-Mar</div>
@@ -621,11 +650,11 @@ Backgrounds are identical.
     </div>
     Code:
     <div class="code">
-    <xmp id="activitylistcode"><plugin-active-task-activity-list>
+    <xmp id="activitylistcode"><plugin-active-task-activity-list class="plugin-active-task-activity-list">
   <table class="table table-striped">
     <tbody>
       <tr>
-        <td>
+        <td class="td">
           <div class="activity-list">
             <div class="activity-tite">This happened</div>
             <div class="activity-time">13 hours ago 20:03 05-Mar</div>
@@ -644,11 +673,8 @@ Backgrounds are identical.
 </div>
 <!-- Activity Task End -->
 
-
-
-        </div>
-
-      </div>
+</div>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

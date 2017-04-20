@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Play");
-h1, h2, h3, h4, h5 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -110,18 +114,18 @@ button,
   .btn-group .btn + .btn {
     margin-left: 0px; }
 
-peek-main-title {
+.peek-main-title {
   position: fixed;
   width: 100%;
   z-index: 999; }
-  peek-main-title > .container-fluid {
+  .peek-main-title > .container-fluid {
     background-color: #ffffff;
     height: 40px;
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
     text-transform: uppercase;
     padding-right: 0px;
     padding-left: 0px; }
-  peek-main-title .btn {
+  .peek-main-title .btn {
     text-transform: uppercase;
     height: 40px;
     background-color: #28aae1;
@@ -130,25 +134,25 @@ peek-main-title {
     padding: 8px;
     width: 100%;
     font-family: "Play", sans-serif; }
-  peek-main-title .btn-group {
+  .peek-main-title .btn-group {
     width: 100%;
     padding: 0px; }
-    peek-main-title .btn-group > .btn {
+    .peek-main-title .btn-group > .btn {
       width: 50%; }
-      peek-main-title .btn-group > .btn:first-child, peek-main-title .btn-group > .btn:last-child {
+      .peek-main-title .btn-group > .btn:first-child, .peek-main-title .btn-group > .btn:last-child {
         border-radius: 0px; }
-  peek-main-title .menu-bar {
+  .peek-main-title .menu-bar {
     display: table;
     width: 100%;
     table-layout: fixed; }
-    peek-main-title .menu-bar > div {
+    .peek-main-title .menu-bar > div {
       display: table-cell; }
-    peek-main-title .menu-bar .menu-bar-left {
+    .peek-main-title .menu-bar .menu-bar-left {
       width: 60px; }
-    peek-main-title .menu-bar .menu-bar-right {
+    .peek-main-title .menu-bar .menu-bar-right {
       text-align: right;
       width: 115px; }
-    peek-main-title .menu-bar .menu-title h2 {
+    .peek-main-title .menu-bar .menu-title h2 {
       font-size: 0.8em;
       height: 40px;
       line-height: 40px;
@@ -200,22 +204,22 @@ peek-main-title {
         padding: 10px;
         margin-top: 4px; }
 
-peek-main-footer {
+.peek-main-footer {
   position: fixed;
   width: 100%;
   bottom: 0px;
-  z-index: 999; }
-  peek-main-footer > div {
-    background-color: #ffffff;
+  z-index: 999;
+  background-color: #ffffff; }
+  .peek-main-footer .container-fluid {
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
-    peek-main-footer > div h2 {
-      font-size: 0.8em;
-      height: 40px;
-      line-height: 40px;
-      overflow: hidden;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; }
+  .peek-main-footer .h2 {
+    font-size: 0.8em;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 .home-page {
   background-image: url("../images/home_background.png");
@@ -224,17 +228,17 @@ peek-main-footer {
   background-repeat: no-repeat;
   background-size: cover; }
 
-peek-main-home > .container-fluid {
+.peek-main-home > .container-fluid {
   padding-top: 45px;
   padding-bottom: 55px; }
-  peek-main-home > .container-fluid > .row {
+  .peek-main-home > .container-fluid > .row {
     margin-right: -10px;
     margin-left: -10px; }
 
-peek-main-home .home-icon {
+.peek-main-home .home-icon {
   padding: 5px;
   font-family: "Play", sans-serif; }
-  peek-main-home .home-icon a {
+  .peek-main-home .home-icon a {
     display: block;
     background-image: url("../images/button_home_background.png");
     background-repeat: repeat;
@@ -245,26 +249,26 @@ peek-main-home .home-icon {
     font-size: 1.1em;
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
     transition: 0.45s; }
-    peek-main-home .home-icon a img {
+    .peek-main-home .home-icon a img {
       padding: 15px 30px; }
-    peek-main-home .home-icon a:hover {
+    .peek-main-home .home-icon a:hover {
       text-decoration: none;
       box-shadow: 0px 0px 0px transparent; }
 
-plugin-active-task > .container-fluid {
+.plugin-active-task > .container-fluid {
   padding-top: 55px;
   padding-bottom: 55px; }
-  plugin-active-task > .container-fluid > .row {
+  .plugin-active-task > .container-fluid > .row {
     margin-right: -15px;
     margin-left: -15px; }
 
-plugin-active-task-task-list .table > tbody > tr > td {
+.plugin-active-task-task-list .td {
   border-top: 0px;
   border-bottom: 1px solid #999999;
   position: relative;
   padding: 15px 20px 15px 0px; }
 
-plugin-active-task-task-list .task-icon {
+.plugin-active-task-task-list .task-icon {
   position: absolute;
   width: 45px;
   height: 100%;
@@ -272,46 +276,43 @@ plugin-active-task-task-list .task-icon {
   top: 0px;
   padding: 15px 0px 15px 15px;
   font-size: 1.3em; }
-  plugin-active-task-task-list .task-icon .fa {
+  .plugin-active-task-task-list .task-icon .fa {
     color: #28aae1;
     padding-right: 5px; }
 
-plugin-active-task-task-list .task-activity {
+.plugin-active-task-task-list .task-activity {
   margin-right: 10px;
   margin-left: 45px;
   font-size: 0.9rem; }
-  plugin-active-task-task-list .task-activity .task-tite {
+  .plugin-active-task-task-list .task-activity .task-tite {
     padding-bottom: 10px;
     color: #000000;
     font-size: 1.1rem; }
-  plugin-active-task-task-list .task-activity .task-time {
+  .plugin-active-task-task-list .task-activity .task-time {
     font-size: 0.7rem;
     float: right;
     padding: 5px 0px;
     margin-bottom: 5px;
     display: block; }
-  plugin-active-task-task-list .task-activity .task-buttons {
+  .plugin-active-task-task-list .task-activity .task-buttons {
     border-top: 1px solid #cccccc;
     display: block;
     overflow: hidden;
     width: 100%; }
-  plugin-active-task-task-list .task-activity button,
-  plugin-active-task-task-list .task-activity .btn {
+  .plugin-active-task-task-list .task-activity .btn {
     font-size: 0.9em;
     padding: 10px;
     margin: 5px 0px 5px 0px;
     background-image: none;
     background-color: #b3b2b2; }
-    plugin-active-task-task-list .task-activity button:before,
-    plugin-active-task-task-list .task-activity .btn:before {
+    .plugin-active-task-task-list .task-activity .btn:before {
       background-image: none;
       background-color: #807f7f; }
-    plugin-active-task-task-list .task-activity button:hover,
-    plugin-active-task-task-list .task-activity .btn:hover {
+    .plugin-active-task-task-list .task-activity .btn:hover {
       background-image: none;
       background-color: #b3b2b2; }
 
-plugin-active-task-task-list .task-read-more {
+.plugin-active-task-task-list .task-read-more {
   position: absolute;
   background-color: #cccccc;
   font-size: 0.6em;
@@ -323,35 +324,35 @@ plugin-active-task-task-list .task-read-more {
   background-position: center center;
   background-size: 100% auto;
   background-repeat: no-repeat; }
-  plugin-active-task-task-list .task-read-more:hover {
+  .plugin-active-task-task-list .task-read-more:hover {
     background-color: #28aae1;
     cursor: pointer; }
 
-plugin-active-task-activity-list .table > tbody > tr > td {
+.plugin-active-task-activity-list .td {
   border-top: 0px;
   border-bottom: 1px solid #999999;
   position: relative;
   padding: 15px 30px 15px 15px; }
 
-plugin-active-task-activity-list .activity-tite {
+.plugin-active-task-activity-list .activity-tite {
   padding-bottom: 10px;
   color: #000000;
   font-size: 1.1rem; }
 
-plugin-active-task-activity-list .activity-time {
+.plugin-active-task-activity-list .activity-time {
   font-size: 0.7rem;
   float: right;
   padding: 5px 0px;
   margin-bottom: 5px;
   display: block; }
 
-plugin-active-task-activity-list .activity-buttons {
+.plugin-active-task-activity-list .activity-buttons {
   border-top: 1px solid #cccccc;
   display: block;
   overflow: hidden;
   width: 100%; }
 
-plugin-active-task-activity-list .task-read-more {
+.plugin-active-task-activity-list .task-read-more {
   position: absolute;
   background-color: #cccccc;
   font-size: 0.6em;
@@ -363,21 +364,21 @@ plugin-active-task-activity-list .task-read-more {
   background-position: center center;
   background-size: 100% auto;
   background-repeat: no-repeat; }
-  plugin-active-task-activity-list .task-read-more:hover {
+  .plugin-active-task-activity-list .task-read-more:hover {
     background-color: #28aae1;
     cursor: pointer; }
 
-peek-information > .container-fluid {
+.peek-information > .container-fluid {
   padding-top: 55px;
   padding-bottom: 55px; }
-  peek-information > .container-fluid > .row {
+  .peek-information > .container-fluid > .row {
     margin-right: -15px;
     margin-left: -15px; }
 
-peek-information .information-icon {
+.peek-information .information-icon {
   background-image: url("../images/home_background.png"); }
 
-peek-information .fa.information-icon-large {
+.peek-information .fa.information-icon-large {
   font-size: 6em;
   border-radius: 8px;
   vertical-align: middle;
@@ -394,7 +395,7 @@ peek-information .fa.information-icon-large {
   padding: 0px;
   text-align: center; }
 
-peek-information .information-icon-large {
+.peek-information .information-icon-large {
   background-image: url("../images/home_background.png");
   background-size: 400%;
   background-position: top center;
@@ -405,32 +406,32 @@ peek-information .information-icon-large {
   width: 136px;
   height: 136px;
   text-align: center; }
-  peek-information .information-icon-large img {
+  .peek-information .information-icon-large .image {
     max-height: 100%; }
 
-peek-form-data > .container-fluid {
+.peek-form-data > .container-fluid {
   padding-top: 55px;
   padding-bottom: 55px; }
-  peek-form-data > .container-fluid > .row {
+  .peek-form-data > .container-fluid > .row {
     margin-right: -15px;
     margin-left: -15px; }
 
-peek-form-data .navigation-information {
+.peek-form-data .navigation-information {
   border-bottom: 1px solid #999999; }
-  peek-form-data .navigation-information .form-group {
+  .peek-form-data .navigation-information .form-group {
     padding-top: 0px;
     margin-bottom: 0px; }
 
-peek-form-data .form-group {
+.peek-form-data .form-group {
   margin-bottom: 0px;
   padding-bottom: 15px;
   padding-top: 15px;
   color: #000000; }
 
-peek-table-data > .container-fluid {
+.peek-table-data > .container-fluid {
   padding-top: 40px;
   padding-bottom: 55px; }
-  peek-table-data > .container-fluid > .row {
+  .peek-table-data > .container-fluid > .row {
     margin-right: -15px;
     margin-left: -15px; }
 

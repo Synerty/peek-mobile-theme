@@ -18,20 +18,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="dist/stylesheet.css">
+<link rel="stylesheet" href="../dist/stylesheet.css">
 
 </head>
 <body>
   <peek-main-app>
 
-    <peek-main-title _nghost-vob-4="">
+    <peek-main-title class="peek-main-title">
      <div class="container-fluid">
       <div class="menu-bar">
        <div class="menu-bar-left">
         <button class="btn left-button">Home</button>
        </div>
        <div class="menu-title">
-        <h2>Peek Title</h2>
+        <h2 class="h2">Peek Title</h2>
        </div>
        <div class="menu-bar-right">
         <div class="btn-group" role="group" aria-label="">
@@ -43,17 +43,17 @@
      </div>
     </peek-main-title>
 
-<peek-information>
+<peek-information class="peek-information">
   <div class="container-fluid">
       <router-outlet></router-outlet>
       <plugin-pof-field-switching>
         <div class="text-center">
-          <div class="information-icon-large"><img src="images/field_switching.png"></div>
+          <div class="information-icon-large"><img src="../images/field_switching.png" class="image"></div>
             <h1>Welcome to Field Switching.</h1>
               <p>
                 Peek Field Switching allows field engineers working on the electricity network to electronically
               </p>
-              <ul>
+                <ul>
                   <li>View switching instructions</li>
                   <li>Receive instructions from the control room</li>
                   <li>And field confirm field switching operations</li>
@@ -68,16 +68,14 @@
     </div>
   </peek-information>
 
-  <peek-main-footer>
-    <div class="container-fluid">
-        <div _ngcontent-vob-5="" class="row">
-          <div _ngcontent-vob-5="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-            <h2>
-              Offline, xxx minutes
-            </h2>
+  <peek-main-footer class="peek-main-footer">
+      <div class="container-fluid">
+          <div  class="row">
+              <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h2 class="h2">Offline, xxx minutes</h2>
+              </div>
           </div>
-        </div>
-    </div>
+      </div>
   </peek-main-footer>
 
 </peek-main-app>

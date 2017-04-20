@@ -16,20 +16,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="dist/stylesheet.css">
+<link rel="stylesheet" href="../dist/stylesheet.css">
 
 </head>
 <body>
   <peek-main-app>
 
-    <peek-main-title>
+    <peek-main-title class="peek-main-title">
      <div class="container-fluid">
       <div class="menu-bar">
        <div class="menu-bar-left">
         <button class="btn left-button">Home</button>
        </div>
        <div class="menu-title">
-        <h2>Peek Title</h2>
+        <h2 class="h2">Peek Title</h2>
        </div>
        <div class="menu-bar-right">
         <div class="btn-group" role="group" aria-label="">
@@ -41,7 +41,7 @@
      </div>
     </peek-main-title>
 
-<peek-table-data>
+<peek-table-data class="peek-table-data">
 
 <div class="container-fluid">
     <router-outlet></router-outlet><peek-plugin-pof-field-switching-job-op-list>
@@ -68,57 +68,55 @@
             </tr>
             </thead>
             <tbody>
-            <!--template bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
-}--><tr>
-                <td class="text-center">1</td>
-                <td>Completed</td>
-                <td>Weedons ZS - R15/174</td>
-                <td>Unit 3342 Motor Trip<br>
+
+            <tr>
+                <td class="td text-center">1</td>
+                <td class="td">Completed</td>
+                <td class="td">Weedons ZS - R15/174</td>
+                <td class="td">Unit 3342 Motor Trip<br>
                     Job</td>
-
             </tr><tr>
-                <td class="text-center">2</td>
-                <td>Confirmed</td>
-                <td>Weedons ZS - R15/174</td>
-                <td>Unit 3342 Motor Trip<br>
+                <td class="td text-center">2</td>
+                <td class="td">Confirmed</td>
+                <td class="td">Weedons ZS - R15/174</td>
+                <td class="td">Unit 3342 Motor Trip<br>
                     Apply Scan Inhibit</td>
 
             </tr><tr>
-                <td class="text-center">3</td>
-                <td>Confirmed</td>
-                <td>Weedons ZS - R15/174</td>
-                <td>Unit 3342 Motor Trip<br>
+                <td class="td text-center">3</td>
+                <td class="td">Confirmed</td>
+                <td class="td">Weedons ZS - R15/174</td>
+                <td class="td">Unit 3342 Motor Trip<br>
                     Remove Scan Inhibit</td>
 
             </tr><tr>
-                <td class="text-center">4</td>
-                <td>Confirmed</td>
-                <td>Weedons ZS - R15/174</td>
-                <td>Unit 3342 Motor Trip<br>
+                <td class="td text-center">4</td>
+                <td class="td">Confirmed</td>
+                <td class="td">Weedons ZS - R15/174</td>
+                <td class="td">Unit 3342 Motor Trip<br>
                     Remove Scan Inhibit</td>
 
             </tr><tr>
-                <td class="text-center">5</td>
-                <td>Confirmed</td>
-                <td>Weedons ZS - R15/174</td>
-                <td>Unit 3342 Motor Trip<br>
+                <td class="td text-center">5</td>
+                <td class="td">Confirmed</td>
+                <td class="td">Weedons ZS - R15/174</td>
+                <td class="td">Unit 3342 Motor Trip<br>
                     Apply Scan Inhibit</td>
 
             </tr><tr>
-                <td class="text-center">6</td>
-                <td>Confirmed</td>
-                <td>Weedons ZS - R15/174</td>
-                <td>Unit 3342 Motor Trip<br>
+                <td class="td text-center">6</td>
+                <td class="td">Confirmed</td>
+                <td class="td">Weedons ZS - R15/174</td>
+                <td class="td">Unit 3342 Motor Trip<br>
                     Remove Scan Inhibit</td>
 
-            </tr><tr>
-                <td class="text-center">7</td>
-                <td>Confirmed</td>
-                <td>Weedons ZS - R15/174</td>
-                <td>Unit 3342 Motor Trip<br>
+            </tr>
+            <tr>
+                <td class="td text-center">7</td>
+                <td class="td">Confirmed</td>
+                <td class="td">Weedons ZS - R15/174</td>
+                <td class="td">Unit 3342 Motor Trip<br>
                     Remove Scan Inhibit</td>
-
             </tr>
 
             </tbody>
@@ -133,16 +131,14 @@
 
 </peek-table-data>
 
-<peek-main-footer>
-  <div class="container-fluid">
-    <div _ngcontent-vob-5="" class="row">
-      <div _ngcontent-vob-5="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-        <h2>
-          Offline, xxx minutes
-        </h2>
-      </div>
+<peek-main-footer class="peek-main-footer">
+    <div class="container-fluid">
+        <div  class="row">
+            <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h2 class="h2">Offline, xxx minutes</h2>
+            </div>
+        </div>
     </div>
-  </div>
 </peek-main-footer>
 
 </peek-main-app>

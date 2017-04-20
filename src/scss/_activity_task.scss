@@ -1,5 +1,5 @@
 //plugin
-plugin-active-task{
+.plugin-active-task{
 
   //adjusting for fixed header and footer
   >.container-fluid{
@@ -15,21 +15,14 @@ plugin-active-task{
 }
 
 //tasks
-plugin-active-task-task-list{
+.plugin-active-task-task-list{
 
-    .table{
-      &>tbody{
-        &>tr{
-          &>td{
-            border-top: 0px;
-            border-bottom: 1px solid darken($grey,20%);
-            position: relative;
-            padding: $general_padding ($general_padding+5) $general_padding 0px;
-          }
-        }
-      }
-    }
-
+  .td{
+    border-top: 0px;
+    border-bottom: 1px solid darken($grey,20%);
+    position: relative;
+    padding: $general_padding ($general_padding+5) $general_padding 0px;
+  }
 
   .task-icon{
     position: absolute;
@@ -74,7 +67,6 @@ plugin-active-task-task-list{
       width: 100%;
     }
 
-    button,
     .btn{
       font-size: 0.9em;
       padding: $general_padding - 5px;
@@ -120,18 +112,13 @@ plugin-active-task-task-list{
 }
 
 //plugin activity task list
-plugin-active-task-activity-list{
-  .table{
-    &>tbody{
-      &>tr{
-        &>td{
-          border-top: 0px;
-          border-bottom: 1px solid darken($grey,20%);
-          position: relative;
-          padding: $general_padding ($general_padding*2) $general_padding $general_padding;
-        }
-      }
-    }
+.plugin-active-task-activity-list{
+
+  .td{
+    border-top: 0px;
+    border-bottom: 1px solid darken($grey,20%);
+    position: relative;
+    padding: $general_padding ($general_padding*2) $general_padding $general_padding;
   }
 
   .activity-tite{
