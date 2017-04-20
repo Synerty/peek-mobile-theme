@@ -372,8 +372,7 @@ The text remains a single line and truncates a "..." if the line exceeds the min
 
   Code:
   <div class="code">
-    <xmp id="homecode"><body class="home-page">...</body>
-    </xmp>
+    <xmp id="homecode"><body class="home-page">...</body></xmp>
     <button class="btn" data-clipboard-target="#homecode">copy</button>
   </div>
 
@@ -397,7 +396,7 @@ The text remains a single line and truncates a "..." if the line exceeds the min
 
   Display Sample:
   <div class="display-sample">
-    <peek-main-home>
+    <peek-main-home class="peek-main-home">
       <div class="home-icon">
           <a href="http://localhost:4200/peek_plugin_noop">
               <img _ngcontent-vob-5="" src="../images/home_testing_noop.png">
@@ -435,14 +434,14 @@ Backgrounds are identical.
       <div class="display-sample">
         <peek-information class="peek-information">
           <div class="information-icon-large">
-           <img src="../images/field_switching.png">
+           <img src="../images/field_switching.png" class="image">
           </div>
         </peek-information>
       </div>
 
       Image code:
       <div class="code"><xmp id="imagedisplaycode"><div class="information-icon-large">
- <img src="images/field_switching.png">
+ <img src="images/field_switching.png" class="image">
 </div></xmp>
 <button class="btn" data-clipboard-target="#imagedisplaycode">copy</button>
       </div>
