@@ -211,6 +211,7 @@
                 <div class="document-title">Peek</div>
                 <div class="document-subtitle">Documentation<div/>
             </li>
+            <li><a href="#bootstrap">Bootstrap</a></li>
             <li><a href="#main-navigation">Main navigation</a></li>
             <li><a href="#footer">Footer</a></li>
             <li>
@@ -260,6 +261,40 @@
           <h1 class="title document">Peek App Documentation</h1>
 
 <!-- content start -->
+
+<!-- Bootstrap start -->
+<div id="bootstrap">
+  <h1 class="document">Bootstrap</h1>
+  The css for the peek app is based upon bootstrap. For more detailed reference to bootstrap documentation please visit <a href="http://getbootstrap.com">http://getbootstrap.com</a>.
+
+  <h2 class="document">General Bootstrap Layout</h2>
+  Bootstrap follows a general nested layout, that must be observed. In most cases:
+
+  <ul>
+    <li>A column : .col-xs-, .col-sm-*, .col-md*</li>
+    <li>Must always be contained within a row.</li>
+    <li>And the row must always be contained within a container (container-fluid or container)</li>
+    <li>This format does not apply to the following elements:
+      <ul>
+        <li><a href="#main-navigation">Main Navigation</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  Code sample:
+    <div class="code"><xmp id="top-navigation"><div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4"></div>
+  </div>
+</div>
+</xmp>
+    </div>
+
+</div>
+<!-- Bootstrap end -->
+
 
 <!-- Top Navigation start -->
 <div id="main-navigation">
