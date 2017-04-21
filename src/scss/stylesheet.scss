@@ -10,6 +10,7 @@
 @import '_activity_task';
 @import '_information';
 @import '_form_data';
+@import '_details_data';
 @import '_table_data';
 
 body,
@@ -33,9 +34,27 @@ ul{
   margin: $general_padding 0px;
 }
 
-hr{
+.hr{
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 *:focus {outline:none!important;}
+
+
+.navigation-information{
+  border-bottom: 1px solid darken($grey,20%);
+
+  .form-group{
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+}
+
+.form-group{
+  margin-bottom: 0px;
+  padding-bottom: $general_padding;
+  padding-top: $general_padding;
+  color: $black;
+}

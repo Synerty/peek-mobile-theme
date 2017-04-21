@@ -416,17 +416,12 @@ button,
     margin-right: -15px;
     margin-left: -15px; }
 
-.peek-form-data .navigation-information {
-  border-bottom: 1px solid #999999; }
-  .peek-form-data .navigation-information .form-group {
-    padding-top: 0px;
-    margin-bottom: 0px; }
-
-.peek-form-data .form-group {
-  margin-bottom: 0px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  color: #000000; }
+.peek-details-data > .container-fluid {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+  .peek-details-data > .container-fluid > .row {
+    margin-right: -15px;
+    margin-left: -15px; }
 
 .peek-table-data > .container-fluid {
   padding-top: 40px;
@@ -452,9 +447,21 @@ li {
 ul {
   margin: 15px 0px; }
 
-hr {
+.hr {
   margin-top: 0px;
   margin-bottom: 0px; }
 
 *:focus {
   outline: none !important; }
+
+.navigation-information {
+  border-bottom: 1px solid #999999; }
+  .navigation-information .form-group {
+    padding-top: 0px;
+    margin-bottom: 0px; }
+
+.form-group {
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #000000; }
