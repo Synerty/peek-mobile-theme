@@ -183,7 +183,7 @@ button,
   position: fixed;
   width: 100%;
   bottom: 0px;
-  z-index: 999;
+  z-index: 899;
   background-color: #ffffff; }
   .peek-main-footer .container-fluid {
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
@@ -423,12 +423,85 @@ button,
   float: right;
   font-size: 1.5em; }
 
+.plugin-chat-msg-list > .container-fluid {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+  .plugin-chat-msg-list > .container-fluid > .row {
+    margin-right: -15px;
+    margin-left: -15px; }
+
+.plugin-chat-msg-list .well {
+  padding: 10px 0px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  overflow: hidden; }
+
+.plugin-chat-msg-list .btn .fa {
+  color: #ffffff; }
+
+.plugin-chat-msg-list .messaging-text {
+  padding-bottom: 135px; }
+
+.plugin-chat-msg-list .messaging-area {
+  bottom: 40px;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: #ffffff; }
+  .plugin-chat-msg-list .messaging-area .messaging-textarea {
+    width: 70%;
+    float: left; }
+    .plugin-chat-msg-list .messaging-area .messaging-textarea textarea {
+      border-radius: 0px;
+      height: 80px; }
+  .plugin-chat-msg-list .messaging-area .send {
+    background-color: #5ca43f;
+    opacity: 1; }
+    .plugin-chat-msg-list .messaging-area .send:hover {
+      background-color: #3d6c2a; }
+  .plugin-chat-msg-list .messaging-area .messaging-buttons {
+    width: 30%;
+    float: right; }
+    .plugin-chat-msg-list .messaging-area .messaging-buttons .btn {
+      border-radius: 0px;
+      width: 50%;
+      float: left;
+      height: 80px; }
+
+.plugin-chat-msg-list .chat-window .chat-message {
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 90px; }
+  .plugin-chat-msg-list .chat-window .chat-message .chat-bubble {
+    background-color: #ededed;
+    padding: 5px 10px;
+    border-radius: 8px 8px 0px 8px; }
+
+.plugin-chat-msg-list .chat-window .chat-reply {
+  text-align: left;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 90px; }
+  .plugin-chat-msg-list .chat-window .chat-reply .chat-bubble {
+    background-color: #dff0d8;
+    padding: 5px 10px;
+    border-radius: 4px 4px 4px 0px; }
+
+.plugin-chat-msg-list .chat-window .chat-details {
+  font-size: 0.9em; }
+
 body,
 html {
   font-size: 16px;
   color: #4d4c4c;
   height: 100%;
   font-family: "Play", sans-serif; }
+
+.image {
+  max-width: 100%; }
 
 .hr {
   margin-top: 0px;

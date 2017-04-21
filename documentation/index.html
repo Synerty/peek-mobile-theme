@@ -203,7 +203,6 @@
 
   <body>
 
-
         <div class="document-left">
 
           <ul class="document-menu">
@@ -233,10 +232,10 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#formpage">Form</a>
+                    <a href="#formpage">Details Page</a>
                     <ul>
                       <li><a href="#buttongroups">Button Groups</a></li>
-                      <li><a href="#formrow">Form Row</a></li>
+                      <li><a href="#detailsrow">Details Row</a></li>
                     </ul>
                   </li>
                   <li>
@@ -245,7 +244,7 @@
                       <li><a href="#tableheader">Header</a></li>
                     </ul>
                   </li>
-                  <li><a href="#activitytask">Activity Tash</a>
+                  <li><a href="#activitytask">Activity Task</a>
                     <ul>
                       <li><a href="#tasklist">Task List</a></li>
                       <li><a href="#activitylist">Activity List</a></li>
@@ -282,7 +281,7 @@
   </ul>
 
   Code sample:
-    <div class="code"><xmp id="top-navigation"><div class="container-fluid">
+    <div class="code"><xmp id="bootstrapgrid"><div class="container-fluid">
   <div class="row">
     <div class="col-xs-4"></div>
     <div class="col-xs-4"></div>
@@ -290,6 +289,7 @@
   </div>
 </div>
 </xmp>
+<button class="btn" data-clipboard-target="#bootstrapgrid">copy</button>
     </div>
 
 </div>
@@ -309,19 +309,19 @@
     Display sample:
 <div class="display-sample"><peek-main-title class="peek-main-title">
   <div class="container-fluid">
-      <div _ngcontent-vob-4="" class="menu-bar">
-          <div _ngcontent-vob-4="" class="menu-bar-left">
-              <button _ngcontent-vob-4="" class="btn left-button " ng-reflect-router-link="/">Home</button>
+      <div  class="menu-bar">
+          <div  class="menu-bar-left">
+              <button  class="btn left-button " ng-reflect-router-link="/">Home</button>
               <!--template bindings={ "ng-reflect-ng-for-of": ""}-->
           </div>
-          <div _ngcontent-vob-4="" class="menu-title">
-              <h2 _ngcontent-vob-4="">Peek Home</h2>
+          <div class="menu-title">
+              <h2 class="h2">Peek Home</h2>
           </div>
-          <div _ngcontent-vob-4="" class="menu-bar-right">
+          <div  class="menu-bar-right">
               <!--template bindings={"ng-reflect-ng-for-of": "[object Object]"}-->
               <div class="btn-group" role="group" aria-label="">
-                  <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
-                  <button _ngcontent-vob-4="" class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
+                  <button  class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">User</button>
+                  <button  class="btn right-button" ng-reflect-router-link="/peek_plugin_active_task">Tasks</button>
               </div>
           </div>
       </div>
@@ -338,7 +338,7 @@
     <button class="btn left-button">Home</button>
    </div>
    <div class="menu-title">
-    <h2>Peek Title</h2>
+    <h2 class="h2">Peek Title</h2>
    </div>
    <div class="menu-bar-right">
     <div class="btn-group" role="group" aria-label="">
@@ -434,7 +434,7 @@ The text remains a single line and truncates a "..." if the line exceeds the min
     <peek-main-home class="peek-main-home">
       <div class="home-icon">
           <a href="http://localhost:4200/peek_plugin_noop">
-              <img _ngcontent-vob-5="" src="../images/home_testing_noop.png">
+              <img _ngcontent-vob-5="" src="../images/home_testing_noop.png" class="image">
               <p class="text-center">Testing Noop</p>
           </a>
       </div>
@@ -444,7 +444,7 @@ The text remains a single line and truncates a "..." if the line exceeds the min
   Code sample:
   <div class="code">
     <xmp id="buttoncode"><a href="">
-<img src="../images/testing_noop.png">
+<img src="../images/testing_noop.png" class="image">
 <p class="text-center">Testing Noop</p>
 </a>
     </xmp>
@@ -498,10 +498,9 @@ Backgrounds are identical.
 </div>
 <!-- Information page end -->
 
-<!-- Form page start -->
+<!-- Detail Page start -->
 <div id="formpage">
-  <h1 class="document">Form Page</h1>
-  All of the elements in the Form Pages use the standard bootstrap classes.
+  <h1 class="document">Detail Page</h1>
 
   <h2 class="document" id="buttongroups">Button Groups</h2>
 
@@ -524,7 +523,7 @@ Backgrounds are identical.
 <button class="btn" data-clipboard-target="#buttongroup">copy</button>
 </div>
 
-<h2 class="document" id="formrow">Form row</h2>
+<h2 class="document" id="formrow">Details Row</h2>
 
 Display:
 <div class="row">
