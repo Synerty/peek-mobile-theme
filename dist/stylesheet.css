@@ -43,64 +43,30 @@ table td {
 
 button,
 .btn {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  border-radius: 0px;
-  border-color: transparent;
-  background-color: transparent;
-  background: red;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#28aae1, #1a8cbc);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#28aae1, #1a8cbc);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#28aae1, #1a8cbc);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#28aae1, #1a8cbc);
-  /* Standard syntax */
+  background-color: #28aae1;
   color: #ffffff;
   font-size: 1em;
   font-family: "Play", sans-serif;
   text-transform: uppercase;
-  background-size: 100%;
+  border-radius: 4px;
+  transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -webkit-transition: all .35s ease;
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
   position: relative;
-  z-index: 100; }
-  button:before,
-  .btn:before {
-    background: red;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#0e4962, #146a8f);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0e4962, #146a8f);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0e4962, #146a8f);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0e4962, #146a8f);
-    /* Standard syntax */
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    z-index: -100;
-    transition: opacity 0.45s; }
+  z-index: 100;
+  font-size: 0.8em;
+  padding: 8px;
+  font-weight: normal; }
   button:hover,
   .btn:hover {
-    color: #ffffff; }
-    button:hover:before,
-    .btn:hover:before {
-      opacity: 1; }
-  button:focus, button:visited,
-  .btn:focus,
-  .btn:visited {
-    color: #ffffff; }
+    background-color: #146a8f;
+    color: #ffffff;
+    transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -webkit-transition: all .35s ease; }
 
 .btn-group {
   padding: 15px 0px; }
@@ -126,14 +92,14 @@ button,
     padding-right: 0px;
     padding-left: 0px; }
   .peek-main-title .btn {
-    text-transform: uppercase;
     height: 40px;
-    background-color: #28aae1;
     font-size: 0.8em;
-    line-height: 12px;
-    padding: 8px;
     width: 100%;
-    font-family: "Play", sans-serif; }
+    border-radius: 0px; }
+    .peek-main-title .btn:before {
+      border-radius: 0px; }
+    .peek-main-title .btn:hover {
+      border-radius: 0px; }
   .peek-main-title .btn-group {
     width: 100%;
     padding: 0px; }
@@ -170,20 +136,23 @@ button,
       margin-bottom: 0px; }
       .nav.nav-tabs > li.active > a {
         border-radius: 0px 0px 0 0;
-        background: red;
-        /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(#28aae1, #1a8cbc);
-        /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#28aae1, #1a8cbc);
-        /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#28aae1, #1a8cbc);
-        /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#28aae1, #1a8cbc);
-        /* Standard syntax */
+        background-color: #28aae1;
         color: #ffffff;
         font-size: 1em;
         font-family: "Play", sans-serif;
         text-transform: uppercase;
+        border-radius: 4px;
+        transition: all .35s ease;
+        -moz-transition: all .35s ease;
+        -webkit-transition: all .35s ease;
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 15px;
+        position: relative;
+        z-index: 100;
+        font-size: 0.8em;
+        padding: 8px;
+        font-weight: normal;
         background-image: none;
         background: #999999;
         border-color: #28aae1;
@@ -191,6 +160,12 @@ button,
         font-size: 0.8em;
         padding: 12px;
         margin-top: 0px; }
+        .nav.nav-tabs > li.active > a:hover {
+          background-color: #146a8f;
+          color: #ffffff;
+          transition: all .35s ease;
+          -moz-transition: all .35s ease;
+          -webkit-transition: all .35s ease; }
       .nav.nav-tabs > li > a {
         font-family: "Play", sans-serif;
         text-transform: uppercase;
@@ -430,22 +405,30 @@ button,
     margin-right: -15px;
     margin-left: -15px; }
 
+.plugin-chat-chat-list > .container-fluid {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+  .plugin-chat-chat-list > .container-fluid > .row {
+    margin-right: -15px;
+    margin-left: -15px; }
+
+.plugin-chat-chat-list .well {
+  padding: 10px 0px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  overflow: hidden; }
+
+.plugin-chat-chat-list .fa {
+  color: #b3b2b2;
+  float: right;
+  font-size: 1.5em; }
+
 body,
 html {
   font-size: 16px;
   color: #4d4c4c;
   height: 100%;
   font-family: "Play", sans-serif; }
-
-img {
-  max-width: 100%; }
-
-ul,
-li {
-  text-align: left; }
-
-ul {
-  margin: 15px 0px; }
 
 .hr {
   margin-top: 0px;
@@ -455,7 +438,8 @@ ul {
   outline: none !important; }
 
 .navigation-information {
-  border-bottom: 1px solid #999999; }
+  border-bottom: 1px solid #999999;
+  margin-bottom: 15px; }
   .navigation-information .form-group {
     padding-top: 0px;
     margin-bottom: 0px; }

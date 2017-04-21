@@ -19,14 +19,18 @@
 
   //normal button
   .btn{
-    text-transform: $font_transform;
     height: $navigation_header_height; //setting height to default header naviation height
-    background-color: $brand;
     font-size:$section_font_size;
-    line-height: $general_font_size - 4px;
-    padding:8px;
     width: 100%;
-    font-family: $fonts_special;
+    border-radius: 0px;
+
+    &:before {
+      border-radius: 0px;
+    }
+
+    &:hover{
+      border-radius: 0px;
+    }
   }
 
   //button group

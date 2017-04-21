@@ -12,6 +12,7 @@
 @import '_form_data';
 @import '_details_data';
 @import '_table_data';
+@import '_chat_chart_list';
 
 body,
 html{
@@ -21,18 +22,7 @@ html{
   font-family: $fonts_special;
 }
 
-img{
-  max-width: 100%;
-}
 
-ul,
-li{
-  text-align: left;
-}
-
-ul{
-  margin: $general_padding 0px;
-}
 
 .hr{
   margin-top: 0px;
@@ -41,9 +31,9 @@ ul{
 
 *:focus {outline:none!important;}
 
-
 .navigation-information{
   border-bottom: 1px solid darken($grey,20%);
+  margin-bottom: $general_padding;
 
   .form-group{
     padding-top: 0px;

@@ -8,11 +8,27 @@
 }
 
 @mixin button-settings{
-  @include gradient-linear($brand, $brand_compliment);
+  background-color: $brand;
   color: $white;
   font-size:1em;
   font-family: $fonts_special;
   text-transform: $font_transform;
+  border-radius: 4px;
+  @include rollover;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 100;
+  font-size: 0.8em;
+  padding:8px;
+  font-weight: normal;
+
+  &:hover{
+    background-color: darken($brand,20%);
+    color: $white;
+    @include rollover;
+  }
 }
 
 @mixin box-shadow{
