@@ -1,0 +1,18 @@
+{
+  "name": "@synerty/peek-mobile-theme",
+  "version": "0.0.1",
+  "description": "Theme for the Peek Mobile service",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@stash.synerty.com/peek/peek-mobile-theme.git"
+  },
+  "author": "Synerty Pty Ltd <contact@synerty.com> (https://www.synerty.com)",
+  "license": "MIT"
+}
