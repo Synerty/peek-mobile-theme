@@ -24,51 +24,60 @@
 <body>
   <peek-main-app>
 
-    <peek-main-title class="peek-main-title">
-     <div class="container-fluid">
-      <div class="menu-bar">
-       <div class="menu-bar-left">
-        <button class="btn left-button">Home</button>
-       </div>
-       <div class="menu-title">
-        <h2 class="h2">Peek Title</h2>
-       </div>
-       <div class="menu-bar-right">
-        <div class="btn-group" role="group" aria-label="">
-         <button class="btn right-button">Tasks</button>
-         <button class="btn right-button">User</button>
+    <peek-main-title>
+      <div class="peek-main-title">
+       <div class="container-fluid">
+        <div class="menu-bar">
+         <div class="menu-bar-left">
+          <button class="btn left-button">Home</button>
+         </div>
+         <div class="menu-title">
+          <h2 class="h2">Peek Title</h2>
+         </div>
+         <div class="menu-bar-right">
+          <div class="btn-group" role="group" aria-label="">
+           <button class="btn right-button">Tasks</button>
+           <button class="btn right-button">User</button>
+          </div>
+         </div>
         </div>
        </div>
-      </div>
      </div>
     </peek-main-title>
 
-<peek-information class="peek-information">
+<peek-information>
+  <div class="peek-information">
   <div class="container-fluid">
       <router-outlet></router-outlet>
       <plugin-pof-field-switching>
-        <div class="text-center">
-          <div class="information-icon-large"><img src="../images/field_switching.png" class="image"></div>
-            <h1>Welcome to Field Switching.</h1>
-              <p>
-                Peek Field Switching allows field engineers working on the electricity network to electronically
-              </p>
-                <ul>
-                  <li>View switching instructions</li>
-                  <li>Receive instructions from the control room</li>
-                  <li>And field confirm field switching operations</li>
-              </ul>
+
+        <div class="center">
+          <div class="information-icon-large">
+            <img src="../images/field_switching.png" class="image">
           </div>
-          <button class="btn" ng-reflect-router-link="./joblist">My Jobs &gt;</button>
-          <div class="user-status text-center">
-            <i class="fa fa-user information-icon-large" aria-hidden="true"></i>
-            <h1>Logged in as Tim Hamilton</h1>
-          </div>
+
+        <h1>Welcome to Field Switching.</h1>
+        </div>
+        <p>
+          Peek Field Switching allows field engineers working on the electricity network to electronically
+        </p>
+        <ul>
+          <li>View switching instructions</li>
+          <li>Receive instructions from the control room</li>
+          <li>And field confirm field switching operations</li>
+        </ul>
+        <button class="btn" ng-reflect-router-link="./joblist">My Jobs &gt;</button>
+        <div class="user-status center">
+          <i class="fa fa-user information-icon-large" aria-hidden="true"></i>
+          <h1>Logged in as Tim Hamilton</h1>
+        </div>
         </plugin-pof-field-switching>
+    </div>
     </div>
   </peek-information>
 
-  <peek-main-footer class="peek-main-footer">
+  <peek-main-footer>
+    <div class="peek-main-footer">
       <div class="container-fluid">
           <div  class="row">
               <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
@@ -76,6 +85,7 @@
               </div>
           </div>
       </div>
+    </div>
   </peek-main-footer>
 
 </peek-main-app>

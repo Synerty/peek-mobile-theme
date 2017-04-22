@@ -1,92 +1,103 @@
 <!DOCTYPE html>
-<html><head>
-  <meta charset="utf-8">
-  <title>Peek</title>
-<base href=".">
+<html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <head>
+        <meta charset="utf-8">
+        <title>Peek</title>
+        <base href=".">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!--font awesome-->
-<script src="https://use.fontawesome.com/b4d291589e.js"></script>
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="../dist/stylesheet.css">
+        <!--font awesome-->
+        <script src="https://use.fontawesome.com/b4d291589e.js"></script>
 
 
-</head>
-<body>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <peek-main-app ng-version="4.0.2">
-    <ng2-balloon-msg _nghost-gpn-0="">
-        <div _ngcontent-gpn-0="" class="ng2BaloonMsgQueue"></div>
-    </ng2-balloon-msg>
+        <link rel="stylesheet" href="../dist/stylesheet.css">
 
-    <peek-main-title class="peek-main-title">
-     <div class="container-fluid">
-      <div class="menu-bar">
-       <div class="menu-bar-left">
-        <button class="btn left-button">Home</button>
-       </div>
-       <div class="menu-title">
-        <h2 class="h2">Peek Title</h2>
-       </div>
-       <div class="menu-bar-right">
-        <div class="btn-group" role="group" aria-label="">
-         <button class="btn right-button">Tasks</button>
-         <button class="btn right-button">User</button>
-        </div>
-       </div>
-      </div>
-     </div>
-    </peek-main-title>
 
-    <plugin-chat-chat-list class="plugin-chat-chat-list" ng-version="4.0.2">
+    </head>
 
-    <div class="container-fluid">
-        <router-outlet></router-outlet>
+    <body>
 
-        <div  class="row navigation-information">
-          <div  class="form-group col-xs-12">
-              <button class="btn">New Chat</button>
-          </div>
-        </div>
+        <peek-main-app ng-version="4.0.2">
+            <ng2-balloon-msg _nghost-gpn-0="">
+                <div _ngcontent-gpn-0="" class="ng2BaloonMsgQueue"></div>
+            </ng2-balloon-msg>
 
-            <div class="well">
-                <div class="col-sm-12">
-                  <i class="fa fa-comment" aria-hidden="true"></i>
-                  <div class="chat-topic">Chief Wiggum (C917)</div>
+            <peek-main-title>
+                <div class="peek-main-title">
+                    <div class="container-fluid">
+                        <div class="menu-bar">
+                            <div class="menu-bar-left">
+                                <button class="btn left-button">Home</button>
+                            </div>
+                            <div class="menu-title">
+                                <h2 class="h2">Peek Title</h2>
+                            </div>
+                            <div class="menu-bar-right">
+                                <div class="btn-group" role="group" aria-label="">
+                                    <button class="btn right-button">Tasks</button>
+                                    <button class="btn right-button">User</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </peek-main-title>
 
-            <div class="well">
-                <div class="col-sm-12">
-                  <i class="fa fa-comment" aria-hidden="true"></i>
-                  <div class="chat-topic">(PowerOn Fusion)</div>
+            <plugin-chat-chat-list ng-version="4.0.2">
+              <div class="plugin-chat-chat-list">
+
+
+                <div class="container-fluid">
+                    <router-outlet></router-outlet>
+
+                    <div class="row navigation-information">
+                        <div class="form-group col-xs-12">
+                            <button class="btn">New Chat</button>
+                        </div>
+                    </div>
+
+                    <div class="well">
+                        <div class="col-sm-12">
+                            <i class="fa fa-comment" aria-hidden="true"></i>
+                            <div class="chat-topic">Chief Wiggum (C917)</div>
+                        </div>
+                    </div>
+
+                    <div class="well">
+                        <div class="col-sm-12">
+                            <i class="fa fa-comment" aria-hidden="true"></i>
+                            <div class="chat-topic">(PowerOn Fusion)</div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-
-    </div>
-
-    </plugin-chat-chat-list>
-
-    <peek-main-footer class="peek-main-footer">
-        <div class="container-fluid">
-            <div  class="row">
-                <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                    <h2 class="h2">Offline, xxx minutes</h2>
                 </div>
-            </div>
-        </div>
-    </peek-main-footer>
+            </plugin-chat-chat-list>
 
-</peek-main-app>
+            <peek-main-footer>
+              <div class="peek-main-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <h2 class="h2">Offline, xxx minutes</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </peek-main-footer>
 
-</body></html>
+        </peek-main-app>
+
+    </body>
+</html>

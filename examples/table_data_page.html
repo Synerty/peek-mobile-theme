@@ -1,146 +1,165 @@
 <!DOCTYPE html>
 <!-- saved from url=(0083)http://localhost:4200/peek_plugin_pof_field_switching/joboplist/C000013eeJ/J-5102-C -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
 
-  <title>Peek</title>
-  <!--<base href="/">--><base href=".">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Peek</title>
+        <!--<base href="/">-->
+        <base href=".">
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="../dist/stylesheet.css">
+        <link rel="stylesheet" href="../dist/stylesheet.css">
 
-</head>
-<body>
-  <peek-main-app>
+    </head>
 
-    <peek-main-title class="peek-main-title">
-     <div class="container-fluid">
-      <div class="menu-bar">
-       <div class="menu-bar-left">
-        <button class="btn left-button">Home</button>
-       </div>
-       <div class="menu-title">
-        <h2 class="h2">Peek Title</h2>
-       </div>
-       <div class="menu-bar-right">
-        <div class="btn-group" role="group" aria-label="">
-         <button class="btn right-button">Tasks</button>
-         <button class="btn right-button">User</button>
-        </div>
-       </div>
-      </div>
-     </div>
-    </peek-main-title>
+    <body>
+        <peek-main-app>
 
-<peek-table-data class="peek-table-data">
+            <peek-main-title>
+                <div class="peek-main-title">
+                    <div class="container-fluid">
+                        <div class="menu-bar">
+                            <div class="menu-bar-left">
+                                <button class="btn left-button">Home</button>
+                            </div>
+                            <div class="menu-title">
+                                <h2 class="h2">Peek Title</h2>
+                            </div>
+                            <div class="menu-bar-right">
+                                <div class="btn-group" role="group" aria-label="">
+                                    <button class="btn right-button">Tasks</button>
+                                    <button class="btn right-button">User</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </peek-main-title>
 
-<div class="container-fluid">
-    <router-outlet></router-outlet><peek-plugin-pof-field-switching-job-op-list>
-    <div class="row navigation-information">
+            <peek-table-data>
+              <div class="peek-table-data">
+                <div class="container-fluid">
+                    <router-outlet></router-outlet>
+                    <peek-plugin-pof-field-switching-job-op-list>
+                        <div class="row navigation-information">
 
-        <div class="col-xs-12" >
-          <div class="btn-group" role="group" aria-label="">
-            <button class="btn">My Jobs</button>
-            <button class="btn">&lt; Job J-5102-C</button>
-          </div>
-        </div>
+                            <div class="col-xs-12">
+                                <div class="btn-group" role="group" aria-label="">
+                                    <button class="btn">My Jobs</button>
+                                    <button class="btn">&lt; Job J-5102-C</button>
+                                </div>
+                            </div>
 
-    </div>
+                        </div>
 
-<div class="row">
+                        <div class="row">
 
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th class="text-center">Item</th>
-                <th>State</th>
-                <th>Location</th>
-                <th>Circuit / Details</th>
-            </tr>
-            </thead>
-            <tbody>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Item</th>
+                                        <th>State</th>
+                                        <th>Location</th>
+                                        <th>Circuit / Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-            <tr>
-                <td class="td text-center">1</td>
-                <td class="td">Completed</td>
-                <td class="td">Weedons ZS - R15/174</td>
-                <td class="td">Unit 3342 Motor Trip<br>
-                    Job</td>
-            </tr><tr>
-                <td class="td text-center">2</td>
-                <td class="td">Confirmed</td>
-                <td class="td">Weedons ZS - R15/174</td>
-                <td class="td">Unit 3342 Motor Trip<br>
-                    Apply Scan Inhibit</td>
+                                    <tr>
+                                        <td class="td text-center">1</td>
+                                        <td class="td">Completed</td>
+                                        <td class="td">Weedons ZS - R15/174</td>
+                                        <td class="td">Unit 3342 Motor Trip
+                                            <br> Job
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td text-center">2</td>
+                                        <td class="td">Confirmed</td>
+                                        <td class="td">Weedons ZS - R15/174</td>
+                                        <td class="td">Unit 3342 Motor Trip
+                                            <br> Apply Scan Inhibit</td>
 
-            </tr><tr>
-                <td class="td text-center">3</td>
-                <td class="td">Confirmed</td>
-                <td class="td">Weedons ZS - R15/174</td>
-                <td class="td">Unit 3342 Motor Trip<br>
-                    Remove Scan Inhibit</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td text-center">3</td>
+                                        <td class="td">Confirmed</td>
+                                        <td class="td">Weedons ZS - R15/174</td>
+                                        <td class="td">Unit 3342 Motor Trip
+                                            <br> Remove Scan Inhibit</td>
 
-            </tr><tr>
-                <td class="td text-center">4</td>
-                <td class="td">Confirmed</td>
-                <td class="td">Weedons ZS - R15/174</td>
-                <td class="td">Unit 3342 Motor Trip<br>
-                    Remove Scan Inhibit</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td text-center">4</td>
+                                        <td class="td">Confirmed</td>
+                                        <td class="td">Weedons ZS - R15/174</td>
+                                        <td class="td">Unit 3342 Motor Trip
+                                            <br> Remove Scan Inhibit</td>
 
-            </tr><tr>
-                <td class="td text-center">5</td>
-                <td class="td">Confirmed</td>
-                <td class="td">Weedons ZS - R15/174</td>
-                <td class="td">Unit 3342 Motor Trip<br>
-                    Apply Scan Inhibit</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td text-center">5</td>
+                                        <td class="td">Confirmed</td>
+                                        <td class="td">Weedons ZS - R15/174</td>
+                                        <td class="td">Unit 3342 Motor Trip
+                                            <br> Apply Scan Inhibit</td>
 
-            </tr><tr>
-                <td class="td text-center">6</td>
-                <td class="td">Confirmed</td>
-                <td class="td">Weedons ZS - R15/174</td>
-                <td class="td">Unit 3342 Motor Trip<br>
-                    Remove Scan Inhibit</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td text-center">6</td>
+                                        <td class="td">Confirmed</td>
+                                        <td class="td">Weedons ZS - R15/174</td>
+                                        <td class="td">Unit 3342 Motor Trip
+                                            <br> Remove Scan Inhibit</td>
 
-            </tr>
-            <tr>
-                <td class="td text-center">7</td>
-                <td class="td">Confirmed</td>
-                <td class="td">Weedons ZS - R15/174</td>
-                <td class="td">Unit 3342 Motor Trip<br>
-                    Remove Scan Inhibit</td>
-            </tr>
+                                    </tr>
+                                    <tr>
+                                        <td class="td text-center">7</td>
+                                        <td class="td">Confirmed</td>
+                                        <td class="td">Weedons ZS - R15/174</td>
+                                        <td class="td">Unit 3342 Motor Trip
+                                            <br> Remove Scan Inhibit</td>
+                                    </tr>
 
-            </tbody>
-        </table>
+                                </tbody>
+                            </table>
 
-        <br>
+                            <br>
 
-</div>
+                        </div>
 
-</peek-plugin-pof-field-switching-job-op-list>
-</div>
+                    </peek-plugin-pof-field-switching-job-op-list>
+                </div>
+                </div>
+            </peek-table-data>
 
-</peek-table-data>
+            <peek-main-footer>
+              <div class="peek-main-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <h2 class="h2">Offline, xxx minutes</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </peek-main-footer>
 
-<peek-main-footer class="peek-main-footer">
-    <div class="container-fluid">
-        <div  class="row">
-            <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                <h2 class="h2">Offline, xxx minutes</h2>
-            </div>
-        </div>
-    </div>
-</peek-main-footer>
+        </peek-main-app>
 
-</peek-main-app>
+    </body>
 
-</body></html>
+</html>

@@ -23,8 +23,12 @@ h1 {
     border-bottom: 3px solid #26abe2;
     padding-bottom: 15px; }
 
-.text-center h1:after {
-  margin: 0px auto; }
+.center {
+  text-align: center; }
+  .center h1 {
+    text-align: center; }
+    .center h1:after {
+      margin: 0px auto; }
 
 .table > thead > tr > th,
 table > thead > tr > th {
@@ -59,7 +63,8 @@ button,
   z-index: 100;
   font-size: 0.8em;
   padding: 8px;
-  font-weight: normal; }
+  font-weight: normal;
+  border: 0px; }
   button:hover,
   .btn:hover {
     background-color: #146a8f;
@@ -153,13 +158,11 @@ button,
         font-size: 0.8em;
         padding: 8px;
         font-weight: normal;
-        background-image: none;
-        background: #999999;
-        border-color: #28aae1;
         border: 0px;
         font-size: 0.8em;
         padding: 12px;
-        margin-top: 0px; }
+        margin-top: 0px;
+        border-radius: 4px 4px 0px 0px; }
         .nav.nav-tabs > li.active > a:hover {
           background-color: #146a8f;
           color: #ffffff;
@@ -266,14 +269,14 @@ button,
   .plugin-active-task-task-list .task-activity .task-time {
     font-size: 0.7rem;
     float: right;
-    padding: 5px 0px;
-    margin-bottom: 5px;
     display: block; }
   .plugin-active-task-task-list .task-activity .task-buttons {
     border-top: 1px solid #cccccc;
     display: block;
     overflow: hidden;
-    width: 100%; }
+    width: 100%;
+    padding-top: 5px;
+    margin-top: 5px; }
   .plugin-active-task-task-list .task-activity .btn {
     font-size: 0.9em;
     padding: 10px;
