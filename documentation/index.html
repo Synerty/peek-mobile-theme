@@ -15,13 +15,15 @@
     <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
     <link rel="stylesheet" href="../dist/stylesheet.css">
 
-
     <style media="screen">
 
-    html,body{
+    html,
+    body{
       font-size: 18px;
       color: #353535;
       background-image: none;
+      padding: 0px;
+      margin: 0px;
     }
 
     .document-left{
@@ -35,8 +37,10 @@
     .document-right{
       margin-left: 300px;
       background-color: white;
+      padding-top: 30px;
       padding-left: 30px;
       padding-right: 30px;
+      padding-bottom: 30px;
     }
 
     .document-menu li{
@@ -88,6 +92,8 @@
         text-transform: capitalize;
         letter-spacing: -3px;
         border-top: 0px;
+        margin: 0px;
+        padding: 0px;
       }
 
       .document{
@@ -102,6 +108,8 @@
 
       h1.document:after{
         border: 0px;
+        padding: 0px;
+        margin: 0px;
       }
 
       h2.document{
@@ -196,6 +204,14 @@
       }
       .home-icon{
         width: 300px;
+      }
+      .messaging-text{
+        padding-bottom: 0px!important;
+      }
+
+      .messaging-area{
+        position: relative!important;
+        bottom: 0px !important;
       }
     </style>
 
@@ -609,101 +625,90 @@ Code:
     <br/><br/>
     Display:
       <div class="display-sample">
-<plugin-active-task-task-list class="plugin-active-task-task-list">
-    <table class="table table-striped">
-        <tbody>
-          <tr>
-            <td class="td">
-              <div class="task-icon">
-                  <i class="fa fa-comment" aria-hidden="true"></i>
-              </div>
-              <div class="task-activity">
-                <div class="task-tite">Spam IT</div>
-                You have a new message
-                <div class="task-time">13 hours ago 20:03 05-Mar</div>
-                <div class="task-buttons">
-                  <button type="button" name="button">button1</button>
-                  <button type="button" name="button">button1</button>
-                  <button type="button" name="button">button1</button>
-                </div>
-              </div>
-              <div class="task-read-more"></div>
-            </td>
-          </tr>
-        </tbody>
-    </table>
+
+
+<plugin-active-task-task-list>
+  <div class="plugin-active-task-task-list">
+    <div class="td bg-success">
+      <div class="task-icon"><i class="fa fa-comment" aria-hidden="true"></i></div>
+      <div class="task-activity">
+          <div class="task-tite">New Message New Message New Message New Message</div>
+          You have a new message You have a new message You have a new message You have a new message
+          <div class="task-time">13 hours ago 20:03 05-Mar</div>
+          <div class="task-buttons">
+              <button type="button" name="button">button1</button>
+              <button type="button" name="button">button2</button>
+              <button type="button" name="button">button3</button>
+              <button type="button" name="button">button4</button>
+              <button type="button" name="button">button5</button>
+              <button type="button" name="button">button6</button>
+          </div>
+           <div class="task-read-more"></div>
+      </div>
+    </div>
+  </div>
   </plugin-active-task-task-list>
+
+
       </div>
 
     Code:
-    <div class="code">
-<xmp id="tasklistcode"><plugin-active-task-task-list class="plugin-active-task-task-list">
-  <table class="table table-striped">
-    <tbody>
-      <tr>
-        <td class="td">
-          <div class="task-icon">
-              <i class="fa fa-comment" aria-hidden="true"></i>
+<div class="code">
+<xmp id="tasklistcode"><plugin-active-task-task-list>
+  <div class="plugin-active-task-task-list">
+    <div class="td bg-success">
+      <div class="task-icon"><i class="fa fa-comment" aria-hidden="true"></i></div>
+      <div class="task-activity">
+          <div class="task-tite">New Message New Message New Message New Message</div>
+          You have a new message You have a new message You have a new message You have a new message
+          <div class="task-time">13 hours ago 20:03 05-Mar</div>
+          <div class="task-buttons">
+              <button type="button" name="button">button1</button>
+              <button type="button" name="button">button2</button>
+              <button type="button" name="button">button3</button>
+              <button type="button" name="button">button4</button>
+              <button type="button" name="button">button5</button>
+              <button type="button" name="button">button6</button>
           </div>
-          <div class="task-activity">
-            <div class="task-tite">Spam IT</div>
-            You have a new message
-            <div class="task-time">13 hours ago 20:03 05-Mar</div>
-            <div class="task-buttons">
-              <button type="button" name="button">button1</button>
-              <button type="button" name="button">button1</button>
-              <button type="button" name="button">button1</button>
-            </div>
-          </div>
-          <div class="task-read-more"></div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</plugin-active-task-task-list></xmp>
-      <button class="btn" data-clipboard-target="#tasklistcode">copy</button>
+           <div class="task-read-more"></div>
+      </div>
     </div>
-
+  </div>
+</plugin-active-task-task-list></xmp>
+<button class="btn" data-clipboard-target="#tasklistcode">copy</button>
+</div>
 
     <h2 id="activitylist" class="document">Activity List</h2>
     Code specific only to Activity List.
     <br/><Br/>
     Display:
     <div class="display-sample">
-      <plugin-active-task-activity-list class="plugin-active-task-activity-list">
-          <table class="table table-striped">
-              <tbody>
-                <tr>
-                  <td class="td">
-                    <div class="activity-list">
-                      <div class="activity-tite">This happened</div>
-                      <div class="activity-time">13 hours ago 20:03 05-Mar</div>
-                      A message came for uoi
-                    </div>
-                    <a class="activity-read-more"></a>
-                  </td>
-                </tr>
-              </tbody>
-          </table>
+      <plugin-active-task-activity-list>
+        <div  class="plugin-active-task-activity-list">
+          <div class="td bg-success">
+            <div class="activity-list">
+                <div class="activity-tite">This happened</div>
+                <div class="activity-time">13 hours ago 20:03 05-Mar</div>
+                A message came for uoi
+            </div>
+            <a class="activity-read-more"></a>
+          </div>
+        </div>
       </plugin-active-task-activity-list>
     </div>
     Code:
     <div class="code">
-    <xmp id="activitylistcode"><plugin-active-task-activity-list class="plugin-active-task-activity-list">
-  <table class="table table-striped">
-    <tbody>
-      <tr>
-        <td class="td">
-          <div class="activity-list">
-            <div class="activity-tite">This happened</div>
-            <div class="activity-time">13 hours ago 20:03 05-Mar</div>
-            A message came for uoi
-          </div>
-          <a class="activity-read-more"></a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <xmp id="activitylistcode"><plugin-active-task-activity-list>
+  <div  class="plugin-active-task-activity-list">
+    <div class="td bg-success">
+      <div class="activity-list">
+          <div class="activity-tite">This happened</div>
+          <div class="activity-time">13 hours ago 20:03 05-Mar</div>
+          A message came for uoi
+      </div>
+      <a class="activity-read-more"></a>
+    </div>
+  </div>
 </plugin-active-task-activity-list></xmp>
     <button class="btn" data-clipboard-target="#activitylistcode">copy</button>
     </div>
@@ -711,6 +716,118 @@ Code:
 
 </div>
 <!-- Activity Task End -->
+
+<!-- Activity Task Start -->
+<div id="messages">
+  <h1 class="document">Messages</h1>
+  <h2 class="document">Messages list</h2>
+
+  Display:
+  <div class="display-sample">
+    <div class="plugin-chat-chat-list">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well">
+            <i class="fa fa-comment" aria-hidden="true"></i>
+            <div class="chat-topic">Chief Wiggum (C917)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  Code:
+<div class="code">
+<xmp id="chatlistcode"><div class="plugin-chat-chat-list">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="well">
+        <i class="fa fa-comment" aria-hidden="true"></i>
+        <div class="chat-topic">Chief Wiggum (C917)</div>
+      </div>
+    </div>
+  </div>
+</div></xmp>
+<button class="btn" data-clipboard-target="#chatlistcode">copy</button>
+</div>
+
+  <h2 class="document">Messages chat message</h2>
+  <h3 class="document">Messages bubbles (Message & Reply)</h3>
+
+    Display:
+    <div class="display-sample">
+      <plugin-chat-msg-list>
+        <div class="plugin-chat-msg-list">
+          <div class="messaging-text">
+            <div class="chat-window">
+              <div class="chat-message">
+                  <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
+                  <div class="chat-bubble">A message written by a user</div>
+              </div>
+              <div class="chat-reply">
+                  <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
+                  <div class="chat-bubble">A message written by a user</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </plugin-chat-msg-list>
+    </div>
+
+    Code:
+<div class="code">
+<xmp id="chatlistcode"><div class="plugin-chat-msg-list"><div class="messaging-text">
+  <div class="chat-window">
+      <div class="chat-message">
+        <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
+        <div class="chat-bubble">A message written by a user</div>
+      </div>
+      <div class="chat-reply">
+        <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
+        <div class="chat-bubble">A message written by a user</div>
+      </div>
+    </div>
+  </div>
+</div>
+</xmp>
+<button class="btn" data-clipboard-target="#chatlistcode">copy</button>
+</div>
+
+<h3 class="document">Messaging area</h3>
+
+  Display:
+  <div class="display-sample">
+    <div class="plugin-chat-msg-list">
+      <div class="messaging-area">
+          <div class="messaging-textarea">
+              <textarea class="form-control ng-untouched ng-pristine ng-valid"></textarea>
+          </div>
+          <div class="messaging-buttons">
+              <button class="btn send" type="button" disabled="">Send</button>
+              <button class="btn" type="button">SOS</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  Code:
+  <div class="code"><xmp id="messagtextarea"><div class="plugin-chat-msg-list">
+  <div class="messaging-area">
+      <div class="messaging-textarea">
+          <textarea class="form-control ng-untouched ng-pristine ng-valid"></textarea>
+      </div>
+      <div class="messaging-buttons">
+          <button class="btn send" type="button" disabled="">Send</button>
+          <button class="btn" type="button">SOS</button>
+      </div>
+  </div>
+</div>
+</xmp>
+<button class="btn" data-clipboard-target="#messagtextarea">copy</button>
+</div>
+</div>
+<!-- Activity Task End -->
+
 
 </div>
 </div>

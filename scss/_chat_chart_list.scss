@@ -12,7 +12,8 @@
   }
 
   .well{
-    padding: ($general_padding - 5px) 0px;
+    padding-top: ($general_padding - 5px);
+    padding-bottom: ($general_padding - 5px);
     margin-bottom: $general_padding;
     font-size: 1.2em;
     overflow: hidden;
@@ -23,7 +24,5 @@
       float: right;
       font-size: 1.5em;
   }
-
-
 
 }
