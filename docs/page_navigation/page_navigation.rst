@@ -18,14 +18,8 @@ sized around the text they contain.
 Looks Classes
 -------------
 
-Contains the following looks classes:
-
-*  :code:`.btn-group`
-
-*  :code:`.btn`
-
 The :code:`.btn-group` and :code:`.btn` classes will not have a hierarchy and will be
-used throughout peek platform.  These looks classes attribute changes are found in
+used throughout Peek.  These looks classes attribute changes are found in
 :file:`_bootstrap_adjustments.scss`.
 
 
@@ -54,7 +48,7 @@ The following image shows a button group on the left.
 .. image:: /page_navigation/page_navigation-table_data_page.web.jpg
   :align: center
 
-The following image shows a button :code:`btn` on the left.
+The following image shows a button :code:`.btn` on the left.
 
 .. image:: /page_navigation/page_navigation-plugin_chat_list.web.jpg
   :align: center
