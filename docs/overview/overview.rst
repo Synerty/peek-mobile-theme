@@ -15,7 +15,8 @@ for NativeScript.
 
 The scss will be structured in such a way to ignore hierarchy and tag selection.
 
-.. image:: /overview/peek_app.jpg
+.. image:: /overview/peek_app.web.jpg
+  :align: center
 
 
 .. _overview_bootstrap:
