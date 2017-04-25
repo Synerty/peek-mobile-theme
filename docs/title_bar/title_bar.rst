@@ -113,7 +113,7 @@ The Title Bar NativeScript layout classes are found in the
 .. note:: The NativeScript layout settings are not required at this time.
 
 
-Display Sample TODO
+Display Sample
 --------------
 
 HTML
