@@ -19,8 +19,14 @@ The Title Bar is unique, therefore the classes used will be specific for the
 Title Bar.
 
 
-Class :code:`.peek-title-bar`
------------------------------
+Looks Classes
+-------------
+
+The Title Bar looks classes are found in the :file:`_title_bar.scss`.
+
+
+Title Bar :code:`.peek-title-bar`
+`````````````````````````````````
 
 The :code:`.peek-title-bar` class will contain the classes specific to the Title Bar.
 
@@ -35,10 +41,6 @@ The :code:`.peek-title-bar` class will contain the classes specific to the Title
           }
         }
 
-Looks Classes
--------------
-
-The Title Bar looks classes are found in the :file:`_title_bar.scss`.
 
 Buttons :code:`.btn`
 ````````````````````
@@ -46,9 +48,6 @@ Buttons :code:`.btn`
 The :code:`.btn` class dictates the style and size of all the buttons in the Title Bar.
 These buttons are unique to the Title Bar.
 
-
-Examples
-~~~~~~~~
 
 HTML: ::
 
@@ -74,9 +73,6 @@ Title :code:`.title`
 
 The :code:`.title` class styles the dynamic title.
 
-
-Examples
-~~~~~~~~
 
 HTML: ::
 
