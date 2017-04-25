@@ -4,10 +4,10 @@
 Generic TODO
 =======
 
+
 Tables
 ------
 
-(Redefined to ignore hierarchy and tag selection)
 
 Class :code:`.page-category-name`
 `````````````````````````````````
@@ -22,14 +22,31 @@ Class :code:`.page-category-name`
 
 *  :code:`.table-row-cell`
 
+
+Display Sample
+``````````````
+
+.. image::
+  :align: center
+
+
 Lists
 -----
 
-*  :code:`.page-category-title`
+Class :code:`.page-category-title`
+``````````````````````````````````
 
 *  :code:`.list-group`
 
 *  :code:`.list-group-item`
+
+
+Display Sample
+``````````````
+
+.. image::
+  :align: center
+
 
 Other useful styles
 -------------------
@@ -40,4 +57,11 @@ Other useful styles
 
 *  :code:`.h1 to .h6`
 
-*  :code:`.button-group`
+
+Display Sample
+``````````````
+
+.. image::
+  :align: center
+
+

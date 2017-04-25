@@ -7,6 +7,8 @@ Peek Mobile Theme Documentation
     :caption: Contents:
 
     overview/overview
-    navigation_bar/navigation_bar
+    app_navigation/app_navigation
     footer/footer
+    page_navigation/page_navigation
     generic/generic
+    screen_category_specific/screen_category_specific
