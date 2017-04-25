@@ -1,12 +1,12 @@
 ===============================
-PEEK Mobile Theme Documentation
+Peek Mobile Theme Documentation
 ===============================
 
 .. toctree::
     :maxdepth: 2
     :caption: Contents:
 
-    bootstrap/bootstrap
+    overview/overview
     navigation_bar/navigation_bar
     footer/footer
     generic/generic
