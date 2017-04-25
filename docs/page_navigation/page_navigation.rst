@@ -4,11 +4,13 @@
 Page Navigation
 ===============
 
-Page Navigation is dynamic and exists if required by the plugin.
+Page Navigation is dynamic and exists if required by the plugin.  The contents of the
+Page Navigation is constructed from the plugin.
 
 The Page Navigation is located below the :ref:`title_bar`, above the page.
 
-The buttons remain a fixed size throughout a responsive lifecycle.
+The buttons remain a fixed size throughout a responsive lifecycle.  The buttons are
+sized around the text they contain.
 
 .. note:: The buttons require a different theme to the :ref:`title_bar`.
 
