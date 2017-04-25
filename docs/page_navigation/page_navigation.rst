@@ -6,7 +6,7 @@ Page Navigation
 
 Page Navigation is dynamic and exists if required by the plugin.
 
-.. note:: The buttons require a different theme to the :ref:`app_navigation`.
+.. note:: The buttons require a different theme to the :ref:`title_bar`.
 
 
 Class :code:`.peek-page-nav`

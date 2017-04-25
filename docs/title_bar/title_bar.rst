@@ -1,32 +1,32 @@
-.. _app_navigation:
+.. _title_bar:
 
-==============
-App Navigation
-==============
+=========
+Title Bar
+=========
 
-The App Navigation is fixed to the top of the page.
+The Title Bar is fixed to the top of the page.
 
 The buttons remain a fixed size throughout a responsive lifecycle.
 
-The buttons on the right of the App Navigation will range from none to many.
+The buttons on the right of the Title Bar will range from none to many.
 
 The centralized title remains a single line and truncates a :code:`...` if the line
 exceeds the minimum screen width.
 
 The title has a fixed width of 40px.
 
-The App Navigation is unique, therefore the classes used will be specific for the
-App Navigation.
+The Title Bar is unique, therefore the classes used will be specific for the
+Title Bar.
 
 
-Class :code:`.peek-app-nav`
----------------------------
+Class :code:`.peek-title-bar`
+-----------------------------
 
-The :code:`.peek-app-nav` class will contain the classes specific to the App Navigation.
+The :code:`.peek-title-bar` class will contain the classes specific to the Title Bar.
 
 ::
 
-        .peek-app-nav{
+        .peek-title-bar{
 
           .btn{
           }
@@ -38,13 +38,13 @@ The :code:`.peek-app-nav` class will contain the classes specific to the App Nav
 Looks Classes
 -------------
 
-The App Navigation looks classes are found in the :file:`_app_navigation.scss`.
+The Title Bar looks classes are found in the :file:`_title_bar.scss`.
 
 Buttons :code:`.btn`
 ````````````````````
 
-The :code:`.btn` class dictates the style and size of all the buttons in the Navigation
-Bar.  These buttons are unique to the App Navigation.
+The :code:`.btn` class dictates the style and size of all the buttons in the Title Bar.
+These buttons are unique to the Title Bar.
 
 
 Examples
@@ -101,14 +101,14 @@ Layout
 HTML Layout
 ```````````
 
-The App Navigation HTML layout classes are found in the :file:`_app_navigation.web.scss`.
+The Title Bar HTML layout classes are found in the :file:`_title_bar.web.scss`.
 
 
 NativeScript Layout
 ```````````````````
 
-The App Navigation NativeScript layout classes are found in the
-:file:`_app_navigation.ns.scss`.
+The Title Bar NativeScript layout classes are found in the
+:file:`_title_bar.ns.scss`.
 
 .. note:: These layout settings are not required at this time.
 
@@ -119,12 +119,12 @@ Display Sample TODO
 HTML
 ````
 
-.. image:: /app_navigation/app-nav.web.jpg
+.. image:: /title_bar/title_bar.web.jpg
   :align: center
 
 
 NativeScript
 ````````````
 
-.. image:: /app_navigation/app-nav.ns.jpg
+.. image:: /title_bar/title_bar.ns.jpg
   :align: center
