@@ -1,7 +1,7 @@
 .. _footer:
 
 ======
-Footer TODO
+Footer
 ======
 
 The footer is fixed at the bottom of the page.
@@ -21,8 +21,10 @@ The :code:`.peek-footer` class will contain the classes specific to the Footer.
 Looks Classes
 -------------
 
-The looks classes are found in the :file:`_footer.css`.
+The Footer looks classes are found in the :file:`_footer.css`.
 
 
 Text :code:`.title`
 ```````````````````
+
+The :code:`.title` class styles the dynamic title.
