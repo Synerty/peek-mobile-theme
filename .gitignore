@@ -101,3 +101,5 @@ peek_worker
 
 config.codekit3
 
+# Sphinx
+doc_autobuild
