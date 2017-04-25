@@ -12,16 +12,16 @@ The text remains a single line and truncates a "..." if the line exceeds the min
 screen width.
 
 
-Class :code:`.peek-footer`
---------------------------
-
-The :code:`.peek-footer` class will contain the classes specific to the Footer.
-
-
 Looks Classes
 -------------
 
 The Footer looks classes are found in the :file:`_footer.scss`.
+
+
+Footer :code:`.peek-footer`
+```````````````````````````
+
+The :code:`.peek-footer` class will contain the classes specific to the Footer.
 
 
 Text :code:`.title`
