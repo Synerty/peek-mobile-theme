@@ -25,7 +25,19 @@ Contains the following looks classes:
 *  :code:`.btn`
 
 The :code:`.btn-group` and :code:`.btn` classes will not have a hierarchy and will be
-used throughout peek platform.
+used throughout peek platform.  These looks classes attribute changes are found in
+:file:`_bootstrap_adjustments.scss`.
+
+
+Layout
+------
+
+
+HTML Layout
+```````````
+
+The Page Navigation HTML layout classes are found in the
+:file:`_page_navigation.web.scss`.
 
 
 Display Sample
