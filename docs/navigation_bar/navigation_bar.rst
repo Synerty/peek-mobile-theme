@@ -1,12 +1,14 @@
 .. _navigation_bar:
 
 ==============
-Navigation Bar TODO
+Navigation Bar
 ==============
 
 The Navigation Bar is fixed to the top of the page.
 
 The buttons remain a fixed size throughout a responsive lifecycle.
+
+The buttons on the right of the Navigation Bar will range from none to many.
 
 The centralized title remains a single line and truncates a :code:`...` if the line
 exceeds the minimum screen width.
@@ -22,13 +24,21 @@ Class :code:`.peek-nav-bar`
 
 The :code:`.peek-nav-bar` class will contain the classes specific to the Navigation Bar.
 
-navbar navbar-default navbar-fixed-top
+::
 
+        .peek-nav-bar{
+
+          .btn{
+          }
+
+          .title{
+          }
+        }
 
 Looks Classes
 -------------
 
-The looks classes are found in the :file:`_navigation.css`.
+The Navigation Bar looks classes are found in the :file:`_navigation.scss`.
 
 Buttons :code:`.btn`
 ````````````````````
@@ -36,88 +46,85 @@ Buttons :code:`.btn`
 The :code:`.btn` class dictates the style and size of all the buttons in the Navigation
 Bar.  These buttons are unique to the Navigation Bar.
 
+
+Examples
+~~~~~~~~
+
+HTML: ::
+
+        <button class="btn"
+                [routerLink]="['/']">
+            Home
+
+        </button>
+
+
+NativeScript: ::
+
+        <Button class="btn"
+                col="0" row="0"
+                text="Home"
+                [nsRouterLink]="['/']">
+
+        </Button>
+
+
 Title :code:`.title`
 ````````````````````
 
-The :code:`.title`
+The :code:`.title` class styles the dynamic title.
 
 
-Web Layout TODO
-----------
+Examples
+~~~~~~~~
 
-The web layout classes are found in the :file:`_navigation.web.css`.
+HTML: ::
+
+        <div class="title">
+            {{title}}
+        </div>
 
 
+NativeScript: ::
 
-NativeScript Layout TODO
--------------------
+        <Label class="title"
+               col="1" row="0"
+               [text]="title">
 
-The NativeScript layout classes are found in the :file:`_navigation.ns.css`.
+        </Label>
+
+
+Layout
+------
+
+
+HTML Layout
+```````````
+
+The Navigation Bar HTML layout classes are found in the :file:`_navigation.web.scss`.
+
+
+NativeScript Layout
+```````````````````
+
+The Navigation Bar NativeScript layout classes are found in the
+:file:`_navigation.ns.scss`.
+
+.. note:: These layout settings are not required at this time.
 
 
 Display Sample TODO
 --------------
 
-Web:
+HTML
+````
 
 .. image:: /navigation_bar/nav-bar.web.jpg
   :align: center
 
-NativeScript:
+
+NativeScript
+````````````
 
 .. image:: /navigation_bar/nav-bar.ns.jpg
   :align: center
-
-
-Code Sample TODO
------------
-
-Web:
-
-::
-
-        <div class="peek-nav-bar" [class.bg-danger]="!vortexIsOnline">
-          <button class="navbar-left btn"
-                  [routerLink]="['/']">
-            Home
-
-          </button>
-          <div class="title">
-            {{title}}
-
-          </div>
-          <button class="navbar-right btn"
-                  *ngFor="let link of rightLinks"
-                  [routerLink]="[link.resourcePath]">
-            {{linkTitle(link)}}
-
-          </button>
-        </div>
-
-
-NativeScript:
-
-::
-
-        <GridLayout rows="auto" columns="auto, *, auto"
-                    [class.bg-danger]="!vortexIsOnline">
-
-          <Button class="btn" col="0" row="0"
-                  text="Home" [nsRouterLink]="['/']">
-
-          </Button>
-
-          <Label class="title"
-                 col="1" row="0"
-                 [text]="title">
-
-          </Label>
-
-          <Button class="btn"
-                  *ngFor="let link of rightLinks"
-                  col="2" row="0"
-                  [text]="linkTitle(link)"
-                  [nsRouterLink]="[link.resourcePath]">
-
-          </Button>
-        </GridLayout>
