@@ -1,7 +1,7 @@
 .. _generic:
 
 =======
-Generic TODO
+Generic
 =======
 
 
