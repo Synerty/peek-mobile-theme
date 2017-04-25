@@ -110,7 +110,7 @@ NativeScript Layout
 The Title Bar NativeScript layout classes are found in the
 :file:`_title_bar.ns.scss`.
 
-.. note:: These layout settings are not required at this time.
+.. note:: The NativeScript layout settings are not required at this time.
 
 
 Display Sample TODO
