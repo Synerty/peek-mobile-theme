@@ -5,16 +5,12 @@ Screen Category Specific
 ========================
 
 
-.. _screen_category_specific_details:
+.. _screen_category_specific_details_page:
 
-Details
--------
+Details Page
+------------
 
-
-Class :code:`.peek-detail-screen`
-`````````````````````````````````
-
-The :code:`.peek-detail-screen` class will contain the classes specific for displaying
+The :code:`.peek-detail-page` class will contain the classes specific for displaying
 the Detail Page.
 
 Contains the following looks classes:
@@ -26,13 +22,6 @@ Contains the following looks classes:
 *  :code:`.data-value`
 
 
-Display Sample
-``````````````
-
-.. image::
-  :align: center
-
-
 .. _screen_category_specific_inbox:
 
 Inbox
@@ -41,8 +30,8 @@ Inbox
 .. note:: Previously named Active Task
 
 
-Class :code:`.peek-inbox-screen`
-````````````````````````````````
+The :code:`.peek-inbox-page` class will contain the classes specific for displaying
+the Inbox Page.
 
 Contains the following looks classes:
 
@@ -61,10 +50,3 @@ Contains the following looks classes:
 *  :code:`.inbox-button-group`
 
 *  :code:`.inbox-button`
-
-
-Display Sample
-``````````````
-
-.. image::
-  :align: center

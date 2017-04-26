@@ -1,16 +1,14 @@
-.. _generic:
+.. _generic_looks:
 
-=======
-Generic
-=======
+=============
+Generic Looks
+=============
 
 
 Tables
 ------
 
-
-Class :code:`.page-category-name`
-`````````````````````````````````
+*  :code:`.page-category-name`
 
 *  :code:`.table`
 
@@ -23,29 +21,14 @@ Class :code:`.page-category-name`
 *  :code:`.table-row-cell`
 
 
-Display Sample
-``````````````
-
-.. image::
-  :align: center
-
-
 Lists
 -----
 
-Class :code:`.page-category-title`
-``````````````````````````````````
+*  :code:`.page-category-title`
 
 *  :code:`.list-group`
 
 *  :code:`.list-group-item`
-
-
-Display Sample
-``````````````
-
-.. image::
-  :align: center
 
 
 Other useful styles
@@ -56,12 +39,4 @@ Other useful styles
 *  :code:`.text-align` (center)
 
 *  :code:`.h1 to .h6`
-
-
-Display Sample
-``````````````
-
-.. image::
-  :align: center
-
 
