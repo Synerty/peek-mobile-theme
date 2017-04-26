@@ -1,8 +1,8 @@
 .. _screen_navigation:
 
-===============
+=================
 Screen Navigation
-===============
+=================
 
 Screen Navigation is dynamic and exists if required by the plugin.  The contents of the
 Screen Navigation is constructed from the plugin.
@@ -23,19 +23,15 @@ used throughout Peek.  These looks classes attribute changes are found in
 :file:`_bootstrap_adjustments.scss`.
 
 
-Layout
-------
-
-
 HTML Layout
-```````````
+-----------
 
 The Screen Navigation HTML layout classes are found in the
 :file:`_screen_navigation.web.scss`.
 
 
 Display Sample
-``````````````
+--------------
 
 The following image shows a button group :code:`.btn-group` on the left and a button
 group on the right.

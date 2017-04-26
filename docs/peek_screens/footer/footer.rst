@@ -30,12 +30,8 @@ Text :code:`.title`
 The :code:`.title` class styles the dynamic title.
 
 
-Layout
-------
-
-
 HTML Layout
-```````````
+-----------
 
 The Footer HTML layout classes are found in the :file:`_footer.web.scss`.
 

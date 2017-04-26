@@ -13,8 +13,9 @@ Looks Classes
 
 The Home Screen looks classes are found in the :file:`_home_screen.scss`.
 
+
 Home Screen :code:`.peek-home-screen`
-`````````````````````````````````
+`````````````````````````````````````
 
 The :code:`.peek-home-screen` class will contain the classes specific to the Home Screen.
 
@@ -37,17 +38,13 @@ Buttons responsively wrap.
 .. image:: ./home_screen-button.web.jpg
 
 
-Layout
-------
-
-
 HTML Layout
-```````````
+-----------
 
 The Home Screen HTML layout classes are found in the :file:`_home_screen.web.scss`.
 
 
 Home Screen Example
------------------
+-------------------
 
 .. image:: ./home_screen.web.jpg
