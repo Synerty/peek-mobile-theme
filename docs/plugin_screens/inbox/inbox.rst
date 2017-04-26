@@ -36,3 +36,17 @@ HTML Layout
 -----------
 
 The Inbox HTML layout classes are found in the :file:`_inbox.web.scss`.
+
+
+Inbox Example
+-------------
+
+Tasks
+`````
+
+.. image:: ./inbox-tasks.web.jpg
+
+Activity
+````````
+
+.. image:: ./inbox-activity.web.jpg

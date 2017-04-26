@@ -28,3 +28,9 @@ HTML Layout
 -----------
 
 The Tables Screen HTML layout classes are found in the :file:`_tables_screen.web.scss`.
+
+
+Tables Screen Example
+---------------------
+
+.. image:: ./tables_screen.web.jpg

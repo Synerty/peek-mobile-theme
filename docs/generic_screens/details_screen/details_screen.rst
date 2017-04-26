@@ -4,6 +4,7 @@
 Details Screen
 ==============
 
+Any plugin screen will be able to use the :code:`.peek-details-screen` attributes.
 
 Looks Classes
 -------------
@@ -24,3 +25,9 @@ HTML Layout
 -----------
 
 The Details Screen HTML layout classes are found in the :file:`_details_screen.web.scss`.
+
+
+Details Screen Example
+----------------------
+
+.. image:: ./details_screen.web.jpg
