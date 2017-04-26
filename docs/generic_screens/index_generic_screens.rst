@@ -6,4 +6,6 @@ Generic Screens
     :maxdepth: 1
     :caption: Contents:
 
-    generic/generic
+    details_screen/details_screen
+    tables_screen/tables_screen
+    other_useful_styles/other_useful_styles
