@@ -63,8 +63,8 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/peek*
 docs/modules.rst
+doc_autobuild
 
 
 # PyBuilder
@@ -100,6 +100,3 @@ peek_server
 peek_worker
 
 config.codekit3
-
-# Sphinx
-doc_autobuild
