@@ -1,8 +1,8 @@
-.. _generic_looks:
+.. _generic_screens:
 
-=============
-Generic Looks
-=============
+===============
+Generic Screens
+===============
 
 
 Tables
