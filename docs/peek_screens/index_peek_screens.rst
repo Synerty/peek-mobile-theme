@@ -8,5 +8,5 @@ Peek Screens
 
     title_bar/title_bar
     home_screen/home_screen
-    screen_navigation/screen_navigation
+    navigation_bar/navigation_bar
     footer/footer

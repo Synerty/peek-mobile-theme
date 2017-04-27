@@ -1,13 +1,13 @@
-.. _screen_navigation:
+.. _navigation_bar:
 
-=================
-Screen Navigation
-=================
+==============
+Navigation Bar
+==============
 
-Screen Navigation is dynamic and exists if required by the plugin.  The contents of the
-Screen Navigation is constructed from the plugin.
+Navigation Bar is dynamic and exists if required by the plugin.  The contents of the
+Navigation Bar is constructed from the plugin.
 
-The Screen Navigation is located below the :ref:`title_bar`, above the screen.
+The Navigation Bar is located below the :ref:`title_bar`, above the screen.
 
 The buttons remain a fixed size throughout a responsive lifecycle.  The buttons are
 sized around the text they contain.
@@ -27,8 +27,8 @@ and will be used throughout Peek.  These looks classes attribute changes are fou
 HTML Layout
 -----------
 
-The Screen Navigation HTML layout classes are found in the
-:file:`_screen_navigation.web.scss`.
+The Navigation Bar HTML layout classes are found in the
+:file:`_navigation_bar.web.scss`.
 
 
 Display Samples
@@ -54,7 +54,7 @@ HTML: ::
         </div>
 
 
-.. image:: ./screen_navigation-detail_data_screen.web.jpg
+.. image:: ./navigation_bar-detail_data_screen.web.jpg
 
 The following example shows a button group on the left.
 
@@ -66,7 +66,7 @@ HTML: ::
         </div>
 
 
-.. image:: ./screen_navigation-table_data_screen.web.jpg
+.. image:: ./navigation_bar-table_data_screen.web.jpg
 
 The following example shows a button :code:`.btn` on the left.
 
@@ -75,4 +75,4 @@ HTML: ::
         <button class="btn">New Chat</button>
 
 
-.. image:: ./screen_navigation-plugin_chat_list.web.jpg
+.. image:: ./navigation_bar-plugin_chat_list.web.jpg
