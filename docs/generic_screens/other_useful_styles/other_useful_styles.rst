@@ -8,10 +8,32 @@ These classes will not have a hierarchy and will be used throughout Peek.  These
 classes attribute changes are found in
 :file:`_bootstrap_adjustments.scss`.
 
-Contains the following looks classes:
 
-*  :code:`.bg-success` and :code:`.bg-danger` Group
+Attention :code:`.bg-success` and :code:`.bg-danger` Group
+----------------------------------------------------------
 
-*  :code:`.text-align` (center)
 
-*  :code:`.h1 to .h6`
+Text Alignment :code:`.text-align`
+----------------------------------
+
+Left, Right or Center
+
+::
+
+        <div *ngIf="appDetails.length"
+             class="text-center h1">
+          No Plugins Installed
+
+        </div>
+
+
+Titles :code:`.h1 to .h6`
+-------------------------
+
+::
+
+        <div *ngIf="appDetails.length"
+             class="text-center h1">
+          No Plugins Installed
+
+        </div>
