@@ -37,3 +37,4 @@ Titles :code:`.h1 to .h6`
           No Plugins Installed
 
         </div>
+

@@ -31,8 +31,8 @@ The Screen Navigation HTML layout classes are found in the
 :file:`_screen_navigation.web.scss`.
 
 
-Display Sample
---------------
+Display Samples
+---------------
 
 
 Buttons
@@ -76,23 +76,3 @@ HTML: ::
 
 
 .. image:: ./screen_navigation-plugin_chat_list.web.jpg
-
-
-Tabs
-````
-
-The following example shows tabs :code:`.nav-tabs`.
-
-HTML: ::
-
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="active" role="presentation">
-                <a aria-controls="home" data-toggle="tab" href="http://localhost:4200/#activeTaskTasks" role="tab">Tasks</a>
-            </li>
-            <li role="presentation">
-                <a aria-controls="profile" data-toggle="tab" href="http://localhost:4200/#activeTaskActivity" role="tab">Activity</a>
-            </li>
-        </ul>
-
-
-.. image:: ./screen_navigation-tabs.web.jpg
