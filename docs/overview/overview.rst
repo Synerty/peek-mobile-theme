@@ -6,6 +6,14 @@ Overview
 
 The Peek Mobile Theme will style the Peek app built upon :ref:`overview_bootstrap`.
 
+
+Design Objective
+----------------
+
+The objective of this project is to stylise the existing layout to make it very
+impressive without changing the HTML / javascript of a page to a large extent. The job
+mainly involves CSS/SCSS upgrade to the base Bootstrap theme.
+
 The bootstrap classes that are related to the layouts will only work on HTML, not
 NativeScript.  Therefore the theme will avoid selecting by bootstrap classes that are
 related to layouts.
