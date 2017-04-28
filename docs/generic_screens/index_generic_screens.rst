@@ -2,9 +2,11 @@
 Generic Screens
 ===============
 
+This section describes the styling of the reusable displays.
+
 .. toctree::
     :maxdepth: 1
-    :caption: Contents:
+    :caption: Generic Screens Contents:
 
     details_screen/details_screen
     tables_screen/tables_screen

@@ -4,64 +4,63 @@
 Other Useful Styles
 ===================
 
-These classes will not have a hierarchy and will be used throughout Peek.  These looks
-classes attribute changes are found in
+These classes are available throughout Peek and attribute changes are found in
 :file:`_bootstrap_adjustments.scss`.
 
 
 Contextual Backgrounds
 ----------------------
 
-Set the background of an element.
+Set the background of an element to any contextual class.
 
-`Contextual Backgrounds <http://getbootstrap.com/css/#helper-classes-backgrounds>`_
+`Bootstrap Contextual Backgrounds <http://getbootstrap.com/css/#helper-classes-backgrounds>`_
 
-Code extract of where contextual backgrounds can be used: ::
+`NativeScript Contextual Backgrounds <https://docs.nativescript.org/ui/theme#contextual-colors>`_
 
-        <td class="td bg-success">
-            <div class="inbox-icon">
-                <i class="fa fa-comment" aria-hidden="true"></i>
-            </div>
-            <div class="inbox-row">
+.. note:: Only :code:`bg-primary` and :code:`bg-danger` exist in the NativeScript
+    Styling Infrastructure.  The other classes need their attributes created from
+    scratch to function in NativeScript.
 
-                <div class="inbox-title">Message Title or Subject</div>
+::
 
-                <div class="inbox-description">This is the message description</div>
+        .bg-primary{
+        <!-- Applies the primary background theme -->
 
-                <div class="inbox-date-time">13 hours ago 20:03 05-Mar</div>
+            color: #fff;
+            background-color: #337ab7;
 
-            </div>
-            <div class="inbox-link-arrow"></div>
-        </td>
+            ...
 
+        }
+        .bg-success{
+        <!-- Applies the success background theme -->
 
-Alignment Classes
------------------
+            background-color: #dff0d8;
 
-`Alignment Classes <http://getbootstrap.com/css/#type-alignment>`_
+            ...
 
-Code extract of where alignment classes can be used: ::
+        }
+        .bg-info{
+        <!-- Applies the info background theme -->
 
-        <div *ngIf="appDetails.length"
-             class="text-center h1">
-          No Plugins Installed
+            background-color: #d9edf7;
 
-        </div>
+            ...
 
+        }
+        .bg-warning{
+        <!-- Applies the warning background theme -->
 
-Typography
-----------
+            background-color: #fcf8e3;
 
-:code:`.h1` through :code:`.h6` classes are available for when you want to match
-the font styling of a heading but still want your text to be displayed inline.
+            ...
 
-`Typography <http://getbootstrap.com/css/#type>`_
+        }
+        .bg-danger{
+        <!-- Applies the danger background theme -->
 
-Code extract of where typography can be used: ::
+            background-color: #f2dede;
 
-        <div *ngIf="appDetails.length"
-             class="text-center h1">
-          No Plugins Installed
+            ...
 
-        </div>
-
+        }
