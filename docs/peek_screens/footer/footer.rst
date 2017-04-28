@@ -21,7 +21,25 @@ The Footer looks classes are found in the :file:`_footer.scss`.
 Footer :code:`.peek-footer`
 ```````````````````````````
 
-The :code:`.peek-footer` class will contain the classes specific to the Footer.
+.. image:: ./footer.web.jpg
+  :align: center
+
+The :code:`.peek-footer` class contains the classes specific to the Footer.
+
+::
+
+        .peek-footer{
+        <!-- Contains the Footer looks classes -->
+
+          .title{
+          <!-- Contains the title looks attributes unique to the Footer -->
+
+          ...
+
+          }
+        }
+
+
 
 
 Text :code:`.title`
@@ -30,13 +48,14 @@ Text :code:`.title`
 The :code:`.title` class styles the dynamic title.
 
 
-HTML Layout
------------
+Layout
+------
+
+HTML:
 
 The Footer HTML layout classes are found in the :file:`_footer.web.scss`.
 
+NativeScript:
 
-Footer Example
---------------
+The Footer NativeScript layout classes are found in the :file:`_footer.ns.scss`.
 
-.. image:: ./footer.web.jpg

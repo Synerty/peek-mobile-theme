@@ -25,11 +25,27 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
 ::
 
         .peek-home-screen{
+        <!-- Contains the Home Screen looks classes -->
 
           .background-image{
+          <!-- Contains the Background looks attributes unique to the Home Screen -->
+
+          ...
+
           }
 
           .home-icon{
+          <!-- Contains the Button looks attributes unique to the Home Screen -->
+
+          ...
+
+          }
+
+          .home-title{
+          <!-- Contains the Button Title looks attributes unique to the Home Screen -->
+
+          ...
+
           }
         }
 
@@ -43,6 +59,7 @@ The :code:`background-image` class needs to be applied in the screen and cannot 
 :code:`body` tag.
 
 .. image:: ./home_background.png
+   :align: center
 
 
 Buttons :code:`.home-icon`
@@ -53,20 +70,24 @@ Buttons on the Home Screen strictly use images.
 Buttons responsively wrap.
 
 
-Button Text :code:`.home-title`
-```````````````````````````````
+Button Title :code:`.home-title`
+````````````````````````````````
 
-The :code:`.home-title` class will contain:
-
-*  :code:`.text-center`
-
-*  :code:`.h3`
+The button title looks attributes.
 
 
-HTML Layout
------------
+Layout
+------
 
-The Home Screen HTML layout classes are found in the :file:`_home_screen.web.scss`.
+HTML:
+
+The Home Screen HTML layout classes are found in the
+:file:`_home_screen.web.scss`.
+
+NativeScript:
+
+The Home Screen NativeScript layout classes are found in the
+:file:`_home_screen.ns.scss`.
 
 
 Display Samples
@@ -74,14 +95,16 @@ Display Samples
 
 HTML: ::
 
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 home-icon">
-          <a ng-reflect-router-link="/peek_plugin_tutorial" href="/peek_plugin_tutorial">
-            <img class="image" src="/assets/peek_plugin_tutorial/icon.png">
-            <div class="home-title">
-              Tutorial Plugin
+        <div class="peek-home-screen">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 home-icon">
+            <a>
+              <img class="image" src="...">
+              <div class="home-title">
+                ...
 
-            </div>
-          </a>
+              </div>
+            </a>
+          </div>
         </div>
 
 
@@ -89,18 +112,15 @@ HTML: ::
 
 NativeScript: ::
 
-        <GridLayout class="home-icon"
-                    *ngFor="let app of appDetails"
-                    rows="*,auto" columns="*"
-                    [nsRouterLink]="[app.resourcePath]">
-          <Image row="0" col="0"
-                 src="~{{app.pluginIconPath}}">
+        <GridLayout Class="peek-home-screen">
+          <GridLayout class="home-icon">
+            <Image src="...">
 
-          </Image>
-          <Label class="home-title"
-                 row="1" col="0"
-                 [text]="app.title">
+            </Image>
+            <Label class="home-title"
+                   [text]="...">
 
-          </Label>
+            </Label>
+          </GridLayout>
         </GridLayout>
 

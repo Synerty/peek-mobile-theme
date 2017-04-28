@@ -9,6 +9,9 @@ Navigation Bar is constructed from the plugin.
 
 The Navigation Bar is located below the :ref:`title_bar`, above the screen.
 
+.. image:: ./navigation_bar.web.jpg
+   :align: center
+
 The buttons remain a fixed size throughout a responsive lifecycle.  The buttons are
 sized around the text they contain.
 
@@ -18,10 +21,33 @@ sized around the text they contain.
 Looks Classes
 -------------
 
-The :code:`.btn-group`, :code:`.btn` and :code:`.nav-tabs` classes will not have a
-hierarchy
-and will be used throughout Peek.  These looks classes attribute changes are found in
+The :code:`.btn-group`, :code:`.btn` and :code:`.nav-tabs` classes are used throughout
+Peek.  These looks classes attribute changes are found in
 :file:`_bootstrap_adjustments.scss`.
+
+
+::
+
+        .btn-group{
+        <!-- Contains the Button Group looks attributes -->
+
+        ...
+
+        }
+
+        .btn{
+        <!-- Contains the Button looks attributes -->
+
+        ...
+
+        }
+
+        .nav-tabs{
+        <!-- Contains the Tabs looks attributes -->
+
+        ...
+
+        }
 
 
 HTML Layout
@@ -43,14 +69,14 @@ group on the right.
 
 HTML: ::
 
-        <div class="btn-group pull-left" role="group" aria-label="">
-            <button class="btn" role="group" aria-label="">My Jobs</button>
-            <button class="btn" role="group" aria-label="">Job</button>
-            <button class="btn" role="group" aria-label="">Operations</button>
+        <div class="btn-group pull-left" role="group">
+            <button class="btn" role="group">My Jobs</button>
+            <button class="btn" role="group">Job</button>
+            <button class="btn" role="group">Operations</button>
         </div>
-        <div class="btn-group pull-right" role="group" aria-label="">
-            <button class="btn" role="group" aria-label="">&lt;</button>
-            <button class="btn" role="group" aria-label="">&gt;</button>
+        <div class="btn-group pull-right" role="group">
+            <button class="btn" role="group">&lt;</button>
+            <button class="btn" role="group">&gt;</button>
         </div>
 
 
@@ -60,7 +86,7 @@ The following example shows a button group on the left.
 
 HTML: ::
 
-        <div class="btn-group" role="group" aria-label="">
+        <div class="btn-group" role="group">
             <button class="btn">My Jobs</button>
             <button class="btn">&lt; Job J-5102-C</button>
         </div>
