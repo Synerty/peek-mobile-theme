@@ -4,15 +4,27 @@
 Overview
 ========
 
-The Peek Mobile Theme will style the Peek app built upon :ref:`overview_bootstrap`.
+.. image:: ./peek_ios_display_field-switching.png
+  :align: center
+
+The main aim of the Peek application is to display and transmit data. Plugins are
+installed on the app and communicate with other plugins to retrieve, transmit, store or
+display data.
 
 
-Design Objective
-----------------
+What Is Peek TODO
+------------
 
-The objective of this project is to stylise the existing layout to make it very
-impressive without changing the HTML / javascript of a page to a large extent. The job
-mainly involves CSS/SCSS upgrade to the base Bootstrap theme.
+TODO
+
+
+.. _overview_bootstrap:
+
+Bootstrap
+---------
+
+The scss for the peek app is based upon bootstrap.  For more detail to
+bootstrap documentation please visit `BootStrap <http://getbootstrap.com>`_.
 
 The bootstrap classes that are related to the layouts will only work on HTML, not
 NativeScript.  Therefore the theme will avoid selecting by bootstrap classes that are
@@ -23,17 +35,6 @@ for NativeScript.
 
 The scss will be structured in such a way to ignore hierarchy and tag selection.
 
-.. image:: ./peek_app.web.jpg
-  :align: center
-
-
-.. _overview_bootstrap:
-
-Bootstrap
----------
-
-The css for the peek app is based upon bootstrap. For more detailed reference to
-bootstrap documentation please visit `BootStrap <http://getbootstrap.com>`_.
 
 .. note:: NativeScript does not use :ref:`overview_bootstrap` for layout.
 
