@@ -7,15 +7,36 @@ Overview
 .. image:: ./peek_ios_display_field-switching.png
   :align: center
 
-The main aim of the Peek application is to display and transmit data. Plugins are
-installed on the app and communicate with other plugins to retrieve, transmit, store or
-display data.
+The main aim of the Peek application is to display and transmit data.
 
 
-What Is Peek TODO
+What is Peek
 ------------
 
-TODO
+Peek is a semi distributed pluggable python platform.
+
+Plugins are installed across the peek services and communicate with other plugins to
+retrieve, transmit, store or display data.
+
+Peek provides a platform for Python similar to the functionality JBOSS provides for JAVA.
+(Or at least that is in the intention, it's early days)
+
+
+The Big Bang
+````````````
+
+Peek was created and is maintained by `Synerty <https://www.synerty.com>`_ to be a
+distributed, pluggable python platform that provides many of the core services needed
+for enterprise applications.
+
+We wanted to integrate smaller pieces of code, that can leverage different existing
+boilerplate code which the platform provides. For example, services for parallel
+processing or services for business integrations.
+
+The Peek Platform allows developers to better write and integrate smaller units of code.
+
+`Synerty <https://www.synerty.com>`_ uses the Peek platform to provide scalable
+enterprise grade applications to the power utilities sector.
 
 
 .. _overview_bootstrap:
