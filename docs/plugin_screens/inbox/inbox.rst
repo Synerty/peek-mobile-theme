@@ -15,128 +15,187 @@ The Inbox looks classes are found in the :file:`_inbox.scss`.
 The :code:`.peek-inbox` class contain the classes specific to the
 Inbox.
 
+::
 
-Tabs
-````
+        .peek-inbox{
+        <!-- Contains the Inbox screen looks classes -->
 
-The following example shows tabs :code:`.nav-tabs`.
+            .nav-tabs{
+            <!-- Contains the navigation tabs looks attributes unique to Inbox -->
 
-HTML: ::
+                ...
 
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="active" role="presentation">
-                <a aria-controls="home" data-toggle="tab" href="http://localhost:4200/#activeTaskTasks" role="tab">Tasks</a>
-            </li>
-            <li role="presentation">
-                <a aria-controls="profile" data-toggle="tab" href="http://localhost:4200/#activeTaskActivity" role="tab">Activity</a>
-            </li>
-        </ul>
+            }
+            .table{
+            <!-- Contains the table looks attributes unique to Inbox -->
 
+                ...
+
+            }
+        }
+
+
+.. note:: the :code:`.table` class is expanded in :ref:`inbox_table`.
+
+
+.. _details_screen_nav_tabs:
+
+Nav Tabs :code:`.nav-tabs`
+``````````````````````````
 
 .. image:: ./screen_navigation-tabs.web.jpg
+  :align: center
+
+The :code:`.nav-tabs` class contain the classes specific to a Inbox screen.
+
+Below is a HTML code extract using :ref:`inbox_nav_tabs`: ::
+
+        <div class="peek-inbox">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active" role="presentation">
+                    <a aria-controls="home" data-toggle="tab" role="tab">
+                        Tasks
+
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a aria-controls="profile" data-toggle="tab" role="tab">
+                        Activity
+
+                    </a>
+                </li>
+            </ul>
+        </div>
 
 
-Table
-`````
-
+.. _inbox_table:
 
 Table :code:`.table`
 ````````````````````
 
-The :code:`.table` class will contain:
-
-*  :code:`table-striped`
+The :code:`.table` class contain the classes specific to the Inbox screen.
 
 
-Icon :code:`.inbox-icon`
-~~~~~~~~~~~~~~~~~~~~~~~~
+.. _inbox_Tasks:
 
-The :code:`.inbox-icon` class will contain styling for the plugin icon.
+Tasks
+~~~~~
 
-
-Inbox Row :code:`.inbox-row`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The :code:`.inbox-row` class will contain styling for the row.
+.. image:: ./inbox-tasks.web.jpg
+  :align: center
 
 
-Title :code:`.inbox-title`
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Activity
+~~~~~~~~
 
-The :code:`.inbox-title` class will contain:
-
-*  :code:`h2`
-
-
-Description :code:`.inbox-description`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The :code:`.inbox-description` class will contain:
-
-*  :code:`h3`
+.. image:: ./inbox-activity.web.jpg
+  :align: center
 
 
-Date & Time :code:`.inbox-date-time`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+scss
+~~~~
 
-The :code:`.inbox-date-time` class will contain:
+::
 
-*  :code:`h5`
+        .inbox-table{
+        <!-- Contains the inbox table looks classes unique to the Inbox -->
+
+            ...
+
+            .inbox-icon{
+            <!-- Contains the icon looks attributes unique to the .inbox-table class -->
+
+                ...
+
+            }
+            .inbox-row{
+            <!-- Contains the row looks attributes unique to the .inbox-table class -->
+
+                ...
+
+                .inbox-title{
+                <!-- Contains the title text looks attributes unique to the .inbox-row class -->
+
+                    ...
+
+                }
+                .inbox-description{
+                <!-- Contains the description text looks attributes unique to the .inbox-row class -->
+
+                    ...
+
+                }
+                .inbox-date-time{
+                <!-- Contains the date and time looks attributes unique to the .inbox-row class -->
+
+                    ...
+
+                }
+                .inbox-btn-grp{
+                <!-- Contains the button group looks attributes unique to the .inbox-row class -->
+
+                    ...
+
+                }
+                .inbox-btn{
+                <!-- Contains the button looks attributes unique to the .inbox-row class
+                 -->
+
+                    ...
+
+                }
+            }
+            .inbox-read-more{
+            <!-- Contains the read more link looks attributes unique to the .inbox-table class -->
+
+                ...
+
+            }
+        }
 
 
-Button Group :code:`.inbox-btn-grp`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The :code:`.inbox-date-time` class will contain:
-
-*  :code:`btn-grp`
 
 
-Buttons :code:`.inbox-btn`
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The :code:`.inbox-button` class will contain:
-
-*  :code:`btn`
+Layout
+------
 
 
-Arrow :code:`.inbox-link-arrow`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HTML
+````
 
-The :code:`.inbox-link-arrow` class will contain styling for the read more arrow.
-
-
-HTML Layout
------------
-
-The Inbox HTML layout classes are found in the :file:`_inbox.web.scss`.
+The Inbox HTML layout classes are found in the
+:file:`_inbox.web.scss`.
 
 
-Display Samples
----------------
+NativeScript
+````````````
+
+The Inbox NativeScript layout classes are found in the
+:file:`_inbox.ns.scss`.
+
+
+Code Extract
+------------
 
 Below is the HTML code extract of the first two rows from the
-:ref:`inbox_inbox_example_tasks`: ::
+:ref:`inbox_Tasks`: ::
 
-        <div class="tab-content">
-            <div class="tab-pane active" id="activeTaskTasks" role="tabpanel">
-                <div class="peek-inbox">
 
+        <div class="peek-inbox">
+            <div class="tab-content">
+                <div class="tab-pane active" id="activeTaskTasks" role="tabpanel">
                     <table class="table">
                         <tbody>
                             <tr>
                                 <td class="td bg-success">
                                     <div class="inbox-icon">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
+
                                     </div>
                                     <div class="inbox-row">
-
                                         <div class="inbox-title">New Message New Message New Message New Message</div>
-
                                         <div class="inbox-description">You have a new message You have a new message You have a new message You have a new message</div>
-
                                         <div class="inbox-date-time">13 hours ago 20:03 05-Mar</div>
-
                                         <div class="inbox-btn-grp">
                                             <button class="inbox-btn" type="button" name="button">button1</button>
                                             <button class="inbox-btn" type="button" name="button">button2</button>
@@ -144,16 +203,18 @@ Below is the HTML code extract of the first two rows from the
                                             <button class="inbox-btn" type="button" name="button">button4</button>
                                             <button class="inbox-btn" type="button" name="button">button5</button>
                                             <button class="inbox-btn" type="button" name="button">button6</button>
+
                                         </div>
                                     </div>
-                                    <div class="inbox-link-arrow"></div>
+                                    <div class="inbox-read-more"></div>
+
                                 </td>
                             </tr>
-
                             <tr>
                                 <td class="td bg-success">
                                     <div class="inbox-icon">
                                         <i class="fa fa-check-square-o" aria-hidden="true"></i>
+
                                     </div>
                                     <div class="inbox-row">
                                         <div class="inbox-title">Task</div>
@@ -164,11 +225,11 @@ Below is the HTML code extract of the first two rows from the
                                         <div class="inbox-btn-grp">
                                             <button class="inbox-btn" type="button" name="button">button1</button>
                                             <button class="inbox-btn" type="button" name="button">button1</button>
-                                        </div>
 
+                                        </div>
                                     </div>
-                                    <div class="inbox-link-arrow">
-                                    </div>
+                                    <div class="inbox-read-more"></div>
+
                                 </td>
                             </tr>
                         </tbody>
@@ -177,19 +238,3 @@ Below is the HTML code extract of the first two rows from the
             </div>
         </div>
 
-
-Inbox Example
--------------
-
-.. _inbox_inbox_example_tasks:
-
-Tasks
-`````
-
-.. image:: ./inbox-tasks.web.jpg
-
-
-Activity
-````````
-
-.. image:: ./inbox-activity.web.jpg
