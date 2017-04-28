@@ -21,53 +21,52 @@ sized around the text they contain.
 Looks Classes
 -------------
 
-The :code:`.btn-group`, :code:`.btn` and :code:`.nav-tabs` classes are used throughout
-Peek.  These looks classes attribute changes are found in
-:file:`_bootstrap_adjustments.scss`.
-
+The :code:`.btn-group` and :code:`.btn` classes are used throughout Peek.
+These looks classes attribute changes are found in :file:`_bootstrap_adjustments.scss`.
 
 ::
 
         .btn-group{
         <!-- Contains the Button Group looks attributes -->
-
-        ...
+            ...
 
         }
-
         .btn{
         <!-- Contains the Button looks attributes -->
-
-        ...
-
-        }
-
-        .nav-tabs{
-        <!-- Contains the Tabs looks attributes -->
-
-        ...
+            ...
 
         }
 
 
-HTML Layout
------------
+Layout
+------
+
+
+HTML
+````
 
 The Navigation Bar HTML layout classes are found in the
 :file:`_navigation_bar.web.scss`.
+
+
+NativeScript
+````````````
+
+The Navigation Bar NativeScript layout classes are found in the
+:file:`_navigation_bar.ns.scss`.
 
 
 Display Samples
 ---------------
 
 
-Buttons
-```````
+HTML
+````
 
 The following example shows a button group :code:`.btn-group` on the left and a button
 group on the right.
 
-HTML: ::
+::
 
         <div class="btn-group pull-left" role="group">
             <button class="btn" role="group">My Jobs</button>
@@ -84,7 +83,7 @@ HTML: ::
 
 The following example shows a button group on the left.
 
-HTML: ::
+::
 
         <div class="btn-group" role="group">
             <button class="btn">My Jobs</button>
@@ -96,7 +95,7 @@ HTML: ::
 
 The following example shows a button :code:`.btn` on the left.
 
-HTML: ::
+::
 
         <button class="btn">New Chat</button>
 

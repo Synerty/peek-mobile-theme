@@ -15,8 +15,6 @@ mainly involves CSS/SCSS upgrade to the base Bootstrap theme.
 This app will be viewed predominately during the day. The design and layout must be
 clear to read in very bright sunlight.
 
-Web app screenshot:
-
 .. image:: ./peek_app.web.jpg
   :align: center
 

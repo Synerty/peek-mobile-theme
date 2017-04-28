@@ -33,7 +33,17 @@ The Title Bar looks classes are found in the :file:`_title_bar.scss`.
 Title Bar :code:`.peek-title-bar`
 `````````````````````````````````
 
+
+HTML
+~~~~
+
 .. image:: ./title_bar.web.jpg
+  :align: center
+
+NativeScript
+~~~~~~~~~~~~
+
+.. image:: ./title_bar.ns.jpg
   :align: center
 
 The :code:`.peek-title-bar` class contains the looks classes specific to the Title Bar.
@@ -42,21 +52,43 @@ The :code:`.peek-title-bar` class contains the looks classes specific to the Tit
 
         .peek-title-bar{
         <!-- Contains the Title Bar looks classes -->
+            ...
 
-          .btn{
-          <!-- Contains the button looks attributes unique to the Title Bar -->
+            .btn{
+            <!-- Contains the button looks attributes unique to the Title Bar -->
 
-          ...
+                ...
 
-          }
+            }
+            .title{
+            <!-- Contains the title looks attributes unique to the Title Bar -->
 
-          .title{
-          <!-- Contains the title looks attributes unique to the Title Bar -->
+                ...
 
-          ...
-
-          }
+            }
         }
+
+
+HTML
+~~~~
+
+::
+
+        <div class="peek-title-bar">
+            ...
+
+        </div>
+
+
+NativeScript
+~~~~~~~~~~~~
+
+::
+
+        <GridLayout class="peek-title-bar">
+            ...
+
+        </GridLayout>
 
 
 Button :code:`.btn`
@@ -65,28 +97,28 @@ Button :code:`.btn`
 The :code:`.btn` class dictates the style and size of all the buttons in the Title Bar.
 These buttons are unique to the Title Bar.
 
-HTML:
+HTML
+~~~~
 
 .. image:: ./title_bar-home_button.web.jpg
 
 ::
 
-        <div class="peek-title-bar">
-          <button class="btn">
-              Home
+        <button class="btn">
+            Home
 
-          </button>
-        </div>
+        </button>
 
 
-NativeScript: ::
+NativeScript
+~~~~~~~~~~~~
 
-        <GridLayout class="peek-title-bar">
-          <Button class="btn"
-                  text="Home">
+::
 
-          </Button>
-        </GridLayout>
+        <Button class="btn"
+                text="Home">
+
+        </Button>
 
 
 Title :code:`.title`
@@ -94,52 +126,41 @@ Title :code:`.title`
 
 The :code:`.title` class styles the dynamic title.  Plugins will update the title text.
 
-HTML:
+HTML
+~~~~
 
 .. image:: ./title_bar-title.web.jpg
 
 ::
 
-        <div class="peek-title-bar">
-          <div class="title">
-              ...
+        <div class="title">
+            ...
 
-          </div>
         </div>
 
 
-NativeScript: ::
+NativeScript
+~~~~~~~~~~~~
 
-        <GridLayout class="peek-title-bar">
-          <Label class="title"
-                 [text]="...">
+::
 
-          </Label>
-        </GridLayout>
+        <Label class="title"
+               [text]="...">
+
+        </Label>
 
 
 Layout
 ------
 
-HTML:
+
+HTML
+~~~~
 
 The Title Bar HTML layout classes are found in the :file:`_title_bar.web.scss`.
 
-NativeScript:
+NativeScript
+~~~~~~~~~~~~
 
 The Title Bar NativeScript layout classes are found in the
 :file:`_title_bar.ns.scss`.
-
-
-Display Sample
---------------
-
-HTML:
-
-.. image:: ./title_bar.web.jpg
-  :align: center
-
-NativeScript:
-
-.. image:: ./title_bar.ns.jpg
-  :align: center

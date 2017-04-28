@@ -19,16 +19,15 @@ Inbox.
 
         .peek-inbox{
         <!-- Contains the Inbox screen looks classes -->
+            ...
 
             .nav-tabs{
             <!-- Contains the navigation tabs looks attributes unique to Inbox -->
-
                 ...
 
             }
             .table{
             <!-- Contains the table looks attributes unique to Inbox -->
-
                 ...
 
             }
@@ -99,61 +98,50 @@ scss
 
         .inbox-table{
         <!-- Contains the inbox table looks classes unique to the Inbox -->
-
             ...
 
             .inbox-icon{
             <!-- Contains the icon looks attributes unique to the .inbox-table class -->
-
                 ...
 
             }
             .inbox-row{
             <!-- Contains the row looks attributes unique to the .inbox-table class -->
-
                 ...
 
                 .inbox-title{
                 <!-- Contains the title text looks attributes unique to the .inbox-row class -->
-
                     ...
 
                 }
                 .inbox-description{
                 <!-- Contains the description text looks attributes unique to the .inbox-row class -->
-
                     ...
 
                 }
                 .inbox-date-time{
                 <!-- Contains the date and time looks attributes unique to the .inbox-row class -->
-
                     ...
 
                 }
                 .inbox-btn-grp{
                 <!-- Contains the button group looks attributes unique to the .inbox-row class -->
-
                     ...
 
                 }
                 .inbox-btn{
                 <!-- Contains the button looks attributes unique to the .inbox-row class
                  -->
-
                     ...
 
                 }
             }
             .inbox-read-more{
             <!-- Contains the read more link looks attributes unique to the .inbox-table class -->
-
                 ...
 
             }
         }
-
-
 
 
 Layout

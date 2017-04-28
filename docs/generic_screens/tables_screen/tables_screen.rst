@@ -27,33 +27,28 @@ Screen.
 
         .peek-tables-screen{
         <!-- Contains the Tables Screen looks classes -->
+            ...
 
             .table{
             <!-- Contains the table looks attributes unique to the Tables Screen -->
-
                 ...
 
                 .table-head{
                 <!-- Contains the table header looks attributes unique to the .table class -->
-
                     ...
 
                     .table-head-cell{
                     <!-- Contains the table head cell looks attributes unique to the .table-head class -->
-
                         ...
 
                     }
                 }
-            }
                 .table-row{
                 <!-- Contains the table row looks attributes unique to the .table class -->
-
                     ...
 
                     .table-row-cell{
                     <!-- Contains the table row cell looks attributes unique to the .table-row class -->
-
                         ...
 
                     }
@@ -65,12 +60,16 @@ Screen.
 Layout
 ------
 
-HTML:
+
+HTML
+````
 
 The Tables Screen HTML layout classes are found in the
 :file:`_tables_screen.web.scss`.
 
-NativeScript:
+
+NativeScript
+````````````
 
 The Tables Screen NativeScript layout classes are found in the
 :file:`_tables_screen.ns.scss`.

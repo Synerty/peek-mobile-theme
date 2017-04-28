@@ -30,32 +30,30 @@ The :code:`.peek-footer` class contains the classes specific to the Footer.
 
         .peek-footer{
         <!-- Contains the Footer looks classes -->
+            ...
 
-          .title{
-          <!-- Contains the title looks attributes unique to the Footer -->
+            .title{
+            <!--
+                Contains the title looks attributes unique to the Footer
+                This title will be dynamically set by the plugins installed
+            -->
+                ...
 
-          ...
-
-          }
+            }
         }
-
-
-
-
-Text :code:`.title`
-```````````````````
-
-The :code:`.title` class styles the dynamic title.
 
 
 Layout
 ------
 
-HTML:
+
+HTML
+````
 
 The Footer HTML layout classes are found in the :file:`_footer.web.scss`.
 
-NativeScript:
+
+NativeScript
+````````````
 
 The Footer NativeScript layout classes are found in the :file:`_footer.ns.scss`.
-
