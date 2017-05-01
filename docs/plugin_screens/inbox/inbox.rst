@@ -96,48 +96,125 @@ scss
 
 ::
 
-        .inbox-table{
+        .inbox{
         <!-- Contains the inbox table looks classes unique to the Inbox -->
             ...
 
-            .inbox-icon{
-            <!-- Contains the icon looks attributes unique to the .inbox-table class -->
+            .table{
+            <!-- Contains the table looks attributes unique to the .inbox class -->
                 ...
 
-            }
-            .inbox-row{
-            <!-- Contains the row looks attributes unique to the .inbox-table class -->
-                ...
-
-                .inbox-title{
-                <!-- Contains the title text looks attributes unique to the .inbox-row class -->
+                .tr{
+                <!-- Contains the table row looks attributes unique to the .table class -->
                     ...
 
                 }
-                .inbox-description{
-                <!-- Contains the description text looks attributes unique to the .inbox-row class -->
-                    ...
-
-                }
-                .inbox-date-time{
-                <!-- Contains the date and time looks attributes unique to the .inbox-row class -->
-                    ...
-
-                }
-                .inbox-btn-grp{
-                <!-- Contains the button group looks attributes unique to the .inbox-row class -->
-                    ...
-
-                }
-                .inbox-btn{
-                <!-- Contains the button looks attributes unique to the .inbox-row class
-                 -->
+                .td{
+                <!-- Contains the table row cell looks attributes unique to the .table class -->
                     ...
 
                 }
             }
-            .inbox-read-more{
-            <!-- Contains the read more link looks attributes unique to the .inbox-table class -->
+            .icon{
+            <!-- Contains the icon looks attributes unique to the .inbox class -->
+                ...
+
+            }
+            .row{
+            <!-- Contains the row looks attributes unique to the .inbox class -->
+                ...
+
+            }
+            .title{
+            <!-- Contains the title text looks attributes unique to the .inbox class -->
+                ...
+
+            }
+            .description{
+            <!-- Contains the description text looks attributes unique to the .inbox class -->
+                ...
+
+            }
+            .date-time{
+            <!-- Contains the date and time looks attributes unique to the .inbox class -->
+                ...
+
+            }
+            .btn-group{
+            <!-- Contains the button group looks attributes unique to the .inbox class -->
+                ...
+
+            }
+            .btn{
+            <!-- Contains the button looks attributes unique to the .inbox class
+             -->
+                ...
+
+            }
+            .read-more{
+            <!-- Contains the read more link looks attributes unique to the .inbox class -->
+                ...
+
+            }
+        }
+
+        .activity{
+        <!-- Contains the activity table looks classes unique to the Inbox -->
+            ...
+
+            .table{
+            <!-- Contains the table looks attributes unique to the .activity class -->
+                ...
+
+                .tr{
+                <!-- Contains the table row looks attributes unique to the .table class -->
+                    ...
+
+                }
+                .td{
+                <!-- Contains the table row cell looks attributes unique to the .table class -->
+                    ...
+
+                }
+            }
+            .icon{
+            <!-- Contains the icon looks attributes unique to the .activity class -->
+                ...
+
+            }
+            .row{
+            <!-- Contains the row looks attributes unique to the .activity class -->
+                ...
+
+            }
+            .title{
+            <!-- Contains the title text looks attributes unique to the .activity class -->
+                ...
+
+            }
+            .description{
+            <!-- Contains the description text looks attributes unique to the .activity class -->
+                ...
+
+            }
+            .date-time{
+            <!-- Contains the date and time looks attributes unique to the .activity class -->
+                ...
+
+            }
+            .btn-group{
+            <!-- Contains the button group looks attributes unique to the .activity class -->
+                ...
+
+            }
+            .btn{
+            <!-- Contains the button looks attributes unique to the .activity class
+             -->
+                ...
+
+            }
+            .read-more{
+            <!-- Contains the read more link looks attributes unique to the .activity class -->
                 ...
 
             }
@@ -176,47 +253,47 @@ Below is the HTML code extract of the first two rows from the
                         <tbody>
                             <tr>
                                 <td class="td bg-success">
-                                    <div class="inbox-icon">
+                                    <div class="icon">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
 
                                     </div>
-                                    <div class="inbox-row">
-                                        <div class="inbox-title">New Message New Message New Message New Message</div>
-                                        <div class="inbox-description">You have a new message You have a new message You have a new message You have a new message</div>
-                                        <div class="inbox-date-time">13 hours ago 20:03 05-Mar</div>
-                                        <div class="inbox-btn-grp">
-                                            <button class="inbox-btn" type="button" name="button">button1</button>
-                                            <button class="inbox-btn" type="button" name="button">button2</button>
-                                            <button class="inbox-btn" type="button" name="button">button3</button>
-                                            <button class="inbox-btn" type="button" name="button">button4</button>
-                                            <button class="inbox-btn" type="button" name="button">button5</button>
-                                            <button class="inbox-btn" type="button" name="button">button6</button>
+                                    <div class="row">
+                                        <div class="title">New Message New Message New Message New Message</div>
+                                        <div class="description">You have a new message You have a new message You have a new message You have a new message</div>
+                                        <div class="date-time">13 hours ago 20:03 05-Mar</div>
+                                        <div class="btn-grp">
+                                            <button class="btn" type="button" name="button">button1</button>
+                                            <button class="btn" type="button" name="button">button2</button>
+                                            <button class="btn" type="button" name="button">button3</button>
+                                            <button class="btn" type="button" name="button">button4</button>
+                                            <button class="btn" type="button" name="button">button5</button>
+                                            <button class="btn" type="button" name="button">button6</button>
 
                                         </div>
                                     </div>
-                                    <div class="inbox-read-more"></div>
+                                    <div class="read-more"></div>
 
                                 </td>
                             </tr>
                             <tr>
                                 <td class="td bg-success">
-                                    <div class="inbox-icon">
+                                    <div class="icon">
                                         <i class="fa fa-check-square-o" aria-hidden="true"></i>
 
                                     </div>
-                                    <div class="inbox-row">
-                                        <div class="inbox-title">Task</div>
-                                        <div class="inbox-description">You have a new message You have a new message You have a new message You have a new message</div>
+                                    <div class="row">
+                                        <div class="title">Task</div>
+                                        <div class="description">You have a new message You have a new message You have a new message You have a new message</div>
 
-                                        <div class="inbox-date-time">13 hours ago 20:03 05-Mar</div>
+                                        <div class="date-time">13 hours ago 20:03 05-Mar</div>
 
-                                        <div class="inbox-btn-grp">
-                                            <button class="inbox-btn" type="button" name="button">button1</button>
-                                            <button class="inbox-btn" type="button" name="button">button1</button>
+                                        <div class="btn-grp">
+                                            <button class="btn" type="button" name="button">button1</button>
+                                            <button class="btn" type="button" name="button">button1</button>
 
                                         </div>
                                     </div>
-                                    <div class="inbox-read-more"></div>
+                                    <div class="read-more"></div>
 
                                 </td>
                             </tr>
