@@ -155,12 +155,13 @@ Layout
 
 
 HTML
-~~~~
+````
 
 The Title Bar HTML layout classes are found in the :file:`_title_bar.web.scss`.
 
+
 NativeScript
-~~~~~~~~~~~~
+````````````
 
 The Title Bar NativeScript layout classes are found in the
 :file:`_title_bar.ns.scss`.
