@@ -30,20 +30,20 @@ Screen.
         <!-- Contains the Details Screen looks classes -->
             ...
 
-            .data-row{
+            .row{
             <!-- Contains the row looks attributes unique to the Details Screen -->
                 ...
 
-                .data-title{
-                <!-- Contains the title looks attributes unique to the .data-row class -->
-                    ...
+            .title{
+            <!-- Contains the title looks attributes unique to the Details Screen -->
+                ...
 
-                }
-                .data-value{
-                <!-- Contains the value looks attributes unique to the .data-row class -->
-                    ...
+            }
+            .value{
+            <!-- Contains the value looks attributes unique to the Details Screen -->
+                ...
 
-                }
+            }
             }
         }
 
@@ -73,32 +73,32 @@ Below is the HTML code extract of the first two rows from the
 :ref:`details_screen_details_screen`: ::
 
         <div class="peek-details-screen">
-            <div class="data-row">
+            <div class="row">
                 <div class="form-group col-xs-5">
-                    <div class="data-title">
+                    <div class="title">
                         Item
 
                     </div>
-                    <div class="data-value">
+                    <div class="value">
                         #3
 
                     </div>
                 </div>
                 <div class="form-group col-xs-7">
-                    <div class="data-title">
+                    <div class="title">
                         State
 
                     </div>
-                    <div class="data-value">
+                    <div class="value">
                         Confirmed
 
                     </div>
                 </div>
             </div>
-            <div class="data-row">
+            <div class="row">
                 <div class="form-group col-xs-12">
-                    <div class="data-title">Location</div>
-                    <div class="data-value">
+                    <div class="title">Location</div>
+                    <div class="value">
                         Weedons ZS - R15/174
 
                     </div>
