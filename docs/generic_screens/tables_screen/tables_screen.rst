@@ -36,22 +36,22 @@ Screen.
                 .table-head{
                 <!-- Contains the table header looks attributes unique to the .table class -->
                     ...
-
-                    .table-head-cell{
-                    <!-- Contains the table head cell looks attributes unique to the .table-head class -->
-                        ...
-
-                    }
+                
                 }
-                .table-row{
+                .th{
+                <!-- Contains the table head cell looks attributes unique to the .table class -->
+                    ...
+
+                }
+                .tr{
                 <!-- Contains the table row looks attributes unique to the .table class -->
                     ...
 
-                    .table-row-cell{
-                    <!-- Contains the table row cell looks attributes unique to the .table-row class -->
-                        ...
+                }
+                .td{
+                <!-- Contains the table row cell looks attributes unique to the .table class -->
+                    ...
 
-                    }
                 }
             }
         }
@@ -83,31 +83,25 @@ Below is the HTML code extract of table header and first two rows from
 
         <div class="peek-tables-screen">
           <table class="table">
-              <thead>
                   <tr class="table-head">
-                      <th class="table-head-cell">Item</th>
-                      <th class="table-head-cell">State</th>
-                      <th class="table-head-cell">Location</th>
-                      <th class="table-head-cell">Circuit / Details</th>
+                      <th class="th">Item</th>
+                      <th class="th">State</th>
+                      <th class="th">Location</th>
+                      <th class="th">Circuit / Details</th>
                   </tr>
-              </thead>
-              <tbody>
-
-                  <tr class="table-row">
-                      <td class="table-row-cell">1</td>
-                      <td class="table-row-cell">Completed</td>
-                      <td class="table-row-cell">Weedons ZS - R15/174</td>
-                      <td class="table-row-cell">Unit 3342 Motor Trip
+                  <tr class="tr">
+                      <td class="td">1</td>
+                      <td class="td">Completed</td>
+                      <td class="td">Weedons ZS - R15/174</td>
+                      <td class="td">Unit 3342 Motor Trip
                           <br> Job</td>
                   </tr>
-                  <tr class="table-row">
-                      <td class="table-row-cell">2</td>
-                      <td class="table-row-cell">Confirmed</td>
-                      <td class="table-row-cell">Weedons ZS - R15/174</td>
-                      <td class="table-row-cell">Unit 3342 Motor Trip
+                  <tr class="tr">
+                      <td class="td">2</td>
+                      <td class="td">Confirmed</td>
+                      <td class="td">Weedons ZS - R15/174</td>
+                      <td class="td">Unit 3342 Motor Trip
                           <br> Apply Scan Inhibit</td>
-        
                   </tr>
-              </tbody>
           </table>
         </div>
