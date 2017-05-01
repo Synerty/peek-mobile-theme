@@ -28,29 +28,37 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
         <!-- Contains the Home Screen looks classes -->
             ...
 
-            .background-image{
-            <!--
-                Contains the Background looks attributes unique to the Home Screen
-                Home Screen background is unique and different to other screens
-                Cannot use the body tag
-            -->
-                ...
-
-            }
-            .home-icon{
+            .plugin-icon{
             <!--
                 Contains the Button looks attributes unique to the Home Screen
-                Strictly uses images
                 Buttons responsively wrap
             -->
                 ...
 
             }
-            .home-title{
+            .plugin-image{
+            <!--
+                Contains the Image looks attributes unique to the Home Screen
+                Strictly uses images
+            -->
+                ...
+
+            }
+            .plugin-title{
             <!-- Contains the Button Title looks attributes unique to the Home Screen -->
                 ...
 
             }
+        }
+
+        .background-image{
+        <!--
+            Contains the Background looks attributes
+            Home Screen background is unique and different to other screens
+            Cannot use the body tag
+        -->
+            ...
+
         }
 
 
@@ -88,10 +96,10 @@ HTML
 ::
 
         <div class="peek-home-screen">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 home-icon">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 plugin-icon">
                 <a>
-                    <img class="image" src="..."></img>
-                    <div class="home-title">
+                    <img class="plugin-image" src="..."></img>
+                    <div class="plugin-title">
                         ...
 
                     </div>
@@ -109,11 +117,12 @@ NativeScript
 ::
 
         <GridLayout Class="peek-home-screen">
-            <GridLayout class="home-icon">
-                <Image src="...">
+            <GridLayout class="plugin-icon">
+                <Image class="plugin-image"
+                       src="...">
 
                 </Image>
-                <Label class="home-title"
+                <Label class="plugin-title"
                        [text]="...">
 
                 </Label>
