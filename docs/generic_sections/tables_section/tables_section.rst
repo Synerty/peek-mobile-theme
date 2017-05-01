@@ -1,36 +1,36 @@
-.. _tables_screen:
+.. _tables_section:
 
-=============
-Tables Screen
-=============
+==============
+Tables Section
+==============
 
-Any plugin screen will be able to use the :code:`.peek-tables-screen` attributes.
+Any plugin Screen will be able to use the :code:`.peek-tables-section` attributes.
 
 
 Looks Classes
 -------------
 
-The Tables looks classes are found in the :file:`_tables_screen.scss`.
+The Tables looks classes are found in the :file:`_tables_section.scss`.
 
-.. _tables_screen_tables_screen:
+.. _tables_section_tables_section:
 
-Tables Screen :code:`.peek-tables-screen`
-`````````````````````````````````````````
+Tables Section :code:`.peek-tables-section`
+```````````````````````````````````````````
 
-.. image:: ./tables_screen.web.jpg
+.. image:: ./tables_section.web.jpg
   :align: center
 
-The :code:`.peek-tables-screen` class contain the classes specific to a Tables
-Screen.
+The :code:`.peek-tables-section` class contain the classes specific to a Tables
+Section.
 
 ::
 
-        .peek-tables-screen{
-        <!-- Contains the Tables Screen looks classes -->
+        .peek-tables-section{
+        <!-- Contains the Tables Section looks classes -->
             ...
 
             .table{
-            <!-- Contains the table looks attributes unique to the Tables Screen -->
+            <!-- Contains the table looks attributes unique to the Tables Section -->
                 ...
 
                 .table-head{
@@ -64,24 +64,24 @@ Layout
 HTML
 ````
 
-The Tables Screen HTML layout classes are found in the
-:file:`_tables_screen.web.scss`.
+The Tables Section HTML layout classes are found in the
+:file:`_tables_section.web.scss`.
 
 
 NativeScript
 ````````````
 
-The Tables Screen NativeScript layout classes are found in the
-:file:`_tables_screen.ns.scss`.
+The Tables Section NativeScript layout classes are found in the
+:file:`_tables_section.ns.scss`.
 
 
 Code Extract
 ------------
 
 Below is the HTML code extract of table header and first two rows from
-:ref:`tables_screen_tables_screen`: ::
+:ref:`tables_section_tables_section`: ::
 
-        <div class="peek-tables-screen">
+        <div class="peek-tables-section">
           <table class="table">
                   <tr class="table-head">
                       <th class="th">Item</th>

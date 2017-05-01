@@ -1,21 +1,21 @@
-.. _navigation_bar:
+.. _navigation_section:
 
-==============
-Navigation Bar
-==============
+==================
+Navigation Section
+==================
 
-Navigation Bar is dynamic and exists if required by the plugin.  The contents of the
-Navigation Bar is constructed from the plugin.
+Navigation Section is dynamic and exists if required by the plugin.  The contents of the
+Navigation Section is constructed from the plugin.
 
-The Navigation Bar is located below the :ref:`title_bar`, above the screen.
+The Navigation Section is located below the :ref:`title_section`, above the screen.
 
-.. image:: ./navigation_bar.web.jpg
+.. image:: ./navigation_section.web.jpg
    :align: center
 
 The buttons remain a fixed size throughout a responsive lifecycle.  The buttons are
 sized around the text they contain.
 
-.. note:: The buttons require a different theme to the :ref:`title_bar`.
+.. note:: The buttons require a different theme to the :ref:`title_section`.
 
 
 Looks Classes
@@ -26,8 +26,8 @@ These looks classes attribute changes are found in :file:`_bootstrap_adjustments
 
 ::
 
-        .peek-nav-bar{
-        <!-- Contains the Navigation Bar looks attributes -->
+        .peek-nav-section{
+        <!-- Contains the Navigation Section looks attributes -->
             ...
 
         }
@@ -50,15 +50,15 @@ Layout
 HTML
 ````
 
-The Navigation Bar HTML layout classes are found in the
-:file:`_navigation_bar.web.scss`.
+The Navigation Section HTML layout classes are found in the
+:file:`_navigation_section.web.scss`.
 
 
 NativeScript
 ````````````
 
-The Navigation Bar NativeScript layout classes are found in the
-:file:`_navigation_bar.ns.scss`.
+The Navigation Section NativeScript layout classes are found in the
+:file:`_navigation_section.ns.scss`.
 
 
 Display Samples
@@ -84,7 +84,7 @@ group on the right.
         </div>
 
 
-.. image:: ./navigation_bar-detail_data_screen.web.jpg
+.. image:: ./navigation_section-detail_data_screen.web.jpg
 
 The following example shows a button group on the left.
 
@@ -96,7 +96,7 @@ The following example shows a button group on the left.
         </div>
 
 
-.. image:: ./navigation_bar-table_data_screen.web.jpg
+.. image:: ./navigation_section-table_data_screen.web.jpg
 
 The following example shows a button :code:`.btn` on the left.
 
@@ -105,4 +105,4 @@ The following example shows a button :code:`.btn` on the left.
         <button class="btn">New Chat</button>
 
 
-.. image:: ./navigation_bar-plugin_chat_list.web.jpg
+.. image:: ./navigation_section-plugin_chat_list.web.jpg

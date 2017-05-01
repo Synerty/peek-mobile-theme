@@ -1,46 +1,46 @@
-.. _details_screen:
+.. _details_section:
 
-==============
-Details Screen
-==============
+===============
+Details Section
+===============
 
-Any plugin screen will be able to use the :code:`.peek-details-screen` attributes.
+Any plugin Screen will be able to use the :code:`.peek-details-section` attributes.
 
 
 Looks Classes
 -------------
 
-The Details looks classes are found in the :file:`_details_screen.scss`.
+The Details looks classes are found in the :file:`_details_section.scss`.
 
 
-.. _details_screen_details_screen:
+.. _details_section_details_section:
 
-Details Screen :code:`.peek-details-screen`
-```````````````````````````````````````````
+Details Section :code:`.peek-details-section`
+`````````````````````````````````````````````
 
-.. image:: ./details_screen.web.jpg
+.. image:: ./details_section.web.jpg
   :align: center
 
-The :code:`.peek-details-screen` class contain the classes specific to a Details
-Screen.
+The :code:`.peek-details-section` class contain the classes specific to a Details
+Section.
 
 ::
 
-        .peek-details-screen{
-        <!-- Contains the Details Screen looks classes -->
+        .peek-details-section{
+        <!-- Contains the Details Section looks classes -->
             ...
 
             .row{
-            <!-- Contains the row looks attributes unique to the Details Screen -->
+            <!-- Contains the row looks attributes unique to the Details Section -->
                 ...
 
             .title{
-            <!-- Contains the title looks attributes unique to the Details Screen -->
+            <!-- Contains the title looks attributes unique to the Details Section -->
                 ...
 
             }
             .value{
-            <!-- Contains the value looks attributes unique to the Details Screen -->
+            <!-- Contains the value looks attributes unique to the Details Section -->
                 ...
 
             }
@@ -55,24 +55,24 @@ Layout
 HTML
 ````
 
-The Details Screen HTML layout classes are found in the
-:file:`_details_screen.web.scss`.
+The Details Section HTML layout classes are found in the
+:file:`_details_section.web.scss`.
 
 
 NativeScript
 ````````````
 
-The Details Screen NativeScript layout classes are found in the
-:file:`_details_screen.ns.scss`.
+The Details Section NativeScript layout classes are found in the
+:file:`_details_section.ns.scss`.
 
 
 Code Extract
 ------------
 
 Below is the HTML code extract of the first two rows from the
-:ref:`details_screen_details_screen`: ::
+:ref:`details_section_details_section`: ::
 
-        <div class="peek-details-screen">
+        <div class="peek-details-section">
             <div class="row">
                 <div class="form-group col-xs-5">
                     <div class="title">
