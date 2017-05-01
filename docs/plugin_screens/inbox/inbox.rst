@@ -18,16 +18,16 @@ Inbox.
 ::
 
         .peek-inbox{
-        <!-- Contains the Inbox screen looks classes -->
+        /* Contains the Inbox screen looks classes */
             ...
 
             .nav-tabs{
-            <!-- Contains the navigation tabs looks attributes unique to Inbox -->
+            /* Contains the navigation tabs looks attributes unique to Inbox */
                 ...
 
             }
             .table{
-            <!-- Contains the table looks attributes unique to Inbox -->
+            /* Contains the table looks attributes unique to Inbox */
                 ...
 
             }
@@ -97,124 +97,124 @@ scss
 ::
 
         .inbox{
-        <!-- Contains the inbox table looks classes unique to the Inbox -->
+        /* Contains the inbox table looks classes unique to the Inbox */
             ...
 
             .table{
-            <!-- Contains the table looks attributes unique to the .inbox class -->
+            /* Contains the table looks attributes unique to the .inbox class */
                 ...
 
                 .tr{
-                <!-- Contains the table row looks attributes unique to the .table class -->
+                /* Contains the table row looks attributes unique to the .table class */
                     ...
 
                 }
                 .td{
-                <!-- Contains the table row cell looks attributes unique to the .table class -->
+                /* Contains the table row cell looks attributes unique to the .table class */
                     ...
 
                 }
             }
             .icon{
-            <!-- Contains the icon looks attributes unique to the .inbox class -->
+            /* Contains the icon looks attributes unique to the .inbox class */
                 ...
 
             }
             .row{
-            <!-- Contains the row looks attributes unique to the .inbox class -->
+            /* Contains the row looks attributes unique to the .inbox class */
                 ...
 
             }
             .title{
-            <!-- Contains the title text looks attributes unique to the .inbox class -->
+            /* Contains the title text looks attributes unique to the .inbox class */
                 ...
 
             }
             .description{
-            <!-- Contains the description text looks attributes unique to the .inbox class -->
+            /* Contains the description text looks attributes unique to the .inbox class */
                 ...
 
             }
             .date-time{
-            <!-- Contains the date and time looks attributes unique to the .inbox class -->
+            /* Contains the date and time looks attributes unique to the .inbox class */
                 ...
 
             }
             .btn-group{
-            <!-- Contains the button group looks attributes unique to the .inbox class -->
+            /* Contains the button group looks attributes unique to the .inbox class */
                 ...
 
             }
             .btn{
-            <!-- Contains the button looks attributes unique to the .inbox class
-             -->
+            /* Contains the button looks attributes unique to the .inbox class
+             */
                 ...
 
             }
             .read-more{
-            <!-- Contains the read more link looks attributes unique to the .inbox class -->
+            /* Contains the read more link looks attributes unique to the .inbox class */
                 ...
 
             }
         }
 
         .activity{
-        <!-- Contains the activity table looks classes unique to the Inbox -->
+        /* Contains the activity table looks classes unique to the Inbox */
             ...
 
             .table{
-            <!-- Contains the table looks attributes unique to the .activity class -->
+            /* Contains the table looks attributes unique to the .activity class */
                 ...
 
                 .tr{
-                <!-- Contains the table row looks attributes unique to the .table class -->
+                /* Contains the table row looks attributes unique to the .table class */
                     ...
 
                 }
                 .td{
-                <!-- Contains the table row cell looks attributes unique to the .table class -->
+                /* Contains the table row cell looks attributes unique to the .table class */
                     ...
 
                 }
             }
             .icon{
-            <!-- Contains the icon looks attributes unique to the .activity class -->
+            /* Contains the icon looks attributes unique to the .activity class */
                 ...
 
             }
             .row{
-            <!-- Contains the row looks attributes unique to the .activity class -->
+            /* Contains the row looks attributes unique to the .activity class */
                 ...
 
             }
             .title{
-            <!-- Contains the title text looks attributes unique to the .activity class -->
+            /* Contains the title text looks attributes unique to the .activity class */
                 ...
 
             }
             .description{
-            <!-- Contains the description text looks attributes unique to the .activity class -->
+            /* Contains the description text looks attributes unique to the .activity class */
                 ...
 
             }
             .date-time{
-            <!-- Contains the date and time looks attributes unique to the .activity class -->
+            /* Contains the date and time looks attributes unique to the .activity class */
                 ...
 
             }
             .btn-group{
-            <!-- Contains the button group looks attributes unique to the .activity class -->
+            /* Contains the button group looks attributes unique to the .activity class */
                 ...
 
             }
             .btn{
-            <!-- Contains the button looks attributes unique to the .activity class
-             -->
+            /* Contains the button looks attributes unique to the .activity class
+             */
                 ...
 
             }
             .read-more{
-            <!-- Contains the read more link looks attributes unique to the .activity class -->
+            /* Contains the read more link looks attributes unique to the .activity class */
                 ...
 
             }

@@ -27,20 +27,20 @@ Section.
 ::
 
         .peek-details-section{
-        <!-- Contains the Details Section looks classes -->
+        /* Contains the Details Section looks classes */
             ...
 
             .row{
-            <!-- Contains the row looks attributes unique to the Details Section -->
+            /* Contains the row looks attributes unique to the Details Section */
                 ...
 
             .title{
-            <!-- Contains the title looks attributes unique to the Details Section -->
+            /* Contains the title looks attributes unique to the Details Section */
                 ...
 
             }
             .value{
-            <!-- Contains the value looks attributes unique to the Details Section -->
+            /* Contains the value looks attributes unique to the Details Section */
                 ...
 
             }

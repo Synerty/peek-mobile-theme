@@ -26,30 +26,30 @@ Section.
 ::
 
         .peek-tables-section{
-        <!-- Contains the Tables Section looks classes -->
+        /* Contains the Tables Section looks classes */
             ...
 
             .table{
-            <!-- Contains the table looks attributes unique to the Tables Section -->
+            /* Contains the table looks attributes unique to the Tables Section */
                 ...
 
                 .table-head{
-                <!-- Contains the table header looks attributes unique to the .table class -->
+                /* Contains the table header looks attributes unique to the .table class */
                     ...
                 
                 }
                 .th{
-                <!-- Contains the table head cell looks attributes unique to the .table class -->
+                /* Contains the table head cell looks attributes unique to the .table class */
                     ...
 
                 }
                 .tr{
-                <!-- Contains the table row looks attributes unique to the .table class -->
+                /* Contains the table row looks attributes unique to the .table class */
                     ...
 
                 }
                 .td{
-                <!-- Contains the table row cell looks attributes unique to the .table class -->
+                /* Contains the table row cell looks attributes unique to the .table class */
                     ...
 
                 }

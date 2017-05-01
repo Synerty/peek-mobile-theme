@@ -24,7 +24,7 @@ Set the background of an element to any contextual class.
 ::
 
         .bg-primary{
-        <!-- Applies the primary background theme -->
+        /* Applies the primary background theme */
 
             color: #fff;
             background-color: #337ab7;
@@ -33,7 +33,7 @@ Set the background of an element to any contextual class.
 
         }
         .bg-success{
-        <!-- Applies the success background theme -->
+        /* Applies the success background theme */
 
             background-color: #dff0d8;
 
@@ -41,7 +41,7 @@ Set the background of an element to any contextual class.
 
         }
         .bg-info{
-        <!-- Applies the info background theme -->
+        /* Applies the info background theme */
 
             background-color: #d9edf7;
 
@@ -49,7 +49,7 @@ Set the background of an element to any contextual class.
 
         }
         .bg-warning{
-        <!-- Applies the warning background theme -->
+        /* Applies the warning background theme */
 
             background-color: #fcf8e3;
 
@@ -57,7 +57,7 @@ Set the background of an element to any contextual class.
 
         }
         .bg-danger{
-        <!-- Applies the danger background theme -->
+        /* Applies the danger background theme */
 
             background-color: #f2dede;
 

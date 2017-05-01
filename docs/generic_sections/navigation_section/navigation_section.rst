@@ -27,17 +27,17 @@ These looks classes attribute changes are found in :file:`_bootstrap_adjustments
 ::
 
         .peek-nav-section{
-        <!-- Contains the Navigation Section looks attributes -->
+        /* Contains the Navigation Section looks attributes */
             ...
 
         }
         .btn-group{
-        <!-- Contains the Button Group looks attributes -->
+        /* Contains the Button Group looks attributes */
             ...
 
         }
         .btn{
-        <!-- Contains the Button looks attributes -->
+        /* Contains the Button looks attributes */
             ...
 
         }

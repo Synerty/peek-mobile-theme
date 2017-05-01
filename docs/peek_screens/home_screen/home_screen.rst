@@ -25,38 +25,38 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
 ::
 
         .peek-home-screen{
-        <!-- Contains the Home Screen looks classes -->
+        /* Contains the Home Screen looks classes */
             ...
 
             .plugin-icon{
-            <!--
+            /*
                 Contains the Button looks attributes unique to the Home Screen
                 Buttons responsively wrap
-            -->
+            */
                 ...
 
             }
             .plugin-image{
-            <!--
+            /*
                 Contains the Image looks attributes unique to the Home Screen
                 Strictly uses images
-            -->
+            */
                 ...
 
             }
             .plugin-title{
-            <!-- Contains the Button Title looks attributes unique to the Home Screen -->
+            /* Contains the Button Title looks attributes unique to the Home Screen */
                 ...
 
             }
         }
 
         .background-image{
-        <!--
+        /*
             Contains the Background looks attributes
             Home Screen background is unique and different to other screens
             Cannot use the body tag
-        -->
+        */
             ...
 
         }
