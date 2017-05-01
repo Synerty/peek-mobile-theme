@@ -26,6 +26,11 @@ These looks classes attribute changes are found in :file:`_bootstrap_adjustments
 
 ::
 
+        .peek-nav-bar{
+        <!-- Contains the Navigation Bar looks attributes -->
+            ...
+
+        }
         .btn-group{
         <!-- Contains the Button Group looks attributes -->
             ...
