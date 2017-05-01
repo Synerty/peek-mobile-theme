@@ -2,239 +2,289 @@
 <!-- saved from url=(0045)http://localhost:4200/peek_plugin_inbox -->
 <html>
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <title>Peek</title>
-        <!--<base href="/">-->
-        <base href=".">
+    <title>Peek</title>
+    <!--<base href="/">-->
+    <base href=".">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
 
-        <!--font awesome-->
-        <script src="https://use.fontawesome.com/b4d291589e.js"></script>
+    <!--font awesome-->
+    <script src="https://use.fontawesome.com/b4d291589e.js"></script>
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="../dist/stylesheet.css">
+    <link rel="stylesheet" href="../dist/_bootstrap_adjustments.web.scss">
+    <link rel="stylesheet" href="../dist/_bootstrap_adjustments.scss">
+    <link rel="stylesheet" href="../dist/_title_bar.web.scss">
+    <link rel="stylesheet" href="../dist/_title_bar.scss">
+    <link rel="stylesheet" href="../dist/_footer.web.scss">
+    <link rel="stylesheet" href="../dist/_footer.scss">
+    <link rel="stylesheet" href="../dist/_inbox.web.scss">
+    <link rel="stylesheet" href="../dist/_inbox.scss">
 
-    </head>
+</head>
 
-    <body>
-        <peek-main-app ng-version="2.4.9">
-            <ng2-balloon-msg _nghost-gpn-0="">
-                <div _ngcontent-gpn-0="" class="ng2BaloonMsgQueue"></div>
-            </ng2-balloon-msg>
+<body>
 
-            <peek-main-title>
-              <div class="peek-main-title">
-                <div class="container-fluid">
-                    <div class="menu-bar">
-                        <div class="menu-bar-left">
-                            <button class="btn left-button">Home</button>
-                        </div>
-                        <div class="menu-title">
-                            <h2 class="h2">Peek Title</h2>
-                        </div>
-                        <div class="menu-bar-right">
-                            <div class="btn-group" role="group" aria-label="">
-                                <button class="btn right-button">Tasks</button>
-                                <button class="btn right-button">User</button>
-                            </div>
-                        </div>
+<div class="peek-main-title">
+    <div class="container-fluid">
+        <div class="row">
+            <button class="btn pull-left">Home</button>
+        </div>
+        <div class="title">Peek Title</div>
+        <div class="btn-group pull-right" role="group">
+            <button class="btn">Tasks</button>
+            <button class="btn">User</button>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="plugin-inbox">
+    <div class="container-fluid">
+        <div class="row">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active" role="presentation">
+                    <a aria-controls="home" data-toggle="tab"
+                       href="http://localhost:4200/#inboxTasks"
+                       role="tab">Inbox</a>
+                </li>
+                <li role="presentation">
+                    <a aria-controls="profile" data-toggle="tab"
+                       href="http://localhost:4200/#inboxActivity"
+                       role="tab">Activity</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="inboxTasks" role="tabpanel">
+                    <div class="inbox">
+                        <table class="table">
+                            <tr class="tr">
+                                <td class="td bg-success">
+                                    <div class="icon">
+                                        <i class="fa fa-comment"
+                                           aria-hidden="true"></i>
+                                    </div>
+                                    <div class="row">
+                                        <div class="title">
+                                            1st Message Received
+                                        </div>
+                                        <div class="description">
+                                            This is you first message description
+                                        </div>
+                                        <div class="date-time">
+                                            13 hours ago 20:03 05-Mar
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn" role="button">
+                                                button1
+                                            </button>
+                                            <button class="btn" role="button">
+                                                button2
+                                            </button>
+                                            <button class="btn" role="button">
+                                                button3
+                                            </button>
+                                            <button class="btn" role="button">
+                                                button4
+                                            </button>
+                                            <button class="btn" role="button">
+                                                button5
+                                            </button>
+                                            <button class="btn" role="button">
+                                                button6
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="read-more"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="td bg-success">
+                                    <div class="icon">
+                                        <i class="fa fa-check-square-o"
+                                           aria-hidden="true"></i>
+                                    </div>
+                                    <div class="row">
+                                        <div class="title">
+                                            1st Task
+                                        </div>
+                                        <div class="description">
+                                            Your task if you choose to accept it.
+                                        </div>
+                                        <div class="date-time">
+                                            13 hours ago 20:03 05-Mar
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn" role="button">
+                                                button1
+                                            </button>
+                                            <button class="btn" role="button">
+                                                button2
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="read-more">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tr">
+                                <td class="td bg-danger">
+                                    <div class="icon">
+                                        <i class="fa fa-check-square-o"
+                                           aria-hidden="true"></i>
+                                    </div>
+                                    <div class="row">
+                                        <div class="title">Task Number 2</div>
+                                        <div class="description">
+                                            Simon says to hop on one foot
+                                        </div>
+                                        <div class="date-time">
+                                            13 hours ago 20:03 05-Mar
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn" role="button">
+                                                button1
+                                            </button>
+                                            <button class="btn" role="button">
+                                                button2
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tr">
+                                <td class="td">
+                                    <div class="icon">
+                                        <i class="fa fa-square-o"
+                                           aria-hidden="true"></i>
+                                    </div>
+                                    <div class="row">
+                                        <div class="title">Who's Simon</div>
+                                        <div class="description">
+                                            I'm curious
+                                        </div>
+                                        <div class="date-time">
+                                            13 hours ago 20:03 05-Mar
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn" role="button">
+                                                button1
+                                            </button>
+                                            <button class="btn" role="button">
+                                                button2
+                                            </button>
+                                            <button class="btn" role="button">
+                                                button3
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="read-more">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tr">
+                                <td class="td bg-success">
+                                    <div class="icon"></div>
+                                    <div class="row">
+                                        <div class="title">Spam IT</div>
+                                        <div class="description">
+                                            You have a new message You have a new
+                                            message You have a new message You have a
+                                            new message You have a new message You
+                                            have a new message You have a new message
+                                            You have a new message
+                                        </div>
+
+                                        <div class="date-time">
+                                            13 hours ago 20:03 05-Mar
+                                        </div>
+                                    </div>
+                                    <a class="read-more">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-              </div>
-            </peek-main-title>
 
-            <plugin-inbox>
-              <div class="plugin-inbox">
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <router-outlet></router-outlet>
-                        <div>
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="active" role="presentation">
-                                    <a aria-controls="home" data-toggle="tab" href="http://localhost:4200/#activeTaskTasks" role="tab">Tasks</a>
-                                </li>
-                                <li role="presentation">
-                                    <a aria-controls="profile" data-toggle="tab" href="http://localhost:4200/#activeTaskActivity" role="tab">Activity</a>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="activeTaskTasks" role="tabpanel">
-                                    <plugin-inbox-task-list class="plugin-inbox-task-list">
-
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="td bg-success">
-                                                        <div class="task-icon">
-                                                            <i class="fa fa-comment" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="task-activity">
-
-                                                            <div class="task-tite">New Message New Message New Message New Message</div>
-
-                                                            You have a new message You have a new message You have a new message You have a new message
-
-                                                            <div class="task-time">13 hours ago 20:03 05-Mar</div>
-
-                                                            <div class="task-buttons">
-                                                                <button type="button" name="button">button1</button>
-                                                                <button type="button" name="button">button2</button>
-                                                                <button type="button" name="button">button3</button>
-                                                                <button type="button" name="button">button4</button>
-                                                                <button type="button" name="button">button5</button>
-                                                                <button type="button" name="button">button6</button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="task-read-more"></div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="td bg-success">
-                                                        <div class="task-icon">
-                                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="task-activity">
-                                                            <div class="task-tite">Task</div>
-                                                            You have a new message You have a new message You have a new message You have a new message
-
-                                                            <div class="task-time">13 hours ago 20:03 05-Mar</div>
-
-                                                            <div class="task-buttons">
-                                                                <button type="button" name="button">button1</button>
-                                                                <button type="button" name="button">button1</button>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="task-read-more">
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="td bg-danger">
-                                                        <div class="task-icon">
-                                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="task-activity">
-                                                            <div class="task-tite">Task</div>
-                                                            You have a new message You have a new message You have a new message You have a new message You have a new message You have a new message You have a new message You have a new message
-
-                                                            <div class="task-time">13 hours ago 20:03 05-Mar</div>
-
-                                                            <div class="task-buttons">
-                                                                <button type="button" name="button">button1</button>
-                                                                <button type="button" name="button">button1</button>
-                                                            </div>
-                                                        </div>
-
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="td">
-                                                        <div class="task-icon">
-                                                            <i class="fa fa-square-o" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="task-activity">
-                                                            <div class="task-tite">Spam IT</div>
-
-                                                            You have a new message You have a new message You have a new message You have a new message
-
-                                                            <div class="task-time">13 hours ago 20:03 05-Mar</div>
-
-                                                            <div class="task-buttons">
-                                                                <button type="button" name="button">button1</button>
-                                                                <button type="button" name="button">button1</button>
-                                                                <button type="button" name="button">button1</button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="task-read-more">
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="td bg-success">
-                                                        <div class="task-icon"></div>
-                                                        <div class="task-activity">
-                                                            <div class="task-tite">Spam IT</div>
-                                                            You have a new message You have a new message You have a new message You have a new message You have a new message You have a new message You have a new message You have a new message
-
-                                                            <div class="task-time">13 hours ago 20:03 05-Mar</div>
-                                                        </div>
-                                                        <a class="task-read-more">
-                                                        </a>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </plugin-inbox-task-list>
-                                </div>
-
-                                <div class="tab-pane" id="activeTaskActivity" role="tabpanel">
-                                    <plugin-inbox-activity-list class="plugin-inbox-activity-list">
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="td">
-                                                        <div class="activity-list">
-                                                            <div class="activity-tite">This happened</div>
-                                                            <div class="activity-time">13 hours ago 20:03 05-Mar</div>
-                                                            A message came for uoi
-                                                        </div>
-                                                        <a class="activity-read-more"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="td bg-success">
-
-                                                        <div class="task-activity">
-                                                            <div class="activity-tite">Test Activity</div>
-                                                            <div class="task-time">YEAH</div>
-
-                                                        </div>
-                                                        <a class="task-read-more"></a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </plugin-inbox-activity-list>
-                                </div>
-                            </div>
-                        </div>
+                <div class="tab-pane" id="inboxActivity" role="tabpanel">
+                    <div class="activity">
+                        <table class="table">
+                            <tr class="tr">
+                                <td class="td">
+                                    <div class="row">
+                                        <div class="title">
+                                            This happened
+                                        </div>
+                                        <div class="date-time">
+                                            13 hours ago 20:03 05-Mar
+                                        </div>
+                                        <div class="description">
+                                            A message came for uoi
+                                        </div>
+                                    </div>
+                                    <a class="read-more"></a>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td bg-success">
+                                    <div class="row">
+                                        <div class="title">
+                                            Test Activity
+                                        </div>
+                                        <div class="date-time">
+                                            12 hours ago 20:03 05-Mar
+                                        </div>
+                                        <div class="description">
+                                            Only a test
+                                        </div>
+                                    </div>
+                                    <a class="read-more"></a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-              </div>
-            </plugin-inbox>
+            </div>
+        </div>
+    </div>
+</div>
 
-            <peek-main-footer>
-              <div class="peek-main-footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                            <h2 class="h2">Offline, xxx minutes</h2>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </peek-main-footer>
+<div class="peek-main-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="title">Offline, xxx minutes</div>
+            </div>
+        </div>
+    </div>
+</div>
 
-        </peek-main-app>
-    </body>
+</body>
 
 </html>
