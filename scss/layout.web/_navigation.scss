@@ -1,16 +1,16 @@
 // Main top navigation
 .peek-main-title{
 
-  $section_font_size: 0.8em;
+  //$section_font_size: 0.8em;
   position: fixed;
   width: 100%;
   z-index: 999;
 
   > .container-fluid{
-    background-color: $white;
+    //background-color: $white;
     height: $navigation_header_height;// main header height being set
     @include box-shadow;
-    text-transform: $font_transform;
+    //text-transform: $font_transform;
     padding-right: 0px;
     padding-left: 0px;
 
@@ -19,16 +19,16 @@
   //normal button
   .btn{
     height: $navigation_header_height; //setting height to default header naviation height
-    font-size:$section_font_size;
+    //font-size:$section_font_size;
     width: 100%;
-    border-radius: 0px;
+    //border-radius: 0px;
 
     &:before {
-      border-radius: 0px;
+      //border-radius: 0px;
     }
 
     &:hover{
-      border-radius: 0px;
+      //border-radius: 0px;
     }
   }
 
@@ -41,7 +41,7 @@
 
         &:first-child,
         &:last-child{
-          border-radius: 0px;
+          //border-radius: 0px;
         }
 
     }
@@ -63,21 +63,21 @@
     }
 
     .menu-bar-right{
-      text-align: right;
+      //text-align: right;
       width: 115px;
     }
 
     .menu-title{
 
       h2{
-        font-size :$section_font_size;
+        //font-size :$section_font_size;
         height: $navigation_header_height; //setting height to default header naviation height
         line-height: $navigation_header_height; // line height to bring text in center of header navigation
         padding: 0px $general_padding;
-        overflow: hidden;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        //overflow: hidden;
+        //white-space: nowrap;
+        //overflow: hidden;
+        //text-overflow: ellipsis;
       }
 
     }
@@ -88,36 +88,36 @@
 //navigation tabs
 .nav{
 
-  $section_font_size: 0.8em;
+  //$section_font_size: 0.8em;
   margin: 0px;
 
   &.nav-tabs{
-    border-bottom: 0px solid $brand;
+    //border-bottom: 0px solid $brand;
 
     & > li {
       margin-bottom: 0px;
 
       &.active{
         & > a{
-          border-radius: 0px 0px 0 0;
+          //border-radius: 0px 0px 0 0;
           @include button-settings;
-          font-size:$section_font_size;
+          //font-size:$section_font_size;
           padding: 12px;
           margin-top: 0px;
-          border-radius: 0px;
+          //border-radius: 0px;
         }
       }
 
       & > a{
-        font-family: $fonts_special;
-        text-transform: $font_transform;
-        color: lighten($font_colour_default,10%);
-        font-size:$section_font_size;
-        border: 0px;
+        //font-family: $fonts_special;
+        //text-transform: $font_transform;
+        //color: lighten($font_colour_default,10%);
+        //font-size:$section_font_size;
+        //border: 0px;
         margin-right: 0px;
         margin-top: 10px;
-        border-radius: 0px 0px 0 0;
-        background-color: #eee;
+        //border-radius: 0px 0px 0 0;
+        //background-color: #eee;
         padding: 10px;
         margin-top: 4px
       }

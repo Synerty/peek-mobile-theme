@@ -1,9 +1,9 @@
 .home-page{
-  background-image: url('../images/home_background.png');
+  //background-image: url('../images/home_background.png');
   background-repeat: no-repeat;
-  background-color: $general_background_color;
-  background-repeat: no-repeat;
-  background-size: cover;
+  //background-color: $general_background_color;
+  //background-repeat: no-repeat;
+  //background-size: cover;
 }
 
 .peek-main-home{
@@ -28,13 +28,13 @@
 
     a{
       display: block;
-      background-image: url("../images/button_home_background.png");
-      background-repeat: repeat;
+      //background-image: url("../images/button_home_background.png");
+      //background-repeat: repeat;
       padding: $general_padding;
-      border-radius: $general_border_radius + 2px;
-      color: $white;
-      text-transform: capitalize;
-      font-size: 1.1em;
+      //border-radius: $general_border_radius + 2px;
+      //color: $white;
+      //text-transform: capitalize;
+      //font-size: 1.1em;
       @include box-shadow;
       transition: 0.45s;
 
@@ -43,7 +43,7 @@
       }
 
       &:hover{
-          text-decoration: none;
+          //text-decoration: none;
           @include no-shadow;
       }
 

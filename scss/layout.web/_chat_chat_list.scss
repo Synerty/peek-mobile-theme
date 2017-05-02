@@ -15,14 +15,11 @@
     padding-top: ($general_padding - 5px);
     padding-bottom: ($general_padding - 5px);
     margin-bottom: $general_padding;
-    font-size: 1.2em;
     overflow: hidden;
   }
 
   .fa{
-      color: darken($grey,10%);
       float: right;
-      font-size: 1.5em;
   }
 
 }
