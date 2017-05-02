@@ -1,0 +1,100 @@
+//tasks
+.plugin-active-task-task-list{
+
+  .td{
+    border-top: 0px;
+    border-bottom: 1px solid darken($grey,20%);
+
+  }
+
+  .task-icon{
+
+    font-size: 1.3em;
+
+    .fa{
+      color: $brand;
+    }
+
+  }
+
+  .task-activity{
+
+    font-size: 0.9rem;
+
+    .task-tite{
+      color: $black;
+      font-size: 1.1rem;
+    }
+
+    .task-time{
+      font-size: 0.7rem;
+      display: block;
+    }
+
+    .task-buttons{
+      border-top: 1px solid $grey;
+      display: block;
+      overflow: hidden;
+    }
+
+    .btn{
+      font-size: 0.9em;
+    }
+
+  }
+
+  .task-read-more{
+    background-color: $grey;
+    font-size: 0.6em;
+    background-image: url('../images/icon_more.png');
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    &:hover{
+      background-color: $brand;
+    }
+
+  }
+
+}
+
+//plugin activity task list
+.plugin-active-task-activity-list{
+
+  .td{
+    border-top: 0px;
+    border-bottom: 1px solid darken($grey,20%);
+  }
+
+  .activity-tite{
+    color: $black;
+    font-size: 1.1rem;
+  }
+
+  .activity-time{
+    font-size: 0.7rem;
+  }
+
+  .activity-buttons{
+    border-top: 1px solid $grey;
+    overflow: hidden;
+  }
+
+  .task-read-more{
+    position: absolute;
+    background-color: $grey;
+    font-size: 0.6em;
+    background-image: url('../images/icon_more.png');
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    &:hover{
+      background-color: $brand;
+      cursor: pointer;
+    }
+
+  }
+
+}

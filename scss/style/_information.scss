@@ -1,0 +1,59 @@
+.peek-information{
+
+  //adjusting for fixed header and footer
+  >.container-fluid{
+    padding-top: $navigation_header_height + $general_padding;
+    padding-bottom: $navigation_header_height + $general_padding;
+
+    > .row{
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+  }
+  .information-icon{
+    background-image: url('../images/home_background.png');
+  }
+
+  //icon
+  .fa{
+    &.information-icon-large{
+      font-size: 6em;
+      //padding: ($general_padding*2)($general_padding*3);
+      border-radius: $general_border_radius*2;
+      //overflow: hidden;
+      vertical-align: middle;
+      color: $white;
+      background-image: url('../images/home_background.png');
+      background-size: 400%;
+      background-position: top center;
+      @include inner-shadow(0.35);
+      position: relative;
+      display: inline-block;
+      width: 136px;
+      height: 136px;
+      line-height: 136px;
+      padding: 0px;
+      text-align: center;
+    }
+  }
+
+  .information-icon-large{
+    background-image: url('../images/home_background.png');
+    background-size: 400%;
+    background-position: top center;
+    @include inner-shadow(0.35);
+    display: inline-block;
+    padding: 20px;
+    border-radius: $general_border_radius*2;
+    width: 136px;
+    height: 136px;
+    text-align: center;
+
+    .image{
+      max-height: 100%;
+    }
+
+  }
+
+}

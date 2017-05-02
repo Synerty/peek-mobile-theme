@@ -1,0 +1,61 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5{
+  @include nuke;
+  font-family: $fonts_special;
+}
+
+.center{
+  text-align: center;
+    h1{
+      text-align: center;
+  }
+}
+
+//table
+.table{
+  color: $black;
+
+  .table-header{
+    background-color: darken($grey,20%);
+    color: $white;
+    font-family: $fonts_special;
+    border-bottom: 0px;
+    font-size: 1.2em;
+  }
+
+}
+
+//nav tabs active lists
+.tab-content{
+  border-top: 1px solid darken($grey,20%);
+}
+
+.btn{
+  @include button-settings;
+}
+
+//button groups
+.btn-group{
+
+  &>.btn{
+      border-right: 1px solid $brand_compliment;
+
+    &:first-child{
+      border-radius: $general_border_radius 0px 0px $general_border_radius;
+    }
+
+    &:last-child{
+      border-radius: 0px $general_border_radius $general_border_radius 0px;
+      border-right: 0px none $brand_compliment;
+    }
+
+  }
+
+
+}
