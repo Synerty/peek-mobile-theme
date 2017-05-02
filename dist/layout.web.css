@@ -66,28 +66,18 @@
   width: 100%;
   z-index: 999; }
   .peek-main-title > .container-fluid {
-    background-color: #ffffff;
     height: 40px;
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
-    text-transform: uppercase;
     padding-right: 0px;
     padding-left: 0px; }
   .peek-main-title .btn {
     height: 40px;
-    font-size: 0.8em;
-    width: 100%;
-    border-radius: 0px; }
-    .peek-main-title .btn:before {
-      border-radius: 0px; }
-    .peek-main-title .btn:hover {
-      border-radius: 0px; }
+    width: 100%; }
   .peek-main-title .btn-group {
     width: 100%;
     padding: 0px; }
     .peek-main-title .btn-group > .btn {
       width: 50%; }
-      .peek-main-title .btn-group > .btn:first-child, .peek-main-title .btn-group > .btn:last-child {
-        border-radius: 0px; }
   .peek-main-title .menu-bar {
     display: table;
     width: 100%;
@@ -97,90 +87,65 @@
     .peek-main-title .menu-bar .menu-bar-left {
       width: 60px; }
     .peek-main-title .menu-bar .menu-bar-right {
-      text-align: right;
       width: 115px; }
     .peek-main-title .menu-bar .menu-title h2 {
-      font-size: 0.8em;
       height: 40px;
       line-height: 40px;
-      padding: 0px 15px;
-      overflow: hidden;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; }
+      padding: 0px 15px; }
 
 .nav {
   margin: 0px; }
-  .nav.nav-tabs {
-    border-bottom: 0px solid #28aae1; }
-    .nav.nav-tabs > li {
-      margin-bottom: 0px; }
-      .nav.nav-tabs > li.active > a {
-        border-radius: 0px 0px 0 0;
-        background-color: #28aae1;
+  .nav.nav-tabs > li {
+    margin-bottom: 0px; }
+    .nav.nav-tabs > li.active > a {
+      background-color: #28aae1;
+      color: #ffffff;
+      font-size: 1em;
+      font-family: "Play", sans-serif;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: all .35s ease;
+      -moz-transition: all .35s ease;
+      -webkit-transition: all .35s ease;
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 15px;
+      position: relative;
+      z-index: 100;
+      font-size: 0.8em;
+      padding: 8px;
+      font-weight: normal;
+      border: 0px;
+      padding: 12px;
+      margin-top: 0px; }
+      .nav.nav-tabs > li.active > a:hover {
+        background-color: #146a8f;
         color: #ffffff;
-        font-size: 1em;
-        font-family: "Play", sans-serif;
-        text-transform: uppercase;
-        border-radius: 4px;
         transition: all .35s ease;
         -moz-transition: all .35s ease;
-        -webkit-transition: all .35s ease;
-        cursor: pointer;
-        display: inline-block;
-        padding: 10px 15px;
-        position: relative;
-        z-index: 100;
-        font-size: 0.8em;
-        padding: 8px;
-        font-weight: normal;
-        border: 0px;
-        font-size: 0.8em;
-        padding: 12px;
-        margin-top: 0px;
-        border-radius: 0px; }
-        .nav.nav-tabs > li.active > a:hover {
-          background-color: #146a8f;
-          color: #ffffff;
-          transition: all .35s ease;
-          -moz-transition: all .35s ease;
-          -webkit-transition: all .35s ease; }
-      .nav.nav-tabs > li > a {
-        font-family: "Play", sans-serif;
-        text-transform: uppercase;
-        color: #666666;
-        font-size: 0.8em;
-        border: 0px;
-        margin-right: 0px;
-        margin-top: 10px;
-        border-radius: 0px 0px 0 0;
-        background-color: #eee;
-        padding: 10px;
-        margin-top: 4px; }
+        -webkit-transition: all .35s ease; }
+    .nav.nav-tabs > li > a {
+      margin-right: 0px;
+      margin-top: 10px;
+      padding: 10px;
+      margin-top: 4px; }
 
 .peek-main-footer {
   position: fixed;
   width: 100%;
   bottom: 0px;
-  z-index: 899;
-  background-color: #ffffff; }
+  z-index: 899; }
   .peek-main-footer .container-fluid {
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
   .peek-main-footer .h2 {
-    font-size: 0.8em;
     height: 40px;
     line-height: 40px;
     overflow: hidden;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
 
 .home-page {
-  background-image: url("../images/home_background.png");
-  background-repeat: no-repeat;
-  background-color: #fafafa;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
 
 .peek-main-home > .container-fluid {
   padding-top: 45px;
@@ -194,19 +159,12 @@
   font-family: "Play", sans-serif; }
   .peek-main-home .home-icon a {
     display: block;
-    background-image: url("../images/button_home_background.png");
-    background-repeat: repeat;
     padding: 15px;
-    border-radius: 6px;
-    color: #ffffff;
-    text-transform: capitalize;
-    font-size: 1.1em;
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
     transition: 0.45s; }
     .peek-main-home .home-icon a img {
       padding: 15px 30px; }
     .peek-main-home .home-icon a:hover {
-      text-decoration: none;
       box-shadow: 0px 0px 0px transparent; }
 
 .plugin-active-task > .container-fluid {
@@ -287,32 +245,21 @@
 
 .peek-information .fa.information-icon-large {
   font-size: 6em;
-  border-radius: 8px;
+  padding: 30px 45px;
   vertical-align: middle;
-  color: #ffffff;
-  background-image: url("../images/home_background.png");
-  background-size: 400%;
-  background-position: top center;
   box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
   position: relative;
   display: inline-block;
   width: 136px;
   height: 136px;
   line-height: 136px;
-  padding: 0px;
-  text-align: center; }
+  padding: 0px; }
 
 .peek-information .information-icon-large {
-  background-image: url("../images/home_background.png");
-  background-size: 400%;
-  background-position: top center;
   box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
-  display: inline-block;
   padding: 20px;
-  border-radius: 8px;
   width: 136px;
-  height: 136px;
-  text-align: center; }
+  height: 136px; }
   .peek-information .information-icon-large .image {
     max-height: 100%; }
 
@@ -341,13 +288,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 15px;
-  font-size: 1.2em;
   overflow: hidden; }
 
 .plugin-chat-chat-list .fa {
-  color: #b3b2b2;
-  float: right;
-  font-size: 1.5em; }
+  float: right; }
 
 .plugin-chat-msg-list > .container-fluid {
   padding-top: 55px;
@@ -359,11 +303,7 @@
 .plugin-chat-msg-list .well {
   padding: 10px 0px;
   margin-bottom: 15px;
-  font-size: 1.2em;
   overflow: hidden; }
-
-.plugin-chat-msg-list .btn .fa {
-  color: #ffffff; }
 
 .plugin-chat-msg-list .messaging-text {
   padding-bottom: 135px; }
@@ -373,13 +313,11 @@
   height: 80px;
   position: fixed;
   width: 100%;
-  z-index: 999;
-  background-color: #ffffff; }
+  z-index: 999; }
   .plugin-chat-msg-list .messaging-area .messaging-textarea {
     width: 70%;
     float: left; }
     .plugin-chat-msg-list .messaging-area .messaging-textarea textarea {
-      border-radius: 0px;
       height: 80px; }
   .plugin-chat-msg-list .messaging-area .send {
     background-color: #5ca43f;
@@ -390,7 +328,6 @@
     width: 30%;
     float: right; }
     .plugin-chat-msg-list .messaging-area .messaging-buttons .btn {
-      border-radius: 0px;
       width: 50%;
       float: left;
       height: 80px; }
@@ -401,7 +338,6 @@
   margin-bottom: 15px;
   margin-left: 90px; }
   .plugin-chat-msg-list .chat-window .chat-message .chat-bubble {
-    background-color: #ededed;
     padding: 5px 10px;
     border-radius: 8px 8px 0px 8px; }
 
@@ -412,16 +348,30 @@
   margin-bottom: 15px;
   margin-right: 90px; }
   .plugin-chat-msg-list .chat-window .chat-reply .chat-bubble {
-    background-color: #dff0d8;
     padding: 5px 10px;
     border-radius: 4px 4px 4px 0px; }
 
-.plugin-chat-msg-list .chat-window .chat-details {
-  font-size: 0.9em; }
-
 body,
 html {
-  font-size: 16px;
-  color: #4d4c4c;
-  height: 100%;
-  font-family: "Play", sans-serif; }
+  height: 100%; }
+
+.image {
+  max-width: 100%; }
+
+.hr {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+*:focus {
+  outline: none !important; }
+
+.navigation-information {
+  margin-bottom: 15px; }
+  .navigation-information .form-group {
+    padding-top: 0px;
+    margin-bottom: 0px; }
+
+.form-group {
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  padding-top: 15px; }
