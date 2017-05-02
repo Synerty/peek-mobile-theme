@@ -1,0 +1,53 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5{
+  @include nuke;
+  font-family: $fonts_special;
+}
+
+.h1{
+  margin-bottom: $general_padding * 2;
+  padding: ($general_padding * 2) 0px 0px 0px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 15%;
+    border-bottom: 3px solid #26abe2;
+    padding-bottom: $general_padding;
+  }
+
+}
+
+.center{
+  text-align: center;
+    h1{
+      text-align: center;
+      &:after {
+        margin: 0px auto;
+      }
+  }
+}
+
+
+//nav tabs active lists
+.btn{
+  @include button-settings;
+}
+
+//button groups
+.btn-group{
+
+  padding:$general_padding 0px;
+
+  .btn+.btn{
+    margin-left: 0px;
+  }
+
+}

@@ -1,0 +1,24 @@
+@import '../_variables';
+@import '_mixins';
+@import '_bootstrap_adjustments.web';
+
+//
+@import '_navigation';
+@import '_footer';
+
+//pages
+@import '_home';
+@import '_activity_task.web';
+@import '_information';
+@import '_details_data';
+@import '_table_data';
+@import '_chat_chart_list';
+@import '_chat_messages';
+
+body,
+html{
+  font-size: $general_font_size;
+  color: $font_colour_default;
+  height: 100%;
+  font-family: $fonts_special;
+}
