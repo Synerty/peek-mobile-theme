@@ -2,12 +2,12 @@
 
   //adjusting for fixed header and footer
   >.container-fluid{
-    padding-top: $navigation_header_height;
-    padding-bottom: $navigation_header_height + $general_padding;
+    //padding-top: $navigation_header_height;
+    //padding-bottom: $navigation_header_height + $general_padding;
 
     > .row{
-      margin-right: -15px;
-      margin-left: -15px;
+      //margin-right: -15px;
+      //margin-left: -15px;
     }
 
   }
