@@ -28,7 +28,7 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
         /* Contains the Home Screen looks classes */
             ...
 
-            .plugin-icon{
+            .icon{
             /*
                 Contains the Button looks attributes unique to the Home Screen
                 Buttons responsively wrap
@@ -36,7 +36,7 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
                 ...
 
             }
-            .plugin-image{
+            .image{
             /*
                 Contains the Image looks attributes unique to the Home Screen
                 Strictly uses images
@@ -44,7 +44,7 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
                 ...
 
             }
-            .plugin-title{
+            .title{
             /* Contains the Button Title looks attributes unique to the Home Screen */
                 ...
 
@@ -96,10 +96,10 @@ HTML
 ::
 
         <div class="peek-home-screen">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 plugin-icon">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 icon">
                 <a>
-                    <img class="plugin-image" src="..."></img>
-                    <div class="plugin-title">
+                    <img class="image" src="..."></img>
+                    <div class="title">
                         ...
 
                     </div>
@@ -117,12 +117,12 @@ NativeScript
 ::
 
         <GridLayout Class="peek-home-screen">
-            <GridLayout class="plugin-icon">
-                <Image class="plugin-image"
+            <GridLayout class="icon">
+                <Image class="image"
                        src="...">
 
                 </Image>
-                <Label class="plugin-title"
+                <Label class="title"
                        [text]="...">
 
                 </Label>
