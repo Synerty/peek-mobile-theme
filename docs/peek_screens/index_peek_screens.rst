@@ -10,5 +10,4 @@ This section describes the styling of the built in peek platform displays.
 
     title_bar/title_bar
     home_screen/home_screen
-    navigation_bar/navigation_bar
     footer/footer

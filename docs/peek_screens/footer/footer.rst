@@ -29,14 +29,14 @@ The :code:`.peek-footer` class contains the classes specific to the Footer.
 ::
 
         .peek-footer{
-        <!-- Contains the Footer looks classes -->
+        /* Contains the Footer looks classes */
             ...
 
             .title{
-            <!--
+            /*
                 Contains the title looks attributes unique to the Footer
                 This title will be dynamically set by the plugins installed
-            -->
+            */
                 ...
 
             }

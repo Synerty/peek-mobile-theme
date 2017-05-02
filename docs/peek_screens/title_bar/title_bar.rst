@@ -51,17 +51,17 @@ The :code:`.peek-title-bar` class contains the looks classes specific to the Tit
 ::
 
         .peek-title-bar{
-        <!-- Contains the Title Bar looks classes -->
+        /* Contains the Title Bar looks classes */
             ...
 
             .btn{
-            <!-- Contains the button looks attributes unique to the Title Bar -->
+            /* Contains the button looks attributes unique to the Title Bar */
 
                 ...
 
             }
             .title{
-            <!-- Contains the title looks attributes unique to the Title Bar -->
+            /* Contains the title looks attributes unique to the Title Bar */
 
                 ...
 
@@ -155,12 +155,13 @@ Layout
 
 
 HTML
-~~~~
+````
 
 The Title Bar HTML layout classes are found in the :file:`_title_bar.web.scss`.
 
+
 NativeScript
-~~~~~~~~~~~~
+````````````
 
 The Title Bar NativeScript layout classes are found in the
 :file:`_title_bar.ns.scss`.
