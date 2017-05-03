@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Peek</title>
+    <!--<base href="/">-->
+    <base href=".">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../dist/layout.web.css">
+    <link rel="stylesheet" href="../dist/style.css">
+
+</head>
+
+<body>
+
+<div class="peek-title-bar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="btn-group pull-left" role="group">
+                <button class="btn">Home</button>
+            </div>
+            <div class="title">Peek Title</div>
+            <div class="btn-group pull-right" role="group">
+                <button class="btn">(14) Tasks</button>
+                <button class="btn">User</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="peek-home-screen">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="icon">
+                <a ng-reflect-router-link="/peek_plugin_noop"
+                   ng-reflect-href="/peek_plugin_noop"
+                   href="http://localhost:4200/peek_plugin_noop">
+                    <img class="image" src="../images/home_messages.png">
+                    <div class="title">Messages</div>
+                </a>
+            </div>
+            <div class="icon">
+                <a ng-reflect-router-link="/peek_plugin_noop"
+                   ng-reflect-href="/peek_plugin_noop"
+                   href="http://localhost:4200/peek_plugin_noop">
+                    <img class="image" src="../images/home_testing_noop.png">
+                    <div class="title">Testing Noop</div>
+                </a>
+            </div>
+            <div class="icon">
+                <a ng-reflect-router-link="/peek_plugin_pof_field_switching"
+                   ng-reflect-href="/peek_plugin_pof_field_switching"
+                   href="http://localhost:4200/peek_plugin_pof_field_switching">
+                    <img class="image" src="../images/home_field_switching.png">
+                    <div class="title">Field Switching</div>
+                </a>
+            </div>
+            <div class="icon">
+                <a ng-reflect-router-link="/peek_plugin_user"
+                   ng-reflect-href="/peek_plugin_user"
+                   href="http://localhost:4200/peek_plugin_user">
+                    <img class="image" src="../images/login_logout.png">
+                    <div class="title">Login / Logout</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="peek-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="title">Offline, xxx minutes</div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

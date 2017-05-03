@@ -25,8 +25,27 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
 ::
 
         .peek-home-screen{
-        /* Contains the Home Screen looks classes */
+        /*
+            Contains the Home Screen looks classes
+            Contains the Background looks attributes
+            Home Screen background is unique and different to other screens
+            Cannot use the body tag
+        */
             ...
+
+            .container-fluid{
+            /* Contains the container looks attributes unique to the Home Screen */
+
+                ...
+
+            }
+
+            .row{
+            /* Contains the row looks attributes unique to the Home Screen */
+
+                ...
+
+            }
 
             .icon{
             /*
@@ -51,22 +70,68 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
             }
         }
 
-        .background-image{
-        /*
-            Contains the Background looks attributes
-            Home Screen background is unique and different to other screens
-            Cannot use the body tag
-        */
-            ...
 
-        }
-
-
-Background :code:`.background-image`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Background Image
+~~~~~~~~~~~~~~~~
 
 .. image:: ./home_background.png
    :align: center
+
+
+HTML
+~~~~
+
+::
+
+        <div class="peek-home-screen">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="icon">
+                        <a ng-reflect-router-link="/peek_plugin_noop"
+                           ng-reflect-href="/peek_plugin_noop"
+                           href="http://localhost:4200/peek_plugin_noop">
+                            <img class="image" src="../images/home_messages.png">
+                            <div class="title">Messages</div>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a ng-reflect-router-link="/peek_plugin_noop"
+                           ng-reflect-href="/peek_plugin_noop"
+                           href="http://localhost:4200/peek_plugin_noop">
+                            <img class="image" src="../images/home_testing_noop.png">
+                            <div class="title">Testing Noop</div>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a ng-reflect-router-link="/peek_plugin_pof_field_switching"
+                           ng-reflect-href="/peek_plugin_pof_field_switching"
+                           href="http://localhost:4200/peek_plugin_pof_field_switching">
+                            <img class="image" src="../images/home_field_switching.png">
+                            <div class="title">Field Switching</div>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a ng-reflect-router-link="/peek_plugin_user"
+                           ng-reflect-href="/peek_plugin_user"
+                           href="http://localhost:4200/peek_plugin_user">
+                            <img class="image" src="../images/login_logout.png">
+                            <div class="title">Login / Logout</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+NativeScript
+~~~~~~~~~~~~
+
+::
+
+        <ScrollView class="peek-home-screen"
+            ...
+
+        </ScrollView>
 
 
 Layout
@@ -84,48 +149,3 @@ NativeScript
 
 The Home Screen NativeScript layout classes are found in the
 :file:`_home_screen.ns.scss`.
-
-
-Display Samples
----------------
-
-
-HTML
-````
-
-::
-
-        <div class="peek-home-screen">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 icon">
-                <a>
-                    <img class="image" src="..."></img>
-                    <div class="title">
-                        ...
-
-                    </div>
-                </a>
-            </div>
-        </div>
-
-
-.. image:: ./home_screen-button.web.jpg
-
-
-NativeScript
-````````````
-
-::
-
-        <GridLayout Class="peek-home-screen">
-            <GridLayout class="icon">
-                <Image class="image"
-                       src="...">
-
-                </Image>
-                <Label class="title"
-                       [text]="...">
-
-                </Label>
-            </GridLayout>
-        </GridLayout>
-
