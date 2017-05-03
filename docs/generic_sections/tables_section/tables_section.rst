@@ -29,6 +29,16 @@ Section.
         /* Contains the Tables Section looks classes */
             ...
 
+            container-fluid{
+            /* Contains the container looks attributes unique to the Tables Section */
+                ...
+
+            }
+            .row{
+            /* Contains the row looks attributes unique to the Tables Section */
+                ...
+
+            }
             .table{
             /* Contains the table looks attributes unique to the Tables Section */
                 ...
@@ -57,26 +67,8 @@ Section.
         }
 
 
-Layout
-------
-
-
 HTML
-````
-
-The Tables Section HTML layout classes are found in the
-:file:`_tables_section.web.scss`.
-
-
-NativeScript
-````````````
-
-The Tables Section NativeScript layout classes are found in the
-:file:`_tables_section.ns.scss`.
-
-
-Code Extract
-------------
+~~~~
 
 Below is the HTML code extract of table header and first two rows from
 :ref:`tables_section_tables_section`: ::
@@ -105,3 +97,21 @@ Below is the HTML code extract of table header and first two rows from
                   </tr>
           </table>
         </div>
+
+
+Layout
+------
+
+
+HTML
+````
+
+The Tables Section HTML layout classes are found in the
+:file:`_tables_section.web.scss`.
+
+
+NativeScript
+````````````
+
+The Tables Section NativeScript layout classes are found in the
+:file:`_tables_section.ns.scss`.
