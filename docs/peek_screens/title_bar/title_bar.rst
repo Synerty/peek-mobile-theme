@@ -4,6 +4,9 @@
 Title Bar
 =========
 
+.. image:: ./title_bar.web.jpg
+  :align: center
+
 The Title Bar is fixed to the top of the screen.
 
 The buttons remain a fixed size throughout a responsive lifecycle.
@@ -32,19 +35,6 @@ The Title Bar looks classes are found in the :file:`_title_bar.scss`.
 
 Title Bar :code:`.peek-title-bar`
 `````````````````````````````````
-
-
-HTML
-~~~~
-
-.. image:: ./title_bar.web.jpg
-  :align: center
-
-NativeScript
-~~~~~~~~~~~~
-
-.. image:: ./title_bar.ns.jpg
-  :align: center
 
 The :code:`.peek-title-bar` class contains the looks classes specific to the Title Bar.
 
@@ -93,6 +83,9 @@ The :code:`.peek-title-bar` class contains the looks classes specific to the Tit
 HTML
 ~~~~
 
+.. image:: ./title_bar.web.jpg
+  :align: center
+
 ::
 
         <div class="peek-title-bar">
@@ -113,6 +106,9 @@ HTML
 
 NativeScript
 ~~~~~~~~~~~~
+
+.. image:: ./title_bar.ns.jpg
+  :align: center
 
 ::
 
