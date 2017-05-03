@@ -54,6 +54,27 @@ The :code:`.peek-title-bar` class contains the looks classes specific to the Tit
         /* Contains the Title Bar looks classes */
             ...
 
+            .container-fluid{
+            /* Contains the container looks attributes unique to the Title Bar */
+
+                ...
+
+            }
+
+            .row{
+            /* Contains the row looks attributes unique to the Title Bar */
+
+                ...
+
+            }
+
+            .btn-group{
+            /* Contains the button group looks attributes unique to the Title Bar */
+
+                ...
+
+            }
+
             .btn{
             /* Contains the button looks attributes unique to the Title Bar */
 
@@ -75,8 +96,18 @@ HTML
 ::
 
         <div class="peek-title-bar">
-            ...
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="btn-group pull-left" role="group">
+                        <button class="btn">Home</button>
+                    </div>
+                    <div class="title">Peek Title</div>
+                    <div class="btn-group pull-right" role="group">
+                        <button class="btn">(14) Tasks</button>
+                        <button class="btn">User</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -85,69 +116,10 @@ NativeScript
 
 ::
 
-        <GridLayout class="peek-title-bar">
+        <GridLayout class="peek-title-bar"
             ...
 
         </GridLayout>
-
-
-Button :code:`.btn`
-```````````````````
-
-The :code:`.btn` class dictates the style and size of all the buttons in the Title Bar.
-These buttons are unique to the Title Bar.
-
-HTML
-~~~~
-
-.. image:: ./title_bar-home_button.web.jpg
-
-::
-
-        <button class="btn">
-            Home
-
-        </button>
-
-
-NativeScript
-~~~~~~~~~~~~
-
-::
-
-        <Button class="btn"
-                text="Home">
-
-        </Button>
-
-
-Title :code:`.title`
-````````````````````
-
-The :code:`.title` class styles the dynamic title.  Plugins will update the title text.
-
-HTML
-~~~~
-
-.. image:: ./title_bar-title.web.jpg
-
-::
-
-        <div class="title">
-            ...
-
-        </div>
-
-
-NativeScript
-~~~~~~~~~~~~
-
-::
-
-        <Label class="title"
-               [text]="...">
-
-        </Label>
 
 
 Layout
