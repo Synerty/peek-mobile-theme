@@ -28,7 +28,7 @@ Section.
 
         .peek-details-section{
         /* Contains the Details Section looks classes */
-            ....
+            ...
 
             container-fluid{
             /* Contains the container looks attributes unique to the Details Section */
