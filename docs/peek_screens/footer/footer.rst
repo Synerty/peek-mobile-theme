@@ -4,6 +4,9 @@
 Footer
 ======
 
+.. image:: ./footer.web.jpg
+  :align: center
+
 The footer is fixed at the bottom of the screen.
 
 Text is always centered in the footer.
@@ -21,9 +24,6 @@ The Footer looks classes are found in the :file:`_footer.scss`.
 Footer :code:`.peek-footer`
 ```````````````````````````
 
-.. image:: ./footer.web.jpg
-  :align: center
-
 The :code:`.peek-footer` class contains the classes specific to the Footer.
 
 ::
@@ -31,6 +31,20 @@ The :code:`.peek-footer` class contains the classes specific to the Footer.
         .peek-footer{
         /* Contains the Footer looks classes */
             ...
+
+            .container-fluid{
+            /* Contains the container looks attributes unique to the Footer */
+
+                ...
+
+            }
+
+            .row{
+            /* Contains the row looks attributes unique to the Footer */
+
+                ...
+
+            }
 
             .title{
             /*
@@ -41,6 +55,34 @@ The :code:`.peek-footer` class contains the classes specific to the Footer.
 
             }
         }
+
+
+HTML
+~~~~
+
+.. image:: ./footer.web.jpg
+  :align: center
+
+::
+
+        <div class="peek-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="title">Offline, xxx minutes</div>
+                </div>
+            </div>
+        </div>
+
+
+NativeScript
+~~~~~~~~~~~~
+
+::
+
+        <GridLayout class="peek-footer"
+            ...
+
+        </GridLayout>
 
 
 Layout
