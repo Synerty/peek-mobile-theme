@@ -1,4 +1,4 @@
-.home-page{
+.peek-home-screen{
   background-image: url('../images/home_background.png');
   background-repeat: no-repeat;
   background-color: $general_background_color;
@@ -6,7 +6,7 @@
   background-size: cover;
 }
 
-.peek-main-home{
+.peek-home-screen{
 
   //adjusting for fixed header and footer
   >.container-fluid{
