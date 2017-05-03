@@ -126,27 +126,24 @@
     overflow: hidden;
     text-overflow: ellipsis; }
 
-.home-page {
-  background-repeat: no-repeat; }
-
-.peek-main-home > .container-fluid {
+.peek-home-screen > .container-fluid {
   padding-top: 45px;
   padding-bottom: 55px; }
-  .peek-main-home > .container-fluid > .row {
+  .peek-home-screen > .container-fluid > .row {
     margin-right: -10px;
     margin-left: -10px; }
 
-.peek-main-home .home-icon {
+.peek-home-screen .home-icon {
   padding: 5px;
   font-family: "Play", sans-serif; }
-  .peek-main-home .home-icon a {
+  .peek-home-screen .home-icon a {
     display: block;
     padding: 15px;
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
     transition: 0.45s; }
-    .peek-main-home .home-icon a img {
+    .peek-home-screen .home-icon a img {
       padding: 15px 30px; }
-    .peek-main-home .home-icon a:hover {
+    .peek-home-screen .home-icon a:hover {
       box-shadow: 0px 0px 0px transparent; }
 
 .plugin-active-task > .container-fluid {
