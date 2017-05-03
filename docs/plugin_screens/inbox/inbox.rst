@@ -193,147 +193,271 @@ Inbox.
 
 
 HTML
-~~~~
+````
+
+
+plugin-active-task-client
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
-        <div class="plugin-inbox">
-            <div class="container-fluid">
-                <div class="row">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="active" role="presentation">
-                            <a aria-controls="home" data-toggle="tab"
-                               href="http://localhost:4200/#inboxTasks"
-                               role="tab">Inbox</a>
-                        </li>
-                        <li role="presentation">
-                            <a aria-controls="profile" data-toggle="tab"
-                               href="http://localhost:4200/#inboxActivity"
-                               role="tab">Activity</a>
-                        </li>
-                    </ul>
+        <div class="peek-inbox">
 
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="inboxTasks" role="tabpanel">
-                            <div class="inbox">
-                                <table class="table">
-                                    <tr class="tr">
-                                        <td class="td">
-                                            <div class="icon">
-                                                <i class="fa fa-comment"
-                                                   aria-hidden="true"></i>
-                                            </div>
-                                            <div class="row">
-                                                <div class="title">
-                                                    1st Message Received
-                                                </div>
-                                                <div class="description">
-                                                    This is you first message description
-                                                </div>
-                                                <div class="date-time">
-                                                    13 hours ago 20:03 05-Mar
-                                                </div>
-                                                <div class="btn-group">
-                                                    <button class="btn" role="button">
-                                                        button1
-                                                    </button>
-                                                    <button class="btn" role="button">
-                                                        button2
-                                                    </button>
-                                                    <button class="btn" role="button">
-                                                        button3
-                                                    </button>
-                                                    <button class="btn" role="button">
-                                                        button4
-                                                    </button>
-                                                    <button class="btn" role="button">
-                                                        button5
-                                                    </button>
-                                                    <button class="btn" role="button">
-                                                        button6
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="read-more"></div>
-                                        </td>
-                                    </tr>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs"
+                role="tablist">
+                <li class="active"
+                    role="presentation">
+                    <a href="#activeTaskTasks"
+                       aria-controls="home"
+                       role="tab"
+                       data-toggle="tab">
+                        Tasks
 
-                                    <tr>
-                                        <td class="td">
-                                            <div class="icon">
-                                                <i class="fa fa-check-square-o"
-                                                   aria-hidden="true"></i>
-                                            </div>
-                                            <div class="row">
-                                                <div class="title">
-                                                    1st Task
-                                                </div>
-                                                <div class="description">
-                                                    Your task if you choose to accept it.
-                                                </div>
-                                                <div class="date-time">
-                                                    13 hours ago 20:03 05-Mar
-                                                </div>
-                                                <div class="btn-group">
-                                                    <button class="btn" role="button">
-                                                        button1
-                                                    </button>
-                                                    <button class="btn" role="button">
-                                                        button2
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="read-more">
-                                            </div>
-                                        </td>
-                                    </tr>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#activeTaskActivity"
+                       aria-controls="profile"
+                       role="tab"
+                       data-toggle="tab">
+                        Activity
 
-                                </table>
-                            </div>
-                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active"
+                     role="tabpanel"
+                     id="activeTaskTasks">
+                    <plugin-active-task-task-list></plugin-active-task-task-list>
 
-                        <div class="tab-pane" id="inboxActivity" role="tabpanel">
-                            <div class="activity">
-                                <table class="table">
-                                    <tr class="tr">
-                                        <td class="td">
-                                            <div class="row">
-                                                <div class="title">
-                                                    This happened
-                                                </div>
-                                                <div class="date-time">
-                                                    13 hours ago 20:03 05-Mar
-                                                </div>
-                                                <div class="description">
-                                                    A message came for uoi
-                                                </div>
-                                            </div>
-                                            <a class="read-more"></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="tr">
-                                        <td class="td">
-                                            <div class="row">
-                                                <div class="title">
-                                                    Test Activity
-                                                </div>
-                                                <div class="date-time">
-                                                    12 hours ago 20:03 05-Mar
-                                                </div>
-                                                <div class="description">
-                                                    Only a test
-                                                </div>
-                                            </div>
-                                            <a class="read-more"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="tab-pane"
+                     role="tabpanel"
+                     id="activeTaskActivity">
+                    <plugin-active-task-activity-list></plugin-active-task-activity-list>
+
                 </div>
             </div>
         </div>
+
+
+plugin-active-task-task-list
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+        <div class="inbox">
+            <table class="table table-striped">
+                <tr class="tr"
+                    *ngFor="let task of tasks"
+                    (click)="taskClicked(task)">
+                    <td class="td">
+                        <div class="icon">
+                            <i class="fa fa-comment"
+                               aria-hidden="true">
+
+                            </i>
+                        </div>
+                        <div class="row">
+                            <div class="title">
+                                {{task.title}}
+
+                            </div>
+                            <div class="description">
+                                {{task.description}}
+
+                            </div>
+                            <div class="date-time">
+                                {{timePast(task)}} ago, {{dateTime(task)}}
+
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+plugin-active-task-activity-list
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+        <div class="activity">
+            <div class="message"
+                 *ngIf="activities.length === 0">
+                There is no recent activity.
+
+            </div>
+            <table class="table">
+                <tr class="tr"
+                    *ngFor="let activity of activities"
+                    (click)="activityClicked(activity)">
+                    <td class="td">
+                        <div class="row">
+                            <div class="title">
+                                {{activity.title}}
+
+                            </div>
+                            <div class="description">
+                                {{activity.description}}
+
+                            </div>
+                            <div class="date-time">
+                                {{timePast(activity)}} ago, {{dateTime(activity)}}
+
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+NativeScript
+````````````
+
+
+plugin-active-task-client
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+        <StackLayout class="peek-inbox">
+
+            <TabView #tabview [selectedIndex]="tabindex" sdkExampleTitle sdkToggleNavButton>
+                <StackLayout *tabItem="{title: 'Tasks'}">
+                    <plugin-active-task-task-list></plugin-active-task-task-list>
+                </StackLayout>
+                <StackLayout *tabItem="{title: 'Activity'}">
+                    <plugin-active-task-activity-list></plugin-active-task-activity-list>
+                </StackLayout>
+            </TabView>
+        </StackLayout>
+
+
+plugin-active-task-task-list
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+        <ScrollView class="inbox">
+            <label class="message"
+                   *ngIf="tasks.length === 0"
+                   text="There are no tasks :-)">
+
+            </label>
+            <ListView [items]="tasks">
+                <ng-template let-item="item" let-i="index">
+                    <StackLayout
+                            [class.bg-success]="!item.isCompleted() && item.isPrioritySuccess()"
+                            [class.bg-info]="!item.isCompleted() && item.isPriorityInfo()"
+                            [class.bg-warning]="!item.isCompleted() && item.isPriorityWarning()"
+                            [class.bg-danger]="!item.isCompleted() && item.isPriorityDanger()"
+                            (tap)="taskClicked(item)">
+                        <GridLayout columns="auto,*,auto" rows="*">
+                            <Label class="icon"
+                                   row="0" col="0"
+                                   *ngIf="item.isTask() && !item.isCompleted()"
+                                   [text]="'fa-square-o' | fonticon">
+
+                            </Label>
+
+                            <Label class="icon"
+                                   row="0" col="0"
+                                   *ngIf="item.isTask() && item.isCompleted()"
+                                   [text]="'fa-check-square-o' | fonticon">
+
+                            </Label>
+
+                            <Label class="icon"
+                                   row="0" col="0"
+                                   *ngIf="item.isMessage() && !item.isCompleted()"
+                                   [text]="'fa-comment-o' | fonticon">
+
+                            </Label>
+
+                            <Label class="title"
+                                   row="0" col="1"
+                                   [text]="' ' + item.title"
+                                   textWrap="true">
+
+                            </Label>
+
+                            <Label class="read-more"
+                                   row="0" col="2" *ngIf="hasRoute(item)"
+
+                                   [text]="'fa-angle-right' | fonticon">
+
+                            </Label>
+                        </GridLayout>
+                        <label class="description"
+                               [text]="item.description"
+                               textWrap="true">
+
+                        </label>
+                        <label class="date-time"
+                               [text]="timePast(item) + ' ago, ' + dateTime(item)"></label>
+
+                        <WrapLayout *ngIf="!item.isActioned()">
+                            <Button *ngFor="let action of item.actions"
+                                    [text]="action.title"
+                                    (tap)="actionClicked(item, action)">
+
+                            </Button>
+                        </WrapLayout>
+                    </StackLayout>
+                </ng-template>
+            </ListView>
+        </ScrollView>
+
+
+plugin-active-task-activity-list
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+        <ScrollView class="inbox">
+            <label class="message"
+                   *ngIf="activities.length === 0"
+                   text="There is no recent activity">
+
+            </label>
+
+            <ListView [items]="activities"
+                      (tap)="activityClicked(activity)">
+                <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+                    <StackLayout [class.odd]="odd" [class.even]="even"
+                                 (tap)="activityClicked(item)">
+                        <GridLayout columns="*,auto" rows="*">
+                            <label class="title"
+                                   row="0" col="0"
+                                   [text]="item.title" textWrap="true">
+
+                            </label>
+                            <Label class="read-more"
+                                   *ngIf="hasRoute(item)"
+                                   row="0" col="1"
+                                   [text]="'fa-angle-right' | fonticon">
+
+                            </Label>
+                        </GridLayout>
+                        <label class="description"
+                               [text]="item.description">
+
+                        </label>
+                        <label class="date-time"
+                               [text]="timePast(item) + ' ago, ' + dateTime(item)">
+
+                        </label>
+                    </StackLayout>
+                </ng-template>
+            </ListView>
+        </ScrollView>
+
 
 Layout
 ------

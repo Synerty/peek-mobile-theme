@@ -59,6 +59,11 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
                 ...
 
             }
+            .message{
+            /* Contains the Button Title looks attributes unique to the Home Screen */
+                ...
+
+            }
             .title{
             /* Contains the Button Title looks attributes unique to the Home Screen */
                 ...
@@ -80,42 +85,26 @@ HTML
 ::
 
         <div class="peek-home-screen">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="icon">
-                        <a ng-reflect-router-link="/peek_plugin_noop"
-                           ng-reflect-href="/peek_plugin_noop"
-                           href="http://localhost:4200/peek_plugin_noop">
-                            <img class="image" src="../images/home_messages.png">
-                            <div class="title">Messages</div>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a ng-reflect-router-link="/peek_plugin_noop"
-                           ng-reflect-href="/peek_plugin_noop"
-                           href="http://localhost:4200/peek_plugin_noop">
-                            <img class="image" src="../images/home_testing_noop.png">
-                            <div class="title">Testing Noop</div>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a ng-reflect-router-link="/peek_plugin_pof_field_switching"
-                           ng-reflect-href="/peek_plugin_pof_field_switching"
-                           href="http://localhost:4200/peek_plugin_pof_field_switching">
-                            <img class="image" src="../images/home_field_switching.png">
-                            <div class="title">Field Switching</div>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a ng-reflect-router-link="/peek_plugin_user"
-                           ng-reflect-href="/peek_plugin_user"
-                           href="http://localhost:4200/peek_plugin_user">
-                            <img class="image" src="../images/login_logout.png">
-                            <div class="title">Login / Logout</div>
-                        </a>
-                    </div>
-                </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="message"
+                   *ngIf="!appDetails.length">
+                No Plugins Installed
+
+              </div>
+              <div class="icon"
+                   *ngFor="let app of appDetails">
+                <a [routerLink]="[app.resourcePath]">
+                  <img class="image"
+                       [src]="[app.pluginIconPath]">
+                  <div class="title">
+                    {{app.title}}
+
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
 
 
@@ -124,9 +113,29 @@ NativeScript
 
 ::
 
-        <ScrollView class="peek-home-screen"
-            ...
+        <ScrollView class="peek-home-screen">
+          <WrapLayout>
+            <Label class="message"
+                   *ngIf="!appDetails.length"
+                   text="No Plugins Installed">
 
+            </Label>
+            <GridLayout class="icon"
+                        *ngFor="let app of appDetails"
+                        rows="*,auto" columns="*"
+                        [nsRouterLink]="[app.resourcePath]">
+              <Image class="image"
+                     row="0" col="0"
+                     src="~{{app.pluginIconPath}}">
+
+              </Image>
+              <Label class="title"
+                     row="1" col="0"
+                     [text]="app.title">
+
+              </Label>
+            </GridLayout>
+          </WrapLayout>
         </ScrollView>
 
 

@@ -81,18 +81,35 @@ HTML
 ::
 
         <div class="peek-title-bar">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="btn-group pull-left" role="group">
-                        <button class="btn">Home</button>
-                    </div>
-                    <div class="title">Peek Title</div>
-                    <div class="btn-group pull-right" role="group">
-                        <button class="btn">(14) Tasks</button>
-                        <button class="btn">User</button>
-                    </div>
+          <div class="container-fluid">
+            <div class="row"
+                 [class.bg-danger]="!vortexIsOnline">
+              <div class="btn-group pull-left"
+                   role="group">
+                <button class="btn"
+                        [routerLink]="['/']">
+                  Home
+
+                </button>
+                <div class="btn-group pull-right"
+                     role="group">
+                  <div class="title">
+                    {{title}}
+
+                  </div>
+                  <div class="btn-group pull-right"
+                       role="group">
+                    <button class="btn"
+                            *ngFor="let link of rightLinks"
+                            [routerLink]="[link.resourcePath]">
+                      {{linkTitle(link)}}
+
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
 
 
@@ -105,8 +122,36 @@ NativeScript
 ::
 
         <GridLayout class="peek-title-bar"
-            ...
+                    [class.bg-danger]="!vortexIsOnline"
+                    rows="auto" columns="auto, *, auto">
 
+          <Button class="btn" col="0" row="0"
+                  text="Home"
+                  [nsRouterLink]="['/']">
+
+          </Button>
+
+          <Button class="btn"
+                  *ngFor="let link of leftLinks"
+                  col="0" row="0"
+                  [text]="linkTitle(link)"
+                  [nsRouterLink]="[link.resourcePath]">
+
+          </Button>
+
+          <Label class="title"
+                 col="1" row="0"
+                 [text]="title">
+
+          </Label>
+
+          <Button class="btn"
+                  *ngFor="let link of rightLinks"
+                  col="2" row="0"
+                  [text]="linkTitle(link)"
+                  [nsRouterLink]="[link.resourcePath]">
+
+          </Button>
         </GridLayout>
 
 
