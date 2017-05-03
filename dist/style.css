@@ -63,30 +63,16 @@
     border-radius: 0px 4px 4px 0px;
     border-right: 0px none #1a8cbc; }
 
-.peek-main-title > .container-fluid {
+.peek-title-bar {
+  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
   background-color: #ffffff;
   text-transform: uppercase; }
-
-.peek-main-title .btn {
-  font-size: 0.8em;
-  border-radius: 0px; }
-  .peek-main-title .btn:before {
+  .peek-title-bar .btn {
+    font-size: 0.8em;
+    border-radius: 0px;
+    padding: 10px; }
+  .peek-title-bar .btn-group > .btn:first-child, .peek-title-bar .btn-group > .btn:last-child {
     border-radius: 0px; }
-  .peek-main-title .btn:hover {
-    border-radius: 0px; }
-
-.peek-main-title .btn-group > .btn:first-child, .peek-main-title .btn-group > .btn:last-child {
-  border-radius: 0px; }
-
-.peek-main-title .menu-bar .menu-bar-right {
-  text-align: right; }
-
-.peek-main-title .menu-bar .menu-title h2 {
-  font-size: 0.8em;
-  overflow: hidden;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
 
 .nav.nav-tabs {
   border-bottom: 0px solid #28aae1; }

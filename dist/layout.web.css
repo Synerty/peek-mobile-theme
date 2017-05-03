@@ -56,42 +56,24 @@
     -moz-transition: all .35s ease;
     -webkit-transition: all .35s ease; }
 
-.btn-group {
-  padding: 15px 0px; }
-  .btn-group .btn + .btn {
-    margin-left: 0px; }
+.btn-group .btn + .btn {
+  margin-left: 0px; }
 
-.peek-main-title {
-  position: fixed;
+.peek-title-bar {
   width: 100%;
-  z-index: 999; }
-  .peek-main-title > .container-fluid {
-    height: 40px;
-    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
+  z-index: 999;
+  height: 40px;
+  position: fixed; }
+  .peek-title-bar > .container-fluid {
     padding-right: 0px;
     padding-left: 0px; }
-  .peek-main-title .btn {
-    height: 40px;
-    width: 100%; }
-  .peek-main-title .btn-group {
-    width: 100%;
-    padding: 0px; }
-    .peek-main-title .btn-group > .btn {
-      width: 50%; }
-  .peek-main-title .menu-bar {
-    display: table;
-    width: 100%;
-    table-layout: fixed; }
-    .peek-main-title .menu-bar > div {
-      display: table-cell; }
-    .peek-main-title .menu-bar .menu-bar-left {
-      width: 60px; }
-    .peek-main-title .menu-bar .menu-bar-right {
-      width: 115px; }
-    .peek-main-title .menu-bar .menu-title h2 {
-      height: 40px;
-      line-height: 40px;
-      padding: 0px 15px; }
+  .peek-title-bar .btn {
+    height: 40px; }
+  .peek-title-bar .menu-title {
+    line-height: 40px; }
+    @media (min-width: 768px) {
+      .peek-title-bar .menu-title {
+        text-align: center; } }
 
 .nav {
   margin: 0px; }
