@@ -1,88 +1,31 @@
 // Main top navigation
-.peek-main-title{
+.peek-title-bar{
 
   //$section_font_size: 0.8em;
-  position: fixed;
   width: 100%;
   z-index: 999;
-
-  > .container-fluid{
-    //background-color: $white;
-    height: $navigation_header_height;// main header height being set
-    @include box-shadow;
-    //text-transform: $font_transform;
+  height: $navigation_header_height;// main header height being set
+  position: fixed;
+  
+  >.container-fluid{
     padding-right: 0px;
     padding-left: 0px;
-
   }
 
   //normal button
   .btn{
     height: $navigation_header_height; //setting height to default header naviation height
-    //font-size:$section_font_size;
-    width: 100%;
-    //border-radius: 0px;
+  }
 
-    &:before {
-      //border-radius: 0px;
-    }
+  //title
+  .menu-title{
+    line-height: $navigation_header_height;
 
-    &:hover{
-      //border-radius: 0px;
+    @media (min-width: 768px){
+      text-align: center;
     }
   }
 
-  //button group
-  .btn-group{
-    width: 100%;
-    padding: 0px;
-    &>.btn{
-        width: 50%;
-
-        &:first-child,
-        &:last-child{
-          //border-radius: 0px;
-        }
-
-    }
-
-  }
-
-  .menu-bar{
-
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-
-    & > div{
-      display: table-cell;
-    }
-
-    .menu-bar-left{
-      width: 60px;
-    }
-
-    .menu-bar-right{
-      //text-align: right;
-      width: 115px;
-    }
-
-    .menu-title{
-
-      h2{
-        //font-size :$section_font_size;
-        height: $navigation_header_height; //setting height to default header naviation height
-        line-height: $navigation_header_height; // line height to bring text in center of header navigation
-        padding: 0px $general_padding;
-        //overflow: hidden;
-        //white-space: nowrap;
-        //overflow: hidden;
-        //text-overflow: ellipsis;
-      }
-
-    }
-
-  }
 }
 
 //navigation tabs
