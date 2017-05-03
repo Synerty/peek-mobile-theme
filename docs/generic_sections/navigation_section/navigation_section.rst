@@ -15,14 +15,20 @@ The Navigation Section is located below the :ref:`title_section`, above the scre
 The buttons remain a fixed size throughout a responsive lifecycle.  The buttons are
 sized around the text they contain.
 
-.. note:: The buttons require a different theme to the :ref:`title_section`.
+.. note:: The buttons require a different theme to the :ref:`title_bar`.
 
 
 Looks Classes
 -------------
 
-The :code:`.btn-group` and :code:`.btn` classes are used throughout Peek.
-These looks classes attribute changes are found in :file:`_bootstrap_adjustments.scss`.
+The Navigation Section looks classes are found in the :file:`_navigation_section.scss`.
+
+
+Navigation Section :code:`.peek-nav-section`
+````````````````````````````````````````````
+
+The :code:`.peek-nav-section` class contains the looks classes specific to the
+Navigation Section.
 
 ::
 
@@ -30,17 +36,67 @@ These looks classes attribute changes are found in :file:`_bootstrap_adjustments
         /* Contains the Navigation Section looks attributes */
             ...
 
+            .container-fluid{
+            /* Contains the container looks attributes unique to the Navigation Section */
+
+                ...
+
+            }
+
+            .row{
+            /* Contains the row looks attributes unique to the Navigation Section */
+
+                ...
+
+            }
+
+           .btn-group{
+           /* Contains the Button Group looks attributes unique to the Navigation Section */
+               ...
+
+           }
+           .btn{
+           /* Contains the Button looks attributes unique to the Navigation Section */
+               ...
+
+           }
         }
-        .btn-group{
-        /* Contains the Button Group looks attributes */
+
+
+HTML
+~~~~
+
+::
+
+        <div class="peek-nav-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="btn-group pull-left" role="group">
+                        <button class="btn" role="group">My Jobs
+                        </button>
+                        <button class="btn" role="group">Job
+                        </button>
+                        <button class="btn" role="group">Operations
+                        </button>
+                    </div>
+                    <div class="btn-group pull-right" role="group">
+                        <button class="btn" role="group">&lt;</button>
+                        <button class="btn" role="group">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+NativeScript
+~~~~~~~~~~~~
+
+::
+
+        <GridLayout class="peek-nav-section"
             ...
 
-        }
-        .btn{
-        /* Contains the Button looks attributes */
-            ...
-
-        }
+        </GridLayout>
 
 
 Layout
@@ -59,50 +115,3 @@ NativeScript
 
 The Navigation Section NativeScript layout classes are found in the
 :file:`_navigation_section.ns.scss`.
-
-
-Display Samples
----------------
-
-
-HTML
-````
-
-The following example shows a button group :code:`.btn-group` on the left and a button
-group on the right.
-
-::
-
-        <div class="btn-group pull-left" role="group">
-            <button class="btn" role="group">My Jobs</button>
-            <button class="btn" role="group">Job</button>
-            <button class="btn" role="group">Operations</button>
-        </div>
-        <div class="btn-group pull-right" role="group">
-            <button class="btn" role="group">&lt;</button>
-            <button class="btn" role="group">&gt;</button>
-        </div>
-
-
-.. image:: ./navigation_section-detail_data_screen.web.jpg
-
-The following example shows a button group on the left.
-
-::
-
-        <div class="btn-group" role="group">
-            <button class="btn">My Jobs</button>
-            <button class="btn">&lt; Job J-5102-C</button>
-        </div>
-
-
-.. image:: ./navigation_section-table_data_screen.web.jpg
-
-The following example shows a button :code:`.btn` on the left.
-
-::
-
-        <button class="btn">New Chat</button>
-
-
-.. image:: ./navigation_section-plugin_chat_list.web.jpg
