@@ -38,18 +38,14 @@ Navigation Section.
 
             .container-fluid{
             /* Contains the container looks attributes unique to the Navigation Section */
-
                 ...
 
             }
-
             .row{
             /* Contains the row looks attributes unique to the Navigation Section */
-
                 ...
 
             }
-
            .btn-group{
            /* Contains the Button Group looks attributes unique to the Navigation Section */
                ...

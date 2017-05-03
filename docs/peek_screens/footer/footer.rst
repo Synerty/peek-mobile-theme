@@ -34,18 +34,14 @@ The :code:`.peek-footer` class contains the classes specific to the Footer.
 
             .container-fluid{
             /* Contains the container looks attributes unique to the Footer */
-
                 ...
 
             }
-
             .row{
             /* Contains the row looks attributes unique to the Footer */
-
                 ...
 
             }
-
             .title{
             /*
                 Contains the title looks attributes unique to the Footer

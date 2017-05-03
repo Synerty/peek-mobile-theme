@@ -46,34 +46,26 @@ The :code:`.peek-title-bar` class contains the looks classes specific to the Tit
 
             .container-fluid{
             /* Contains the container looks attributes unique to the Title Bar */
-
                 ...
 
             }
-
             .row{
             /* Contains the row looks attributes unique to the Title Bar */
-
                 ...
 
             }
-
             .btn-group{
             /* Contains the button group looks attributes unique to the Title Bar */
-
                 ...
 
             }
-
             .btn{
             /* Contains the button looks attributes unique to the Title Bar */
-
                 ...
 
             }
             .title{
             /* Contains the title looks attributes unique to the Title Bar */
-
                 ...
 
             }

@@ -35,18 +35,14 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
 
             .container-fluid{
             /* Contains the container looks attributes unique to the Home Screen */
-
                 ...
 
             }
-
             .row{
             /* Contains the row looks attributes unique to the Home Screen */
-
                 ...
 
             }
-
             .icon{
             /*
                 Contains the Button looks attributes unique to the Home Screen
