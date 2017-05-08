@@ -142,71 +142,39 @@
       .peek-home-screen .icon a:hover {
         box-shadow: 0px 0px 0px transparent; }
 
-.plugin-active-task > .container-fluid {
+.plugin-inbox,
+.inboxActivity {
   padding-top: 55px;
-  padding-bottom: 55px; }
-  .plugin-active-task > .container-fluid > .row {
-    margin-right: -15px;
-    margin-left: -15px; }
-
-.plugin-active-task-task-list .td {
-  position: relative;
-  padding: 15px 20px 15px 0px; }
-
-.plugin-active-task-task-list .task-icon {
-  position: absolute;
-  width: 45px;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  padding: 15px 0px 15px 15px; }
-  .plugin-active-task-task-list .task-icon .fa {
-    padding-right: 5px; }
-
-.plugin-active-task-task-list .task-activity {
-  margin-right: 10px;
-  margin-left: 45px; }
-  .plugin-active-task-task-list .task-activity .task-tite {
-    padding-bottom: 10px; }
-  .plugin-active-task-task-list .task-activity .task-time {
-    float: right; }
-  .plugin-active-task-task-list .task-activity .task-buttons {
-    width: 100%;
-    padding-top: 5px;
-    margin-top: 5px; }
-
-.plugin-active-task-task-list .task-read-more {
-  position: absolute;
-  width: 20px;
-  right: 0px;
-  top: 0px;
-  height: 100%; }
-  .plugin-active-task-task-list .task-read-more:hover {
-    cursor: pointer; }
-
-.plugin-active-task-activity-list .td {
-  padding: 15px 30px 15px 15px; }
-
-.plugin-active-task-activity-list .activity-tite {
-  padding-bottom: 10px; }
-
-.plugin-active-task-activity-list .activity-time {
-  float: right;
-  padding: 5px 0px;
-  margin-bottom: 5px;
-  display: block; }
-
-.plugin-active-task-activity-list .activity-buttons {
-  display: block;
-  width: 100%; }
-
-.plugin-active-task-activity-list .task-read-more {
-  width: 20px;
-  right: 0px;
-  top: 0px;
-  height: 100%; }
-  .plugin-active-task-activity-list .task-read-more:hover {
-    cursor: pointer; }
+  padding-bottom: 55px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .plugin-inbox .task,
+  .inboxActivity .task {
+    padding: 15px;
+    position: relative;
+    width: 100%; }
+    .plugin-inbox .task .date-time,
+    .inboxActivity .task .date-time {
+      margin-bottom: 5px;
+      padding-bottom: 5px; }
+  .plugin-inbox .info,
+  .inboxActivity .info {
+    padding: 0px 15px; }
+  .plugin-inbox .btn.read-more,
+  .inboxActivity .btn.read-more {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    height: 100%;
+    background-image: url("../images/icon_more.png");
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20px;
+    border-radius: 0px;
+    text-indent: -9999px;
+    overflow: hidden; }
 
 .peek-information > .container-fluid {
   padding-top: 55px;

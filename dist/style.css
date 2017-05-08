@@ -123,66 +123,45 @@
       .peek-home-screen .icon a:hover {
         text-decoration: none; }
 
-.plugin-active-task-task-list .td {
-  border-top: 0px;
-  border-bottom: 1px solid #999999; }
-
-.plugin-active-task-task-list .task-icon {
-  font-size: 1.3em; }
-  .plugin-active-task-task-list .task-icon .fa {
-    color: #28aae1; }
-
-.plugin-active-task-task-list .task-activity {
-  font-size: 0.9rem; }
-  .plugin-active-task-task-list .task-activity .task-tite {
-    color: #000000;
-    font-size: 1.1rem; }
-  .plugin-active-task-task-list .task-activity .task-time {
-    font-size: 0.7rem;
-    display: block; }
-  .plugin-active-task-task-list .task-activity .task-buttons {
-    border-top: 1px solid #cccccc;
-    display: block;
-    overflow: hidden; }
-  .plugin-active-task-task-list .task-activity .btn {
+.plugin-inbox .task,
+.inboxActivity .task {
+  overflow: hidden;
+  display: table;
+  border-bottom: 1px solid #ffffff; }
+  .plugin-inbox .task .title,
+  .inboxActivity .task .title {
+    font-size: 1em; }
+  .plugin-inbox .task .description,
+  .inboxActivity .task .description {
     font-size: 0.9em; }
+  .plugin-inbox .task .date-time,
+  .inboxActivity .task .date-time {
+    font-size: 0.8em;
+    border-bottom: 1px solid #cccccc;
+    text-align: right; }
+  .plugin-inbox .task .btn,
+  .inboxActivity .task .btn {
+    color: #ffffff;
+    font-size: 0.8em; }
 
-.plugin-active-task-task-list .task-read-more {
-  background-color: #cccccc;
-  font-size: 0.6em;
-  background-image: url("../images/icon_more.png");
-  background-position: center center;
-  background-size: 100% auto;
-  background-repeat: no-repeat; }
-  .plugin-active-task-task-list .task-read-more:hover {
+.plugin-inbox .btn.read-more,
+.inboxActivity .btn.read-more {
+  display: table-cell;
+  background-color: #b3b2b2; }
+  .plugin-inbox .btn.read-more:hover,
+  .inboxActivity .btn.read-more:hover {
     background-color: #28aae1; }
 
-.plugin-active-task-activity-list .td {
-  border-top: 0px;
-  border-bottom: 1px solid #999999; }
+.plugin-inbox .icon,
+.inboxActivity .icon {
+  color: #28aae1;
+  font-size: 1.4em;
+  display: table-cell; }
 
-.plugin-active-task-activity-list .activity-tite {
-  color: #000000;
-  font-size: 1.1rem; }
-
-.plugin-active-task-activity-list .activity-time {
-  font-size: 0.7rem; }
-
-.plugin-active-task-activity-list .activity-buttons {
-  border-top: 1px solid #cccccc;
-  overflow: hidden; }
-
-.plugin-active-task-activity-list .task-read-more {
-  position: absolute;
-  background-color: #cccccc;
-  font-size: 0.6em;
-  background-image: url("../images/icon_more.png");
-  background-position: center center;
-  background-size: 100% auto;
-  background-repeat: no-repeat; }
-  .plugin-active-task-activity-list .task-read-more:hover {
-    background-color: #28aae1;
-    cursor: pointer; }
+.plugin-inbox .info,
+.inboxActivity .info {
+  display: table-cell;
+  vertical-align: top; }
 
 .peek-information .information-icon {
   background-image: url("../images/home_background.png"); }
