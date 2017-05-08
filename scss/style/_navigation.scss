@@ -27,7 +27,16 @@
 
 }
 
+//Peek navigation section
+.peek-nav-section{
+  border-bottom: 1px solid $grey;
+  overflow: hidden;
 
+  .btn{
+    background-color: darken($grey,20%);
+    border-right-color:darken($grey,35%);
+  }
+}
 
 //navigation tabs
 .nav{
