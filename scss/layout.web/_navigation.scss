@@ -29,36 +29,26 @@
 //navigation tabs
 .nav{
 
-  //$section_font_size: 0.8em;
   margin: 0px;
 
   &.nav-tabs{
-    //border-bottom: 0px solid $brand;
 
     & > li {
       margin-bottom: 0px;
 
       &.active{
         & > a{
-          //border-radius: 0px 0px 0 0;
           @include button-settings;
-          //font-size:$section_font_size;
           padding: 12px;
           margin-top: 0px;
-          //border-radius: 0px;
+
         }
       }
 
       & > a{
-        //font-family: $fonts_special;
-        //text-transform: $font_transform;
-        //color: lighten($font_colour_default,10%);
-        //font-size:$section_font_size;
-        //border: 0px;
+
         margin-right: 0px;
         margin-top: 10px;
-        //border-radius: 0px 0px 0 0;
-        //background-color: #eee;
         padding: 10px;
         margin-top: 4px
       }
