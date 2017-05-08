@@ -1,23 +1,6 @@
-.peek-main-footer{
+.peek-footer{
   $section_font_size: 0.8em;
-  //position: fixed;
-  //width: 100%;
-  //bottom: 0px;
-  //z-index: 899;
   background-color: $white;
-
-  .container-fluid{
-    @include box-shadow;
-  }
-
-  .h2{
-    font-size :$section_font_size;
-    //height: $navigation_header_height; //setting height to default header naviation height
-    //line-height: $navigation_header_height; // line height to bring text in center of header navigation
-    //overflow: hidden;
-    white-space: nowrap;
-    //overflow: hidden;
-    //text-overflow: ellipsis;
-  }
-
+  text-align: center;
+  @include box-shadow;
 }
