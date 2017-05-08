@@ -89,13 +89,10 @@
     border-radius: 0px 0px 0 0;
     background-color: #eee; }
 
-.peek-main-footer {
-  background-color: #ffffff; }
-  .peek-main-footer .container-fluid {
-    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
-  .peek-main-footer .h2 {
-    font-size: 0.8em;
-    white-space: nowrap; }
+.peek-footer {
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
 
 .peek-home-screen {
   background-image: url("../images/home_background.png");
@@ -104,17 +101,20 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-.peek-main-home .home-icon {
-  font-family: "Play", sans-serif; }
-  .peek-main-home .home-icon a {
-    background-image: url("../images/button_home_background.png");
-    background-repeat: repeat;
-    border-radius: 6px;
-    color: #ffffff;
-    text-transform: capitalize;
-    font-size: 1.1em; }
-    .peek-main-home .home-icon a:hover {
-      text-decoration: none; }
+.peek-home-screen {
+  overflow: hidden; }
+  .peek-home-screen .icon {
+    font-family: "Play", sans-serif; }
+    .peek-home-screen .icon a {
+      background-image: url("../images/button_home_background.png");
+      background-repeat: repeat;
+      text-align: center;
+      border-radius: 6px;
+      color: #ffffff;
+      text-transform: capitalize;
+      font-size: 1.1em; }
+      .peek-home-screen .icon a:hover {
+        text-decoration: none; }
 
 .plugin-active-task-task-list .td {
   border-top: 0px;

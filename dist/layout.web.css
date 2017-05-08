@@ -73,9 +73,6 @@
     line-height: 40px;
     padding-left: 15px;
     padding-right: 15px; }
-    @media (min-width: 768px) {
-      .peek-title-bar .title {
-        text-align: center; } }
 
 .nav {
   margin: 0px; }
@@ -114,39 +111,30 @@
       padding: 10px;
       margin-top: 4px; }
 
-.peek-main-footer {
+.peek-footer {
   position: fixed;
   width: 100%;
   bottom: 0px;
-  z-index: 899; }
-  .peek-main-footer .container-fluid {
-    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
-  .peek-main-footer .h2 {
-    height: 40px;
-    line-height: 40px;
-    overflow: hidden;
-    overflow: hidden;
-    text-overflow: ellipsis; }
+  z-index: 899;
+  height: 40px;
+  line-height: 40px; }
 
-.peek-home-screen > .container-fluid {
+.peek-home-screen {
   padding-top: 45px;
   padding-bottom: 55px; }
-  .peek-home-screen > .container-fluid > .row {
-    margin-right: -10px;
-    margin-left: -10px; }
-
-.peek-home-screen .home-icon {
-  padding: 5px;
-  font-family: "Play", sans-serif; }
-  .peek-home-screen .home-icon a {
-    display: block;
-    padding: 15px;
-    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
-    transition: 0.45s; }
-    .peek-home-screen .home-icon a img {
-      padding: 15px 30px; }
-    .peek-home-screen .home-icon a:hover {
-      box-shadow: 0px 0px 0px transparent; }
+  .peek-home-screen .icon {
+    padding: 5px;
+    font-family: "Play", sans-serif; }
+    .peek-home-screen .icon a {
+      display: block;
+      padding: 15px;
+      box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
+      transition: 0.45s;
+      float: left; }
+      .peek-home-screen .icon a img {
+        padding: 15px 30px; }
+      .peek-home-screen .icon a:hover {
+        box-shadow: 0px 0px 0px transparent; }
 
 .plugin-active-task > .container-fluid {
   padding-top: 55px;
