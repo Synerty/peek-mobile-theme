@@ -46,16 +46,6 @@ Inbox.
         /* Contains the Inbox screen looks classes */
             ...
 
-            container-fluid{
-            /* Contains the container looks attributes unique to the Inbox */
-                ...
-
-            }
-            .row{
-            /* Contains the row looks attributes unique to the Inbox */
-                ...
-
-            }
             .nav-tabs{
             /* Contains the navigation tabs looks attributes unique to Inbox */
                 ...
@@ -70,28 +60,14 @@ Inbox.
             /* Contains the inbox table looks classes unique to the Inbox */
                 ...
 
-                .table{
-                /* Contains the table looks attributes unique to the .inbox class */
-                    ...
-
-                    .tr{
-                    /* Contains the table row looks attributes unique to the .table class */
-                        ...
-
-                    }
-                    .td{
-                    /* Contains the table row cell looks attributes unique to the .table class */
-                        ...
-
-                    }
                 }
                 .icon{
                 /* Contains the icon looks attributes unique to the .inbox class */
                     ...
 
                 }
-                .row{
-                /* Contains the row looks attributes unique to the .inbox class */
+                .info{
+                /* Contains the info looks attributes unique to the .inbox class */
                     ...
 
                 }
@@ -132,28 +108,13 @@ Inbox.
             /* Contains the activity table looks classes unique to the Inbox */
                 ...
 
-                .table{
-                /* Contains the table looks attributes unique to the .activity class */
-                    ...
-
-                    .tr{
-                    /* Contains the table row looks attributes unique to the .table class */
-                        ...
-
-                    }
-                    .td{
-                    /* Contains the table row cell looks attributes unique to the .table class */
-                        ...
-
-                    }
-                }
                 .icon{
                 /* Contains the icon looks attributes unique to the .activity class */
                     ...
 
                 }
-                .row{
-                /* Contains the row looks attributes unique to the .activity class */
+                .info{
+                /* Contains the info looks attributes unique to the .activity class */
                     ...
 
                 }
@@ -201,47 +162,45 @@ plugin-active-task-client
 
 ::
 
-        <div class="peek-inbox">
+            <div class="plugin-inbox">
 
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs"
-                role="tablist">
-                <li class="active"
-                    role="presentation">
-                    <a href="#activeTaskTasks"
-                       aria-controls="home"
-                       role="tab"
-                       data-toggle="tab">
-                        Tasks
+                <ul class="nav nav-tabs"
+                    role="tablist">
+                    <li class="active"
+                        role="presentation">
+                        <a aria-controls="home"
+                           data-toggle="tab"
+                           href="http://localhost:4200/#inboxTasks"
+                           role="tab">
+                            Inbox
 
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a href="#activeTaskActivity"
-                       aria-controls="profile"
-                       role="tab"
-                       data-toggle="tab">
-                        Activity
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a aria-controls="profile"
+                           data-toggle="tab"
+                           href="http://localhost:4200/#inboxActivity"
+                           role="tab">
+                            Activity
 
-                    </a>
-                </li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active"
-                     role="tabpanel"
-                     id="activeTaskTasks">
-                    <plugin-active-task-task-list></plugin-active-task-task-list>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active"
+                         role="tabpanel"
+                         id="inboxTasks">
+                        <plugin-active-task-task-list></plugin-active-task-task-list>
 
-                </div>
-                <div class="tab-pane"
-                     role="tabpanel"
-                     id="activeTaskActivity">
-                    <plugin-active-task-activity-list></plugin-active-task-activity-list>
+                    </div>
+                    <div class="tab-pane"
+                         role="tabpanel"
+                         id="inboxActivity">
+                        <plugin-active-task-activity-list></plugin-active-task-activity-list>
 
+                    </div>
                 </div>
             </div>
-        </div>
 
 
 plugin-active-task-task-list
@@ -250,34 +209,39 @@ plugin-active-task-task-list
 ::
 
         <div class="inbox">
-            <table class="table table-striped">
-                <tr class="tr"
-                    *ngFor="let task of tasks"
-                    (click)="taskClicked(task)">
-                    <td class="td">
-                        <div class="icon">
-                            <i class="fa fa-comment"
-                               aria-hidden="true">
+            <div class="message"
+                 *ngIf="tasks.length === 0">
+                The inbox is empty.
 
-                            </i>
-                        </div>
-                        <div class="row">
-                            <div class="title">
-                                {{task.title}}
+            </div>
+            <div class="task bg-success"
+                 *ngFor="let task of tasks"
+                 (click)="taskClicked(task)">
+                <div class="icon">
+                    <i class="fa fa-comment"
+                       aria-hidden="true"></i>
 
-                            </div>
-                            <div class="description">
-                                {{task.description}}
+                </div>
+                <div class="info">
+                    <div class="title">
+                        {{task.title}}
 
-                            </div>
-                            <div class="date-time">
-                                {{timePast(task)}} ago, {{dateTime(task)}}
+                    </div>
+                    <div class="description">
+                        {{task.description}}
 
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                    <div class="date-time">
+                        {{timePast(task)}} ago, {{dateTime(task)}}
+
+                    </div>
+                </div>
+                <div class="btn read-more">
+                    <i class="fa fa-chevron-right"
+                       aria-hidden="true"></i>
+
+                </div>
+            </div>
         </div>
 
 
@@ -292,28 +256,29 @@ plugin-active-task-activity-list
                 There is no recent activity.
 
             </div>
-            <table class="table">
-                <tr class="tr"
-                    *ngFor="let activity of activities"
-                    (click)="activityClicked(activity)">
-                    <td class="td">
-                        <div class="row">
-                            <div class="title">
-                                {{activity.title}}
+            <div class="task"
+                 *ngFor="let activity of activities"
+                 (click)="activityClicked(activity)">
+                <div class="info">
+                    <div class="title">
+                        {{activity.title}}
 
-                            </div>
-                            <div class="description">
-                                {{activity.description}}
+                    </div>
+                    <div class="description">
+                        {{activity.description}}
 
-                            </div>
-                            <div class="date-time">
-                                {{timePast(activity)}} ago, {{dateTime(activity)}}
+                    </div>
+                    <div class="date-time">
+                        {{timePast(activity)}} ago, {{dateTime(activity)}}
 
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+                <div class="btn read-more">
+                    <i class="fa fa-chevron-right"
+                       aria-hidden="true"></i>
+
+                </div>
+            </div>
         </div>
 
 
