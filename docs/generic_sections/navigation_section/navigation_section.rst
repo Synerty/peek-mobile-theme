@@ -36,15 +36,6 @@ Navigation Section.
         /* Contains the Navigation Section looks attributes */
             ...
 
-            .container-fluid{
-            /* Contains the container looks attributes unique to the Navigation Section */
-                ...
-
-            }
-            .row{
-            /* Contains the row looks attributes unique to the Navigation Section */
-                ...
-
             }
            .btn-group{
            /* Contains the Button Group looks attributes unique to the Navigation Section */
@@ -65,21 +56,17 @@ HTML
 ::
 
         <div class="peek-nav-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="btn-group pull-left" role="group">
-                        <button class="btn" role="group">My Jobs
-                        </button>
-                        <button class="btn" role="group">Job
-                        </button>
-                        <button class="btn" role="group">Operations
-                        </button>
-                    </div>
-                    <div class="btn-group pull-right" role="group">
-                        <button class="btn" role="group">&lt;</button>
-                        <button class="btn" role="group">&gt;</button>
-                    </div>
-                </div>
+           <div class="btn-group pull-left" role="group">
+               <button class="btn" role="group">My Jobs
+               </button>
+               <button class="btn" role="group">Job
+               </button>
+               <button class="btn" role="group">Operations
+               </button>
+           </div>
+           <div class="btn-group pull-right" role="group">
+               <button class="btn" role="group">&lt;</button>
+               <button class="btn" role="group">&gt;</button>
             </div>
         </div>
 
