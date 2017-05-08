@@ -22,14 +22,6 @@ html{
   font-family: $fonts_special;
 }
 
-.image{
-  //max-width: 100%;
-}
-
-.hr{
-  //margin-top: 0px;
-  //margin-bottom: 0px;
-}
 
 *:focus {outline:none!important;}
 
@@ -37,16 +29,8 @@ html{
   border-bottom: 1px solid darken($grey,20%);
   //margin-bottom: $general_padding;
 
-  .form-group{
-    //padding-top: 0px;
-    //margin-bottom: 0px;
-  }
-
 }
 
 .form-group{
-  //margin-bottom: 0px;
-  //padding-bottom: $general_padding;
-  //padding-top: $general_padding;
   color: $black;
 }
