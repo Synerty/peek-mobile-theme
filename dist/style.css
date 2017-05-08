@@ -197,6 +197,15 @@
   border-radius: 8px;
   text-align: center; }
 
+.peek-details-section .title {
+  font-size: 0.9em;
+  color: #666666; }
+
+.peek-details-section .value {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
+
 .plugin-chat-chat-list .well {
   font-size: 1.2em; }
 

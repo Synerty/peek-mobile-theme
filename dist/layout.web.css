@@ -235,12 +235,9 @@
   .peek-information .information-icon-large .image {
     max-height: 100%; }
 
-.peek-details-data > .container-fluid {
+.peek-details-section {
   padding-top: 55px;
   padding-bottom: 55px; }
-  .peek-details-data > .container-fluid > .row {
-    margin-right: -15px;
-    margin-left: -15px; }
 
 .peek-table-data > .container-fluid {
   padding-top: 40px;
