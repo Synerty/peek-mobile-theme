@@ -44,15 +44,6 @@ The :code:`.peek-title-bar` class contains the looks classes specific to the Tit
         /* Contains the Title Bar looks classes */
             ...
 
-            .container-fluid{
-            /* Contains the container looks attributes unique to the Title Bar */
-                ...
-
-            }
-            .row{
-            /* Contains the row looks attributes unique to the Title Bar */
-                ...
-
             }
             .btn-group{
             /* Contains the button group looks attributes unique to the Title Bar */
@@ -80,35 +71,28 @@ HTML
 
 ::
 
-        <div class="peek-title-bar">
-          <div class="container-fluid">
-            <div class="row"
-                 [class.bg-danger]="!vortexIsOnline">
-              <div class="btn-group pull-left"
-                   role="group">
-                <button class="btn"
-                        [routerLink]="['/']">
-                  Home
+        <div class="peek-title-bar"
+             [class.bg-danger]="!vortexIsOnline">
+          <div class="btn-group pull-left"
+               role="group">
+            <button class="btn"
+                    [routerLink]="['/']">
+              Home
 
-                </button>
-                <div class="btn-group pull-right"
-                     role="group">
-                  <div class="title">
-                    {{title}}
+            </button>
+          </div>
+          <div class="title pull-left">
+            {{title}}
 
-                  </div>
-                  <div class="btn-group pull-right"
-                       role="group">
-                    <button class="btn"
-                            *ngFor="let link of rightLinks"
-                            [routerLink]="[link.resourcePath]">
-                      {{linkTitle(link)}}
+          </div>
+          <div class="btn-group pull-right"
+               role="group">
+            <button class="btn"
+                    *ngFor="let link of rightLinks"
+                    [routerLink]="[link.resourcePath]">
+              {{linkTitle(link)}}
 
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </button>
           </div>
         </div>
 
