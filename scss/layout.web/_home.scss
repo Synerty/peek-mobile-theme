@@ -1,19 +1,11 @@
 .peek-home-screen{
 
-  //adjusting for fixed header and footer
-  >.container-fluid{
-    padding-top: $navigation_header_height + 5px;
-    padding-bottom: $navigation_header_height + $general_padding;
+  padding-top: $navigation_header_height + 5px;
+  padding-bottom: $navigation_header_height + $general_padding;
 
-    > .row{
-      margin-right: -10px;
-      margin-left: -10px;
-    }
-
-  }
 
   //home page buttons
-  .home-icon{
+  .icon{
 
     padding: 5px;
     font-family: $fonts_special;
@@ -29,6 +21,7 @@
       //font-size: 1.1em;
       @include box-shadow;
       transition: 0.45s;
+      float: left;
 
       img{
         padding: $general_padding ($general_padding*2);
