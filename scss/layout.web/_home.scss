@@ -2,7 +2,9 @@
 
   padding-top: $navigation_header_height + 5px;
   padding-bottom: $navigation_header_height + $general_padding;
-
+  bottom: 0px;
+  min-height: 100%;
+  overflow-y: scroll;
 
   //home page buttons
   .icon{
@@ -12,13 +14,8 @@
 
     a{
       display: block;
-      //background-image: url("../images/button_home_background.png");
-      //background-repeat: repeat;
       padding: $general_padding;
-      //border-radius: $general_border_radius + 2px;
-      //color: $white;
-      //text-transform: capitalize;
-      //font-size: 1.1em;
+
       @include box-shadow;
       transition: 0.45s;
       float: left;
@@ -28,7 +25,6 @@
       }
 
       &:hover{
-          //text-decoration: none;
           @include no-shadow;
       }
 
