@@ -121,7 +121,10 @@
 
 .peek-home-screen {
   padding-top: 45px;
-  padding-bottom: 55px; }
+  padding-bottom: 55px;
+  bottom: 0px;
+  min-height: 100%;
+  overflow-y: scroll; }
   .peek-home-screen .icon {
     padding: 5px;
     font-family: "Play", sans-serif; }
