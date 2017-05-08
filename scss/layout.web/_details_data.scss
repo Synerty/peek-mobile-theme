@@ -1,14 +1,4 @@
-.peek-details-data{
-
-  >.container-fluid{
-    padding-top: $navigation_header_height + $general_padding;
-    padding-bottom: $navigation_header_height + $general_padding;
-
-    > .row{
-      margin-right: -15px;
-      margin-left: -15px;
-    }
-
-  }
-
+.peek-details-section{
+  padding-top: $navigation_header_height + $general_padding;
+  padding-bottom: $navigation_header_height + $general_padding;
 }

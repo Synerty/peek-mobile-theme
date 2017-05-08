@@ -1,14 +1,14 @@
-.peek-details-data{
+.peek-details-section{
 
-  >.container-fluid{
-    //padding-top: $navigation_header_height + $general_padding;
-    //padding-bottom: $navigation_header_height + $general_padding;
+  .title{
+    font-size: 0.9em;
+    color: darken($grey,40%);
+  }
 
-    > .row{
-      //margin-right: -15px;
-      //margin-left: -15px;
-    }
-
+  .value{
+    border-bottom: 1px solid $grey;
+    padding-bottom: $general_padding;
+    margin-bottom: $general_padding;
   }
 
 }
