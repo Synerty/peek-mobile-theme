@@ -22,10 +22,6 @@
     line-height: $navigation_header_height;
     padding-left: $general_padding;
     padding-right: $general_padding;
-
-    @media (min-width: 768px){
-      text-align: center;
-    }
   }
 
 }
