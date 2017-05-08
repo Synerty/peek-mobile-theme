@@ -6,7 +6,7 @@
   z-index: 999;
   height: $navigation_header_height;// main header height being set
   position: fixed;
-  
+
   >.container-fluid{
     padding-right: 0px;
     padding-left: 0px;
@@ -18,8 +18,10 @@
   }
 
   //title
-  .menu-title{
+  .title{
     line-height: $navigation_header_height;
+    padding-left: $general_padding;
+    padding-right: $general_padding;
 
     @media (min-width: 768px){
       text-align: center;
