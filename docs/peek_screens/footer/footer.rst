@@ -32,15 +32,6 @@ The :code:`.peek-footer` class contains the classes specific to the Footer.
         /* Contains the Footer looks classes */
             ...
 
-            .container-fluid{
-            /* Contains the container looks attributes unique to the Footer */
-                ...
-
-            }
-            .row{
-            /* Contains the row looks attributes unique to the Footer */
-                ...
-
             }
             .title{
             /*
@@ -62,11 +53,7 @@ HTML
 ::
 
         <div class="peek-footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="title">Offline, xxx minutes</div>
-                </div>
-            </div>
+          <div class="title">Offline, xxx minutes</div>
         </div>
 
 
