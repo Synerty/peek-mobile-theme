@@ -74,6 +74,13 @@
   .peek-title-bar .btn-group > .btn:first-child, .peek-title-bar .btn-group > .btn:last-child {
     border-radius: 0px; }
 
+.peek-nav-section {
+  border-bottom: 1px solid #cccccc;
+  overflow: hidden; }
+  .peek-nav-section .btn {
+    background-color: #999999;
+    border-right-color: #737373; }
+
 .nav.nav-tabs {
   border-bottom: 0px solid #28aae1; }
   .nav.nav-tabs > li.active > a {

@@ -74,6 +74,9 @@
     padding-left: 15px;
     padding-right: 15px; }
 
+.peek-nav-section {
+  padding: 15px; }
+
 .nav {
   margin: 0px; }
   .nav.nav-tabs > li {
