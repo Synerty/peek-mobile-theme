@@ -61,6 +61,11 @@ The :code:`.peek-title-bar` class contains the looks classes specific to the Tit
 
             }
         }
+        .peek-mobile-page-contents{
+        /* Contains the padding to stop the screens being covered by the title-bar */
+            ...
+
+        }
 
 
 HTML
@@ -94,6 +99,10 @@ HTML
 
             </button>
           </div>
+        </div>
+        <div class="peek-mobile-page-contents">
+            ...
+
         </div>
 
 
