@@ -1,106 +1,56 @@
-.plugin-chat-msg-list{
+.plugin-chat-messages{
 
-  >.container-fluid{
-    padding-top: $navigation_header_height + $general_padding;
-    padding-bottom: $navigation_header_height + $general_padding;
+  padding-top: $navigation_header_height + $general_padding;
+  padding-bottom: $navigation_header_height + $general_padding;
+  $messaging-area-height: 100px;
 
-    > .row{
-      margin-right: -15px;
-      margin-left: -15px;
-    }
 
+  .message-list{
+    padding: $general_padding;
   }
 
-  .well{
-    padding: ($general_padding - 5px) 0px;
-    margin-bottom: $general_padding;
-    overflow: hidden;
+  .sent{
+    padding: $general_padding;
+    margin-bottom: 5px;
+    margin-left: 10%;
   }
 
-  $messaging-area-height: 80px;
-
-  .messaging-text{
-    padding-bottom: $messaging-area-height + $navigation_header_height + $general_padding;
+  .received{
+    padding: $general_padding;
+    margin-bottom: 5px;
+    margin-right: 10%;
   }
+
 
   .messaging-area{
-
-    bottom: $navigation_header_height;
-    height:  $messaging-area-height;
-    position: fixed;
+    display: table;
     width: 100%;
-    z-index: 999;
-  //  background-color: $white;
-
-    .messaging-textarea{
-      width: 70%;
-      float: left;
-
-      textarea{
-        height: $messaging-area-height;
-      }
-
-    }
-
-    .send{
-      background-color: darken($green,45%);
-      opacity: 1;
-
-      &:hover{
-        background-color: darken($green,60%);
-      }
-    }
-
-    .messaging-buttons{
-      width: 30%;
-      float: right;
-
-      .btn{
-          //border-radius: 0px;
-          width: 50%;
-          float: left;
-          height: $messaging-area-height;
-      }
-    }
-
+    position: fixed;
+    bottom: $navigation_header_height;
+    height: $messaging-area-height;
   }
 
-  .chat-window{
+  .messaging-text{
+    display: table-cell;
+    width: 70%;
+    height: $messaging-area-height;
+  }
 
-    .chat-message{
-      $general_border_radius : $general_border_radius+4px;
+  .form-control{
+    height: $messaging-area-height;
+  }
 
-      text-align: right;
-      margin-top: $general_padding;
-      margin-bottom: $general_padding;
-      margin-left: $general_padding*6;
+  .buttons{
+    display: table-cell;
+    width: 30%;
+    position: relative;
 
-      .chat-bubble{
-        //background-color: lighten($grey,13%);
-        padding: 5px 10px;
-        border-radius: $general_border_radius $general_border_radius 0px $general_border_radius;
-      }
-
-    }
-
-    .chat-reply{
-
-        text-align: left;
-        border-radius: $general_border_radius;
-        margin-top: $general_padding;
-        margin-bottom: $general_padding;
-        margin-right: $general_padding*6;
-
-        .chat-bubble{
-          //background-color:$green;
-          padding: 5px 10px;
-            border-radius: $general_border_radius $general_border_radius $general_border_radius 0px;
-        }
-
-    }
-
-    .chat-details{
-      //font-size: 0.9em;
+    .btn{
+      width: 50%;
+      padding: 0px;
+      margin: 0px;
+      float: left;
+      height: $messaging-area-height;
     }
 
   }

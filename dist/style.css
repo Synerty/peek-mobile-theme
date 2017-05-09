@@ -192,32 +192,26 @@
   font-size: 1.5em;
   float: right; }
 
-.plugin-chat-msg-list .well {
-  font-size: 1.2em; }
+.plugin-chat-messages .sent {
+  text-align: right;
+  background-color: #f2f2f2;
+  border-radius: 4px; }
 
-.plugin-chat-msg-list .btn .fa {
-  color: #ffffff; }
+.plugin-chat-messages .received {
+  text-align: left;
+  background-color: #dff0d8;
+  border-radius: 4px; }
 
-.plugin-chat-msg-list .messaging-area {
+.plugin-chat-messages .message-details {
+  font-size: 0.8em;
+  border-radius: 0px; }
+
+.plugin-chat-messages .messaging-area {
+  overflow: hidden;
   background-color: #ffffff; }
-  .plugin-chat-msg-list .messaging-area .messaging-textarea textarea {
+  .plugin-chat-messages .messaging-area .btn,
+  .plugin-chat-messages .messaging-area .form-control {
     border-radius: 0px; }
-  .plugin-chat-msg-list .messaging-area .send {
-    background-color: #5ca43f;
-    opacity: 1; }
-    .plugin-chat-msg-list .messaging-area .send:hover {
-      background-color: #3d6c2a; }
-  .plugin-chat-msg-list .messaging-area .messaging-buttons .btn {
-    border-radius: 0px; }
-
-.plugin-chat-msg-list .chat-window .chat-message .chat-bubble {
-  background-color: #ededed; }
-
-.plugin-chat-msg-list .chat-window .chat-reply .chat-bubble {
-  background-color: #dff0d8; }
-
-.plugin-chat-msg-list .chat-window .chat-details {
-  font-size: 0.9em; }
 
 body,
 html {

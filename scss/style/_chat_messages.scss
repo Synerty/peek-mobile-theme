@@ -1,108 +1,28 @@
-.plugin-chat-msg-list{
-
-  >.container-fluid{
-
-    > .row{
-
-    }
-
+.plugin-chat-messages{
+  .sent{
+    text-align:right;
+    background-color: lighten($grey,15%);
+    border-radius: $general_border_radius;
   }
 
-  .well{
-    font-size: 1.2em;
+  .received{
+    text-align:left;
+    background-color: $green;
+    border-radius: $general_border_radius;
   }
 
-  .btn{
-    .fa{
-        color: $white;
-    }
-  }
-
-  //$messaging-area-height: 80px;
-
-  .messaging-text{
-
+  .message-details{
+    font-size: 0.8em;
+    border-radius: 0px;
   }
 
   .messaging-area{
-
-  //  bottom: $navigation_header_height;
-  //  height:  $messaging-area-height;
-  //  position: fixed;
-  //  width: 100%;
-  //  z-index: 999;
+    overflow: hidden;
     background-color: $white;
-
-    .messaging-textarea{
-      //width: 70%;
-    //  float: left;
-
-      textarea{
-        border-radius: 0px;
-      //  height: $messaging-area-height;
-      }
-
-    }
-
-    .send{
-      background-color: darken($green,45%);
-      opacity: 1;
-
-      &:hover{
-        background-color: darken($green,60%);
-      }
-    }
-
-    .messaging-buttons{
-    //  width: 30%;
-    //  float: right;
-
-      .btn{
-          border-radius: 0px;
-        //  width: 50%;
-        //  float: left;
-        //  height: $messaging-area-height;
-      }
-    }
-
-  }
-
-  .chat-window{
-
-    .chat-message{
-      //$general_border_radius : $general_border_radius+4px;
-
-      //text-align: right;
-      //margin-top: $general_padding;
-      //margin-bottom: $general_padding;
-      //margin-left: $general_padding*6;
-
-      .chat-bubble{
-        background-color: lighten($grey,13%);
-        //padding: 5px 10px;
-        //border-radius: $general_border_radius $general_border_radius 0px $general_border_radius;
-      }
-
-    }
-
-    .chat-reply{
-
-      //  text-align: left;
-      //  border-radius: $general_border_radius;
-      //  margin-top: $general_padding;
-      //  margin-bottom: $general_padding;
-      //  margin-right: $general_padding*6;
-
-        .chat-bubble{
-          background-color:$green;
-          //padding: 5px 10px;
-          //border-radius: $general_border_radius $general_border_radius $general_border_radius 0px;
-        }
-
-    }
-
-    .chat-details{
-      font-size: 0.9em;
+    
+    .btn,
+    .form-control{
+      border-radius: 0px;
     }
 
   }
