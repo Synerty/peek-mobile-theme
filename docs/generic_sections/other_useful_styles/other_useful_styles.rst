@@ -8,6 +8,43 @@ These classes are available throughout Peek and attribute changes are found in
 :file:`_bootstrap_adjustments.scss`.
 
 
+Headings
+--------
+
+Generic Headings.
+
+`Bootstrap Headings <http://getbootstrap.com/css/#type-headings>`_
+
+HTML ::
+
+        <div class="h1">h1. Bootstrap heading</div>
+        <div class="h2">h2. Bootstrap heading</div>
+        <div class="h3">h3. Bootstrap heading</div>
+        <div class="h4">h4. Bootstrap heading</div>
+        <div class="h5">h5. Bootstrap heading</div>
+        <div class="h6">h6. Bootstrap heading</div>
+
+
+Text
+----
+
+Generic Text.
+
+HTML ::
+
+        <div class="p">p. Text</div>
+
+
+Buttons
+-------
+
+Generic buttons.
+
+HTML ::
+
+        <div class="btn">Peek Button</div>
+
+
 Contextual Backgrounds
 ----------------------
 
