@@ -1,12 +1,13 @@
-.plugin-chat-chat-list{
+.plugin-chat-list{
 
-  .well{
+  .messages{
     font-size: 1.2em;
   }
 
   .fa{
       color: darken($grey,10%);
       font-size: 1.5em;
+      float: right;
   }
 
 }
