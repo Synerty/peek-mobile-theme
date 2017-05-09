@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://localhost:4200/peek_plugin_pof_field_switching -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Peek</title>
+    <!--<base href="/">-->
+    <base href=".">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <!--font awesome-->
+    <script src="https://use.fontawesome.com/b4d291589e.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../dist/layout.web.css">
+    <link rel="stylesheet" href="../dist/style.css">
+
+</head>
+<body>
+
+<div class="peek-title-bar">
+    <div class="btn-group pull-left" role="group">
+        <button class="btn">Home</button>
+    </div>
+    <div class="title pull-left">Peek Title</div>
+    <div class="btn-group pull-right" role="group">
+        <button class="btn">(14) Tasks</button>
+        <button class="btn">User</button>
+    </div>
+</div>
+
+<div class="peek-information-section">
+    <img class="image" src="../images/field_switching.png">
+    <div class="title">Welcome to Field Switching.</div>
+    <div class="description">
+        Peek Field Switching allows field engineers working on the electricity
+        network to electronically
+        <ul>
+            <li>View switching instructions</li>
+            <li>Receive instructions from the control room</li>
+            <li>And field confirm field switching operations</li>
+        </ul>
+    </div>
+    <button class="btn" ng-reflect-router-link="./joblist">My Jobs &gt;
+    </button>
+    <i class="icon fa fa-user" aria-hidden="true"></i>
+    <div class="user-status">Logged in as Tim Hamilton</div>
+</div>
+
+<div class="peek-footer">
+    <div class="title">Offline, xxx minutes</div>
+</div>
+
+</body>
+</html>
