@@ -35,14 +35,14 @@ Activity
 Looks Classes
 -------------
 
-The Inbox looks classes are found in the :file:`_inbox.scss`.
+The Inbox looks classes are found in the :file:`_plugin_inbox.scss`.
 
-The :code:`.peek-inbox` class contain the classes specific to the
+The :code:`.plugin-inbox` class contain the classes specific to the
 Inbox.
 
 ::
 
-        .peek-inbox{
+        .plugin-inbox{
         /* Contains the Inbox screen looks classes */
             ...
 
@@ -432,11 +432,11 @@ HTML
 ````
 
 The Inbox HTML layout classes are found in the
-:file:`_inbox.web.scss`.
+:file:`_plugin_inbox.web.scss`.
 
 
 NativeScript
 ````````````
 
 The Inbox NativeScript layout classes are found in the
-:file:`_inbox.ns.scss`.
+:file:`_plugin_inbox.ns.scss`.
