@@ -178,35 +178,39 @@
     text-indent: -9999px;
     overflow: hidden; }
 
-.peek-information > .container-fluid {
+.peek-information-section {
   padding-top: 55px;
-  padding-bottom: 55px; }
-  .peek-information > .container-fluid > .row {
-    margin-right: -15px;
-    margin-left: -15px; }
-
-.peek-information .information-icon {
-  background-image: url("../images/home_background.png"); }
-
-.peek-information .fa.information-icon-large {
-  font-size: 6em;
-  padding: 30px 45px;
-  vertical-align: middle;
-  box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
-  position: relative;
-  display: inline-block;
-  width: 136px;
-  height: 136px;
-  line-height: 136px;
-  padding: 0px; }
-
-.peek-information .information-icon-large {
-  box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
-  padding: 20px;
-  width: 136px;
-  height: 136px; }
-  .peek-information .information-icon-large .image {
-    max-height: 100%; }
+  padding-bottom: 55px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .peek-information-section .fa.information-icon-large {
+    font-size: 6em;
+    padding: 30px 45px;
+    vertical-align: middle;
+    box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
+    position: relative;
+    display: inline-block;
+    width: 136px;
+    height: 136px;
+    line-height: 136px;
+    padding: 0px; }
+  .peek-information-section .icon {
+    box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .peek-information-section .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 1.2em;
+    background-color: #999999; }
 
 .peek-details-section {
   padding-top: 55px;

@@ -161,24 +161,23 @@
   display: table-cell;
   vertical-align: top; }
 
-.peek-information .information-icon {
-  background-image: url("../images/home_background.png"); }
+.peek-information-section .icon {
+  background-image: url("../images/home_background.png");
+  font-size: 3em;
+  color: #ffffff;
+  text-align: center; }
 
-.peek-information .fa.information-icon-large {
+.peek-information-section .title {
+  font-size: 2em;
+  text-align: center; }
+
+.peek-information-section .fa.information-icon-large {
   font-size: 6em;
   border-radius: 8px;
   color: #ffffff;
   background-image: url("../images/home_background.png");
   background-size: 400%;
   background-position: top center;
-  text-align: center; }
-
-.peek-information .information-icon-large {
-  background-image: url("../images/home_background.png");
-  background-size: 400%;
-  background-position: top center;
-  display: inline-block;
-  border-radius: 8px;
   text-align: center; }
 
 .peek-details-section .title {
