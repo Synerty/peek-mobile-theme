@@ -4,23 +4,7 @@
   padding-left:  $general_padding;
   padding-right:  $general_padding;
 
-  //icon
-  .fa{
-    &.information-icon-large{
-      font-size: 6em;
-      padding: ($general_padding*2)($general_padding*3);
-      vertical-align: middle;
 
-      @include inner-shadow(0.35);
-      position: relative;
-      display: inline-block;
-      width: 136px;
-      height: 136px;
-      line-height: 136px;
-      padding: 0px;
-
-    }
-  }
 
   .icon{
 

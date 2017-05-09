@@ -183,17 +183,6 @@
   padding-bottom: 55px;
   padding-left: 15px;
   padding-right: 15px; }
-  .peek-information-section .fa.information-icon-large {
-    font-size: 6em;
-    padding: 30px 45px;
-    vertical-align: middle;
-    box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
-    position: relative;
-    display: inline-block;
-    width: 136px;
-    height: 136px;
-    line-height: 136px;
-    padding: 0px; }
   .peek-information-section .icon {
     box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
     padding: 20px;
