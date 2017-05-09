@@ -1,170 +1,96 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Peek</title>
-        <base href=".">
+<head>
+    <meta charset="utf-8">
+    <title>Peek</title>
+    <base href=".">
 
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
 
-        <!--font awesome-->
-        <script src="https://use.fontawesome.com/b4d291589e.js"></script>
-
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-        <link rel="stylesheet" href="../dist/stylesheet.css">
-
-    </head>
-
-    <body>
-        <peek-main-app ng-version="4.0.2">
-            <ng2-balloon-msg _nghost-c0="">
-                <div _ngcontent-c0="" class="ng2BaloonMsgQueue"></div>
-            </ng2-balloon-msg>
-
-            <peek-main-title>
-                <div class="peek-main-title">
-                    <div class="container-fluid">
-                        <div class="menu-bar">
-                            <div class="menu-bar-left">
-                                <button class="btn left-button">Home</button>
-                            </div>
-                            <div class="menu-title">
-                                <h2 class="h2">Peek Title</h2>
-                            </div>
-                            <div class="menu-bar-right">
-                                <div class="btn-group" role="group" aria-label="">
-                                    <button class="btn right-button">Tasks</button>
-                                    <button class="btn right-button">User</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </peek-main-title>
-
-            <plugin-chat-msg-list>
-
-                <div class="plugin-chat-msg-list">
-
-                    <div class="container-fluid">
-
-                      <div class="messaging-text">
-
-                        <router-outlet></router-outlet>
-
-                        <div class="row navigation-information">
-                            <div class="form-group col-xs-12">
-                                <button class="btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-
-                        <div class="chat-window">
-
-                            <div class="chat-message">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-reply">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-reply">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-message">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-reply">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-message">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-message">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-message">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-reply">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-reply">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-reply">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                            <div class="chat-reply">
-                                <div class="chat-details"><small>From Chief Wiggum (C917), 21 hours ago</small></div>
-                                <div class="chat-bubble">A message written by a user</div>
-                            </div>
-
-                        </div>
-
-                      </div>
-
-                    </div>
+    <!--font awesome-->
+    <script src="https://use.fontawesome.com/b4d291589e.js"></script>
 
 
-                <div class="messaging-area">
-                    <div class="messaging-textarea">
-                        <textarea class="form-control ng-untouched ng-pristine ng-valid"></textarea>
-                    </div>
-                    <div class="messaging-buttons">
-                        <button class="btn send" type="button" disabled="">Send</button>
-                        <button class="btn" type="button">SOS</button>
-                    </div>
-                </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
-              </div>
-              
-            </plugin-chat-msg-list>
+    <link rel="stylesheet" href="../dist/stylesheet.css">
 
-            <peek-main-footer>
-              <div class="peek-main-footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 text-center">
-                            <h2 class="h2">Offline, xxx minutes</h2>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </peek-main-footer>
+</head>
 
-        </peek-main-app>
+<body>
 
-    </body>
+<!-- Navigation Section -->
+<div class="peek-nav-section">
+    <div class="btn-group pull-left" role="group">
+        <button class="btn" role="group">
+            <i class="fa fa-angle-left"
+               aria-hidden="true"></i>
+        </button>
+    </div>
+</div>
+
+<div class="plugin-chat-messages">
+    <div class="message-list">
+        <div class="sent">
+            <div class="message-details">
+                Message sent, 3 hours ago
+
+            </div>
+            <div class="message">
+                A message written by the user
+
+            </div>
+        </div>
+        <div class="received">
+            <div class="message-details">
+                From Chief Wiggum (C917), 2 hours ago
+
+            </div>
+            <div class="message">
+                A message written by a Chief Wiggum
+
+            </div>
+        </div>
+        <div class="sent">
+            <div class="message-details">
+                Message sent, 15 minutes ago
+
+            </div>
+            <div class="message">
+                A message written by the user
+
+            </div>
+        </div>
+    </div>
+
+    <div class="messaging-area">
+        <div class="messaging-text">
+            <textarea class="form-control ng-untouched ng-pristine ng-valid"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="btn" type="button" disabled="">Send</button>
+            <button class="btn" type="button">SOS</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
 </html>
