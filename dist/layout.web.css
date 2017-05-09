@@ -122,12 +122,14 @@
   height: 40px;
   line-height: 40px; }
 
+.peek-mobile-page-contents {
+  min-height: 100%; }
+
 .peek-home-screen {
   padding-top: 45px;
   padding-bottom: 55px;
   bottom: 0px;
-  min-height: 100%;
-  overflow-y: scroll; }
+  min-height: 100%; }
   .peek-home-screen .icon {
     padding: 5px;
     font-family: "Play", sans-serif; }

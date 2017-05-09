@@ -1,10 +1,13 @@
+.peek-mobile-page-contents{
+  min-height: 100%;
+}
+
 .peek-home-screen{
 
   padding-top: $navigation_header_height + 5px;
   padding-bottom: $navigation_header_height + $general_padding;
   bottom: 0px;
   min-height: 100%;
-  overflow-y: scroll;
 
   //home page buttons
   .icon{
