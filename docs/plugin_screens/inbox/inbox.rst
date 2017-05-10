@@ -155,45 +155,46 @@ plugin-active-task-task-list and plugin-active-task-activity-list.
 
 ::
 
-            <div class="plugin-inbox">
+        <div class="plugin-inbox">
 
-                <ul class="nav nav-tabs"
-                    role="tablist">
-                    <li class="active"
-                        role="presentation">
-                        <a aria-controls="home"
-                           data-toggle="tab"
-                           href="http://localhost:4200/#inboxTasks"
-                           role="tab">
-                            Inbox
+            <ul class="nav nav-tabs"
+                role="tablist">
+                <li class="active"
+                    role="presentation">
+                    <a aria-controls="home"
+                       data-toggle="tab"
+                       href="http://localhost:4200/#inboxTasks"
+                       role="tab">
+                        Inbox
 
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a aria-controls="profile"
-                           data-toggle="tab"
-                           href="http://localhost:4200/#inboxActivity"
-                           role="tab">
-                            Activity
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a aria-controls="profile"
+                       data-toggle="tab"
+                       href="http://localhost:4200/#inboxActivity"
+                       role="tab">
+                        Activity
 
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active"
-                         role="tabpanel"
-                         id="inboxTasks">
-                        <plugin-active-task-task-list></plugin-active-task-task-list>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active"
+                     role="tabpanel"
+                     id="inboxTasks">
+                    <plugin-active-task-task-list></plugin-active-task-task-list>
 
-                    </div>
-                    <div class="tab-pane"
-                         role="tabpanel"
-                         id="inboxActivity">
-                        <plugin-active-task-activity-list></plugin-active-task-activity-list>
+                </div>
+                <div class="tab-pane"
+                     role="tabpanel"
+                     id="inboxActivity">
+                    <plugin-active-task-activity-list></plugin-active-task-activity-list>
 
-                    </div>
                 </div>
             </div>
+        </div>
+
 
 
 plugin-active-task-task-list
@@ -244,6 +245,7 @@ outstanding tasks from plugins configured to issue tasks.
         </div>
 
 
+
 plugin-active-task-activity-list
 ````````````````````````````````
 
@@ -285,6 +287,7 @@ of the activity from the plugins configured to show activity.
                 </div>
             </div>
         </div>
+
 
 
 NativeScript
