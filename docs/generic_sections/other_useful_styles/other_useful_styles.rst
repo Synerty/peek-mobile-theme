@@ -4,6 +4,9 @@
 Other Useful Styles
 ===================
 
+Most of the Peek Plugin Screens will use the general bootstrap classes.  The
+general classes will need the Peek App theme applied to them.
+
 These classes are available throughout Peek and attribute changes are found in
 :file:`_bootstrap_adjustments.scss`.
 
@@ -11,18 +14,48 @@ These classes are available throughout Peek and attribute changes are found in
 Headings
 --------
 
-Generic Headings.
+Generic Headings 1 through to 6.
 
 `Bootstrap Headings <http://getbootstrap.com/css/#type-headings>`_
 
-HTML ::
+::
 
-        <div class="h1">h1. Bootstrap heading</div>
-        <div class="h2">h2. Bootstrap heading</div>
-        <div class="h3">h3. Bootstrap heading</div>
-        <div class="h4">h4. Bootstrap heading</div>
-        <div class="h5">h5. Bootstrap heading</div>
-        <div class="h6">h6. Bootstrap heading</div>
+        .h1{
+        /* Applies the heading theme */
+
+            ...
+
+        }
+        .h2{
+        /* Applies the heading theme */
+
+            ...
+
+        }
+        .h3{
+        /* Applies the heading theme */
+
+            ...
+
+        }
+        .h4{
+        /* Applies the heading theme */
+
+            ...
+
+        }
+        .h5{
+        /* Applies the heading theme */
+
+            ...
+
+        }
+        .h6{
+        /* Applies the heading theme */
+
+            ...
+
+        }
 
 
 Text
@@ -32,7 +65,12 @@ Generic Text.
 
 HTML ::
 
-        <div class="p">p. Text</div>
+        .p{
+        /* Applies the text theme */
+
+            ...
+
+        }
 
 
 Buttons
@@ -42,7 +80,12 @@ Generic buttons.
 
 HTML ::
 
-        <div class="btn">Peek Button</div>
+        .btn{
+        /* Applies the Plugin Screen button theme */
+
+            ...
+
+        }
 
 
 Contextual Backgrounds
