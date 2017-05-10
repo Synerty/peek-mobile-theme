@@ -4,41 +4,15 @@
 Inbox
 =====
 
-.. note:: Previously named Active Task
+The Inbox Screen is accessed by the 'Tasks' button in the Title Bar.  The 'Tasks'
+button also shows the number of outstanding tasks.
 
 
-.. _details_screen_nav_tabs:
+Peek Plugin Active Task :code:`plugin-inbox`
+--------------------------------------------
 
-Nav Tabs
-~~~~~~~~
-
-.. image:: ./screen_navigation-tabs.web.jpg
-  :align: center
-
-
-.. _inbox_Tasks:
-
-Tasks
-~~~~~
-
-.. image:: ./inbox-tasks.web.jpg
-  :align: center
-
-
-Activity
-~~~~~~~~
-
-.. image:: ./inbox-activity.web.jpg
-  :align: center
-
-
-Looks Classes
--------------
-
-The Inbox looks classes are found in the :file:`_plugin_inbox.scss`.
-
-The :code:`.plugin-inbox` class contain the classes specific to the
-Inbox.
+The :code:`.plugin-inbox` class contains the classes specific to the
+Peek Plugin Active Task.
 
 ::
 
@@ -153,12 +127,31 @@ Inbox.
         }
 
 
+SCSS Files
+----------
+
+The Inbox looks classes are found in the
+:file:`_plugin_inbox.scss`.
+
+The Inbox HTML layout classes are found in the
+:file:`_plugin_inbox.web.scss`.
+
+The Inbox NativeScript layout classes are found in the
+:file:`_plugin_inbox.ns.scss`.
+
+
 HTML
-````
+----
 
 
 plugin-active-task-client
-~~~~~~~~~~~~~~~~~~~~~~~~~
+`````````````````````````
+
+The following code builds the navigation tabs.  The tabs route to the components
+plugin-active-task-task-list and plugin-active-task-activity-list.
+
+.. image:: ./screen_navigation-tabs.web.jpg
+  :align: center
 
 ::
 
@@ -204,7 +197,13 @@ plugin-active-task-client
 
 
 plugin-active-task-task-list
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+````````````````````````````
+
+The plugin-active-task-task-list component builds the table containing dynamic rows of
+outstanding tasks from plugins configured to issue tasks.
+
+.. image:: ./inbox-tasks.web.jpg
+  :align: center
 
 ::
 
@@ -246,7 +245,13 @@ plugin-active-task-task-list
 
 
 plugin-active-task-activity-list
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+````````````````````````````````
+
+The plugin-active-task-activity-list component builds the table containing dynamic rows
+of the activity from the plugins configured to show activity.
+
+.. image:: ./inbox-activity.web.jpg
+  :align: center
 
 ::
 
@@ -283,11 +288,14 @@ plugin-active-task-activity-list
 
 
 NativeScript
-````````````
+------------
 
 
 plugin-active-task-client
-~~~~~~~~~~~~~~~~~~~~~~~~~
+`````````````````````````
+
+The following code builds the navigation tabs.  The tabs route to
+plugin-active-task-task-list and plugin-active-task-activity-list.
 
 ::
 
@@ -305,7 +313,10 @@ plugin-active-task-client
 
 
 plugin-active-task-task-list
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+````````````````````````````
+
+The plugin-active-task-task-list component builds the table containing dynamic rows of
+outstanding tasks from plugins configured to issue tasks.
 
 ::
 
@@ -381,7 +392,10 @@ plugin-active-task-task-list
 
 
 plugin-active-task-activity-list
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+````````````````````````````````
+
+The plugin-active-task-activity-list component builds the table containing dynamic rows
+of the activity from the plugins configured to show activity.
 
 ::
 
@@ -422,21 +436,3 @@ plugin-active-task-activity-list
                 </ng-template>
             </ListView>
         </ScrollView>
-
-
-Layout
-------
-
-
-HTML
-````
-
-The Inbox HTML layout classes are found in the
-:file:`_plugin_inbox.web.scss`.
-
-
-NativeScript
-````````````
-
-The Inbox NativeScript layout classes are found in the
-:file:`_plugin_inbox.ns.scss`.
