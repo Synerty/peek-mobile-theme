@@ -15,14 +15,8 @@ The text remains a single line and truncates a "..." if the line exceeds the min
 screen width.
 
 
-Looks Classes
--------------
-
-The Footer looks classes are found in the :file:`_footer.scss`.
-
-
 Footer :code:`.peek-footer`
-```````````````````````````
+---------------------------
 
 The :code:`.peek-footer` class contains the classes specific to the Footer.
 
@@ -44,8 +38,21 @@ The :code:`.peek-footer` class contains the classes specific to the Footer.
         }
 
 
+SCSS Files
+----------
+
+The Footer looks classes are found in the
+:file:`_footer.scss`.
+
+The Footer HTML layout classes are found in the
+:file:`_footer.web.scss`.
+
+The Footer NativeScript layout classes are found in the
+:file:`_footer.ns.scss`.
+
+
 HTML
-~~~~
+----
 
 .. image:: ./footer.web.jpg
   :align: center
@@ -58,7 +65,7 @@ HTML
 
 
 NativeScript
-~~~~~~~~~~~~
+------------
 
 ::
 
@@ -66,19 +73,3 @@ NativeScript
             ...
 
         </GridLayout>
-
-
-Layout
-------
-
-
-HTML
-````
-
-The Footer HTML layout classes are found in the :file:`_footer.web.scss`.
-
-
-NativeScript
-````````````
-
-The Footer NativeScript layout classes are found in the :file:`_footer.ns.scss`.

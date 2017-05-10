@@ -27,16 +27,10 @@ The Title Bar is unique, therefore the classes used will be specific for the
 Title Bar.
 
 
-Looks Classes
--------------
-
-The Title Bar looks classes are found in the :file:`_title_bar.scss`.
-
-
 Title Bar :code:`.peek-title-bar`
-`````````````````````````````````
+---------------------------------
 
-The :code:`.peek-title-bar` class contains the looks classes specific to the Title Bar.
+The :code:`.peek-title-bar` class contains the classes specific to the Title Bar.
 
 ::
 
@@ -68,8 +62,21 @@ The :code:`.peek-title-bar` class contains the looks classes specific to the Tit
         }
 
 
+SCSS Files
+----------
+
+The Title Bar looks classes are found in the
+:file:`_title_bar.scss`.
+
+The Title Bar HTML layout classes are found in the
+:file:`_title_bar.web.scss`.
+
+The Title Bar NativeScript layout classes are found in the
+:file:`_title_bar.ns.scss`.
+
+
 HTML
-~~~~
+----
 
 .. image:: ./title_bar.web.jpg
   :align: center
@@ -107,7 +114,7 @@ HTML
 
 
 NativeScript
-~~~~~~~~~~~~
+------------
 
 .. image:: ./title_bar.ns.jpg
   :align: center
@@ -146,20 +153,3 @@ NativeScript
 
           </Button>
         </GridLayout>
-
-
-Layout
-------
-
-
-HTML
-````
-
-The Title Bar HTML layout classes are found in the :file:`_title_bar.web.scss`.
-
-
-NativeScript
-````````````
-
-The Title Bar NativeScript layout classes are found in the
-:file:`_title_bar.ns.scss`.

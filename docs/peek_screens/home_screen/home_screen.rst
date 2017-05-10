@@ -4,21 +4,15 @@
 Home Screen
 ===========
 
-The Home Screen is a unique screen in Peek that displays a link to to available plugins
+The Home Screen is a unique screen in Peek that displays a link to available plugins
 that have front-ends.
 
 .. image:: ./home_screen.web.jpg
    :align: center
 
 
-Looks Classes
--------------
-
-The Home Screen looks classes are found in the :file:`_home_screen.scss`.
-
-
 Home Screen :code:`.peek-home-screen`
-`````````````````````````````````````
+-------------------------------------
 
 The :code:`.peek-home-screen` class will contain the classes specific to the Home Screen.
 
@@ -73,14 +67,27 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
 
 
 Background Image
-~~~~~~~~~~~~~~~~
+````````````````
 
 .. image:: ./home_background.png
    :align: center
 
 
+SCSS Files
+----------
+
+The Home Screen looks classes are found in the
+:file:`_home_screen.scss`.
+
+The Home Screen HTML layout classes are found in the
+:file:`_home_screen.web.scss`.
+
+The Home Screen NativeScript layout classes are found in the
+:file:`_home_screen.ns.scss`.
+
+
 HTML
-~~~~
+----
 
 ::
 
@@ -109,7 +116,7 @@ HTML
 
 
 NativeScript
-~~~~~~~~~~~~
+------------
 
 ::
 
@@ -137,20 +144,3 @@ NativeScript
             </GridLayout>
           </WrapLayout>
         </ScrollView>
-
-
-Layout
-------
-
-
-HTML
-````
-
-The Home Screen HTML layout classes are found in the
-:file:`_home_screen.web.scss`.
-
-NativeScript
-````````````
-
-The Home Screen NativeScript layout classes are found in the
-:file:`_home_screen.ns.scss`.
