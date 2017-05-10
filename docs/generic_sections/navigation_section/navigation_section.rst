@@ -18,14 +18,8 @@ sized around the text they contain.
 .. note:: The buttons require a different theme to the :ref:`title_bar`.
 
 
-Looks Classes
--------------
-
-The Navigation Section looks classes are found in the :file:`_navigation_section.scss`.
-
-
 Navigation Section :code:`.peek-nav-section`
-````````````````````````````````````````````
+--------------------------------------------
 
 The :code:`.peek-nav-section` class contains the looks classes specific to the
 Navigation Section.
@@ -50,21 +44,46 @@ Navigation Section.
         }
 
 
+SCSS Files
+----------
+
+The Navigation Section looks classes are found in the
+:file:`_navigation_section.scss`.
+
+The Navigation Section HTML layout classes are found in the
+:file:`_navigation_section.web.scss`.
+
+The Navigation Section NativeScript layout classes are found in the
+:file:`_navigation_section.ns.scss`.
+
+
 HTML
-~~~~
+----
+
+The :code:`peek-nav-section` is to be included before the code of the plugin screen
+requiring the Nav Bar.
 
 ::
 
         <div class="peek-nav-section">
-           <div class="btn-group pull-left" role="group">
+            <!--
+                The following 'div' groups button to the left of the Nav Bar.
+                Can contain one to many buttons
+            -->
+            <div class="btn-group pull-left" role="group">
                <button class="btn" role="group">My Jobs
                </button>
                <button class="btn" role="group">Job
                </button>
                <button class="btn" role="group">Operations
                </button>
-           </div>
-           <div class="btn-group pull-right" role="group">
+            </div>
+
+            <!--
+                The following 'div' groups button to the right of the Nav Bar.
+                Can contain one to many buttons
+            -->
+            <div class="btn-group pull-right" role="group">
                <button class="btn" role="group">&lt;</button>
                <button class="btn" role="group">&gt;</button>
             </div>
@@ -72,7 +91,10 @@ HTML
 
 
 NativeScript
-~~~~~~~~~~~~
+------------
+
+The :code:`peek-nav-section` is to be included before the code of the plugin screen
+requiring the Nav Bar.
 
 ::
 
@@ -81,20 +103,3 @@ NativeScript
 
         </GridLayout>
 
-
-Layout
-------
-
-
-HTML
-````
-
-The Navigation Section HTML layout classes are found in the
-:file:`_navigation_section.web.scss`.
-
-
-NativeScript
-````````````
-
-The Navigation Section NativeScript layout classes are found in the
-:file:`_navigation_section.ns.scss`.
