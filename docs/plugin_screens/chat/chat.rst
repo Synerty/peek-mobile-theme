@@ -4,14 +4,14 @@
 Chat
 ====
 
+The Chat Screen is accessed through the Home Screen or from a task in the Inbox.
 
-Looks Classes
--------------
 
-The Inbox looks classes are found in the :file:`_plugin_chat.scss`.
+Peek Plugin Chat
+----------------
 
 The :code:`.plugin-chat-list` class contain the classes specific to the
-Chat List Screen.  The :code:`.plugin-chat-messages` class contain the classes specific
+Chat List Screen.  The :code:`.plugin-chat-messages` class contains the classes specific
 to the Chat Messages Screen.
 
 ::
@@ -77,12 +77,27 @@ to the Chat Messages Screen.
         }
 
 
+SCSS Files
+----------
+
+The Inbox looks classes are found in the :file:`_plugin_chat.scss`.
+
+The Inbox HTML layout classes are found in the
+:file:`_plugin_chat.web.scss`.
+
+The Inbox NativeScript layout classes are found in the
+:file:`_plugin_chat.ns.scss`.
+
+
 HTML
 ````
 
 
 plugin-chat-list
 ~~~~~~~~~~~~~~~~
+
+The plugin-chat-list component displays a list of active chats that routes to the
+filtered plugin-chat-messages component.
 
 ::
 
@@ -106,6 +121,8 @@ plugin-chat-list
 
 plugin-chat-messages
 ~~~~~~~~~~~~~~~~~~~~
+
+
 
 ::
 
@@ -153,21 +170,3 @@ plugin-chat-messages
                 </div>
             </div>
         </div>
-
-
-Layout
-------
-
-
-HTML
-````
-
-The Inbox HTML layout classes are found in the
-:file:`_plugin_chat.web.scss`.
-
-
-NativeScript
-````````````
-
-The Inbox NativeScript layout classes are found in the
-:file:`_plugin_chat.ns.scss`.
