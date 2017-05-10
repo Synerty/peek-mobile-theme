@@ -10,4 +10,3 @@ This section describes the styling of the public plugin displays.
 
     inbox/inbox
     chat/chat
-    noop/noop
