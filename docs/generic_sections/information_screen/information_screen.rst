@@ -4,19 +4,20 @@
 Information Section
 ===================
 
+The Information Section is used as a landing page to show useful information before
+getting into Plugin Screens such as a plugin description and information from
+other plugins.
+
 Any plugin Screen will be able to use the :code:`.peek-information-section` attributes.
 
-
-Looks Classes
--------------
-
-The Details looks classes are found in the :file:`_information_section.scss`.
+.. image:: ./information_screen.web.jpg
+   :align: center
 
 
 .. _information_section_details_section:
 
 Details Section :code:`.peek-details-section`
-`````````````````````````````````````````````
+---------------------------------------------
 
 The :code:`.peek-information-section` class contain the classes specific to a Information
 Section.
@@ -60,8 +61,20 @@ Section.
             }
 
 
+SCSS Files
+----------
+
+The Details looks classes are found in the :file:`_information_section.scss`.
+
+The Information Section HTML layout classes are found in the
+:file:`_information_section.web.scss`.
+
+The Information Section NativeScript layout classes are found in the
+:file:`_information_section.ns.scss`.
+
+
 HTML
-~~~~
+----
 
 ::
 
@@ -82,21 +95,3 @@ HTML
             <i class="icon fa fa-user" aria-hidden="true"></i>
             <div class="user-status">Logged in as Tim Hamilton</div>
         </div>
-
-
-Layout
-------
-
-
-HTML
-````
-
-The Information Section HTML layout classes are found in the
-:file:`_information_section.web.scss`.
-
-
-NativeScript
-````````````
-
-The Information Section NativeScript layout classes are found in the
-:file:`_information_section.ns.scss`.
