@@ -1,8 +1,8 @@
-.. _chat:
+.. _peek_plugin_chat:
 
-====
-Chat
-====
+================
+Peek Plugin Chat
+================
 
 Peek Plugin Chat displays active chat sessions and their messages.
 The active chat sessions should indicate if there are unread messages.

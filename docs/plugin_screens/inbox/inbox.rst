@@ -1,15 +1,34 @@
-.. _inbox:
+.. _peek_plugin_inbox:
 
-=====
-Inbox
-=====
+=================
+Peek Plugin Inbox
+=================
 
 The Inbox Screen is accessed by the 'Tasks' button in the Title Bar.  The 'Tasks'
 button also shows the number of outstanding tasks.
+Tabs switch between the components that list items from installed plugins that are
+configured to pass items into the peek-plugin-inbox.
+The items can use icons, buttons and routing, all configurable.
+Background contextual colours and icons can be used to distinguish between levels of
+importance or priority.
 
 
-Peek Plugin Active Task :code:`plugin-inbox`
---------------------------------------------
+Components
+----------
+
+The **plugin-active-task-client** component builds the navigation tabs.
+The tabs route to the components plugin-active-task-task-list and
+plugin-active-task-activity-list.
+
+The **plugin-active-task-task-list** component builds rows of outstanding tasks from
+plugins configured to issue tasks.
+
+The **plugin-active-task-activity-list** component builds rows of the activity from the
+plugins configured to show activity.
+
+
+Classes
+-------
 
 The :code:`.plugin-inbox` class contains the classes specific to the
 Peek Plugin Active Task.
@@ -147,9 +166,6 @@ HTML
 plugin-active-task-client
 `````````````````````````
 
-The following code builds the navigation tabs.  The tabs route to the components
-plugin-active-task-task-list and plugin-active-task-activity-list.
-
 .. image:: ./screen_navigation-tabs.web.jpg
   :align: center
 
@@ -200,9 +216,6 @@ plugin-active-task-task-list and plugin-active-task-activity-list.
 plugin-active-task-task-list
 ````````````````````````````
 
-The plugin-active-task-task-list component builds the table containing dynamic rows of
-outstanding tasks from plugins configured to issue tasks.
-
 .. image:: ./inbox-tasks.web.jpg
   :align: center
 
@@ -249,9 +262,6 @@ outstanding tasks from plugins configured to issue tasks.
 plugin-active-task-activity-list
 ````````````````````````````````
 
-The plugin-active-task-activity-list component builds the table containing dynamic rows
-of the activity from the plugins configured to show activity.
-
 .. image:: ./inbox-activity.web.jpg
   :align: center
 
@@ -297,9 +307,6 @@ NativeScript
 plugin-active-task-client
 `````````````````````````
 
-The following code builds the navigation tabs.  The tabs route to
-plugin-active-task-task-list and plugin-active-task-activity-list.
-
 ::
 
         <StackLayout class="peek-inbox">
@@ -317,9 +324,6 @@ plugin-active-task-task-list and plugin-active-task-activity-list.
 
 plugin-active-task-task-list
 ````````````````````````````
-
-The plugin-active-task-task-list component builds the table containing dynamic rows of
-outstanding tasks from plugins configured to issue tasks.
 
 ::
 
@@ -397,9 +401,6 @@ outstanding tasks from plugins configured to issue tasks.
 plugin-active-task-activity-list
 ````````````````````````````````
 
-The plugin-active-task-activity-list component builds the table containing dynamic rows
-of the activity from the plugins configured to show activity.
-
 ::
 
         <ScrollView class="inbox">
@@ -439,3 +440,4 @@ of the activity from the plugins configured to show activity.
                 </ng-template>
             </ListView>
         </ScrollView>
+
