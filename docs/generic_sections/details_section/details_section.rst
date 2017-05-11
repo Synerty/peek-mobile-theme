@@ -4,22 +4,19 @@
 Details Section
 ===============
 
+The Details Section is best suited to presenting information.  The section is
+best suited to prioritising information by providing focus to the values.
+
 Any plugin Screen will be able to use the :code:`.peek-details-section` attributes.
 
-
-Looks Classes
--------------
-
-The Details looks classes are found in the :file:`_details_section.scss`.
+.. image:: ./details_section.web.jpg
+  :align: center
 
 
 .. _details_section_details_section:
 
 Details Section :code:`.peek-details-section`
-`````````````````````````````````````````````
-
-.. image:: ./details_section.web.jpg
-  :align: center
+---------------------------------------------
 
 The :code:`.peek-details-section` class contain the classes specific to a Details
 Section.
@@ -53,13 +50,28 @@ Section.
         }
 
 
+SCSS Files
+----------
+
+The Details looks classes are found in the
+:file:`_details_section.scss`.
+
+The Details Section HTML layout classes are found in the
+:file:`_details_section.web.scss`.
+
+The Details Section NativeScript layout classes are found in the
+:file:`_details_section.ns.scss`.
+
+
 HTML
-~~~~
+----
 
-::
+The Details Section uses Bootstraps `Grid System <http://getbootstrap.com/css/#grid>`_.
 
-Below is the HTML code extract of the first two rows from the
-:ref:`details_section_details_section`: ::
+A Container contains row's and rows are made up of 12 columns.
+
+Below is the HTML code extract of the first two rows from the screenshot in the
+beginning of the :ref:`details_section`: ::
 
         <div class="peek-details-section">
             <div class="container-fluid">
@@ -98,21 +110,3 @@ Below is the HTML code extract of the first two rows from the
 
             </div>
         </div>
-
-
-Layout
-------
-
-
-HTML
-````
-
-The Details Section HTML layout classes are found in the
-:file:`_details_section.web.scss`.
-
-
-NativeScript
-````````````
-
-The Details Section NativeScript layout classes are found in the
-:file:`_details_section.ns.scss`.
