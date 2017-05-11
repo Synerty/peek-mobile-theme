@@ -4,8 +4,9 @@
 Details Section
 ===============
 
-The Details Section is best suited to presenting information.  The section is
-best suited to prioritising information by providing focus to the values.
+The Details Section is best suited for presenting information.
+
+The section prioritises information by providing focus to the values.
 
 Any plugin Screen will be able to use the :code:`.peek-details-section` attributes.
 
@@ -68,7 +69,12 @@ HTML
 
 The Details Section uses Bootstraps `Grid System <http://getbootstrap.com/css/#grid>`_.
 
-A Container contains row's and rows are made up of 12 columns.
+A Container contains row's.  Row create horizontal groups of columns, rows are made up of
+12 columns.  Content is placed in columns and only column's can be immediate children of
+row's.
+
+Refer to the `Grid System <http://getbootstrap.com/css/#grid>`_ for more information
+about creating page layouts using the Bootstrap grid system.
 
 Below is the HTML code extract of the first two rows from the screenshot in the
 beginning of the :ref:`details_section`: ::
