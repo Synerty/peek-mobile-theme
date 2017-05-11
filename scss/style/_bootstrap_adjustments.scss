@@ -1,5 +1,26 @@
-//fonts
-@import url('https://fonts.googleapis.com/css?family=Play');
+@font-face {
+  font-family: 'Play';
+  font-weight: normal;
+  src: url('../../fonts/Play/Play-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/Play/Play-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/Play/Play-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/Play/Play-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../fonts/Play/Play-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/Play/Play-Regular.svg#svgPlayRegular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Play';
+  font-weight: bold;
+  src: url('../../fonts/Play/Play-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/Play/Play-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/Play/Play-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/Play/Play-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../fonts/Play/Play-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/Play/Play-Bold.svg#svgPlayRegular') format('svg'); /* Legacy iOS */
+}
+
+
 
 .h1,
 .h2,
