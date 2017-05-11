@@ -114,6 +114,9 @@
       padding: 10px;
       margin-top: 4px; }
 
+.btn-group .btn {
+  min-width: 40px; }
+
 .peek-footer {
   position: fixed;
   width: 100%;
