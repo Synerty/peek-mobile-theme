@@ -30,19 +30,27 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
 
-            <link rel="stylesheet" href="../dist/layout.web.css">
-            <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../dist/layout.web.css">
+    <link rel="stylesheet" href="../dist/style.css">
 
 </head>
 
 <body>
 
-<!-- Navigation Section -->
 <div class="peek-nav-section">
-    <div class="btn-group pull-left" role="group">
-        <button class="btn" role="group">
-            <i class="fa fa-angle-left"
-               aria-hidden="true"></i>
+    <div class="btn-group pull-left"
+         role="group">
+        <button class="btn"
+                role="group">
+            <fa name="angle-left"
+                ng-reflect-name="angle-left">
+                <i aria-hidden="true"
+                   class="fa fa-angle-left"
+                   ng-reflect-klass="fa fa-angle-left"
+                   ng-reflect-ng-class="">
+
+                </i>
+            </fa>
         </button>
     </div>
 </div>
@@ -51,46 +59,123 @@
     <div class="message-list">
         <div class="sent">
             <div class="message-details">
-                Message sent, 3 hours ago
+                2 days ago
 
             </div>
-            <div class="message">
-                A message written by the user
+            <div class="sent bg-danger">
+                <div class="h4">
+                    SOS
 
-            </div>
-        </div>
-        <div class="received">
-            <div class="message-details">
-                From Chief Wiggum (C917), 2 hours ago
-
-            </div>
-            <div class="message">
-                A message written by a Chief Wiggum
-
+                </div>
             </div>
         </div>
         <div class="sent">
             <div class="message-details">
-                Message sent, 15 minutes ago
+                2 days ago
 
             </div>
-            <div class="message">
-                A message written by the user
+            <div class="sent bg-success">
+                <div class="h5">
+                    Message from me
 
+                </div>
+            </div>
+        </div>
+        <div class="sent">
+            <div class="message-details">
+                5 minutes ago
+
+            </div>
+            <div class="sent bg-success">
+                <div class="h5">
+                    What are you up to?
+
+                </div>
+            </div>
+        </div>
+        <div class="received">
+            <div class="message-details">
+                From Craig Spencer (E1887), 2 minutes
+                ago
+
+            </div>
+            <div class="received bg-success">
+
+                <div class="h5">
+                    heaps ay
+
+                </div>
+            </div>
+        </div>
+        <div class="received">
+            <div class="message-details">
+                From Craig Spencer (E1887), 2 minutes
+                ago
+
+            </div>
+            <div class="received bg-success">
+                <div class="h5">
+                    Might need help later
+
+                </div>
+            </div>
+        </div>
+        <div class="received">
+            <div class="message-details">
+                From Craig Spencer (E1887), 2 minutes
+                ago
+
+            </div>
+            <div class="received bg-danger">
+                <div class="h4">
+                    SOS
+
+                </div>
+            </div>
+        </div>
+        <div class="received">
+            <div class="message-details">
+                From Craig Spencer (E1887), 2 minutes
+                ago
+
+            </div>
+            <div class="received bg-success">
+                <div class="h5">
+                    choice
+
+                </div>
+            </div>
+        </div>
+        <div class="sent">
+            <div class="message-details">
+                a minute ago
+
+            </div>
+            <div class="sent bg-success">
+
+                <div class="h5">
+                    righto
+
+                </div>
             </div>
         </div>
     </div>
-
     <div class="messaging-area">
-        <div class="messaging-text">
-            <textarea class="form-control ng-untouched ng-pristine ng-valid"></textarea>
-        </div>
-        <div class="buttons">
-            <button class="btn" type="button" disabled="">Send</button>
-            <button class="btn" type="button">SOS</button>
-        </div>
-    </div>
+    <textarea class="form-control ng-valid ng-dirty ng-touched"
+              ng-reflect-model="">
+    </textarea>
+        <button class="btn"
+                type="button"
+                disabled="">
+            Send
 
+        </button>
+        <button class="btn"
+                type="button">
+            SOS
+
+        </button>
+    </div>
 </div>
 
 </body>

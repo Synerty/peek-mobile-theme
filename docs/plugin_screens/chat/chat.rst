@@ -4,15 +4,38 @@
 Chat
 ====
 
-The Chat Screen is accessed through the Home Screen or from a task in the Inbox.
+Peek Plugin Chat displays active chat sessions and their messages.
+The active chat sessions should indicate if there are unread messages.
+The message lists will display sent messages on the right and received messages on the
+left.
+Background contextual colours will distinguish a successfully sent message or an
+emergency "SOS" message received.
 
 
-Peek Plugin Chat
-----------------
+Components
+----------
+
+The **chat-list** component displays a list of active chat sessions that route to the
+msg-list component.
+The "New Chat" button in the Navigation Bar routes to the new-chat component.
+
+The **new-chat** component creates new chat sessions.
+The user builds a list of one or more users for a new chat session.
+
+The **msg-list** component shows the list of sent and received messages for the
+selected chat session.
+The "angle-left" button in the Navigation Bar routes to the chat-list component.
+The user has the option to compose a new message to send of send an "SOS" message.
+
+
+Classes
+-------
 
 The :code:`.plugin-chat-list` class contain the classes specific to the
-Chat List Screen.  The :code:`.plugin-chat-messages` class contains the classes specific
-to the Chat Messages Screen.
+chat-list component.
+The :code:`.plugin-chat-messages` class contains the classes specific to the msg-list
+component.
+The new-chat component uses generic classes, see :ref:`other_useful_styles`.
 
 ::
 
@@ -66,13 +89,12 @@ to the Chat Messages Screen.
                     ...
 
                 }
+            }
+            messaging-area{
+            /* Contains the compose message area looks attributes unique to the
+            Chat Messages */
+                ...
 
-                message{
-                /* Contains the message text looks attributes unique to the message-list
-                class */
-                    ...
-
-                }
             }
         }
 
@@ -90,83 +112,189 @@ The Inbox NativeScript layout classes are found in the
 
 
 HTML
-````
+----
 
 
-plugin-chat-list
-~~~~~~~~~~~~~~~~
-
-The plugin-chat-list component displays a list of active chats that routes to the
-filtered plugin-chat-messages component.
+chat-list component
+```````````````````
 
 ::
 
-        <div class="plugin-chat-list">
-            <div class="messages">
-                <i class="icon fa fa-comment" aria-hidden="true"></i>
-                <div class="topic">
-                    Chief Wiggum (C917)
+        <!--TRANSITION WITH REASON DIALOG -->
+        <pl-chat-new-chat
+                *ngIf="isNewChatDialogShown()"
+                (create)="dialogConfirmed($event)"
+                (cancel)="dialogCanceled()"
+                [data]="newChatDialogData">
 
-                </div>
-            </div>
-            <div class="messages">
-                <i class="icon fa fa-comment" aria-hidden="true"></i>
-                <div class="topic">
-                    (PowerOn Fusion)
+        </pl-chat-new-chat>
 
-                </div>
+
+        <div class="peek-nav-section">
+            <div class="btn-group pull-left"
+                 *ngIf="!isNewChatDialogShown()"
+                 role="group">
+                <button class="btn"
+                        role="group"
+                        (click)="newChatClicked()">
+                    New Chat
+                </button>
             </div>
         </div>
 
+        <div class="plugin-chat-list">
+            <!-- Use the template tag syntax, as this works with nativescript too -->
+            <ng-template ngFor let-chat [ngForOf]="chats" let-i="index">
+                <div class="messages" (click)="chatClicked(chat)">
 
-plugin-chat-messages
-~~~~~~~~~~~~~~~~~~~~
+                    <!-- Unread indicator -->
+                    <fa class="icon" name="fw" *ngIf="isChatRead(chat)"></fa>
+                    <fa class="icon" name="comment-o" *ngIf="!isChatRead(chat)"></fa>
+
+                    <!-- Other Users -->
+                    <div class="topic" *ngFor="let user of otherChatUsers(chat)">
+                        {{userDisplayName(user)}} ({{user.userId}})
+                    </div>
+                </div>
+            </ng-template>
+        </div>
 
 
+new-chat component
+``````````````````
 
 ::
 
-        <div class="plugin-chat-messages">
+        <div [@dialogAnimation]="dialogAnimationState"
+             (@dialogAnimation.done)="animationDone($event)">
+
+            <div class="h2">
+                Start a chat wth :
+            </div>
+
+            <div class="p"
+                 *ngIf="!createButtonEnabled()">
+                No users selected
+            </div>
+            <ul>
+                <li *ngFor="let u of data.users">
+                    {{u.displayName}}
+                </li>
+            </ul>
+
+            <div class="form-group">
+                <label class="h4"
+                       for="userIdField">
+                    Add User:
+                </label>
+                <select class="form-control"
+                        id="userIdField"
+                        name="userId"
+                        [(ngModel)]="selectedUserIndex">
+                    <option [value]="i" *ngFor="let i = index; let item of usersStrList">
+                        {{item}}
+                    </option>
+                </select>
+            </div>
+
+
+            <!-- BEGIN HANDBACK DIALOG -->
+            <div>
+                <Button class="btn" (click)="addUserClicked()"
+                        [disabled]="!newButtonEnabled()">
+                    Add User
+                </Button>
+
+                <Button class="btn" (click)="confirmClicked(false)"
+                        [disabled]="!createButtonEnabled()">
+                    Create Chat
+                </Button>
+
+                <Button class="btn" (click)="cancelClicked(false)">
+                    Cancel
+                </Button>
+            </div>
+        </div>
+
+msg-list component
+``````````````````
+
+::
+
+        <div class="peek-nav-section">
+            <div class="btn-group pull-left"
+                 role="group">
+                <button class="btn"
+                        role="group"
+                        (click)="navToChatsClicked()">
+                    <fa name="angle-left"></fa>
+                </button>
+            </div>
+        </div>
+
+        <div class="plugin-chat-messages"
+             #messageListRef>
+            <!-- No Messages -->
+            <div class="h3"
+                 *ngIf="!haveMessages()">
+                No messages
+
+            </div>
             <div class="message-list">
-                <div class="sent">
-                    <div class="message-details">
-                        Message sent, 3 hours ago
 
-                    </div>
-                    <div class="message">
-                        A message written by the user
+                <div *ngFor="let i=index; let msg of messages()">
+                    <!-- Unread marker -->
+                    <hr *ngIf="isFirstUnreadMesage(i)"/>
 
-                    </div>
-                </div>
-                <div class="received">
-                    <div class="message-details">
-                        From Chief Wiggum (C917), 2 hours ago
+                    <!-- From and Date -->
+                    <div [class.sent]="isMessageFromThisUser(msg)"
+                         [class.received]="!isMessageFromThisUser(msg)">
+                        <div class="message-details"
+                             *ngIf="!isMessageFromThisUser(msg)">
+                            From {{userDisplayName(msg)}} ({{msg.fromUserId}}), {{timePast(msg)}}
+                            ago
 
-                    </div>
-                    <div class="message">
-                        A message written by a Chief Wiggum
+                        </div>
+                        <div class="message-details"
+                             *ngIf="isMessageFromThisUser(msg)">
+                            {{timePast(msg)}} ago
 
-                    </div>
-                </div>
-                <div class="sent">
-                    <div class="message-details">
-                        Message sent, 15 minutes ago
+                        </div>
+                        <div [class.sent]="isMessageFromThisUser(msg)"
+                             [class.received]="!isMessageFromThisUser(msg)"
+                             [class.bg-success]="isNormalPriority(msg)"
+                             [class.bg-danger]="isEmergencyPriority(msg)">
 
-                    </div>
-                    <div class="message">
-                        A message written by the user
+                            <div class="h5"
+                                 *ngIf="isNormalPriority(msg)">
+                                {{msg.message}}
 
+                            </div>
+                            <div class="h4"
+                                 *ngIf="isEmergencyPriority(msg)">
+                                {{msg.message}}
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="messaging-area">
-                <div class="messaging-text">
-                    <textarea class="form-control ng-untouched ng-pristine ng-valid"></textarea>
-                </div>
-                <div class="buttons">
-                    <button class="btn" type="button" disabled="">Send</button>
-                    <button class="btn" type="button">SOS</button>
-                </div>
+            <textarea class="form-control"
+                      [(ngModel)]="newMessageText">
+
+            </textarea>
+                <button class="btn" type="button"
+                        [disabled]="!sendEnabled()"
+                        (click)="sendMsgClicked()">
+                    Send
+
+                </button>
+                <button class="btn" type="button"
+                        (click)="sendSosClicked()">
+                    SOS
+
+                </button>
             </div>
         </div>
