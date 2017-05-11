@@ -7,18 +7,13 @@
   height: $navigation_header_height;// main header height being set
   position: fixed;
 
-  >.container-fluid{
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
   //normal button
   .btn{
     height: $navigation_header_height; //setting height to default header naviation height
   }
 
   //title
-  .title{
+  .title-bar-title{
     line-height: $navigation_header_height;
     padding-left: $general_padding;
     padding-right: $general_padding;

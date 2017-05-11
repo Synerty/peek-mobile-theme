@@ -61,12 +61,9 @@
   z-index: 999;
   height: 40px;
   position: fixed; }
-  .peek-title-bar > .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px; }
   .peek-title-bar .btn {
     height: 40px; }
-  .peek-title-bar .title {
+  .peek-title-bar .title-bar-title {
     line-height: 40px;
     padding-left: 15px;
     padding-right: 15px; }
