@@ -12,26 +12,9 @@
   //home page buttons
   .icon{
 
-    padding: 5px;
     font-family: $fonts_special;
-
-    a{
-      display: block;
-      padding: $general_padding;
-
-      @include box-shadow;
-      transition: 0.45s;
-      float: left;
-
-      img{
-        padding: $general_padding ($general_padding*2);
-      }
-
-      &:hover{
-          @include no-shadow;
-      }
-
-      }
+    margin-top: $general_padding;
+    padding: $general_padding*2;
 
     }
 

@@ -14,7 +14,6 @@
   font-family: $fonts_special;
   text-transform: $font_transform;
   border-radius: 4px;
-  @include rollover;
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
@@ -28,7 +27,6 @@
   &:hover{
     background-color: darken($brand,20%);
     color: $white;
-    @include rollover;
   }
 }
 

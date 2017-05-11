@@ -37,9 +37,6 @@
   font-family: "Play", sans-serif;
   text-transform: uppercase;
   border-radius: 4px;
-  transition: all .35s ease;
-  -moz-transition: all .35s ease;
-  -webkit-transition: all .35s ease;
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
@@ -51,10 +48,7 @@
   border: 0px; }
   .btn:hover {
     background-color: #146a8f;
-    color: #ffffff;
-    transition: all .35s ease;
-    -moz-transition: all .35s ease;
-    -webkit-transition: all .35s ease; }
+    color: #ffffff; }
 
 .btn-group .btn + .btn {
   margin-left: 0px; }
@@ -88,9 +82,6 @@
       font-family: "Play", sans-serif;
       text-transform: uppercase;
       border-radius: 4px;
-      transition: all .35s ease;
-      -moz-transition: all .35s ease;
-      -webkit-transition: all .35s ease;
       cursor: pointer;
       display: inline-block;
       padding: 10px 15px;
@@ -104,10 +95,7 @@
       margin-top: 0px; }
       .nav.nav-tabs > li.active > a:hover {
         background-color: #146a8f;
-        color: #ffffff;
-        transition: all .35s ease;
-        -moz-transition: all .35s ease;
-        -webkit-transition: all .35s ease; }
+        color: #ffffff; }
     .nav.nav-tabs > li > a {
       margin-right: 0px;
       margin-top: 10px;
@@ -134,18 +122,9 @@
   bottom: 0px;
   min-height: 100%; }
   .peek-home-screen .icon {
-    padding: 5px;
-    font-family: "Play", sans-serif; }
-    .peek-home-screen .icon a {
-      display: block;
-      padding: 15px;
-      box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
-      transition: 0.45s;
-      float: left; }
-      .peek-home-screen .icon a img {
-        padding: 15px 30px; }
-      .peek-home-screen .icon a:hover {
-        box-shadow: 0px 0px 0px transparent; }
+    font-family: "Play", sans-serif;
+    margin-top: 15px;
+    padding: 30px; }
 
 .plugin-inbox,
 .inboxActivity {

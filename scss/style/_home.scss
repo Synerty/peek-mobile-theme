@@ -14,29 +14,15 @@
 
     //padding: 5px;
     font-family: $fonts_special;
-
-    a{
-      //display: block;
-      background-image: url("../images/button_home_background.png");
-      background-repeat: repeat;
-      text-align: center;
-      border-radius: $general_border_radius + 2px;
-      color: $white;
-      text-transform: capitalize;
-      font-size: 1.1em;
-      //@include box-shadow;
-      //transition: 0.45s;
-
-      img{
-        //padding: $general_padding ($general_padding*2);
-      }
-
-      &:hover{
-          text-decoration: none;
-          //@include no-shadow;
-      }
-
-      }
+    background-image: url("../images/button_home_background.png");
+    background-repeat: repeat;
+    display: block;
+    color: $white;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: $general_border_radius + 2px;
+    font-size: 1.1em;
+    @include box-shadow;
 
     }
 

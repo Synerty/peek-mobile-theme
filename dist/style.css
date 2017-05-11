@@ -36,9 +36,6 @@
   font-family: "Play", sans-serif;
   text-transform: uppercase;
   border-radius: 4px;
-  transition: all .35s ease;
-  -moz-transition: all .35s ease;
-  -webkit-transition: all .35s ease;
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
@@ -50,10 +47,7 @@
   border: 0px; }
   .btn:hover {
     background-color: #146a8f;
-    color: #ffffff;
-    transition: all .35s ease;
-    -moz-transition: all .35s ease;
-    -webkit-transition: all .35s ease; }
+    color: #ffffff; }
 
 .btn-group > .btn {
   border-right: 1px solid #1a8cbc; }
@@ -104,17 +98,16 @@
   background-size: cover; }
 
 .peek-home-screen .icon {
-  font-family: "Play", sans-serif; }
-  .peek-home-screen .icon a {
-    background-image: url("../images/button_home_background.png");
-    background-repeat: repeat;
-    text-align: center;
-    border-radius: 6px;
-    color: #ffffff;
-    text-transform: capitalize;
-    font-size: 1.1em; }
-    .peek-home-screen .icon a:hover {
-      text-decoration: none; }
+  font-family: "Play", sans-serif;
+  background-image: url("../images/button_home_background.png");
+  background-repeat: repeat;
+  display: block;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 1.1em;
+  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
 
 .plugin-inbox .task,
 .inboxActivity .task {
