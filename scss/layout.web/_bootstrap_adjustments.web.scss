@@ -12,17 +12,7 @@
   padding: ($general_padding * 2) 0px 0px 0px;
   text-align: center;
 
-  &:after {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 15%;
-    border-bottom: 3px solid #26abe2;
-    padding-bottom: $general_padding;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:$general_padding*2;
-  }
+
 
 }
 
