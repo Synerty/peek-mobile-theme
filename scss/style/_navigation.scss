@@ -11,15 +11,18 @@
     font-size:$section_font_size;
     border-radius: 0px;
     padding: 10px;
+    background-color: $brand;
+    margin-right: 0px;
+    border-right: 1px solid darken($brand,10%);
   }
 
   //button group
   .btn-group{
 
     &>.btn{
-        &:first-child,
+
         &:last-child{
-          border-radius: 0px;
+          border-right:0px;
         }
     }
 

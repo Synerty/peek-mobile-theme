@@ -13,14 +13,18 @@
 
 .h1 {
   margin-bottom: 30px;
-  padding: 30px 0px 0px 0px; }
+  padding: 30px 0px 0px 0px;
+  text-align: center; }
   .h1:after {
     content: "";
     display: block;
     height: 1px;
     width: 15%;
     border-bottom: 3px solid #26abe2;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px; }
 
 .center {
   text-align: center; }
@@ -30,7 +34,7 @@
       margin: 0px auto; }
 
 .btn {
-  background-color: #28aae1;
+  background-color: #999999;
   color: #ffffff;
   font-size: 1em;
   font-family: "Play", sans-serif;
@@ -46,7 +50,7 @@
   font-weight: normal;
   border: 0px; }
   .btn:hover {
-    background-color: #146a8f;
+    background-color: #737373;
     color: #ffffff; }
 
 .btn-group .btn + .btn {
@@ -75,7 +79,7 @@
   .nav.nav-tabs > li {
     margin-bottom: 0px; }
     .nav.nav-tabs > li.active > a {
-      background-color: #28aae1;
+      background-color: #999999;
       color: #ffffff;
       font-size: 1em;
       font-family: "Play", sans-serif;
@@ -93,7 +97,7 @@
       padding: 12px;
       margin-top: 0px; }
       .nav.nav-tabs > li.active > a:hover {
-        background-color: #146a8f;
+        background-color: #737373;
         color: #ffffff; }
     .nav.nav-tabs > li > a {
       margin-right: 0px;

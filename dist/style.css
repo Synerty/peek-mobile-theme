@@ -45,7 +45,7 @@
   border-top: 1px solid #999999; }
 
 .btn {
-  background-color: #28aae1;
+  background-color: #999999;
   color: #ffffff;
   font-size: 1em;
   font-family: "Play", sans-serif;
@@ -61,11 +61,11 @@
   font-weight: normal;
   border: 0px; }
   .btn:hover {
-    background-color: #146a8f;
+    background-color: #737373;
     color: #ffffff; }
 
 .btn-group > .btn {
-  border-right: 1px solid #1a8cbc; }
+  margin-right: 1px; }
 
 .peek-title-bar {
   box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
@@ -74,9 +74,12 @@
   .peek-title-bar .btn {
     font-size: 0.8em;
     border-radius: 0px;
-    padding: 10px; }
-  .peek-title-bar .btn-group > .btn:first-child, .peek-title-bar .btn-group > .btn:last-child {
-    border-radius: 0px; }
+    padding: 10px;
+    background-color: #28aae1;
+    margin-right: 0px;
+    border-right: 1px solid #1a8cbc; }
+  .peek-title-bar .btn-group > .btn:last-child {
+    border-right: 0px; }
 
 .peek-nav-section {
   border-bottom: 1px solid #cccccc;
