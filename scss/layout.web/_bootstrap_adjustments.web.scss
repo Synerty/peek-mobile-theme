@@ -2,7 +2,8 @@
 .h2,
 .h3,
 .h4,
-.h5{
+.h5,
+.h6{
   @include nuke;
   font-family: $fonts_special;
 }
@@ -11,9 +12,6 @@
   margin-bottom: $general_padding * 2;
   padding: ($general_padding * 2) 0px 0px 0px;
   text-align: center;
-
-
-
 }
 
 .center{
