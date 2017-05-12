@@ -133,8 +133,8 @@
   overflow: hidden;
   display: table;
   border-bottom: 1px solid #ffffff; }
-  .plugin-inbox .task .title,
-  .inboxActivity .task .title {
+  .plugin-inbox .task .inbox-title,
+  .inboxActivity .task .inbox-title {
     font-size: 1em; }
   .plugin-inbox .task .description,
   .inboxActivity .task .description {
