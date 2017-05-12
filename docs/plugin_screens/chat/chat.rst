@@ -5,11 +5,14 @@ Peek Plugin Chat
 ================
 
 Peek Plugin Chat displays active chat sessions and their messages.
-The active chat sessions should indicate if there are unread messages.
-The message lists will display sent messages on the right and received messages on the
-left.
-Background contextual colours will distinguish a successfully sent message or an
-emergency "SOS" message received.
+
+*  The active chat sessions should indicate if there are unread messages.
+
+*  The message lists will display sent messages on the right and received messages on
+   the left.
+
+*  Background contextual colours will distinguish a successfully sent message or an
+   emergency "SOS" message received.
 
 
 Components
@@ -40,21 +43,29 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
 ::
 
         .plugin-chat-list{
-        /* Contains the Chat List screen looks classes */
+        /*
+            Contains the chat-list component classes
+        */
             ...
 
             messages{
-            /* Contains the Messages button looks attributes unique to the Chat List */
+            /*
+                Contains the Messages attributes unique to the Chat List
+            */
                 ...
 
                 icon{
-                /* Contains the icon looks attributes unique to the message class */
+                /*
+                    Contains the icon attributes unique to the message class
+                    The icon is used to indicate unread messages
+                */
                     ...
 
                 }
-
-                topic{
-                /* Contains the topic text looks attributes unique to the message class */
+                title{
+                /*
+                    Contains the topic text attributes unique to the message class
+                */
                     ...
 
                 }
@@ -62,37 +73,72 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
         }
 
         .plugin-chat-messages{
-        /* Contains the Chat Messages screen looks classes */
+        /* Contains the msg-list component classes */
             ...
 
             message-list{
-            /* Contains the Messages list looks attributes unique to the Chat Messages */
+            /*
+                Attributes for the container of messages, unique to the Chat
+                Messages.
+                Scrolls through the messages with most recent at the bottom.
+            */
                 ...
 
                 sent{
-                /* Contains the sent message looks attributes unique to the message-list
-                class */
+                /*
+                    Contains the sent message attributes unique to the message-list
+                    class.
+                    Container is right aligned with background colour different to the
+                    received class.
+                    bg-success class applied for a successfully sent message.
+                */
                     ...
 
                 }
-
                 received{
-                /* Contains the received text looks attributes unique to the message-list
-                class */
+                /*
+                    Contains the received text attributes unique to the message-list
+                    class.
+                    Container is right aligned with background colour different to the
+                    sent class.
+                    bg-warning class applied for an emergency priority message.
+                */
                     ...
 
                 }
-
                 message-details{
-                /* Contains the message details text looks attributes unique to the
-                message-list class */
+                /*
+                    Contains the message details text attributes unique to the
+                    message-list class.
+                    The message details should not be the focus of attention (text-muted)
+                */
+                    ...
+
+                }
+                emergency-text{
+                /*
+                    Contains the emergency priority message text attributes unique to the
+                    message-list class
+
+                */
+                    ...
+
+                }
+                normal-text{
+                /*
+                    Contains the normal priority message text attributes unique to the
+                    message-list class
+                */
                     ...
 
                 }
             }
             messaging-area{
-            /* Contains the compose message area looks attributes unique to the
-            Chat Messages */
+            /*
+                Contains the compose message area attributes unique to the
+                chat messages.
+                Fixed to the bottom of the screen.
+            */
                 ...
 
             }
@@ -152,7 +198,7 @@ chat-list component
                     <fa class="icon" name="comment-o" *ngIf="!isChatRead(chat)"></fa>
 
                     <!-- Other Users -->
-                    <div class="topic" *ngFor="let user of otherChatUsers(chat)">
+                    <div class="title" *ngFor="let user of otherChatUsers(chat)">
                         {{userDisplayName(user)}} ({{user.userId}})
                     </div>
                 </div>
@@ -265,12 +311,12 @@ msg-list component
                              [class.bg-success]="isNormalPriority(msg)"
                              [class.bg-danger]="isEmergencyPriority(msg)">
 
-                            <div class="h5"
+                            <div class="emergency-text"
                                  *ngIf="isNormalPriority(msg)">
                                 {{msg.message}}
 
                             </div>
-                            <div class="h4"
+                            <div class="normal-text"
                                  *ngIf="isEmergencyPriority(msg)">
                                 {{msg.message}}
 
