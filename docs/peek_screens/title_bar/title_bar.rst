@@ -27,30 +27,25 @@ The Title Bar is unique, therefore the classes used will be specific for the
 Title Bar.
 
 
-Title Bar :code:`.peek-title-bar`
----------------------------------
+Classes
+-------
 
 The :code:`.peek-title-bar` class contains the classes specific to the Title Bar.
 
 ::
 
         .peek-title-bar{
-        /* Contains the Title Bar looks classes */
+        /* Contains the Title Bar classes */
             ...
 
             }
-            .btn-group{
-            /* Contains the button group looks attributes unique to the Title Bar */
+            .title-bar-btn{
+            /* Contains the button attributes unique to the Title Bar */
                 ...
 
             }
-            .btn{
-            /* Contains the button looks attributes unique to the Title Bar */
-                ...
-
-            }
-            .title{
-            /* Contains the title looks attributes unique to the Title Bar */
+            .title-bar-title{
+            /* Contains the title attributes unique to the Title Bar */
                 ...
 
             }
@@ -65,7 +60,7 @@ The :code:`.peek-title-bar` class contains the classes specific to the Title Bar
 SCSS Files
 ----------
 
-The Title Bar looks classes are found in the
+The Title Bar style classes are found in the
 :file:`_title_bar.scss`.
 
 The Title Bar HTML layout classes are found in the
@@ -87,19 +82,19 @@ HTML
              [class.bg-danger]="!vortexIsOnline">
           <div class="btn-group pull-left"
                role="group">
-            <button class="btn"
+            <button class="title-bar-btn"
                     [routerLink]="['/']">
               Home
 
             </button>
           </div>
-          <div class="title pull-left">
+          <div class="title-bar-title pull-left">
             {{title}}
 
           </div>
           <div class="btn-group pull-right"
                role="group">
-            <button class="btn"
+            <button class="title-bar-btn"
                     *ngFor="let link of rightLinks"
                     [routerLink]="[link.resourcePath]">
               {{linkTitle(link)}}
@@ -107,10 +102,7 @@ HTML
             </button>
           </div>
         </div>
-        <div class="peek-mobile-page-contents">
-            ...
 
-        </div>
 
 
 NativeScript

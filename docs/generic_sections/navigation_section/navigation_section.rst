@@ -4,8 +4,9 @@
 Navigation Section
 ==================
 
-Navigation Section is dynamic and exists if required by the plugin.  The contents of the
-Navigation Section is constructed from the plugin.
+Navigation Section is dynamic and exists if required by the plugin.
+
+The contents of the Navigation Section is constructed from the plugin.
 
 The Navigation Section is located below the :ref:`title_section`, above the screen.
 
@@ -18,8 +19,8 @@ sized around the text they contain.
 .. note:: The buttons require a different theme to the :ref:`title_bar`.
 
 
-Navigation Section :code:`.peek-nav-section`
---------------------------------------------
+Classes
+-------
 
 The :code:`.peek-nav-section` class contains the looks classes specific to the
 Navigation Section.
@@ -30,13 +31,7 @@ Navigation Section.
         /* Contains the Navigation Section looks attributes */
             ...
 
-            }
-           .btn-group{
-           /* Contains the Button Group looks attributes unique to the Navigation Section */
-               ...
-
-           }
-           .btn{
+           .nav-section-btn{
            /* Contains the Button looks attributes unique to the Navigation Section */
                ...
 
@@ -47,7 +42,7 @@ Navigation Section.
 SCSS Files
 ----------
 
-The Navigation Section looks classes are found in the
+The Navigation Section style classes are found in the
 :file:`_navigation_section.scss`.
 
 The Navigation Section HTML layout classes are found in the
@@ -71,11 +66,11 @@ requiring the Nav Bar.
                 Can contain one to many buttons
             -->
             <div class="btn-group pull-left" role="group">
-               <button class="btn" role="group">My Jobs
+               <button class="nav-section-btn" role="group">My Jobs
                </button>
-               <button class="btn" role="group">Job
+               <button class="nav-section-btn" role="group">Job
                </button>
-               <button class="btn" role="group">Operations
+               <button class="nav-section-btn" role="group">Operations
                </button>
             </div>
 
@@ -84,8 +79,8 @@ requiring the Nav Bar.
                 Can contain one to many buttons
             -->
             <div class="btn-group pull-right" role="group">
-               <button class="btn" role="group">&lt;</button>
-               <button class="btn" role="group">&gt;</button>
+               <button class="nav-section-btn" role="group">&lt;</button>
+               <button class="nav-section-btn" role="group">&gt;</button>
             </div>
         </div>
 

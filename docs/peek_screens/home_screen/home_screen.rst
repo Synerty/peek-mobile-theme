@@ -11,8 +11,8 @@ that have front-ends.
    :align: center
 
 
-Home Screen :code:`.peek-home-screen`
--------------------------------------
+Classes
+-------
 
 The :code:`.peek-home-screen` class will contain the classes specific to the Home Screen.
 
@@ -27,17 +27,7 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
         */
             ...
 
-            .container-fluid{
-            /* Contains the container looks attributes unique to the Home Screen */
-                ...
-
-            }
-            .row{
-            /* Contains the row looks attributes unique to the Home Screen */
-                ...
-
-            }
-            .icon{
+            .home-screen-icon{
             /*
                 Contains the Button looks attributes unique to the Home Screen
                 Buttons responsively wrap
@@ -45,7 +35,7 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
                 ...
 
             }
-            .image{
+            .home-screen-image{
             /*
                 Contains the Image looks attributes unique to the Home Screen
                 Strictly uses images
@@ -53,12 +43,7 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
                 ...
 
             }
-            .message{
-            /* Contains the Button Title looks attributes unique to the Home Screen */
-                ...
-
-            }
-            .title{
+            .home-screen-title{
             /* Contains the Button Title looks attributes unique to the Home Screen */
                 ...
 
@@ -76,7 +61,7 @@ Background Image
 SCSS Files
 ----------
 
-The Home Screen looks classes are found in the
+The Home Screen style classes are found in the
 :file:`_home_screen.scss`.
 
 The Home Screen HTML layout classes are found in the
@@ -94,17 +79,18 @@ HTML
         <div class="peek-home-screen">
           <div class="container-fluid">
             <div class="row">
-              <div class="message"
+              <div class="title h3"
                    *ngIf="!appDetails.length">
                 No Plugins Installed
 
               </div>
-              <div class="icon col-xs-6 col-sm-4 col-md-3 col-lg-2"
+              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"
                    *ngFor="let app of appDetails">
-                <a [routerLink]="[app.resourcePath]">
-                  <img class="image"
+                <a class="home-screen-icon"
+                   [routerLink]="[app.resourcePath]">
+                  <img class="home-screen-image"
                        [src]="[app.pluginIconPath]">
-                  <div class="title">
+                  <div class="home-screen-title">
                     {{app.title}}
 
                   </div>
@@ -113,6 +99,7 @@ HTML
             </div>
           </div>
         </div>
+
 
 
 NativeScript

@@ -14,10 +14,8 @@ Any plugin Screen will be able to use the :code:`.peek-details-section` attribut
   :align: center
 
 
-.. _details_section_details_section:
-
-Details Section :code:`.peek-details-section`
----------------------------------------------
+Classes
+-------
 
 The :code:`.peek-details-section` class contain the classes specific to a Details
 Section.
@@ -28,23 +26,19 @@ Section.
         /* Contains the Details Section looks classes */
             ...
 
-            container-fluid{
-            /* Contains the container looks attributes unique to the Details Section */
+            .details-section-title{
+            /*
+                Contains the title attributes unique to the Details Section
+                this text will have the text-muted effect
+            */
                 ...
 
             }
-            .row{
-            /* Contains the row looks attributes unique to the Details Section */
-                ...
-
-            }
-            .title{
-            /* Contains the title looks attributes unique to the Details Section */
-                ...
-
-            }
-            .value{
-            /* Contains the value looks attributes unique to the Details Section */
+            .details-section-value{
+            /*
+                Contains the value attributes unique to the Details Section
+                text to have the focus of attention
+            */
                 ...
 
             }
@@ -54,7 +48,7 @@ Section.
 SCSS Files
 ----------
 
-The Details looks classes are found in the
+The Details style classes are found in the
 :file:`_details_section.scss`.
 
 The Details Section HTML layout classes are found in the
@@ -89,16 +83,16 @@ beginning of the :ref:`details_section`: ::
                         This div contains the cell contents.  Rows are made up of 12
                         parts.
                      -->
-                        <div class="title">Item</div>
-                        <div class="value">#3</div>
+                        <div class="details-section-title">Item</div>
+                        <div class="details-section-value">#3</div>
                     </div>
                     <div class="col-xs-7">
                     <!--
                         This div contains the cell contents.  Rows are made up of 12
                         parts.
                      -->
-                        <div class="title">State</div>
-                        <div class="value">Confirmed</div>
+                        <div class="details-section-title">State</div>
+                        <div class="details-section-value">Confirmed</div>
                     </div>
                 </div>
 
@@ -109,8 +103,8 @@ beginning of the :ref:`details_section`: ::
                         This div contains the cell contents.  Rows are made up of 12
                         parts.
                      -->
-                        <div class="title">Location</div>
-                        <div class="value">Weedons ZS - R15/174</div>
+                        <div class="details-section-title">Location</div>
+                        <div class="details-section-value">Weedons ZS - R15/174</div>
                     </div>
                 </div>
 

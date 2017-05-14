@@ -9,10 +9,8 @@ The Tables Section is best suited to display tabular information.
 Any plugin Screen will be able to use the :code:`.peek-tables-section` attributes.
 
 
-.. _tables_section_tables_section:
-
-Tables Section :code:`.peek-tables-section`
--------------------------------------------
+Classes
+-------
 
 .. image:: ./tables_section.web.jpg
   :align: center
@@ -31,17 +29,17 @@ Section.
                 ...
 
                 .tr{
-                /* Contains the table row looks attributes unique to the .table class */
+                /* Contains the table row attributes unique to the .table class */
                     ...
 
                 }
                 .th{
-                /* Contains the table head cell looks attributes unique to the .table class */
+                /* Contains the table head cell attributes unique to the .table class */
                     ...
 
                 }
                 .td{
-                /* Contains the table row cell looks attributes unique to the .table class */
+                /* Contains the table row cell attributes unique to the .table class */
                     ...
 
                 }
@@ -52,7 +50,7 @@ Section.
 SCSS Files
 ----------
 
-The Tables looks classes are found in the
+The Tables style classes are found in the
 :file:`_tables_section.scss`.
 
 The Tables Section HTML layout classes are found in the

@@ -15,8 +15,8 @@ The text remains a single line and truncates a "..." if the line exceeds the min
 screen width.
 
 
-Footer :code:`.peek-footer`
----------------------------
+Classes
+-------
 
 The :code:`.peek-footer` class contains the classes specific to the Footer.
 
@@ -27,7 +27,7 @@ The :code:`.peek-footer` class contains the classes specific to the Footer.
             ...
 
             }
-            .title{
+            .footer-title{
             /*
                 Contains the title looks attributes unique to the Footer
                 This title will be dynamically set by the plugins installed
@@ -41,7 +41,7 @@ The :code:`.peek-footer` class contains the classes specific to the Footer.
 SCSS Files
 ----------
 
-The Footer looks classes are found in the
+The Footer style classes are found in the
 :file:`_footer.scss`.
 
 The Footer HTML layout classes are found in the
@@ -60,7 +60,7 @@ HTML
 ::
 
         <div class="peek-footer">
-          <div class="title">Offline, xxx minutes</div>
+          <div class="footer-title">Offline, xxx minutes</div>
         </div>
 
 

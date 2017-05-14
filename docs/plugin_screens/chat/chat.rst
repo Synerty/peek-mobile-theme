@@ -48,13 +48,13 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
         */
             ...
 
-            messages{
+            chat-list-messages{
             /*
                 Contains the Messages attributes unique to the Chat List
             */
                 ...
 
-                icon{
+                chat-list-icon{
                 /*
                     Contains the icon attributes unique to the message class
                     The icon is used to indicate unread messages
@@ -62,7 +62,7 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
                     ...
 
                 }
-                title{
+                chat-list-title{
                 /*
                     Contains the topic text attributes unique to the message class
                 */
@@ -76,7 +76,7 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
         /* Contains the msg-list component classes */
             ...
 
-            message-list{
+            chat-messages-list{
             /*
                 Attributes for the container of messages, unique to the Chat
                 Messages.
@@ -84,7 +84,7 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
             */
                 ...
 
-                sent{
+                chat-messages-sent{
                 /*
                     Contains the sent message attributes unique to the message-list
                     class.
@@ -95,7 +95,7 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
                     ...
 
                 }
-                received{
+                chat-messages-received{
                 /*
                     Contains the received text attributes unique to the message-list
                     class.
@@ -106,7 +106,7 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
                     ...
 
                 }
-                message-details{
+                chat-messages-details{
                 /*
                     Contains the message details text attributes unique to the
                     message-list class.
@@ -115,7 +115,7 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
                     ...
 
                 }
-                emergency-text{
+                chat-messages-emergency{
                 /*
                     Contains the emergency priority message text attributes unique to the
                     message-list class
@@ -124,7 +124,7 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
                     ...
 
                 }
-                normal-text{
+                chat-messages-normal{
                 /*
                     Contains the normal priority message text attributes unique to the
                     message-list class
@@ -133,7 +133,7 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
 
                 }
             }
-            messaging-area{
+            chat-messages-compose{
             /*
                 Contains the compose message area attributes unique to the
                 chat messages.
@@ -148,7 +148,7 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
 SCSS Files
 ----------
 
-The Inbox looks classes are found in the :file:`_plugin_chat.scss`.
+The Inbox style classes are found in the :file:`_plugin_chat.scss`.
 
 The Inbox HTML layout classes are found in the
 :file:`_plugin_chat.web.scss`.
@@ -177,6 +177,10 @@ chat-list component
 
 
         <div class="peek-nav-section">
+            <!--
+                The following 'div' groups button to the left of the Nav Bar.
+                Can contain one to many buttons
+            -->
             <div class="btn-group pull-left"
                  *ngIf="!isNewChatDialogShown()"
                  role="group">
@@ -191,14 +195,14 @@ chat-list component
         <div class="plugin-chat-list">
             <!-- Use the template tag syntax, as this works with nativescript too -->
             <ng-template ngFor let-chat [ngForOf]="chats" let-i="index">
-                <div class="messages" (click)="chatClicked(chat)">
+                <div class="chat-list-messages" (click)="chatClicked(chat)">
 
                     <!-- Unread indicator -->
-                    <fa class="icon" name="fw" *ngIf="isChatRead(chat)"></fa>
-                    <fa class="icon" name="comment-o" *ngIf="!isChatRead(chat)"></fa>
+                    <fa class="chat-list-icon" name="fw" *ngIf="isChatRead(chat)"></fa>
+                    <fa class="chat-list-icon" name="comment-o" *ngIf="!isChatRead(chat)"></fa>
 
                     <!-- Other Users -->
-                    <div class="title" *ngFor="let user of otherChatUsers(chat)">
+                    <div class="chat-list-title" *ngFor="let user of otherChatUsers(chat)">
                         {{userDisplayName(user)}} ({{user.userId}})
                     </div>
                 </div>
@@ -286,7 +290,7 @@ msg-list component
                 No messages
 
             </div>
-            <div class="message-list">
+            <div class="chat-messages-list">
 
                 <div *ngFor="let i=index; let msg of messages()">
                     <!-- Unread marker -->
@@ -295,28 +299,28 @@ msg-list component
                     <!-- From and Date -->
                     <div [class.sent]="isMessageFromThisUser(msg)"
                          [class.received]="!isMessageFromThisUser(msg)">
-                        <div class="message-details"
+                        <div class="chat-messages-details"
                              *ngIf="!isMessageFromThisUser(msg)">
                             From {{userDisplayName(msg)}} ({{msg.fromUserId}}), {{timePast(msg)}}
                             ago
 
                         </div>
-                        <div class="message-details"
+                        <div class="chat-messages-details"
                              *ngIf="isMessageFromThisUser(msg)">
                             {{timePast(msg)}} ago
 
                         </div>
-                        <div [class.sent]="isMessageFromThisUser(msg)"
-                             [class.received]="!isMessageFromThisUser(msg)"
+                        <div [class.chat-messages-sent]="isMessageFromThisUser(msg)"
+                             [class.chat-messages-received]="!isMessageFromThisUser(msg)"
                              [class.bg-success]="isNormalPriority(msg)"
                              [class.bg-danger]="isEmergencyPriority(msg)">
 
-                            <div class="emergency-text"
+                            <div class="chat-messages-normal"
                                  *ngIf="isNormalPriority(msg)">
                                 {{msg.message}}
 
                             </div>
-                            <div class="normal-text"
+                            <div class="chat-messages-emergency"
                                  *ngIf="isEmergencyPriority(msg)">
                                 {{msg.message}}
 
@@ -326,7 +330,7 @@ msg-list component
                 </div>
             </div>
 
-            <div class="messaging-area">
+            <div class="chat-messages-compose">
             <textarea class="form-control"
                       [(ngModel)]="newMessageText">
 

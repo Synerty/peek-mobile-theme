@@ -5,8 +5,8 @@ Information Section
 ===================
 
 The Information Section is used as a landing page to show useful information before
-getting into Plugin Screens such as a plugin description and information from
-other plugins.
+presenting Plugin Screens.  The useful information can include a plugin description and
+information from other plugins relevant to the plugin.
 
 Any plugin Screen will be able to use the :code:`.peek-information-section` attributes.
 
@@ -14,10 +14,8 @@ Any plugin Screen will be able to use the :code:`.peek-information-section` attr
    :align: center
 
 
-.. _information_section_details_section:
-
-Details Section :code:`.peek-details-section`
----------------------------------------------
+Classes
+-------
 
 The :code:`.peek-information-section` class contain the classes specific to a Information
 Section.
@@ -25,37 +23,43 @@ Section.
 ::
 
         .peek-information-section{
-        /* Contains the Information Section looks classes */
+        /*
+            Contains the Information Section classes
+        */
             ...
 
-            image{
-            /* Contains the image looks attributes unique to the Details Section */
+            information-section-icon{
+            /*
+                Contains the icon attributes unique to the Details Section
+            */
                 ...
 
             }
-            title{
-            /* Contains the title looks attributes unique to the Details Section */
+            information-section-title{
+            /*
+                Contains the title attributes unique to the Details Section
+            */
                 ...
 
             }
-            description{
-            /* Contains the description looks attributes unique to the Details Section */
+            information-section-description{
+            /*
+                Contains the description attributes unique to the Details Section
+            */
                 ...
 
             }
-            btn{
-            /* Contains the button looks attributes unique to the Details Section */
+            information-section-btn{
+            /*
+                Contains the button attributes unique to the Details Section
+            */
                 ...
 
             }
-            icon{
-            /* Contains the icon looks attributes unique to the Details Section */
-                ...
-
-            }
-            user-status{
-            /* Contains the user status text looks attributes unique to the Details
-            Section */
+            information-section-user-status{
+            /*
+                Contains the user status text attributes unique to the Details Section
+            */
                 ...
 
             }
@@ -64,7 +68,7 @@ Section.
 SCSS Files
 ----------
 
-The Details looks classes are found in the :file:`_information_section.scss`.
+The Information style classes are found in the :file:`_information_section.scss`.
 
 The Information Section HTML layout classes are found in the
 :file:`_information_section.web.scss`.
@@ -79,9 +83,9 @@ HTML
 ::
 
         <div class="peek-information-section">
-            <img class="image" src="../images/field_switching.png">
-            <div class="title">Welcome to Field Switching.</div>
-            <div class="description">
+            <img class="information-section-icon" src="../images/field_switching.png">
+            <div class="information-section-title">Welcome to Field Switching.</div>
+            <div class="information-section-description">
                 Peek Field Switching allows field engineers working on the electricity
                 network to electronically
                 <ul>
@@ -90,8 +94,8 @@ HTML
                     <li>And field confirm field switching operations</li>
                 </ul>
             </div>
-            <button class="btn" ng-reflect-router-link="./joblist">My Jobs &gt;
+            <button class="information-section-btn" ng-reflect-router-link="./joblist">My Jobs &gt;
             </button>
-            <i class="icon fa fa-user" aria-hidden="true"></i>
-            <div class="user-status">Logged in as Tim Hamilton</div>
+            <i class="information-section-icon fa fa-user" aria-hidden="true"></i>
+            <div class="information-section-user-status">Logged in as Tim Hamilton</div>
         </div>
