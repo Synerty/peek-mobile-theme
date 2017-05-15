@@ -7,26 +7,27 @@
   text-transform: $font_transform;
 
   //normal button
-  .btn{
+  .title-bar-btn{
     font-size:$section_font_size;
     border-radius: 0px;
-    padding: 10px;
     background-color: $brand;
     margin-right: 0px;
     border-right: 1px solid darken($brand,10%);
+    border-left: 0px;
+    float: left;
   }
 
   //button group
   .btn-group{
+    background-color: $brand;
+  }
 
-    &>.btn{
-
+  .title-bar-btn{
         &:last-child{
           border-right:0px;
         }
     }
 
-  }
 
 }
 

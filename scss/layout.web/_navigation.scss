@@ -8,8 +8,10 @@
   position: fixed;
 
   //normal button
-  .btn{
+  .title-bar-btn{
     height: $navigation_header_height; //setting height to default header naviation height
+    @include button-settings;
+    padding: 0px 10px;
   }
 
   //title
