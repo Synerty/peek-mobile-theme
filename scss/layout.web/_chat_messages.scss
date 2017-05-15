@@ -1,10 +1,6 @@
 .plugin-chat-messages{
 
   $messaging-area-height: 100px;
-  padding-top: $navigation_header_height + $general_padding;
-  padding-bottom: $messaging-area-height + ($general_padding*2);
-
-
 
   .chat-messages-list{
     padding: $general_padding;

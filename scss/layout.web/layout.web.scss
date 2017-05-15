@@ -17,11 +17,15 @@
 
 body,
 html{
-  //font-size: $general_font_size;
-  //color: $font_colour_default;
   height: 100%;
-  //font-family: $fonts_special;
 }
+
+.peek-mobile-page-contents{
+  height: 100%;
+  padding-top: $navigation_header_height;
+  padding-bottom: $navigation_header_height + $general_padding;
+}
+
 
 .image{
   max-width: 100%;

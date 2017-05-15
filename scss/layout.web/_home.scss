@@ -1,11 +1,5 @@
-.peek-mobile-page-contents{
-  height: 100%;
-}
-
 .peek-home-screen{
 
-  padding-top: $navigation_header_height + 5px;
-  padding-bottom: $navigation_header_height + $general_padding;
   bottom: 0px;
   min-height: 100%;
 
@@ -15,9 +9,7 @@
     font-family: $fonts_special;
     margin-top: $general_padding*2;
     padding: $general_padding*2;
-
     position: relative;
-
 
     .home-screen-image{
       width: 100%;

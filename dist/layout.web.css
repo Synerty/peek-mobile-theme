@@ -104,12 +104,7 @@
   height: 40px;
   line-height: 40px; }
 
-.peek-mobile-page-contents {
-  height: 100%; }
-
 .peek-home-screen {
-  padding-top: 45px;
-  padding-bottom: 55px;
   bottom: 0px;
   min-height: 100%; }
   .peek-home-screen .home-screen-icon {
@@ -131,8 +126,6 @@
 
 .plugin-inbox,
 .inboxActivity {
-  padding-top: 55px;
-  padding-bottom: 55px;
   padding-left: 15px;
   padding-right: 15px; }
   .plugin-inbox .task,
@@ -164,8 +157,6 @@
     overflow: hidden; }
 
 .peek-information-section {
-  padding-top: 55px;
-  padding-bottom: 55px;
   padding-left: 15px;
   padding-right: 15px; }
   .peek-information-section .icon {
@@ -186,65 +177,58 @@
     font-size: 1.2em;
     background-color: #999999; }
 
-.peek-details-section {
-  padding-top: 55px;
-  padding-bottom: 55px; }
+.plugin-chat-list .chat-list-messages {
+  margin: 0px 15px 15px 15px;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px; }
 
-.peek-table-data > .container-fluid {
-  padding-top: 40px;
-  padding-bottom: 55px; }
-  .peek-table-data > .container-fluid > .row {
-    margin-right: -15px;
-    margin-left: -15px; }
+.plugin-chat-messages .chat-messages-list {
+  padding: 15px; }
 
-.plugin-chat-list {
-  padding-top: 55px;
-  padding-bottom: 55px; }
-  .plugin-chat-list .chat-list-messages {
-    margin: 0px 15px 15px 15px;
-    display: block;
-    overflow: hidden;
-    padding: 15px;
-    border: 1px solid #cccccc;
-    border-radius: 4px; }
+.plugin-chat-messages .chat-messages-sent {
+  padding: 15px;
+  margin-bottom: 5px;
+  margin-left: 10%; }
 
-.plugin-chat-messages {
-  padding-top: 55px;
-  padding-bottom: 130px; }
-  .plugin-chat-messages .chat-messages-list {
-    padding: 15px; }
-  .plugin-chat-messages .chat-messages-sent {
-    padding: 15px;
-    margin-bottom: 5px;
-    margin-left: 10%; }
-  .plugin-chat-messages .chat-messages-received {
-    padding: 15px;
-    margin-bottom: 5px;
-    margin-right: 10%; }
-  .plugin-chat-messages .chat-messages-compose {
-    display: table;
-    width: 100%;
-    position: fixed;
-    bottom: 40px;
-    height: 100px; }
-  .plugin-chat-messages .form-control {
-    display: table-cell;
-    width: 70%;
-    height: 100px;
-    float: left; }
-  .plugin-chat-messages .btn {
-    display: table-cell;
-    width: 15%;
-    padding: 0px;
-    margin: 0px;
-    line-height: 0px;
-    top: 0px;
-    height: 100px;
-    float: left; }
+.plugin-chat-messages .chat-messages-received {
+  padding: 15px;
+  margin-bottom: 5px;
+  margin-right: 10%; }
+
+.plugin-chat-messages .chat-messages-compose {
+  display: table;
+  width: 100%;
+  position: fixed;
+  bottom: 40px;
+  height: 100px; }
+
+.plugin-chat-messages .form-control {
+  display: table-cell;
+  width: 70%;
+  height: 100px;
+  float: left; }
+
+.plugin-chat-messages .btn {
+  display: table-cell;
+  width: 15%;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0px;
+  top: 0px;
+  height: 100px;
+  float: left; }
 
 body,
 html {
   height: 100%; }
+
+.peek-mobile-page-contents {
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 55px; }
 
 .image {
   max-width: 100%; }
