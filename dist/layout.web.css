@@ -105,17 +105,24 @@
   line-height: 40px; }
 
 .peek-mobile-page-contents {
-  min-height: 100%; }
+  height: 100%; }
 
 .peek-home-screen {
   padding-top: 45px;
   padding-bottom: 55px;
   bottom: 0px;
   min-height: 100%; }
-  .peek-home-screen .icon {
+  .peek-home-screen .home-screen-icon {
     font-family: "Play", sans-serif;
-    margin-top: 15px;
+    margin-top: 30px;
     padding: 30px; }
+    @media (min-width: 970px) {
+      .peek-home-screen .home-screen-icon {
+        font-size: 0.9em; } }
+    .peek-home-screen .home-screen-icon .home-screen-image {
+      width: 100%;
+      height: auto;
+      padding-bottom: 15px; }
 
 .plugin-inbox,
 .inboxActivity {

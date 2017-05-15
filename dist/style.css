@@ -109,24 +109,24 @@
   text-align: center;
   box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
 
-.peek-mobile-page-contents {
+.peek-home-screen {
   background-image: url("../images/home_background.png");
   background-repeat: no-repeat;
   background-color: #fafafa;
   background-repeat: no-repeat;
-  background-size: cover; }
-
-.peek-home-screen .icon {
-  font-family: "Play", sans-serif;
-  background-image: url("../images/button_home_background.png");
-  background-repeat: repeat;
-  display: block;
-  color: #ffffff;
-  text-transform: capitalize;
-  text-align: center;
-  border-radius: 6px;
-  font-size: 1.1em;
-  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
+  background-size: cover;
+  min-height: 100%; }
+  .peek-home-screen .home-screen-icon {
+    font-family: "Play", sans-serif;
+    background-image: url("../images/button_home_background.png");
+    background-repeat: repeat;
+    display: block;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1.1em;
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
 
 .plugin-inbox .task,
 .inboxActivity .task {

@@ -1,16 +1,14 @@
-.peek-mobile-page-contents{
+.peek-home-screen{
+
   background-image: url('../images/home_background.png');
   background-repeat: no-repeat;
   background-color: $general_background_color;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.peek-home-screen{
-
+  min-height:100%;
 
   //home page buttons
-  .icon{
+  .home-screen-icon{
 
     //padding: 5px;
     font-family: $fonts_special;
@@ -23,7 +21,7 @@
     border-radius: $general_border_radius + 2px;
     font-size: 1.1em;
     @include box-shadow;
-
+    
     }
 
 }
