@@ -1,28 +1,29 @@
 .plugin-chat-messages{
 
-  padding-top: $navigation_header_height + $general_padding;
-  padding-bottom: $navigation_header_height + $general_padding;
   $messaging-area-height: 100px;
+  padding-top: $navigation_header_height + $general_padding;
+  padding-bottom: $messaging-area-height + ($general_padding*2);
 
 
-  .message-list{
+
+  .chat-messages-list{
     padding: $general_padding;
   }
 
-  .sent{
+  .chat-messages-sent{
     padding: $general_padding;
     margin-bottom: 5px;
     margin-left: 10%;
   }
 
-  .received{
+  .chat-messages-received{
     padding: $general_padding;
     margin-bottom: 5px;
     margin-right: 10%;
   }
 
 
-  .messaging-area{
+  .chat-messages-compose{
     display: table;
     width: 100%;
     position: fixed;
@@ -30,29 +31,23 @@
     height: $messaging-area-height;
   }
 
-  .messaging-text{
+  .form-control{
     display: table-cell;
     width: 70%;
     height: $messaging-area-height;
+    float: left;
   }
 
-  .form-control{
-    height: $messaging-area-height;
-  }
-
-  .buttons{
+  .btn{
     display: table-cell;
-    width: 30%;
-    position: relative;
-
-    .btn{
-      width: 50%;
-      padding: 0px;
-      margin: 0px;
-      float: left;
-      height: $messaging-area-height;
-    }
-
+    width: 15%;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    top:0px;
+    height: $messaging-area-height;
+    float: left;
   }
+
 
 }

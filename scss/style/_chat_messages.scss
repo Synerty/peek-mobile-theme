@@ -1,7 +1,7 @@
 .plugin-chat-messages{
-  .sent{
+  .chat-messages-sent{
     text-align:right;
-    background-color: lighten($grey,15%);
+
     border-radius: $general_border_radius;
   }
 
@@ -16,15 +16,14 @@
     border-radius: 0px;
   }
 
-  .messaging-area{
+  .chat-messages-compose{
     overflow: hidden;
     background-color: $white;
-    
-    .btn,
-    .form-control{
-      border-radius: 0px;
-    }
+  }
 
+  .btn,
+  .form-control{
+    border-radius: 0px;
   }
 
 }

@@ -200,7 +200,7 @@
 .plugin-chat-list {
   padding-top: 55px;
   padding-bottom: 55px; }
-  .plugin-chat-list .messages {
+  .plugin-chat-list .chat-list-messages {
     margin: 0px 15px 15px 15px;
     display: block;
     overflow: hidden;
@@ -210,39 +210,37 @@
 
 .plugin-chat-messages {
   padding-top: 55px;
-  padding-bottom: 55px; }
-  .plugin-chat-messages .message-list {
+  padding-bottom: 130px; }
+  .plugin-chat-messages .chat-messages-list {
     padding: 15px; }
-  .plugin-chat-messages .sent {
+  .plugin-chat-messages .chat-messages-sent {
     padding: 15px;
     margin-bottom: 5px;
     margin-left: 10%; }
-  .plugin-chat-messages .received {
+  .plugin-chat-messages .chat-messages-received {
     padding: 15px;
     margin-bottom: 5px;
     margin-right: 10%; }
-  .plugin-chat-messages .messaging-area {
+  .plugin-chat-messages .chat-messages-compose {
     display: table;
     width: 100%;
     position: fixed;
     bottom: 40px;
     height: 100px; }
-  .plugin-chat-messages .messaging-text {
+  .plugin-chat-messages .form-control {
     display: table-cell;
     width: 70%;
-    height: 100px; }
-  .plugin-chat-messages .form-control {
-    height: 100px; }
-  .plugin-chat-messages .buttons {
+    height: 100px;
+    float: left; }
+  .plugin-chat-messages .btn {
     display: table-cell;
-    width: 30%;
-    position: relative; }
-    .plugin-chat-messages .buttons .btn {
-      width: 50%;
-      padding: 0px;
-      margin: 0px;
-      float: left;
-      height: 100px; }
+    width: 15%;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    top: 0px;
+    height: 100px;
+    float: left; }
 
 body,
 html {

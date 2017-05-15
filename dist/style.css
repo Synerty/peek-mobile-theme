@@ -196,7 +196,7 @@
   padding-bottom: 15px;
   margin-bottom: 15px; }
 
-.chat-list-messages .messages {
+.chat-list-messages .chat-list-messages {
   font-size: 1.2em; }
 
 .chat-list-messages .fa {
@@ -204,9 +204,8 @@
   font-size: 1.5em;
   float: right; }
 
-.plugin-chat-messages .sent {
+.plugin-chat-messages .chat-messages-sent {
   text-align: right;
-  background-color: #f2f2f2;
   border-radius: 4px; }
 
 .plugin-chat-messages .received {
@@ -218,12 +217,13 @@
   font-size: 0.8em;
   border-radius: 0px; }
 
-.plugin-chat-messages .messaging-area {
+.plugin-chat-messages .chat-messages-compose {
   overflow: hidden;
   background-color: #ffffff; }
-  .plugin-chat-messages .messaging-area .btn,
-  .plugin-chat-messages .messaging-area .form-control {
-    border-radius: 0px; }
+
+.plugin-chat-messages .btn,
+.plugin-chat-messages .form-control {
+  border-radius: 0px; }
 
 body,
 html {
