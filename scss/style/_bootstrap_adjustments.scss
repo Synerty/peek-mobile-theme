@@ -20,8 +20,6 @@
        url('../fonts/Play/play.svg#svgPlayBold') format('svg'); /* Legacy iOS */
 }
 
-
-
 .h1,
 .h2,
 .h3,
@@ -37,6 +35,11 @@
     h1{
       text-align: center;
   }
+}
+
+.title{
+  font-size: 2em;
+  text-align: center;
 }
 
 //table

@@ -33,6 +33,10 @@
   .center h1 {
     text-align: center; }
 
+.title {
+  font-size: 2em;
+  text-align: center; }
+
 .table {
   color: #000000; }
   .table .table-header {
@@ -194,12 +198,12 @@
     color: #ffffff;
     font-size: 0.8em; }
 
-.plugin-inbox .btn.read-more,
-.inboxActivity .btn.read-more {
+.plugin-inbox .btn.inbox-read-more,
+.inboxActivity .btn.inbox-read-more {
   display: table-cell;
   background-color: #b3b2b2; }
-  .plugin-inbox .btn.read-more:hover,
-  .inboxActivity .btn.read-more:hover {
+  .plugin-inbox .btn.inbox-read-more:hover,
+  .inboxActivity .btn.inbox-read-more:hover {
     background-color: #28aae1; }
 
 .plugin-inbox .inbox-icon,
