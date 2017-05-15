@@ -25,7 +25,6 @@
       margin: 0px auto; }
 
 .btn {
-  background-color: #999999;
   color: #ffffff;
   font-size: 1em;
   font-family: "Play", sans-serif;
@@ -39,7 +38,8 @@
   font-size: 0.8em;
   padding: 8px;
   font-weight: normal;
-  border: 0px; }
+  border: 0px;
+  background-color: #999999; }
   .btn:hover {
     background-color: #737373;
     color: #ffffff; }
@@ -54,7 +54,6 @@
   position: fixed; }
   .peek-title-bar .title-bar-btn {
     height: 40px;
-    background-color: #999999;
     color: #ffffff;
     font-size: 1em;
     font-family: "Play", sans-serif;
@@ -69,6 +68,7 @@
     padding: 8px;
     font-weight: normal;
     border: 0px;
+    background-color: #999999;
     padding: 0px 10px; }
     .peek-title-bar .title-bar-btn:hover {
       background-color: #737373;
@@ -86,7 +86,6 @@
   .nav.nav-tabs > li {
     margin-bottom: 0px; }
     .nav.nav-tabs > li.active > a {
-      background-color: #999999;
       color: #ffffff;
       font-size: 1em;
       font-family: "Play", sans-serif;
@@ -101,6 +100,7 @@
       padding: 8px;
       font-weight: normal;
       border: 0px;
+      background-color: #999999;
       padding: 12px;
       margin-top: 0px; }
       .nav.nav-tabs > li.active > a:hover {

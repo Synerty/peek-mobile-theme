@@ -46,7 +46,6 @@
   border-top: 1px solid #999999; }
 
 .btn {
-  background-color: #999999;
   color: #ffffff;
   font-size: 1em;
   font-family: "Play", sans-serif;
@@ -60,7 +59,8 @@
   font-size: 0.8em;
   padding: 8px;
   font-weight: normal;
-  border: 0px; }
+  border: 0px;
+  background-color: #999999; }
   .btn:hover {
     background-color: #737373;
     color: #ffffff; }
@@ -74,10 +74,10 @@
   text-transform: uppercase; }
   .peek-title-bar .title-bar-btn {
     font-size: 0.8em;
-    border-radius: 0px;
-    background-color: #28aae1;
+    border-radius: 0px !important;
+    background-color: #28aae1 !important;
     margin-right: 0px;
-    border-right: 1px solid #1a8cbc;
+    border-right: 1px solid #1a8cbc !important;
     border-left: 0px;
     float: left; }
   .peek-title-bar .btn-group {

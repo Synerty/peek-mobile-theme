@@ -9,7 +9,6 @@
 
 @mixin button-settings{
 
-  background-color: darken($grey,20%);
   color: $white;
   font-size:1em;
   font-family: $fonts_special;
@@ -24,6 +23,7 @@
   padding:8px;
   font-weight: normal;
   border: 0px;
+  background-color: darken($grey,20%);
 
   &:hover{
     background-color: darken($grey,35%);
