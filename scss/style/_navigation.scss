@@ -15,6 +15,7 @@
     border-right: 1px solid darken($brand,10%)!important;
     border-left: 0px;
     float: left;
+    @include button-settings;
   }
 
   //button group
@@ -22,12 +23,13 @@
     background-color: $brand;
   }
 
+
+
   .title-bar-btn{
         &:last-child{
-          border-right:0px;
+          border-right:0px!important;
         }
     }
-
 
 }
 
@@ -36,10 +38,26 @@
   border-bottom: 1px solid $grey;
   overflow: hidden;
 
-  .btn{
+  .nav-section-btn{
     background-color: darken($grey,20%);
-    border-right-color:darken($grey,35%);
+    border-right: 1px solid darken($grey,35%)!important;
+    border-radius: 0px!important;
+    border-left: 0px;
+    float: left;
+    @include button-settings;
+    min-width: 40px;
+
+    &:last-child{
+      border-right: 0px!important;
+      border-radius:0px $general_border_radius $general_border_radius 0px!important;
+    }
+
+    &:first-child{
+      border-radius:$general_border_radius 0px 0px $general_border_radius !important;
+    }
+
   }
+
 }
 
 //navigation tabs

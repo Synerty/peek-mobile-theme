@@ -10,7 +10,6 @@
   //normal button
   .title-bar-btn{
     height: $navigation_header_height; //setting height to default header naviation height
-    @include button-settings;
     padding: 0px 10px;
   }
 
@@ -28,7 +27,6 @@
   padding: $general_padding;
 }
 
-
 //navigation tabs
 .nav{
 
@@ -44,12 +42,10 @@
           @include button-settings;
           padding: 12px;
           margin-top: 0px;
-
         }
       }
 
       & > a{
-
         margin-right: 0px;
         margin-top: 10px;
         padding: 10px;
