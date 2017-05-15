@@ -4,22 +4,22 @@
   padding-left: $general_padding;
   padding-right: $general_padding;
 
-  .task{
+  .inbox-item{
     padding: $general_padding;
     position: relative;
     width: 100%;
 
-    .date-time{
+    .inbox-date-time{
       margin-bottom: 5px;
       padding-bottom: 5px;
     }
   }
 
-  .info{
+  .inbox-info{
     padding: 0px $general_padding;
   }
 
-  .btn.read-more{
+  .btn.inbox-read-more{
     position: absolute;
     top: 0px;
     right: 0px;
