@@ -72,14 +72,17 @@
   box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35);
   background-color: #ffffff;
   text-transform: uppercase; }
-  .peek-title-bar .btn {
+  .peek-title-bar .title-bar-btn {
     font-size: 0.8em;
     border-radius: 0px;
-    padding: 10px;
     background-color: #28aae1;
     margin-right: 0px;
-    border-right: 1px solid #1a8cbc; }
-  .peek-title-bar .btn-group > .btn:last-child {
+    border-right: 1px solid #1a8cbc;
+    border-left: 0px;
+    float: left; }
+  .peek-title-bar .btn-group {
+    background-color: #28aae1; }
+  .peek-title-bar .title-bar-btn:last-child {
     border-right: 0px; }
 
 .peek-nav-section {
@@ -168,13 +171,13 @@
   display: table-cell;
   vertical-align: top; }
 
-.peek-information-section .icon {
+.peek-information-section .information-section-icon {
   background-image: url("../images/home_background.png");
   font-size: 3em;
   color: #ffffff;
   text-align: center; }
 
-.peek-information-section .title {
+.peek-information-section .information-section-title {
   font-size: 2em;
   text-align: center; }
 
@@ -191,7 +194,7 @@
   font-size: 0.9em;
   color: #666666; }
 
-.peek-details-section .value {
+.peek-details-section .details-section-value {
   border-bottom: 1px solid #cccccc;
   padding-bottom: 15px;
   margin-bottom: 15px; }

@@ -52,8 +52,27 @@
   z-index: 999;
   height: 40px;
   position: fixed; }
-  .peek-title-bar .btn {
-    height: 40px; }
+  .peek-title-bar .title-bar-btn {
+    height: 40px;
+    background-color: #999999;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: "Play", sans-serif;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 100;
+    font-size: 0.8em;
+    padding: 8px;
+    font-weight: normal;
+    border: 0px;
+    padding: 0px 10px; }
+    .peek-title-bar .title-bar-btn:hover {
+      background-color: #737373;
+      color: #ffffff; }
   .peek-title-bar .title-bar-title {
     line-height: 40px;
     padding-left: 15px;
@@ -159,7 +178,9 @@
 .peek-information-section {
   padding-left: 15px;
   padding-right: 15px; }
-  .peek-information-section .icon {
+  .peek-information-section .information-section-title {
+    padding-bottom: 15px; }
+  .peek-information-section .information-section-icon {
     box-shadow: inset 2px 3px 24px rgba(0, 0, 0, 0.35);
     padding: 20px;
     max-width: 100px;
@@ -170,7 +191,7 @@
     margin-left: auto;
     margin-right: auto;
     display: block; }
-  .peek-information-section .btn {
+  .peek-information-section .information-section-btn {
     margin-left: auto;
     margin-right: auto;
     display: block;
