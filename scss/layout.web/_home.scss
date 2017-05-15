@@ -16,15 +16,22 @@
     margin-top: $general_padding*2;
     padding: $general_padding*2;
 
-    @media (min-width: 970px){
-      font-size: 0.9em ;
-    }
+    position: relative;
 
 
     .home-screen-image{
       width: 100%;
       height: auto;
+      padding-bottom: 40px;
+    }
+
+    .home-screen-title{
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
       padding-bottom: $general_padding;
+      width: 100%;
+      padding: $general_padding;
     }
 
     }

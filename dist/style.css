@@ -196,10 +196,10 @@
   padding-bottom: 15px;
   margin-bottom: 15px; }
 
-.plugin-chat-list .messages {
+.chat-list-messages .messages {
   font-size: 1.2em; }
 
-.plugin-chat-list .fa {
+.chat-list-messages .fa {
   color: #b3b2b2;
   font-size: 1.5em;
   float: right; }

@@ -115,14 +115,19 @@
   .peek-home-screen .home-screen-icon {
     font-family: "Play", sans-serif;
     margin-top: 30px;
-    padding: 30px; }
-    @media (min-width: 970px) {
-      .peek-home-screen .home-screen-icon {
-        font-size: 0.9em; } }
+    padding: 30px;
+    position: relative; }
     .peek-home-screen .home-screen-icon .home-screen-image {
       width: 100%;
       height: auto;
-      padding-bottom: 15px; }
+      padding-bottom: 40px; }
+    .peek-home-screen .home-screen-icon .home-screen-title {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      padding-bottom: 15px;
+      width: 100%;
+      padding: 15px; }
 
 .plugin-inbox,
 .inboxActivity {
