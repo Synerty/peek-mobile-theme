@@ -1,7 +1,7 @@
 .plugin-inbox,
 .inboxActivity{
 
-  .task{
+  .inbox-item{
     overflow: hidden;
     display: table;
     border-bottom: 1px solid $white;
@@ -10,11 +10,11 @@
       font-size: 1em;
     }
 
-    .description{
+    .inbox-description{
       font-size: 0.9em;
     }
 
-    .date-time{
+    .inbox-date-time{
       font-size: 0.8em;
       border-bottom: 1px solid $grey;
       text-align: right;
@@ -27,7 +27,7 @@
 
   }
 
-  .btn.read-more{
+  .btn.inbox-read-more{
     display: table-cell;
     background-color: darken($grey,10%);
 
@@ -36,13 +36,13 @@
     }
   }
 
-  .icon{
+  .inbox-icon{
     color: $brand;
     font-size: 1.4em;
     display: table-cell;
   }
 
-  .info{
+  .inbox-info{
     display: table-cell;
     vertical-align: top;
   }

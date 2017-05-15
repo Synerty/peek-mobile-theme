@@ -173,24 +173,24 @@
     font-size: 1.1em;
     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
 
-.plugin-inbox .task,
-.inboxActivity .task {
+.plugin-inbox .inbox-item,
+.inboxActivity .inbox-item {
   overflow: hidden;
   display: table;
   border-bottom: 1px solid #ffffff; }
-  .plugin-inbox .task .inbox-title,
-  .inboxActivity .task .inbox-title {
+  .plugin-inbox .inbox-item .inbox-title,
+  .inboxActivity .inbox-item .inbox-title {
     font-size: 1em; }
-  .plugin-inbox .task .description,
-  .inboxActivity .task .description {
+  .plugin-inbox .inbox-item .inbox-description,
+  .inboxActivity .inbox-item .inbox-description {
     font-size: 0.9em; }
-  .plugin-inbox .task .date-time,
-  .inboxActivity .task .date-time {
+  .plugin-inbox .inbox-item .inbox-date-time,
+  .inboxActivity .inbox-item .inbox-date-time {
     font-size: 0.8em;
     border-bottom: 1px solid #cccccc;
     text-align: right; }
-  .plugin-inbox .task .btn,
-  .inboxActivity .task .btn {
+  .plugin-inbox .inbox-item .btn,
+  .inboxActivity .inbox-item .btn {
     color: #ffffff;
     font-size: 0.8em; }
 
@@ -202,14 +202,14 @@
   .inboxActivity .btn.read-more:hover {
     background-color: #28aae1; }
 
-.plugin-inbox .icon,
-.inboxActivity .icon {
+.plugin-inbox .inbox-icon,
+.inboxActivity .inbox-icon {
   color: #28aae1;
   font-size: 1.4em;
   display: table-cell; }
 
-.plugin-inbox .info,
-.inboxActivity .info {
+.plugin-inbox .inbox-info,
+.inboxActivity .inbox-info {
   display: table-cell;
   vertical-align: top; }
 

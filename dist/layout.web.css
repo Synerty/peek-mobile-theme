@@ -127,20 +127,20 @@
 .inboxActivity {
   padding-left: 15px;
   padding-right: 15px; }
-  .plugin-inbox .task,
-  .inboxActivity .task {
+  .plugin-inbox .inbox-item,
+  .inboxActivity .inbox-item {
     padding: 15px;
     position: relative;
     width: 100%; }
-    .plugin-inbox .task .date-time,
-    .inboxActivity .task .date-time {
+    .plugin-inbox .inbox-item .inbox-date-time,
+    .inboxActivity .inbox-item .inbox-date-time {
       margin-bottom: 5px;
       padding-bottom: 5px; }
-  .plugin-inbox .info,
-  .inboxActivity .info {
+  .plugin-inbox .inbox-info,
+  .inboxActivity .inbox-info {
     padding: 0px 15px; }
-  .plugin-inbox .btn.read-more,
-  .inboxActivity .btn.read-more {
+  .plugin-inbox .btn.inbox-read-more,
+  .inboxActivity .btn.inbox-read-more {
     position: absolute;
     top: 0px;
     right: 0px;
