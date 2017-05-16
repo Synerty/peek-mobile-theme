@@ -47,13 +47,6 @@ Section.
                 ...
 
             }
-            information-section-title{
-            /*
-                Contains the title attributes unique to the Details Section
-            */
-                ...
-
-            }
 
 
 SCSS Files
