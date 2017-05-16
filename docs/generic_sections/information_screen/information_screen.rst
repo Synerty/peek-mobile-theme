@@ -4,14 +4,26 @@
 Information Section
 ===================
 
-The Information Section is used as a landing page to show useful information before
-presenting Plugin Screens.  The useful information can include a plugin description and
-information from other plugins relevant to the plugin.
+The Information Section shows useful plugin related descriptions, information and / or
+instructions.  This can include data from other plugins.
 
-Any plugin Screen will be able to use the :code:`.peek-information-section` attributes.
+Ideally the Information Section is used as the landing page before presenting the plugin
+screens. It could be used throughout a plugin if required.
 
 .. image:: ./information_screen.web.jpg
    :align: center
+
+The Information Section should provide the Peek App user any relevant information
+needed to use a plugin.
+
+Uses:
+
+*  Initial landing page
+
+*  Sub section landing page (instructions for part of a plugin that may function
+   differently)
+
+Any plugin Screen will be able to use the :code:`.peek-information-section` attributes.
 
 
 Classes
@@ -42,27 +54,6 @@ Section.
                 ...
 
             }
-            information-section-description{
-            /*
-                Contains the description attributes unique to the Details Section
-            */
-                ...
-
-            }
-            information-section-btn{
-            /*
-                Contains the button attributes unique to the Details Section
-            */
-                ...
-
-            }
-            information-section-user-status{
-            /*
-                Contains the user status text attributes unique to the Details Section
-            */
-                ...
-
-            }
 
 
 SCSS Files
@@ -84,8 +75,8 @@ HTML
 
         <div class="peek-information-section">
             <img class="information-section-icon" src="../images/field_switching.png">
-            <div class="information-section-title">Welcome to Field Switching.</div>
-            <div class="information-section-description">
+            <div class="title">Welcome to Field Switching.</div>
+            <div class="p">
                 Peek Field Switching allows field engineers working on the electricity
                 network to electronically
                 <ul>
@@ -94,8 +85,8 @@ HTML
                     <li>And field confirm field switching operations</li>
                 </ul>
             </div>
-            <button class="information-section-btn" ng-reflect-router-link="./joblist">My Jobs &gt;
+            <button class="btn" ng-reflect-router-link="./joblist">My Jobs &gt;
             </button>
             <i class="information-section-icon fa fa-user" aria-hidden="true"></i>
-            <div class="information-section-user-status">Logged in as Tim Hamilton</div>
+            <div class="title">Logged in as Tim Hamilton</div>
         </div>

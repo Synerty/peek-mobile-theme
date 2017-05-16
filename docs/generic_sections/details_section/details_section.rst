@@ -4,14 +4,27 @@
 Details Section
 ===============
 
-The Details Section is best suited for presenting information.
-
-The section prioritises information by providing focus to the values.
-
-Any plugin Screen will be able to use the :code:`.peek-details-section` attributes.
+The Details Section presents data (text, numbers, images, or other data) of importance
+to the Peek app user.
+It involves enumerating important characteristics, emphasizing significant figures and
+identifying important features of data.
 
 .. image:: ./details_section.web.jpg
   :align: center
+
+Ideally this section will be configured to present only required data to the user
+reducing the need for the Peek app user scrolling / filtering through unnecessary data.
+Prioritises information by providing focus to the values.
+
+Uses:
+
+*  Instructions
+
+*  Itinerary
+
+*  Form Data (displaying not editing)
+
+Any plugin Screen will be able to use the :code:`.peek-details-section` attributes.
 
 
 Classes
