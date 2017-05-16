@@ -1,5 +1,7 @@
 .plugin-chat-list{
 
+  padding-top: $general_padding + $general_padding_nav_bar;
+
   .chat-list-messages{
     margin:0px $general_padding $general_padding $general_padding;
     display: block;
