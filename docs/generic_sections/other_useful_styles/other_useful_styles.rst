@@ -4,9 +4,10 @@
 Other Useful Styles
 ===================
 
-Most of the Peek Plugin Screens will use the general bootstrap classes.
+Peek Theme is applied to bootstrap and some newly created classes as not all Peek Plugins
+require specific style configurations.
 
-The classes will need the Peek App theme applied to them.
+Most of the Peek Plugin Screens will use the generic bootstrap classes.
 
 These classes are available throughout Peek and attribute changes are found in
 :file:`_bootstrap_adjustments.scss`.
@@ -17,7 +18,7 @@ Title
 
 Generic Peek theme Title.
 
-HTML ::
+::
 
         .title{
         /* Applies the title theme */
@@ -79,7 +80,7 @@ Text
 
 Generic Peek theme Text.
 
-HTML ::
+::
 
         .p{
         /* Applies the text theme */
@@ -94,7 +95,7 @@ Buttons
 
 Generic Peek theme buttons.
 
-HTML ::
+::
 
         .btn{
         /* Applies the Plugin Screen button theme */
@@ -103,6 +104,8 @@ HTML ::
 
         }
 
+
+.. _other_useful_styles+contextual_backgrounds:
 
 Contextual Backgrounds
 ----------------------

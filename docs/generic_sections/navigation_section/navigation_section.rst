@@ -4,19 +4,30 @@
 Navigation Section
 ==================
 
-Navigation Section is dynamic and exists if required by the plugin.
+The Navigation Section is positioned below the :ref:`title_bar`, above the plugin
+screen and contains buttons that route to other screens or toggle the data presented.
 
-The contents of the Navigation Section is constructed from the plugin.
-
-The Navigation Section is located below the :ref:`title_section`, above the screen.
+The sample below shows an example of breadcrumbs navigation (left) and forward / next and
+back / previous buttons (right).
 
 .. image:: ./navigation_section.web.jpg
    :align: center
 
+The Navigation Section serves as primary navigation routes for the active plugin.
+
+If a Navigation Section is required it is constructed by the plugin screen.
+
+Navigation Types:
+
+*  Breadcrumbs
+*  Pagination
+*  forward and / or back, next and / or previous
+
 The buttons remain a fixed size throughout a responsive lifecycle.  The buttons are
 sized around the text they contain.
 
-.. note:: The buttons require a different theme to the :ref:`title_bar`.
+.. note:: The buttons require a different theme to the :ref:`title_bar` and generic
+   peek theme buttons.
 
 
 Classes
@@ -28,11 +39,11 @@ Navigation Section.
 ::
 
         .peek-nav-section{
-        /* Contains the Navigation Section looks attributes */
+        /* Contains the Navigation Section attributes */
             ...
 
            .nav-section-btn{
-           /* Contains the Button looks attributes unique to the Navigation Section */
+           /* Contains the Button attributes unique to the Navigation Section */
                ...
 
            }
@@ -83,18 +94,3 @@ requiring the Nav Bar.
                <button class="nav-section-btn" role="group">&gt;</button>
             </div>
         </div>
-
-
-NativeScript
-------------
-
-The :code:`peek-nav-section` is to be included before the code of the plugin screen
-requiring the Nav Bar.
-
-::
-
-        <GridLayout class="peek-nav-section"
-            ...
-
-        </GridLayout>
-

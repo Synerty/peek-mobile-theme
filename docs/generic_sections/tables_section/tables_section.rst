@@ -4,7 +4,24 @@
 Tables Section
 ==============
 
-The Tables Section is best suited to display tabular information.
+The Tables Section is best suited when there's logical relationships among text,
+numbers, images, or other data exist in two dimensions (vertical and horizontal).
+These relationships are represented in columns and rows, and the columns and rows must
+be recognizable in order for the logical relationships to be perceived.
+
+Useful for viewing detailed data and precise values, good for comparing individual values.
+
+.. image:: ./tables_section.web.jpg
+  :align: center
+
+The objective of this technique is to present tabular information in a way that
+preserves relationships within the information.
+
+*  Filter or sort data
+
+*  Show exact data
+
+*  Visualise single or two dimensional data.
 
 Any plugin Screen will be able to use the :code:`.peek-tables-section` attributes.
 
@@ -12,20 +29,17 @@ Any plugin Screen will be able to use the :code:`.peek-tables-section` attribute
 Classes
 -------
 
-.. image:: ./tables_section.web.jpg
-  :align: center
-
 The :code:`.peek-tables-section` class contain the classes specific to a Tables
 Section.
 
 ::
 
         .peek-tables-section{
-        /* Contains the Tables Section looks classes */
+        /* Contains the Tables Section classes */
             ...
 
             .table{
-            /* Contains the table looks attributes unique to the Tables Section */
+            /* Contains the table attributes unique to the Tables Section */
                 ...
 
                 .tr{
