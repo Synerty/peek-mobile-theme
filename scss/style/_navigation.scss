@@ -37,6 +37,7 @@
 .peek-nav-section{
   border-bottom: 1px solid $grey;
   overflow: hidden;
+  background: white;
 
   .nav-section-btn{
     background-color: darken($grey,20%);
