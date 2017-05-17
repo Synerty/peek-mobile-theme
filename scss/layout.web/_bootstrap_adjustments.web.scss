@@ -5,7 +5,11 @@
 .h5,
 .h6{
   @include nuke;
-  font-family: $fonts_special;
+  padding: $general_padding 0px 0px 0px;
+}
+
+.p{
+  padding: $general_padding 0px 0px 0px;
 }
 
 .title{
