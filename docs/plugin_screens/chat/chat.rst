@@ -14,6 +14,20 @@ Peek Plugin Chat displays active chat sessions and their messages.
 *  Background contextual colours will distinguish a successfully sent message or an
    emergency "SOS" message received.
 
+Chats:
+
+.. image:: ./chat-chats.web.jpg
+  :align: center
+
+Messages:
+
+.. image:: ./chat-msgs.web.jpg
+  :align: center
+
+Originally this plugin was designed to send messages between the power grid control
+room and field engineers.
+
+Simple communications with external systems.
 
 Components
 ----------

@@ -4,20 +4,60 @@
 Peek Plugin Inbox
 =================
 
-Peek Plugin Inbox displays a list of tasks to be actioned and an activity list log for
-plugins that have been configured.
+Peek Plugin Inbox displays a list of unacknowledged items issued to the logged in user.
 
-*  The Inbox Screen is accessed by the 'Tasks' button in the Title Bar.
+Inbox:
 
-*  The 'Tasks' button also shows the number of tasks.
+.. image:: ./inbox-tasks.web.jpg
+  :align: center
 
-*  Tabs switch between the components that list items from installed plugins that are
-   configured to pass items into the peek-plugin-inbox.
+Peek Plugin Activity display a log of items issued to the logged in user.
 
-*  The items can use icons, buttons and routing, all configurable.
+Activity:
 
-*  Background contextual colours and icons can be used to distinguish between levels of
-   importance or priority.
+.. image:: ./inbox-activity.web.jpg
+  :align: center
+
+If a device user has a role of performing tasks, which are managed by
+Peek, Peek will issue items to the user via this plugin.
+
+#.  The active task plugin receives items from other plugins
+
+#.  The new items are persisted within the Peek Storage database
+
+#.  Delivery to the users device is ensured
+
+#.  Once the item is on the user device, it may be :
+
+    #.  Selected from the 'Inbox' tab, this will route to the plugin that issued the
+        item.
+
+    #.  Actioned, actions will be delivered back to the initiating plugin back on the
+        peek server.
+
+#.  All items and the state of items are viewable from an administrators page.
+
+#.  The Inbox Screen is accessed by the 'Tasks' button in the Title Bar.
+
+#.  The 'Tasks' button also shows the number of tasks.
+
+Examples:
+
+#.  The following are use case examples of what can be done with the Active Task plugin.
+
+#.  Notifications that arrive as read, and require no action. This can create an audit
+    trail for the user.
+
+#.  Notification that are unread until the user selects them. Selecting them will
+    navigate to another plugin, the initiating plugin will be notified and it can then
+    mark the task as read or delete it.
+
+#.  Actions that are required. Actions can be created by initiating plugins, and stay
+    "unread / unactioned" until the user completes what ever action is required within
+    another plugin. The initiating plugin then removes or marks the action as completed.
+
+#.  Question. A task can be created with multiple actions, upon selecting an action,
+    the initiating plugin will be notified, it can then remove the task.
 
 
 Components
@@ -127,9 +167,6 @@ HTML
 plugin-active-task-client
 `````````````````````````
 
-.. image:: ./screen_navigation-tabs.web.jpg
-  :align: center
-
 ::
 
         <div class="plugin-inbox">
@@ -177,9 +214,6 @@ plugin-active-task-client
 plugin-active-task-task-list
 ````````````````````````````
 
-.. image:: ./inbox-tasks.web.jpg
-  :align: center
-
 ::
 
         <div class="inbox-tasks">
@@ -221,9 +255,6 @@ plugin-active-task-task-list
 
 plugin-active-task-activity-list
 ````````````````````````````````
-
-.. image:: ./inbox-activity.web.jpg
-  :align: center
 
 ::
 
