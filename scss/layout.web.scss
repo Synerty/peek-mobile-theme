@@ -2,6 +2,9 @@
 @import '_mixins';
 @import 'layout.web/_bootstrap_adjustments.web';
 
+//peek screens
+@import 'layout.web/_title_bar.web';
+
 @import 'layout.web/_navigation';
 @import 'layout.web/_footer';
 
@@ -18,12 +21,6 @@ body,
 html{
   height: 100%;
 }
-
-.peek-mobile-page-contents{
-  padding-top: $navigation_header_height;
-  padding-bottom: $navigation_header_height + $general_padding;
-}
-
 
 .image{
   max-width: 100%;
