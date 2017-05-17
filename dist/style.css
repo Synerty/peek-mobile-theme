@@ -1,9 +1,13 @@
 @font-face {
   font-family: 'Play';
   font-weight: normal;
-  src: url("../fonts/Play/Play-Regular.eot");
-  /* IE9 Compat Modes */
   src: url("../fonts/Play/Play-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Play/Play-Regular.woff2") format("woff2"), url("../fonts/Play/Play-Regular.woff") format("woff"), url("../fonts/Play/Play-Regular.ttf") format("truetype"), url("../fonts/Play/play.svg#svgPlayRegular") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Play';
+  font-weight: bold;
+  src: url("../fonts/Play/Play-Bold.woff2") format("woff2"), url("../fonts/Play/Play-Bold.woff") format("woff"), url("../fonts/Play/Play-Bold.ttf") format("truetype"), url("../fonts/Play/play.svg#svgPlayBold") format("svg");
   /* Legacy iOS */ }
 
 .h1,
@@ -99,7 +103,8 @@
 
 .peek-nav-section {
   border-bottom: 1px solid #cccccc;
-  overflow: hidden; }
+  overflow: hidden;
+  background: white; }
   .peek-nav-section .nav-section-btn {
     background-color: #999999;
     border-right: 1px solid #737373 !important;
@@ -150,24 +155,24 @@
   text-align: center;
   box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
 
-.peek-home-screen {
+.peek-home-screen .home-screen-icon {
+  font-family: "Play", sans-serif;
+  background-image: url("../images/button_home_background.png");
+  background-repeat: repeat;
+  display: block;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 1.1em;
+  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
+
+.peek-home-screen-background {
   background-image: url("../images/home_background.png");
   background-repeat: no-repeat;
   background-color: #fafafa;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%; }
-  .peek-home-screen .home-screen-icon {
-    font-family: "Play", sans-serif;
-    background-image: url("../images/button_home_background.png");
-    background-repeat: repeat;
-    display: block;
-    color: #ffffff;
-    text-transform: capitalize;
-    text-align: center;
-    border-radius: 6px;
-    font-size: 1.1em;
-    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.35); }
+  background-size: cover; }
 
 .plugin-inbox .inbox-item,
 .inboxActivity .inbox-item {

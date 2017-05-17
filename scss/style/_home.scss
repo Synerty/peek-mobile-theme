@@ -1,11 +1,5 @@
 .peek-home-screen{
 
-  background-image: url('../images/home_background.png');
-  background-repeat: no-repeat;
-  background-color: $general_background_color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height:100%;
 
   //home page buttons
   .home-screen-icon{
@@ -24,4 +18,12 @@
 
     }
 
+}
+
+.peek-home-screen-background{
+  background-image: url('../images/home_background.png');
+  background-repeat: no-repeat;
+  background-color: $general_background_color;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
