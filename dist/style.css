@@ -6,14 +6,6 @@
   src: url("../fonts/Play/Play-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Play/Play-Regular.woff2") format("woff2"), url("../fonts/Play/Play-Regular.woff") format("woff"), url("../fonts/Play/Play-Regular.ttf") format("truetype"), url("../fonts/Play/play.svg#svgPlayRegular") format("svg");
   /* Legacy iOS */ }
 
-@font-face {
-  font-family: 'Play';
-  font-weight: bold;
-  src: url("../fonts/Play/Play-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Play/Play-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Play/Play-Bold.woff2") format("woff2"), url("../fonts/Play/Play-Bold.woff") format("woff"), url("../fonts/Play/Play-Bold.ttf") format("truetype"), url("../fonts/Play/play.svg#svgPlayBold") format("svg");
-  /* Legacy iOS */ }
-
 .h1,
 .h2,
 .h3,

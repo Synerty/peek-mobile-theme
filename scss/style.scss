@@ -1,0 +1,36 @@
+@import '_variables';
+@import '_mixins';
+@import 'style/_bootstrap_adjustments';
+
+@import 'style/_navigation';
+@import 'style/_footer';
+
+//pages
+@import 'style/_home';
+@import 'style/_activity_task';
+@import 'style/_information';
+@import 'style/_details_data';
+@import 'style/_table_data';
+@import 'style/_chat_list';
+@import 'style/_chat_messages';
+
+body,
+html{
+  font-size: $general_font_size;
+  color: $font_colour_default;
+  //height: 100%;
+  font-family: $fonts_special;
+}
+
+
+*:focus {outline:none!important;}
+
+.navigation-information{
+  border-bottom: 1px solid darken($grey,20%);
+  //margin-bottom: $general_padding;
+
+}
+
+.form-group{
+  color: $black;
+}

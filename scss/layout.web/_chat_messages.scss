@@ -1,6 +1,10 @@
 .plugin-chat-messages{
 
   $messaging-area-height: 100px;
+  padding-top: $general_padding_nav_bar;
+
+  // pad out chat-messages-compose form
+  padding-bottom: $messaging-area-height + $navigation_header_height + $general_padding;
 
   .chat-messages-list{
     padding: $general_padding;
