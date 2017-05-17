@@ -1,0 +1,54 @@
+.peek-home-screen {
+  /*
+      Contains the Home Screen classes
+      Contains the Background attributes
+      Home Screen background is unique and different to other screens
+      Cannot use the body tag
+  */
+
+  .home-screen-icon {
+    /*
+        Contains the Button attributes unique to the Home Screen
+        Buttons responsively wrap
+    */
+
+    //padding: 5px;
+    font-family: $fonts_special;
+    background-image: url("../images/button_home_background.png");
+    background-repeat: repeat;
+    display: block;
+    color: $white;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: $general_border_radius + 2px;
+    font-size: 1.1em;
+    @include box-shadow;
+
+    .home-screen-image {
+      /*
+          Contains the Image attributes unique to the Home Screen
+          Strictly uses images
+      */
+
+    }
+    .home-screen-title {
+      /* Contains the Button Title attributes unique to the Home Screen */
+
+    }
+
+  }
+}
+
+.peek-home-screen-background {
+  /*
+      Contains the Background attributes
+      Home Screen background is unique and different to other screens
+      Cannot use the body tag
+  */
+  background-image: url('../images/home_background.png');
+  background-repeat: no-repeat;
+  background-color: $general_background_color;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

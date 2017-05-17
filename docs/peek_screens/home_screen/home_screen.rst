@@ -20,16 +20,13 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
 
         .peek-home-screen{
         /*
-            Contains the Home Screen looks classes
-            Contains the Background looks attributes
-            Home Screen background is unique and different to other screens
-            Cannot use the body tag
+            Contains the Home Screen classes
         */
             ...
 
             .home-screen-icon{
             /*
-                Contains the Button looks attributes unique to the Home Screen
+                Contains the Button attributes unique to the Home Screen
                 Buttons responsively wrap
             */
                 ...
@@ -37,17 +34,27 @@ The :code:`.peek-home-screen` class will contain the classes specific to the Hom
             }
             .home-screen-image{
             /*
-                Contains the Image looks attributes unique to the Home Screen
+                Contains the Image attributes unique to the Home Screen
                 Strictly uses images
             */
                 ...
 
             }
             .home-screen-title{
-            /* Contains the Button Title looks attributes unique to the Home Screen */
+            /* Contains the Button Title attributes unique to the Home Screen */
                 ...
 
             }
+        }
+
+         .peek-home-screen-background{
+        /*
+            Contains the Background attributes
+            Home Screen background is unique and different to other screens
+            Cannot use the body tag
+        */
+            ...
+
         }
 
 

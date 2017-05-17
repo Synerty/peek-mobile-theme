@@ -1,0 +1,58 @@
+.peek-home-screen {
+  /*
+      Contains the Home Screen classes
+      Contains the Background attributes
+      Home Screen background is unique and different to other screens
+      Cannot use the body tag
+  */
+
+  bottom: 0px;
+  min-height: 100%;
+
+  .home-screen-icon {
+    /*
+        Contains the Button attributes unique to the Home Screen
+        Buttons responsively wrap
+    */
+
+    font-family: $fonts_special;
+    margin-top: $general_padding*2;
+    padding: $general_padding*2;
+    position: relative;
+
+    .home-screen-image {
+      /*
+          Contains the Image attributes unique to the Home Screen
+          Strictly uses images
+      */
+      width: 100%;
+      height: auto;
+      padding-bottom: 40px;
+
+    }
+    .home-screen-title {
+      /* Contains the Button Title attributes unique to the Home Screen */
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      padding-bottom: $general_padding;
+      width: 100%;
+      padding: $general_padding;
+
+    }
+  }
+}
+
+.peek-home-screen-background {
+  /*
+      Contains the Background attributes
+      Home Screen background is unique and different to other screens
+      Cannot use the body tag
+  */
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+}
