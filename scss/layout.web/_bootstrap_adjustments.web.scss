@@ -3,41 +3,39 @@
 .h3,
 .h4,
 .h5,
-.h6{
+.h6 {
   @include nuke;
   padding: $general_padding 0px 0px 0px;
 }
 
-.p{
+.p {
   padding: $general_padding 0px 0px 0px;
 }
 
-.title{
+.title {
   margin-bottom: $general_padding * 2;
   padding: ($general_padding * 2) 0px 0px 0px;
 }
 
-.center{
+.center {
   text-align: center;
-    h1{
-      text-align: center;
-      &:after {
-        margin: 0px auto;
-      }
+  h1 {
+    text-align: center;
+    &:after {
+      margin: 0px auto;
+    }
   }
 }
 
-
 //nav tabs active lists
-.btn{
+.btn {
   @include button-settings;
 }
 
 //button groups
-.btn-group{
+.btn-group {
 
-  .btn+.btn{
+  .btn + .btn {
     margin-left: 0px;
   }
-
 }

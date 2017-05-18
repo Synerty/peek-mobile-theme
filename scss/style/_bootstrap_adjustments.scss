@@ -2,19 +2,19 @@
   font-family: 'Play';
   font-weight: normal;
   src: url('../fonts/Play/Play-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Play/Play-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Play/Play-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/Play/Play-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/Play/play.svg#svgPlayRegular') format('svg'); /* Legacy iOS */
+  url('../fonts/Play/Play-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Play/Play-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Play/Play-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Play/play.svg#svgPlayRegular') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'Play';
   font-weight: bold;
   src: url('../fonts/Play/Play-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Play/Play-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/Play/Play-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/Play/play.svg#svgPlayBold') format('svg'); /* Legacy iOS */
+  url('../fonts/Play/Play-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Play/Play-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Play/play.svg#svgPlayBold') format('svg'); /* Legacy iOS */
 }
 
 .h1,
@@ -22,37 +22,35 @@
 .h3,
 .h4,
 .h5,
-.h6{
+.h6 {
   font-family: $fonts_special;
 }
 
-.center{
+.center {
   text-align: center;
-    h1{
-      text-align: center;
+  h1 {
+    text-align: center;
   }
 }
 
-.title{
+.title {
   font-size: 2em;
   text-align: center;
 }
 
 //nav tabs active lists
-.tab-content{
-  border-top: 1px solid darken($grey,20%);
+.tab-content {
+  border-top: 1px solid darken($grey, 20%);
 }
 
-.btn{
+.btn {
   @include button-settings;
 }
 
 //button groups
-.btn-group{
+.btn-group {
 
-  &>.btn{
+  & > .btn {
     margin-right: 1px;
   }
-
-
 }
