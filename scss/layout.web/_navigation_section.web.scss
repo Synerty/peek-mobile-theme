@@ -1,30 +1,35 @@
 //Peek navigation section
-.peek-nav-section{
-/* Contains the Navigation Section attributes */
+.peek-nav-section {
+  /* Contains the Navigation Section attributes */
   padding: $general_padding;
   width: 100%;
   position: fixed;
+  z-index: 899;
+}
+
+.peek-nav-bar-padding {
+  padding-top: $general_padding_nav_bar;
 }
 
 //navigation tabs
-.nav{
+.nav {
 
   margin: 0px;
 
-  &.nav-tabs{
+  &.nav-tabs {
 
     & > li {
       margin-bottom: 0px;
 
-      &.active{
-        & > a{
+      &.active {
+        & > a {
           @include button-settings;
           padding: 12px;
           margin-top: 0px;
         }
       }
 
-      & > a{
+      & > a {
         margin-right: 0px;
         margin-top: 10px;
         padding: 10px;
@@ -35,8 +40,8 @@
 }
 
 //button group
-.btn-group{
-  .btn{
+.btn-group {
+  .btn {
     min-width: 40px;
   }
 }
