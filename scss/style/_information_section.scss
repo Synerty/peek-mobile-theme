@@ -1,20 +1,29 @@
-.peek-information-section{
+.peek-information-section {
+  /*
+      Contains the Information Section classes
+  */
 
-  .information-section-icon{
+  .information-section-icon {
+    /*
+        Contains the icon attributes unique to the peek-information-section class
+    */
     background-image: url('../images/home_background.png');
     font-size: 3em;
     color: $white;
     text-align: center;
-  }
 
-  .information-section-title{
+  }
+  .information-section-title {
+    /*
+        Contains the title attributes unique to the peek-information-section class
+    */
     font-size: 2em;
     text-align: center;
-  }
 
+  }
   //icon
-  .fa{
-    &.information-icon-large{
+  .fa {
+    &.information-icon-large {
       font-size: 6em;
       //padding: ($general_padding*2)($general_padding*3);
       border-radius: $general_border_radius*2;
@@ -25,6 +34,4 @@
       text-align: center;
     }
   }
-
-
 }

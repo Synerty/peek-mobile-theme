@@ -11,7 +11,7 @@ Ideally the Information Section is used as the landing page before presenting th
 screens. It could be used throughout a plugin if required.
 
 .. image:: ./information_screen.web.jpg
-   :align: center
+:align: center
 
 The Information Section should provide the Peek App user any relevant information
 needed to use a plugin.
@@ -34,19 +34,32 @@ Section.
 
 ::
 
-        .peek-information-section{
-        /*
-            Contains the Information Section classes
-        */
+        .peek-information-section {
+          /*
+              Contains the Information Section classes
+          */
+          ...
+
+          .information-section-icon {
+            /*
+                Contains the icon attributes unique to the peek-information-section class
+            */
             ...
 
-            information-section-icon{
+          }
+          .information-section-title {
             /*
-                Contains the icon attributes unique to the Details Section
+                Contains the title attributes unique to the peek-information-section class
             */
-                ...
+            ...
 
-            }
+          }
+          .information-section-btn {
+            /*
+                Contains the button attributes unique to the peek-information-section class
+            */
+          }
+        }
 
 
 SCSS Files
