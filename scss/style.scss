@@ -9,6 +9,7 @@
 
 //plugin screens
 @import 'style/_plugin_inbox';
+@import 'style/_plugin_chat';
 
 @import 'style/_navigation';
 
@@ -16,8 +17,6 @@
 @import 'style/_information';
 @import 'style/_details_data';
 @import 'style/_table_data';
-@import 'style/_chat_list';
-@import 'style/_chat_messages';
 
 body,
 html{

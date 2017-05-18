@@ -1,0 +1,141 @@
+.plugin-chat-list {
+  /*
+      Contains the chat-list component classes
+  */
+  padding-top: $general_padding + $general_padding_nav_bar;
+
+  .chat-list-messages {
+    /*
+        Contains the Messages attributes unique to the Chat List
+    */
+    margin: 0px $general_padding $general_padding $general_padding;
+    display: block;
+    overflow: hidden;
+    padding: $general_padding;
+    border: 1px solid $grey;
+    border-radius: $general_border_radius;
+
+    .chat-list-icon {
+      /*
+          Contains the icon attributes unique to the message class
+          The icon is used to indicate unread messages
+      */
+
+    }
+    .chat-list-title {
+      /*
+          Contains the topic text attributes unique to the message class
+      */
+
+    }
+  }
+}
+
+.plugin-chat-messages {
+  /*
+      Contains the msg-list component classes
+  */
+
+  $messaging-area-height: 100px;
+  padding-top: $general_padding_nav_bar;
+  // pad out chat-messages-compose form
+  padding-bottom: $messaging-area-height + $general_padding;
+
+  .chat-messages-list {
+    /*
+        Attributes for the container of messages, unique to the Chat
+        Messages.
+        Scrolls through the messages with most recent at the bottom.
+    */
+    padding: $general_padding;
+
+    .chat-messages-sent {
+      /*
+          Contains the sent message attributes unique to the message-list
+          class.
+          Container is right aligned with background colour different to the
+          received class.
+          bg-success class applied for a successfully sent message.
+      */
+      padding: $general_padding;
+      margin-bottom: 5px;
+      margin-left: 10%;
+
+    }
+    .chat-messages-received {
+      /*
+          Contains the received text attributes unique to the message-list
+          class.
+          Container is right aligned with background colour different to the
+          sent class.
+          bg-warning class applied for an emergency priority message.
+      */
+      padding: $general_padding;
+      margin-bottom: 5px;
+      margin-right: 10%;
+
+    }
+    .chat-messages-details {
+      /*
+          Contains the message details text attributes unique to the
+          message-list class.
+          The message details should not be the focus of attention (text-muted)
+      */
+
+    }
+    .chat-messages-emergency {
+      /*
+          Contains the emergency priority message text attributes unique to the
+          message-list class
+      */
+
+    }
+    .chat-messages-normal {
+      /*
+          Contains the normal priority message text attributes unique to the
+          message-list class
+      */
+
+    }
+  }
+  .chat-messages-compose {
+    /*
+        Contains the compose message area attributes unique to the
+        chat messages.
+        Fixed to the bottom of the screen.
+    */
+    display: table;
+    width: 100%;
+    position: fixed;
+    bottom: $navigation_header_height + $general_padding;
+    height: $messaging-area-height;
+
+    .chat-messages-new-text {
+      /*
+          Contains the new message text attributes unique to the
+          chat-messages-compose class.
+      */
+      display: table-cell;
+      width: 70%;
+      height: $messaging-area-height;
+      float: left;
+
+    }
+
+    .chat-messages-btn {
+      /*
+          Contains the button attributes unique to the
+          chat-messages-compose class.
+      */
+      display: table-cell;
+      width: 15%;
+      padding: 0px;
+      margin: 0px;
+      line-height: 0px;
+      top: 0px;
+      height: $messaging-area-height;
+      float: left;
+
+    }
+  }
+}

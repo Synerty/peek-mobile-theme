@@ -1,0 +1,128 @@
+.plugin-chat-list {
+  /*
+      Contains the chat-list component classes
+  */
+
+  .chat-list-messages {
+    /*
+        Contains the Messages attributes unique to the Chat List
+    */
+
+    .chat-list-icon {
+      /*
+          Contains the icon attributes unique to the message class
+          The icon is used to indicate unread messages
+      */
+      color: darken($grey, 10%);
+      font-size: 1.5em;
+      float: right;
+
+    }
+    .chat-list-title {
+      /*
+          Contains the topic text attributes unique to the message class
+      */
+
+    }
+    .fa {
+      color: darken($grey, 10%);
+      font-size: 1.5em;
+      float: right;
+    }
+
+  }
+}
+
+.plugin-chat-messages {
+  /*
+      Contains the msg-list component classes
+  */
+
+  .chat-messages-list {
+    /*
+        Attributes for the container of messages, unique to the Chat
+        Messages.
+        Scrolls through the messages with most recent at the bottom.
+    */
+
+    .chat-messages-sent {
+      /*
+          Contains the sent message attributes unique to the message-list
+          class.
+          Container is right aligned with background colour different to the
+          received class.
+          bg-success class applied for a successfully sent message.
+      */
+      //right align and justified
+      direction: rtl;
+      text-align: justify;
+
+    }
+    .chat-messages-received {
+      /*
+          Contains the received text attributes unique to the message-list
+          class.
+          Container is right aligned with background colour different to the
+          sent class.
+          bg-warning class applied for an emergency priority message.
+      */
+      text-align: left;
+
+    }
+    .chat-messages-details {
+      /*
+          Contains the message details text attributes unique to the
+          message-list class.
+          The message details should not be the focus of attention (text-muted)
+      */
+      font-size: 0.8em;
+      border-radius: 0px;
+
+    }
+    .chat-messages-emergency {
+      /*
+          Contains the emergency priority message text attributes unique to the
+          message-list class
+      */
+      background-color: $red;
+      border-radius: $general_border_radius;
+
+    }
+    .chat-messages-normal {
+      /*
+          Contains the normal priority message text attributes unique to the
+          message-list class
+      */
+      background-color: $green;
+      border-radius: $general_border_radius;
+
+    }
+  }
+  .chat-messages-compose {
+    /*
+        Contains the compose message area attributes unique to the
+        chat messages.
+        Fixed to the bottom of the screen.
+    */
+    overflow: hidden;
+    background-color: $white;
+
+    .chat-messages-new-text {
+      /*
+          Contains the new message text attributes unique to the
+          chat-messages-compose class.
+      */
+      border-radius: 0px;
+
+    }
+
+    .chat-messages-btn {
+      /*
+          Contains the button attributes unique to the
+          chat-messages-compose class.
+      */
+      border-radius: 0px;
+
+    }
+  }
+}

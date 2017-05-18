@@ -56,106 +56,124 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
 
 ::
 
-        .plugin-chat-list{
-        /*
-            Contains the chat-list component classes
-        */
-            ...
+        .plugin-chat-list {
+          /*
+              Contains the chat-list component classes
+          */
+          ...
 
-            chat-list-messages{
+          .chat-list-messages {
             /*
                 Contains the Messages attributes unique to the Chat List
             */
-                ...
-
-                chat-list-icon{
-                /*
-                    Contains the icon attributes unique to the message class
-                    The icon is used to indicate unread messages
-                */
-                    ...
-
-                }
-                chat-list-title{
-                /*
-                    Contains the topic text attributes unique to the message class
-                */
-                    ...
-
-                }
-            }
-        }
-
-        .plugin-chat-messages{
-        /* Contains the msg-list component classes */
             ...
 
-            chat-messages-list{
+            .chat-list-icon {
+              /*
+                  Contains the icon attributes unique to the message class
+                  The icon is used to indicate unread messages
+              */
+              ...
+
+            }
+            .chat-list-title {
+              /*
+                  Contains the topic text attributes unique to the message class
+              */
+              ...
+
+            }
+          }
+        }
+
+        .plugin-chat-messages {
+          /*
+              Contains the msg-list component classes
+          */
+          ...
+
+          .chat-messages-list {
             /*
                 Attributes for the container of messages, unique to the Chat
                 Messages.
                 Scrolls through the messages with most recent at the bottom.
             */
-                ...
+            ...
 
-                chat-messages-sent{
-                /*
-                    Contains the sent message attributes unique to the message-list
-                    class.
-                    Container is right aligned with background colour different to the
-                    received class.
-                    bg-success class applied for a successfully sent message.
-                */
-                    ...
+            .chat-messages-sent {
+              /*
+                  Contains the sent message attributes unique to the message-list
+                  class.
+                  Container is right aligned with background colour different to the
+                  received class.
+                  bg-success class applied for a successfully sent message.
+              */
+              ...
 
-                }
-                chat-messages-received{
-                /*
-                    Contains the received text attributes unique to the message-list
-                    class.
-                    Container is right aligned with background colour different to the
-                    sent class.
-                    bg-warning class applied for an emergency priority message.
-                */
-                    ...
-
-                }
-                chat-messages-details{
-                /*
-                    Contains the message details text attributes unique to the
-                    message-list class.
-                    The message details should not be the focus of attention (text-muted)
-                */
-                    ...
-
-                }
-                chat-messages-emergency{
-                /*
-                    Contains the emergency priority message text attributes unique to the
-                    message-list class
-
-                */
-                    ...
-
-                }
-                chat-messages-normal{
-                /*
-                    Contains the normal priority message text attributes unique to the
-                    message-list class
-                */
-                    ...
-
-                }
             }
-            chat-messages-compose{
+            .chat-messages-received {
+              /*
+                  Contains the received text attributes unique to the message-list
+                  class.
+                  Container is right aligned with background colour different to the
+                  sent class.
+                  bg-warning class applied for an emergency priority message.
+              */
+              ...
+
+            }
+            .chat-messages-details {
+              /*
+                  Contains the message details text attributes unique to the
+                  message-list class.
+                  The message details should not be the focus of attention (text-muted)
+              */
+              ...
+
+            }
+            .chat-messages-emergency {
+              /*
+                  Contains the emergency priority message text attributes unique to the
+                  message-list class
+              */
+              ...
+
+            }
+            .chat-messages-normal {
+              /*
+                  Contains the normal priority message text attributes unique to the
+                  message-list class
+              */
+              ...
+
+            }
+          }
+          .chat-messages-compose {
             /*
                 Contains the compose message area attributes unique to the
                 chat messages.
                 Fixed to the bottom of the screen.
             */
-                ...
+            ...
+
+            .chat-messages-new-text {
+              /*
+                  Contains the new message text attributes unique to the
+                  chat-messages-compose class.
+              */
+              ...
 
             }
+
+            .chat-messages-btn {
+              /*
+                  Contains the button attributes unique to the
+                  chat-messages-compose class.
+              */
+              ...
+
+            }
+          }
         }
 
 
