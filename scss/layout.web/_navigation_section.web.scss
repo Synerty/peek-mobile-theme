@@ -1,5 +1,6 @@
 //Peek navigation section
 .peek-nav-section{
+/* Contains the Navigation Section attributes */
   padding: $general_padding;
   width: 100%;
   position: fixed;
@@ -29,9 +30,7 @@
         padding: 10px;
         margin-top: 4px
       }
-
     }
-
   }
 }
 
@@ -40,5 +39,4 @@
   .btn{
     min-width: 40px;
   }
-
 }
