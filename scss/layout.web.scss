@@ -5,12 +5,14 @@
 //peek screens
 @import 'layout.web/_title_bar.web';
 @import 'layout.web/_home_screen.web';
-
-@import 'layout.web/_navigation';
 @import 'layout.web/_footer';
 
+//plugin screens
+@import 'layout.web/_plugin_inbox.web';
+
+@import 'layout.web/_navigation';
+
 //pages
-@import 'layout.web/_activity_task';
 @import 'layout.web/_information';
 @import 'layout.web/_details_data';
 @import 'layout.web/_table_data';

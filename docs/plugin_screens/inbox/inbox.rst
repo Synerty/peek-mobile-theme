@@ -82,68 +82,66 @@ Peek Plugin Active Task.
 
 ::
 
-        .plugin-inbox{
-        /*
-            Contains the peek-plugin-inbox screen classes
-        */
-            ...
+        .plugin-inbox,
+        .inboxActivity {
 
-            .inbox{
-            /* 
+          .inbox {
+            /*
                 Contains the style and classes for the inbox container
             */
+            ...
+
+            .inbox-item {
+              /*
+                  Contains the style and classes for the
+              */
+              ...
+
+              .inbox-icon {
+                /*
+                    Contains the icon attributes unique to the .inbox-item class
+                */
                 ...
 
-                .inbox-item{
+              }
+              .inbox-info {
                 /*
-                    Contains the style and classes for the
+                    Contains the info attributes unique to the .inbox-item class
                 */
-                    ...
+                ...
 
-                    .inbox-icon{
-                    /*
-                        Contains the icon attributes unique to the .inbox-item class
-                    */
-                        ...
+                .inbox-title {
+                  /*
+                      Contains the title text attributes unique to the .inbox-info class
+                  */
+                  ...
 
-                    }
-                    .inbox-info{
-                    /*
-                        Contains the info attributes unique to the .inbox-item class
-                    */
-                        ...
-
-                        .inbox-title{
-                        /*
-                            Contains the title text attributes unique to the .inbox-info class
-                        */
-                            ...
-
-                        }
-                        .inbox-description{
-                        /*
-                            Contains the description text attributes unique to the .inbox-info class
-                        */
-                            ...
-
-                        }
-                        .inbox-date-time{
-                        /*
-                            Contains the date and time attributes unique to the .inbox-info class
-                        */
-                            ...
-
-                        }
-                    }
-                    .inbox-read-more{
-                    /*
-                        Contains the read more link attributes unique to the .plugin-inbox class
-                    */
-                        ...
-
-                    }
                 }
+                .inbox-description {
+                  /*
+                      Contains the description text attributes unique to the .inbox-info class
+                  */
+                  ...
+
+                }
+                .inbox-date-time {
+                  /*
+                      Contains the date and time attributes unique to the .inbox-info class
+                  */
+                  ...
+
+                }
+              }
             }
+            .btn.inbox-read-more {
+              /*
+                  Contains the read more link attributes unique to the .plugin-inbox class
+              */
+              ...
+
+              }
+            }
+          }
         }
 
 

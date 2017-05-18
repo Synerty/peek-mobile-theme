@@ -1,0 +1,70 @@
+.plugin-inbox,
+.inboxActivity {
+
+  .inbox {
+    /*
+        Contains the style and classes for the inbox container
+    */
+
+    .inbox-item {
+      /*
+          Contains the style and classes for the
+      */
+      overflow: hidden;
+      display: table;
+      border-bottom: 1px solid $white;
+
+      .inbox-icon {
+        /*
+            Contains the icon attributes unique to the .inbox-item class
+        */
+        color: $brand;
+        font-size: 1.4em;
+        display: table-cell;
+      }
+
+      .inbox-info {
+        /*
+            Contains the info attributes unique to the .inbox-item class
+        */
+        display: table-cell;
+        vertical-align: top;
+
+        .inbox-title {
+          /*
+              Contains the title text attributes unique to the .inbox-info class
+          */
+          font-size: 1em;
+        }
+
+        .inbox-description {
+          /*
+              Contains the description text attributes unique to the .inbox-info class
+          */
+          font-size: 0.9em;
+        }
+
+        .inbox-date-time {
+          /*
+              Contains the date and time attributes unique to the .inbox-info class
+          */
+          font-size: 0.8em;
+          border-bottom: 1px solid $grey;
+          text-align: right;
+        }
+      }
+    }
+
+    .btn.inbox-read-more {
+      /*
+          Contains the read more link attributes unique to the .plugin-inbox class
+      */
+      display: table-cell;
+      background-color: darken($grey, 10%);
+
+      &:hover {
+        background-color: $brand;
+      }
+    }
+  }
+}

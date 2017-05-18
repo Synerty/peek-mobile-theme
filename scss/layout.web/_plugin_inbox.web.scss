@@ -1,0 +1,78 @@
+.plugin-inbox,
+.inboxActivity {
+
+  padding-top: $general_padding;
+  padding-left: $general_padding;
+  padding-right: $general_padding;
+
+  .inbox {
+    /*
+          Contains the style and classes for the inbox container
+    */
+
+    .inbox-item {
+      /*
+          Contains the style and classes for the
+      */
+      padding: $general_padding;
+      position: relative;
+      width: 100%;
+
+      .inbox-icon {
+        /*
+            Contains the icon attributes unique to the .inbox-item class
+        */
+        color: $brand;
+        font-size: 1.4em;
+        display: table-cell;
+
+      }
+      .inbox-info {
+        /*
+            Contains the info attributes unique to the .inbox-item class
+        */
+        padding: 0px $general_padding;
+
+        .inbox-title {
+          /*
+              Contains the title text attributes unique to the .inbox-info class
+          */
+
+        }
+        .inbox-description {
+          /*
+              Contains the description text attributes unique to the .inbox-info class
+          */
+
+        }
+        .inbox-date-time {
+          /*
+              Contains the date and time attributes unique to the .inbox-info class
+          */
+          margin-bottom: 5px;
+          padding-bottom: 5px;
+
+        }
+      }
+    }
+    .btn.inbox-read-more {
+      /*
+          Contains the read more link attributes unique to the .plugin-inbox class
+      */
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      padding: 0px;
+      height: 100%;
+      background-image: url('../images/icon_more.png');
+      background-position: center center;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      width: 20px;
+      border-radius: 0px;
+      text-indent: - 9999px;
+      overflow: hidden;
+
+    }
+  }
+}
