@@ -1,0 +1,22 @@
+.peek-details-section {
+  /* Contains the Details Section looks classes */
+
+  .details-section-title {
+    /*
+        Contains the title attributes unique to the Details Section
+        this text will have the text-muted effect
+    */
+    font-size: 0.9em;
+    color: darken($grey, 40%);
+
+  }
+  .details-section-value {
+    /*
+        Contains the value attributes unique to the Details Section
+        text to have the focus of attention
+    */
+    font-size: 16px;
+    font-weight: 500;
+
+  }
+}
