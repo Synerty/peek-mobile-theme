@@ -1,0 +1,21 @@
+// Title Bar
+.peek-title-bar {
+  /* Contains the Title Bar classes */
+
+}
+
+.title-bar-btn {
+  /* Contains the button attributes unique to the Title Bar */
+
+}
+
+.title-bar-title {
+  /* Contains the title attributes unique to the Title Bar */
+  vertical-align: center;
+  padding-left: $general_padding;
+  padding-right: $general_padding;
+}
+
+.peek-mobile-page-contents {
+  /* Contains the padding to stop the screens being covered by the title-bar */
+}
