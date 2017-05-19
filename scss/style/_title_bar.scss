@@ -1,37 +1,46 @@
 // Title Bar
 .peek-title-bar {
   /* Contains the Title Bar classes */
-  $section_font_size: 0.8em;
   @include box-shadow;
   background-color: $white;
   text-transform: $font_transform;
+}
 
-  .title-bar-btn {
-    /* Contains the button attributes unique to the Title Bar */
-    font-size: $section_font_size;
-    border-radius: 0px !important;
-    background-color: $brand !important;
-    margin-right: 0px;
-    border-right: 1px solid darken($brand, 10%) !important;
-    border-left: 0px;
-    float: left;
-    @include button-settings;
-  }
+.title-bar-btn {
+  /* Contains the button attributes unique to the Title Bar */
+  color: $white;
+  font-family: $fonts_special;
+  text-transform: $font_transform;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  padding:8px;
+  font-weight: normal;
+  border: 0px;
+  font-size: 13px;
+  border-radius: 0px;
+  background-color: $brand;
+  margin-right: 0px;
+  border-right: 1px solid darken($brand, 10%);
+  border-left: 0px;
+  float: left;
+}
 
-  //button group
-  .btn-group {
-    background-color: $brand;
+.title-bar-btn {
+  &:last-child {
+    border-right: 0px;
   }
+}
 
-  .title-bar-btn {
-    &:last-child {
-      border-right: 0px !important;
-    }
-  }
-  .title-bar-title {
-    /* Contains the title attributes unique to the Title Bar */
+//button group
+.btn-group {
+  background-color: $brand;
+}
 
-  }
+.title-bar-title {
+  /* Contains the title attributes unique to the Title Bar */
+
 }
 
 .peek-mobile-page-contents {
