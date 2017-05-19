@@ -4,6 +4,11 @@
   @include box-shadow;
   background-color: $white;
   text-transform: $font_transform;
+
+  //button group
+  .btn-group {
+    background-color: $brand;
+  }
 }
 
 .title-bar-btn {
@@ -15,7 +20,7 @@
   display: inline-block;
   position: relative;
   z-index: 100;
-  padding:8px;
+  padding: 8px;
   font-weight: normal;
   border: 0px;
   font-size: 13px;
@@ -31,11 +36,6 @@
   &:last-child {
     border-right: 0px;
   }
-}
-
-//button group
-.btn-group {
-  background-color: $brand;
 }
 
 .title-bar-title {
