@@ -15,6 +15,7 @@
     background-repeat: repeat;
     display: block;
     border-radius: $general_border_radius + 2px;
+    font-family: $fonts_special;
     @include box-shadow;
 
     .home-screen-image {
