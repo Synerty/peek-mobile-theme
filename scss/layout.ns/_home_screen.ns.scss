@@ -5,9 +5,9 @@
       Home Screen background is unique and different to other screens
       Cannot use the body tag
   */
-
   bottom: 0px;
   min-height: 100%;
+  padding: $general_padding;
 
   .home-screen-icon {
     /*
@@ -15,8 +15,8 @@
         Buttons responsively wrap
     */
     background-image: url("~/assets/button_home_background.png");
-    margin-top: $general_padding*2;
-    padding: $general_padding*2;
+    margin: $general_padding;
+    padding: $general_padding;
     position: relative;
 
     .home-screen-image {
