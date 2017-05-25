@@ -1,0 +1,47 @@
+//Peek navigation section
+.peek-nav-section {
+  /* Contains the Navigation Section attributes */
+  padding: $general_padding;
+  width: 100%;
+  position: fixed;
+  z-index: 899;
+}
+
+.peek-nav-bar-padding {
+  padding-top: $general_padding_nav_bar;
+}
+
+//navigation tabs
+.nav {
+
+  margin: 0px;
+
+  &.nav-tabs {
+
+    & > li {
+      margin-bottom: 0px;
+
+      &.active {
+        & > a {
+          @include button-settings;
+          padding: 12px;
+          margin-top: 0px;
+        }
+      }
+
+      & > a {
+        margin-right: 0px;
+        margin-top: 10px;
+        padding: 10px;
+        margin-top: 4px
+      }
+    }
+  }
+}
+
+//button group
+.btn-group {
+  .btn {
+    min-width: 40px;
+  }
+}
