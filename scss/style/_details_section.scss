@@ -6,7 +6,7 @@
         Contains the title attributes unique to the Details Section
         this text will have the text-muted effect
     */
-    font-size: 0.9em;
+    font-size: 12pt;
     color: darken($grey, 40%);
 
   }
@@ -15,8 +15,9 @@
         Contains the value attributes unique to the Details Section
         text to have the focus of attention
     */
-    font-size: 24px;
+    font-size: 18pt;
     font-weight: 500;
+    color: $black;
 
   }
 }

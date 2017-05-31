@@ -21,7 +21,7 @@ $general_padding_nav_bar: 64px;
 //fonts
 $fonts_special:'Play', sans-serif;
 $font_transform: uppercase;
-$font_colour_default: darken($grey,50%);
+$font_colour_default: $black;
 
 //header
 $navigation_header_height: 40px;

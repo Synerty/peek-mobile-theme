@@ -14,7 +14,7 @@
           The icon is used to indicate unread messages
       */
       color: darken($grey, 10%);
-      font-size: 20px;
+      font-size: 15pt;
       float: right;
 
     }
@@ -24,9 +24,10 @@
       */
 
     }
+    color: $black;
     .fa {
       color: darken($grey, 10%);
-      font-size: 20px;
+      font-size: 15pt;
       float: right;
     }
 
@@ -56,6 +57,7 @@
       //right align and justified
       direction: rtl;
       text-align: justify;
+      color: $black;
 
     }
     .chat-messages-received {
@@ -67,6 +69,7 @@
           bg-warning class applied for an emergency priority message.
       */
       text-align: left;
+      color: $black;
 
     }
     .chat-messages-details {
@@ -75,8 +78,8 @@
           message-list class.
           The message details should not be the focus of attention (text-muted)
       */
-      font-size: 14px;
-      border-radius: 0px;
+      font-size: 11pt;
+      border-radius: 0;
 
     }
     .chat-messages-emergency {
@@ -112,7 +115,7 @@
           Contains the new message text attributes unique to the
           chat-messages-compose class.
       */
-      border-radius: 0px;
+      border-radius: 0;
 
     }
 
@@ -121,7 +124,7 @@
           Contains the button attributes unique to the
           chat-messages-compose class.
       */
-      border-radius: 0px;
+      border-radius: 0;
 
     }
   }

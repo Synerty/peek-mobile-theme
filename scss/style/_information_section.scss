@@ -8,7 +8,7 @@
         Contains the icon attributes unique to the peek-information-section class
     */
     background-image: url('../images/home_background.png');
-    font-size: 3em;
+    font-size: 36pt;
     color: $white;
     text-align: center;
 
@@ -17,14 +17,14 @@
     /*
         Contains the title attributes unique to the peek-information-section class
     */
-    font-size: 2em;
+    font-size: 24pt;
     text-align: center;
 
   }
   //icon
   .fa {
     &.information-icon-large {
-      font-size: 6em;
+      font-size: 72pt;
       //padding: ($general_padding*2)($general_padding*3);
       border-radius: $general_border_radius*2;
       color: $white;
