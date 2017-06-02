@@ -18,7 +18,6 @@
         Contains the icon attributes unique to the peek-information-section class
     */
     background-image: url('../images/home_background.png');
-
     @include inner-shadow(0.35);
     padding: 15pt;
     max-width: 75pt;
@@ -29,7 +28,6 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-
   }
 
   .information-section-btn {
@@ -47,5 +45,4 @@
       background-image: url('../images/home_background.png');
     }
   }
-
 }

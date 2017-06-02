@@ -9,19 +9,23 @@ $red: #f2dede;
 
 
 //general
-$general_font_size: 16px;
+$general_font_size: 12pt;
 $general_background_color: lighten($grey,18%);
-$general_padding:15px;
-$general_border_radius: 4px;
-$general_padding_nav_bar: 64px;
+$general_padding:12pt;
+$general_border_radius: 3pt;
+$general_padding_nav_bar: 48pt;
 
 //colour
-
+$general_text: $black;
 
 //fonts
-$fonts_special:'Play', sans-serif;
+$fonts_special:'Play', arial;
 $font_transform: uppercase;
 $font_colour_default: $black;
 
 //header
-$navigation_header_height: 40px;
+$navigation_header_height: 30pt;
+
+//image asset locations
+$ns_assets: "";
+$web_images: "";
