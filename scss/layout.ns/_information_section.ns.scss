@@ -16,8 +16,8 @@
     */
     background-image: url('~/assets/home_background.png');
     padding: 15pt;
-    max-width: 24pt;
-    height: auto;
+    width: 25%;
+    height: 25%;
     border-radius: $general_border_radius;
     margin-top: $general_padding*2;
     margin-bottom: $general_padding*2;
@@ -39,6 +39,6 @@
     }
   }
   .hr-dark {
-    color: $general_background_color;
+    border-top: 1px solid #eee;
   }
 }
