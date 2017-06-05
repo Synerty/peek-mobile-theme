@@ -23,6 +23,10 @@
     &:first-child {
       border-radius: $general_border_radius 0 0 $general_border_radius;
     }
+
+    &:first-child:last-child {
+      border-radius: $general_border_radius;
+    }
   }
 }
 
