@@ -1,0 +1,20 @@
+.peek-details-section {
+  /* Contains the Details Section looks classes */
+  margin-top: $general_padding;
+
+  .details-section-title {
+    /*
+        Contains the title attributes unique to the Details Section
+        this text will have the text-muted effect
+    */
+
+  }
+  .details-section-value {
+    /*
+        Contains the value attributes unique to the Details Section
+        text to have the focus of attention
+    */
+    margin-top: $general_padding;
+    margin-bottom: $general_padding;
+  }
+}
