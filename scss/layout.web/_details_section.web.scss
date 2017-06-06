@@ -15,11 +15,6 @@
         text to have the focus of attention
     */
     margin-top: $general_padding;
-    padding-bottom: $general_padding;
     margin-bottom: $general_padding;
-
-    // Ensure new lines are treated properly
-    white-space: pre-wrap;
-
   }
 }
