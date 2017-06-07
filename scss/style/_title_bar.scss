@@ -2,7 +2,6 @@
 .peek-title-bar {
   /* Contains the Title Bar classes */
   background-color: $white;
-  text-transform: $font_transform;
 
   //button group
   .btn-group {
@@ -13,14 +12,10 @@
 .title-bar-btn {
   /* Contains the button attributes unique to the Title Bar */
   color: $white;
-  font-family: $fonts_special;
-  text-transform: $font_transform;
   cursor: pointer;
   display: inline-block;
   position: relative;
-  z-index: 100;
   padding: 6pt;
-  font-weight: normal;
   border: 0;
   font-size: 10pt;
   border-radius: 0;
