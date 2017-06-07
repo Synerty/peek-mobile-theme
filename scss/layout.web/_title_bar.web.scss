@@ -18,6 +18,9 @@
   line-height: $navigation_header_height;
   padding-left: $general_padding;
   padding-right: $general_padding;
+  float: left;
+  margin: auto;
+  width: 50%;
 }
 
 .peek-mobile-page-contents {

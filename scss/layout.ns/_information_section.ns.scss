@@ -24,21 +24,4 @@
     horizontal-align: center;
     display: block;
   }
-
-  .information-section-btn {
-    /*
-        Contains the button attributes unique to the peek-information-section class
-    */
-    background-color: darken($grey, 20%);
-    display: block;
-    horizontal-align: center;
-  }
-  .fa {
-    &.information-icon-large {
-      background-image: url('~/assets/home_background.png');
-    }
-  }
-  .hr-dark {
-    border-top: 1px solid #eee;
-  }
 }
