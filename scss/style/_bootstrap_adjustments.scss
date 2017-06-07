@@ -28,15 +28,3 @@
 .tab-content {
   border-top: 1pt solid darken($grey, 20%);
 }
-
-.btn {
-  @include button-settings;
-}
-
-//button groups
-.btn-group {
-
-  & > .btn {
-    margin-right: 1pt;
-  }
-}

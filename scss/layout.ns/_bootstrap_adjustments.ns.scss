@@ -27,19 +27,6 @@
   }
 }
 
-//nav tabs active lists
-.btn {
-  @include button-settings;
-}
-
-//button groups
-.btn-group {
-
-  .btn + .btn {
-    margin-left: 0px;
-  }
-}
-
 .bg-primary {
   /* Applies the primary background theme */
 
