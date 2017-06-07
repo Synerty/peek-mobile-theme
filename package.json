@@ -1,6 +1,6 @@
 {
   "name": "@synerty/peek-mobile-theme",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Theme for the Peek Mobile service",
   "main": "index.js",
   "directories": {

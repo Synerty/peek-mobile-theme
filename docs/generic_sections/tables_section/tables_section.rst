@@ -36,28 +36,28 @@ Section.
 
         .peek-tables-section{
         /* Contains the Tables Section classes */
+          ...
+
+          .table{
+          /* Contains the table attributes unique to the Tables Section */
+            ...
+          }
+
+          .tr{
+          /* Contains the table row attributes unique to the .table class */
             ...
 
-            .table{
-            /* Contains the table attributes unique to the Tables Section */
-                ...
+          }
+          .th{
+          /* Contains the table head cell attributes unique to the .table class */
+            ...
 
-                .tr{
-                /* Contains the table row attributes unique to the .table class */
-                    ...
+          }
+          .td{
+          /* Contains the table row cell attributes unique to the .table class */
+            ...
 
-                }
-                .th{
-                /* Contains the table head cell attributes unique to the .table class */
-                    ...
-
-                }
-                .td{
-                /* Contains the table row cell attributes unique to the .table class */
-                    ...
-
-                }
-            }
+          }
         }
 
 
@@ -80,47 +80,88 @@ HTML
 The Tables Section uses Bootstraps `Tables <http://getbootstrap.com/css/#tables>`_.
 
 Below is the HTML code extract of table header and first two rows from
-:ref:`tables_section_tables_section`: ::
+:ref:`tables_section`: ::
 
         <div class="peek-tables-section">
-            <table class="table">
-            <!-- Table contains table rows, 'tr' -->
+            <div class="table table-striped">
+                <thead>
                 <tr class="tr">
-                <!--
-                    Row of cells
-                    Contains table header cells, 'th' or table cells, 'td'
-                    Header cells can be used anywhere as needed
-                -->
-                    <th class="th">Item</th>
-                    <th class="th">State</th>
-                    <th class="th">Location</th>
-                    <th class="th">Circuit / Details</th>
+                    <th class="th">ID</th>
+                    <th class="th">Name</th>
+                    <th class="th">Scheduled Date</th>
+                    <th class="th">Status</th>
                 </tr>
-                <tr class="tr">
-                <!--
-                    Row of cells
-                    Contains table header cells, 'th' or table cells, 'td'
-                    Header cells can be used anywhere as needed
-                -->
-                    <td class="td">1</td>
-                    <td class="td">Completed</td>
-                    <td class="td">Weedons ZS - R15/174</td>
-                    <td class="td">Unit 3342 Motor Trip
-                        <br> Job
+                </thead>
+                <tbody>
+                <tr class="tr"
+                    [class.bg-primary]="item.fieldStatus.isActive"
+                    [class.bg-warning]="item.fieldStatus.isDispatched"
+                    [class.bg-success]="item.fieldStatus.isAccepted"
+                    *ngFor="let item of jobs"
+                    (click)="jobClicked(item)">
+                    <td class="td">
+                        {{item.jobNumber}}
+
+                    </td>
+                    <td class="td">
+                        {{item.jobName}}
+
+                    </td>
+                    <td class="td">
+                        {{item.scheduledDate
+                        | date:'HH:mm EE dd-MMM'}}
+
+                    </td>
+                    <td class="td">
+                        {{item.fieldStatus.niceName}}
+
                     </td>
                 </tr>
-                <tr class="tr">
-                <!--
-                    Row of cells
-                    Contains table header cells, 'th' or table cells, 'td'
-                    Header cells can be used anywhere as needed
-                -->
-                    <td class="td">2</td>
-                    <td class="td">Confirmed</td>
-                    <td class="td">Weedons ZS - R15/174</td>
-                    <td class="td">Unit 3342 Motor Trip
-                        <br> Apply Scan Inhibit
-                    </td>
-                </tr>
-            </table>
+                </tbody>
+            </div>
         </div>
+
+
+NativeScript
+------------
+
+::
+
+        <StackLayout class="peek-tables-section">
+            <StackLayout class="table">
+                <GridLayout class="tr" rows="auto" columns="2*, 3*, 2*">
+                    <Label class="th" row="0" col="0" text="Job"></Label>
+                    <Label class="th" row="0" col="1" text="Scheduled"></Label>
+                    <Label class="th" row="0" col="2" text="Status"></Label>
+                </GridLayout>
+
+                <ListView class="td"
+                          [items]="jobs">
+                    <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+                        <StackLayout
+                                [class.odd]="odd" [class.even]="even"
+                                [class.bg-primary]="item.fieldStatus.isActive"
+                                [class.bg-info]="item.fieldStatus.isAccepted"
+                                [class.bg-success]="item.fieldStatus.isDispatched"
+                                (tap)="jobClicked(item)">
+                            <GridLayout rows="2*,2*,*" columns="2*, 3*, 2*">
+                                <!-- Details -->
+                                <Label row="0" col="0"
+                                       [text]="item.jobNumber"></Label>
+                                <Label row="0" col="1"
+                                       [text]="item.scheduledDate | date:'HH:mm EE dd-MMM'"></Label>
+                                <Label row="0" col="2"
+                                       [text]="item.fieldStatus.niceName"></Label>
+                                <!-- Description -->
+                                <Label row="1" col="0" colSpan="3"
+                                       [text]="item.jobName" textWrap="true"></Label>
+                                <!-- Spacer -->
+                                <Label row="2" col="0" text=""></Label>
+
+                            </GridLayout>
+                        </StackLayout>
+                    </ng-template>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+

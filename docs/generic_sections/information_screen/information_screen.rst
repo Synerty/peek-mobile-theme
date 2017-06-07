@@ -80,19 +80,49 @@ HTML
 ::
 
         <div class="peek-information-section">
-            <img class="information-section-icon" src="../images/field_switching.png">
-            <div class="title">Welcome to Field Switching.</div>
-            <div class="p">
-                Peek Field Switching allows field engineers working on the electricity
-                network to electronically
+            <div class="information-section-title">Welcome to Field Switching</div>
+            <img class="information-section-icon"
+                 src="/assets/peek_plugin_pof_field_switching/plugin_icon.png">
+
+            <div class="p">Peek Field Switching allows field engineers working on the
+                electricity network to electronically
                 <ul>
                     <li>View switching instructions</li>
                     <li>Receive instructions from the control room</li>
                     <li>And field confirm field switching operations</li>
                 </ul>
             </div>
-            <button class="btn" ng-reflect-router-link="./joblist">My Jobs &gt;
-            </button>
-            <i class="information-section-icon fa fa-user" aria-hidden="true"></i>
-            <div class="title">Logged in as Tim Hamilton</div>
+
+            <hr>
+            <div class="information-section-title">Logged in as {{userDetails.displayName}}
+            </div>
         </div>
+
+
+NativeScript
+------------
+
+::
+
+        <StackLayout class="peek-information-section">
+            <Image class="information-section-icon"
+                   src="~/assets/peek_plugin_pof_field_switching/plugin_icon.png"></Image>
+
+            <label class="information-section-title"
+                   text="Welcome to Field Switching"></label>
+            <label class="p"></label>
+
+            <label class="p"
+                   textwrap="true"
+                   text="Peek Field Switching allows field engineers working on the electricity network to electronically:"></label>
+            <label class="p"></label>
+
+            <label class="p" text="* View switching instructions"></label>
+            <label class="p" text="* Receive instructions from the control room"></label>
+            <label class="p" text="* And field confirm field switching operations"></label>
+            <label class="p"></label>
+
+            <label class="information-section-title"
+                   text="Logged in as {{userDetails.displayName}}"></label>
+        </StackLayout>
+

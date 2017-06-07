@@ -7,11 +7,13 @@
 
   .nav-section-btn {
     /* Contains the Button attributes unique to the Navigation Section */
+    color: $font_colour_button;
+    cursor: pointer;
+    font-size: 11pt;
+    padding: 6pt;
+    border: 0;
     background-color: darken($grey, 20%);
-    border-radius: 0;
-    border-left: 0;
     float: left;
-    @include button-settings;
     min-width: 30pt;
     border-right: 1pt solid darken($grey, 35%);
 
