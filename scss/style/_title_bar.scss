@@ -1,7 +1,6 @@
 // Title Bar
 .peek-title-bar {
   /* Contains the Title Bar classes */
-  @include box-shadow;
   background-color: $white;
   text-transform: $font_transform;
 
@@ -40,6 +39,7 @@
 
 .title-bar-title {
   /* Contains the title attributes unique to the Title Bar */
+  color: $black;
 
 }
 

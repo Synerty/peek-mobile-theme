@@ -1,22 +1,3 @@
-@font-face {
-  font-family: 'Play';
-  font-weight: normal;
-  src: url('../fonts/Play/Play-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Play/Play-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/Play/Play-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/Play/Play-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/Play/play.svg#svgPlayRegular') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Play';
-  font-weight: bold;
-  src: url('../fonts/Play/Play-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/Play/Play-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/Play/Play-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/Play/play.svg#svgPlayBold') format('svg'); /* Legacy iOS */
-}
-
 .h1,
 .h2,
 .h3,
