@@ -1,19 +1,16 @@
 // Title Bar
 .peek-title-bar {
   /* Contains the Title Bar classes */
-  //$section_font_size: 0.8em;
   width: 100%;
   z-index: 999;
   height: $navigation_header_height; // main header height being set
   position: fixed;
-
 }
 
 .title-bar-btn {
   /* Contains the button attributes unique to the Title Bar */
   height: $navigation_header_height; //setting height to default header naviation height
-  padding: 0px 10px;
-
+  padding: 0 8pt;
 }
 
 .title-bar-title {
@@ -21,7 +18,6 @@
   line-height: $navigation_header_height;
   padding-left: $general_padding;
   padding-right: $general_padding;
-
 }
 
 .peek-mobile-page-contents {
