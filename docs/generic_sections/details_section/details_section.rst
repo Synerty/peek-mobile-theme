@@ -83,7 +83,7 @@ row's.
 Refer to the `Grid System <http://getbootstrap.com/css/#grid>`_ for more information
 about creating page layouts using the Bootstrap grid system.
 
-Below is the HTML code extract of the first two rows from the screenshot in the
+Below is the HTML code extract of two rows from the screenshot in the
 beginning of the :ref:`details_section`: ::
 
         <div class="peek-nav-bar-padding peek-details-section">
@@ -126,7 +126,16 @@ beginning of the :ref:`details_section`: ::
 NativeScript
 ------------
 
-::
+The Details Section uses the
+`NativeScript recursive layout system <https://docs.nativescript.org/ui/layouts>`_.
+
+The `StackLayout <https://docs.nativescript.org/ui/layout-containers#stacklayout>`_
+defines the horizontal groups of
+`GridLayout <https://docs.nativescript.org/ui/layout-containers#gridlayout>`_ Content
+is placed in the GridLayout that is the immediate child of the StackLayout.
+
+Below is the NativeScript code extract of two rows from the screenshot in the
+beginning of the :ref:`details_section`: ::
 
         <StackLayout class="peek-details-section">
             <GridLayout rows="auto, auto" columns="*, *">
