@@ -68,3 +68,38 @@
     }
   }
 }
+
+//navigation tabs
+.nav {
+
+  $section_font_size: 10pt;
+
+  &.nav-tabs {
+    border-bottom: 0 solid $brand;
+
+    & > li {
+
+      &.active {
+        & > a {
+          font-size: $section_font_size;
+          border-radius: 0;
+        }
+      }
+
+      & > a {
+        font-family: $fonts_special;
+        text-transform: $font_transform;
+        color: lighten($font_colour_default, 10%);
+        font-size: $section_font_size;
+        border: 0;
+        border-radius: 0;
+        background-color: #eee;
+      }
+    }
+  }
+}
+
+//nav tabs active lists
+.tab-content {
+  border-top: 1pt solid darken($grey, 20%);
+}

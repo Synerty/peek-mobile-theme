@@ -40,13 +40,18 @@ Navigation Section.
 
         .peek-nav-section{
         /* Contains the Navigation Section attributes */
+          ...
+
+          .nav-section-btn{
+          /* Contains the Button attributes unique to the Navigation Section */
             ...
 
-           .nav-section-btn{
-           /* Contains the Button attributes unique to the Navigation Section */
-               ...
+          }
+        }
 
-           }
+        .peek-nav-bar-padding {
+        /* Provides padding for the screen under the Navigation Section */
+          ...
         }
 
 
@@ -72,25 +77,69 @@ requiring the Nav Bar.
 ::
 
         <div class="peek-nav-section">
-            <!--
-                The following 'div' groups button to the left of the Nav Bar.
-                Can contain one to many buttons
-            -->
-            <div class="btn-group pull-left" role="group">
-               <button class="nav-section-btn" role="group">My Jobs
-               </button>
-               <button class="nav-section-btn" role="group">Job
-               </button>
-               <button class="nav-section-btn" role="group">Operations
-               </button>
+            <!--END HANDBACK DIALOG -->
+            <div class="btn-group pull-left" role="group" *ngIf="!transitionDialogShown()">
+                <!-- Navigation -->
+                <Button class="nav-section-btn" role="group"
+                        (click)="nav.toMyIncidents()">My Incidents
+                </Button>
+                <Button class="nav-section-btn" role="group"
+                        (click)="navToFindings()">Findings
+                </Button>
+                <Button class="nav-section-btn" role="group"
+                        (click)="navToCalls()">Calls
+                </Button>
             </div>
 
-            <!--
-                The following 'div' groups button to the right of the Nav Bar.
-                Can contain one to many buttons
-            -->
-            <div class="btn-group pull-right" role="group">
-               <button class="nav-section-btn" role="group">&lt;</button>
-               <button class="nav-section-btn" role="group">&gt;</button>
+            <!-- Navigation Place Holder -->
+            <div class="btn-group pull-left" *ngIf="transitionDialogShown()">
+                <!-- Keep the spacing of the top navigation buttons when they disappear -->
+                <Button class="nav-section-btn" style="opacity: 0">&nbsp;</Button>
+            </div>
+
+
+            <div class="btn-group pull-right" *ngIf="!transitionDialogShown()">
+                <Button *ngIf="isUpdateButtonEnabled()"
+                        class="nav-section-btn" (click)="updateClicked()">
+                    Update
+                </Button>
             </div>
         </div>
+
+
+        <div class="peek-nav-bar-padding">
+        <!-- This div provides padding for the screen under the Navigation Section -->
+
+        </div>
+
+NativeScript
+------------
+
+The :code:`peek-nav-section` is to be included before the code of the plugin screen
+requiring the Nav Bar.
+
+::
+
+        <GridLayout rows="auto" columns="auto, *, auto" class="peek-nav-section">
+            <WrapLayout col="0" row="0"
+                        class="btn-group" *ngIf="!transitionDialogShown()">
+
+                <Button class="nav-section-btn" text="My Incidents"
+                        (tap)="nav.toMyIncidents()"></Button>
+                <Button class="nav-section-btn" text="Findings"
+                        (tap)="navToFindings()"></Button>
+                <Button class="nav-section-btn" text="Calls" (tap)="navToCalls()"></Button>
+
+            </WrapLayout>
+
+            <WrapLayout col="2" row="0"
+                        class="btn-group" *ngIf="!transitionDialogShown()">
+
+                <Button *ngIf="isUpdateButtonEnabled()"
+                        class="nav-section-btn" text="Update"
+                        (tap)="updateClicked()"></Button>
+
+            </WrapLayout>
+
+        </GridLayout>
+
