@@ -21,7 +21,9 @@ $general_text: $black;
 //fonts
 $fonts_special: arial;
 $font_transform: uppercase;
-$font_colour_default: $black;
+$font_colour_default: darken($grey, 40%);
+$font_colour_information: $black;
+$font_colour_button: $white;
 
 //header
 $navigation_header_height: 30pt;
