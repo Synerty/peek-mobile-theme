@@ -79,7 +79,7 @@ HTML
 
 The Tables Section uses Bootstraps `Tables <http://getbootstrap.com/css/#tables>`_.
 
-Below is the HTML code extract of table header and first two rows from
+Below is the HTML code extract of table header and two rows from
 :ref:`tables_section`: ::
 
         <div class="peek-tables-section">
@@ -125,7 +125,10 @@ Below is the HTML code extract of table header and first two rows from
 NativeScript
 ------------
 
-::
+The Tables Section uses `Listview <https://docs.nativescript.org/ui/list-view>`_.
+
+Below is the NativeScript code extract of table header and two rows from
+:ref:`tables_section`: ::
 
         <StackLayout class="peek-tables-section">
             <StackLayout class="table">
