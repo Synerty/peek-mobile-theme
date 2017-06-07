@@ -28,20 +28,4 @@
     margin-right: auto;
     display: block;
   }
-
-  .information-section-btn {
-    /*
-        Contains the button attributes unique to the peek-information-section class
-    */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    background-color: darken($grey, 20%);
-  }
-
-  .fa {
-    &.information-icon-large {
-      background-image: url('../images/home_background.png');
-    }
-  }
 }
