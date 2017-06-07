@@ -5,8 +5,14 @@
   width: 100%;
   position: fixed;
   z-index: 899;
+
+  .nav-section-btn {
+    /* Contains the Button attributes unique to the Navigation Section */
+
+  }
 }
 
 .peek-nav-bar-padding {
+  /* Provides padding for the screen under the Navigation Section */
   padding-top: $general_padding_nav_bar;
 }

@@ -40,13 +40,18 @@ Navigation Section.
 
         .peek-nav-section{
         /* Contains the Navigation Section attributes */
+          ...
+
+          .nav-section-btn{
+          /* Contains the Button attributes unique to the Navigation Section */
             ...
 
-           .nav-section-btn{
-           /* Contains the Button attributes unique to the Navigation Section */
-               ...
+          }
+        }
 
-           }
+        .peek-nav-bar-padding {
+        /* Provides padding for the screen under the Navigation Section */
+          ...
         }
 
 
