@@ -86,40 +86,74 @@ about creating page layouts using the Bootstrap grid system.
 Below is the HTML code extract of the first two rows from the screenshot in the
 beginning of the :ref:`details_section`: ::
 
-        <div class="peek-details-section">
+        <div class="peek-nav-bar-padding peek-details-section">
             <div class="container-fluid">
-
+                <!--Displayed form data -->
                 <div class="row">
-                <!-- This div contains the row contents -->
-                    <div class="col-xs-5">
-                    <!--
-                        This div contains the cell contents.  Rows are made up of 12
-                        parts.
-                     -->
-                        <div class="details-section-title">Item</div>
-                        <div class="details-section-value">#3</div>
+                    <div class="col-xs-6">
+                        <div class="details-section-title">
+                            Control Engineer
+                        </div>
+                        <div class="details-section-value">
+                            {{job.activeControlEngineer}}
+                        </div>
                     </div>
-                    <div class="col-xs-7">
-                    <!--
-                        This div contains the cell contents.  Rows are made up of 12
-                        parts.
-                     -->
-                        <div class="details-section-title">State</div>
-                        <div class="details-section-value">Confirmed</div>
+                    <div class="col-xs-6">
+                        <div class="details-section-title">
+                            Field State
+                        </div>
+                        <div class="details-section-value">
+                            {{job.fieldStatus.niceName}}
+                        </div>
                     </div>
                 </div>
 
+                <hr>
                 <div class="row">
-                <!-- This div contains the row contents -->
                     <div class="col-xs-12">
-                    <!--
-                        This div contains the cell contents.  Rows are made up of 12
-                        parts.
-                     -->
-                        <div class="details-section-title">Location</div>
-                        <div class="details-section-value">Weedons ZS - R15/174</div>
+                        <div class="details-section-title">
+                            Name
+                        </div>
+                        <div class="details-section-value">
+                            {{job.jobName}}
+                        </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
+                <hr>
+
+
+NativeScript
+------------
+
+::
+
+        <StackLayout class="peek-details-section">
+            <GridLayout rows="auto, auto" columns="*, *">
+                <!-- Column 1 -->
+                <Label row="0" col="0" class="details-section-title"
+                       text="Control Engineer"></Label>
+                <Label row="1" col="0" class="details-section-value" textWrap="true"
+                       [text]="job.activeControlEngineer"></Label>
+                <!-- Column 2 -->
+                <Label row="0" col="1" class="details-section-title"
+                       text="Field State"></Label>
+                <Label row="1" col="1" class="details-section-value"
+                       [text]="job.fieldStatus.niceName"></Label>
+            </GridLayout>
+
+            <!-- Spacer -->
+            <Label class="h3" text=""></Label>
+
+            <!--<hr>-->
+            <GridLayout rows="auto, auto" columns="*">
+                <Label row="0" col="0" class="details-section-title" text="Name"></Label>
+                <Label row="1" col="0" class="details-section-value" textWrap="true"
+                       [text]="job.jobName"></Label>
+            </GridLayout>
+
+            <!-- Spacer -->
+            <Label class="h3" text=""></Label>
+
+            <!--<hr>-->
+
