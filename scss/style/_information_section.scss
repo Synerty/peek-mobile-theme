@@ -26,16 +26,4 @@
     */
     font-size: 14pt;
   }
-
-  //icon
-  .fa {
-    &.information-icon-large {
-      font-size: 72pt;
-      border-radius: $general_border_radius*2;
-      color: $white;
-      background-size: 400%;
-      background-position: top center;
-      text-align: center;
-    }
-  }
 }
