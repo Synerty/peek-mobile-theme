@@ -20,7 +20,7 @@ Generic Peek theme Title.
 
 ::
 
-        .title{
+        .title {
         /* Applies the title theme */
 
             ...
@@ -37,37 +37,37 @@ Generic Headings 1 through to 6.
 
 ::
 
-        .h1{
+        .h1 {
         /* Applies the heading theme */
 
             ...
 
         }
-        .h2{
+        .h2 {
         /* Applies the heading theme */
 
             ...
 
         }
-        .h3{
+        .h3 {
         /* Applies the heading theme */
 
             ...
 
         }
-        .h4{
+        .h4 {
         /* Applies the heading theme */
 
             ...
 
         }
-        .h5{
+        .h5 {
         /* Applies the heading theme */
 
             ...
 
         }
-        .h6{
+        .h6 {
         /* Applies the heading theme */
 
             ...
@@ -82,23 +82,8 @@ Generic Peek theme Text.
 
 ::
 
-        .p{
+        .p {
         /* Applies the text theme */
-
-            ...
-
-        }
-
-
-Buttons
--------
-
-Generic Peek theme buttons.
-
-::
-
-        .btn{
-        /* Applies the Plugin Screen button theme */
 
             ...
 
