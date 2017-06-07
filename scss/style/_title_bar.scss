@@ -2,11 +2,8 @@
 .peek-title-bar {
   /* Contains the Title Bar classes */
   background-color: $white;
+  display: flex;
 
-  //button group
-  .btn-group {
-    background-color: $brand;
-  }
 }
 
 .title-bar-btn {
@@ -35,7 +32,7 @@
 .title-bar-title {
   /* Contains the title attributes unique to the Title Bar */
   color: $black;
-
+  text-align: center;
 }
 
 .peek-mobile-page-contents {
