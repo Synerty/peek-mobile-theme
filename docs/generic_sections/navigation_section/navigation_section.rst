@@ -76,36 +76,55 @@ requiring the Nav Bar.
 
 ::
 
-        <div class="peek-nav-section">
-            <!--END HANDBACK DIALOG -->
-            <div class="btn-group pull-left" role="group" *ngIf="!transitionDialogShown()">
-                <!-- Navigation -->
-                <Button class="nav-section-btn" role="group"
-                        (click)="nav.toMyIncidents()">My Incidents
+        <div class="peek-nav-section" *ngIf="!confirmDialogShown()">
+            <!--
+                The following 'div' groups button to the left of the Nav Bar.
+                Can contain one to many buttons
+            -->
+            <div class="btn-group pull-left" role="group">
+                <Button class="nav-section-btn"
+                        role="group"
+                        (click)="navToMyJobs()">
+                    My Jobs
                 </Button>
-                <Button class="nav-section-btn" role="group"
-                        (click)="navToFindings()">Findings
+                <Button class="nav-section-btn"
+                        role="group"
+                        (click)="navToJob()">
+                    Job
                 </Button>
-                <Button class="nav-section-btn" role="group"
-                        (click)="navToCalls()">Calls
+                <Button class="nav-section-btn"
+                        role="group"
+                        (click)="navToOperations()">
+                    Operations
                 </Button>
             </div>
 
-            <!-- Navigation Place Holder -->
-            <div class="btn-group pull-left" *ngIf="transitionDialogShown()">
-                <!-- Keep the spacing of the top navigation buttons when they disappear -->
-                <Button class="nav-section-btn" style="opacity: 0">&nbsp;</Button>
-            </div>
+            <!--
+                The following 'div' groups button to the right of the Nav Bar.
+                Can contain one to many buttons
+            -->
+            <div class="btn-group pull-right" role="group">
+                <button class="nav-section-btn"
+                        role="group"
+                        [disabled]="!lastOperationEnabled()"
+                        (click)="navToLastOperation()">
+                    &lt;
+                </button>
+                <button class="nav-section-btn"
+                        role="group"
+                        [disabled]="!nextOperationEnabled()"
+                        (click)="navToNextOperation()">
+                    &gt;
+                </button>
 
-
-            <div class="btn-group pull-right" *ngIf="!transitionDialogShown()">
-                <Button *ngIf="isUpdateButtonEnabled()"
-                        class="nav-section-btn" (click)="updateClicked()">
-                    Update
+                <!-- CONFIRM THE OPERATION -->
+                <Button class="nav-section-btn"
+                        *ngIf="confirmEnabled()"
+                        (click)="confirmOp()">
+                    Confirm
                 </Button>
             </div>
         </div>
-
 
         <div class="peek-nav-bar-padding">
         <!-- This div provides padding for the screen under the Navigation Section -->
@@ -120,26 +139,36 @@ requiring the Nav Bar.
 
 ::
 
-        <GridLayout rows="auto" columns="auto, *, auto" class="peek-nav-section">
-            <WrapLayout col="0" row="0"
-                        class="btn-group" *ngIf="!transitionDialogShown()">
-
-                <Button class="nav-section-btn" text="My Incidents"
-                        (tap)="nav.toMyIncidents()"></Button>
-                <Button class="nav-section-btn" text="Findings"
-                        (tap)="navToFindings()"></Button>
-                <Button class="nav-section-btn" text="Calls" (tap)="navToCalls()"></Button>
-
+        <GridLayout class="peek-nav-section"
+                    rows="auto" columns="auto, *, auto"
+                    *ngIf="!confirmDialogShown()">
+            <WrapLayout class="btn-group"
+                        row="0" col="0">
+                <Button class="nav-section-btn"
+                        text="My Jobs"
+                        (tap)="navToMyJobs()"></Button>
+                <Button class="nav-section-btn"
+                        text="Job"
+                        (tap)="navToJob()"></Button>
+                <Button class="nav-section-btn"
+                        text="Operations"
+                        (tap)="navToOperations()"></Button>
+                <Button class="nav-section-btn"
+                        [text]="Confirm"
+                        *ngIf="confirmEnabled()"
+                        (tap)="confirmOp()"></Button>
             </WrapLayout>
-
-            <WrapLayout col="2" row="0"
-                        class="btn-group" *ngIf="!transitionDialogShown()">
-
-                <Button *ngIf="isUpdateButtonEnabled()"
-                        class="nav-section-btn" text="Update"
-                        (tap)="updateClicked()"></Button>
-
+            <WrapLayout class="btn-group"
+                        row="0" col="2">
+                <Button class="nav-section-btn"
+                        text="<"
+                        [isEnabled]="lastOperationEnabled()"
+                        (tap)="navToLastOperation()"></Button>
+                <Button class="nav-section-btn"
+                        text=">"
+                        [isEnabled]="nextOperationEnabled()"
+                        (tap)="navToNextOperation()"></Button>
             </WrapLayout>
-
         </GridLayout>
+        <StackLayout class="hr-dark"></StackLayout>
 
