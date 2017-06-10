@@ -35,11 +35,11 @@ Section.
 
 ::
 
-        .peek-details-section{
+        .peek-details-section {
         /* Contains the Details Section looks classes */
             ...
 
-            .details-section-title{
+            .details-section-title {
             /*
                 Contains the title attributes unique to the Details Section
                 this text will have the text-muted effect
@@ -47,13 +47,22 @@ Section.
                 ...
 
             }
-            .details-section-value{
+            .details-section-value {
             /*
                 Contains the value attributes unique to the Details Section
                 text to have the focus of attention
             */
                 ...
+                .multiline {
+                /*
+                    For HTML.
+                    This class is to be used for multi-line support.
+                    Whitespace is preserved by the browser. Text will wrap when
+                    necessary, and on line breaks.  Must be in a span
+                */
+                    ...
 
+                }
             }
         }
 
@@ -83,8 +92,7 @@ row's.
 Refer to the `Grid System <http://getbootstrap.com/css/#grid>`_ for more information
 about creating page layouts using the Bootstrap grid system.
 
-Below is the HTML code extract of two rows from the screenshot in the
-beginning of the :ref:`details_section`: ::
+Below is the HTML code extract of three rows: ::
 
         <div class="peek-nav-bar-padding peek-details-section">
             <div class="container-fluid">
@@ -116,6 +124,16 @@ beginning of the :ref:`details_section`: ::
                         </div>
                         <div class="details-section-value">
                             {{job.jobName}}
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="details-section-title">Work Description</div>
+                        <div class="details-section-value">
+                            <span class="multiline">{{job.workSummary}}</span>
                         </div>
                     </div>
                 </div>

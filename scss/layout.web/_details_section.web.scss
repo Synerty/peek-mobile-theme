@@ -16,5 +16,16 @@
     */
     margin-top: $general_padding;
     margin-bottom: $general_padding;
+
+    .multiline {
+      /*
+          For web app layout.
+          This class is to be used for multi-line support.
+          Whitespace is preserved by the browser. Text will wrap when
+          necessary, and on line breaks.  Must be in a span
+      */
+      white-space: pre-wrap;
+
+    }
   }
 }
