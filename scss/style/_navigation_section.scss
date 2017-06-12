@@ -12,10 +12,10 @@
     font-size: 11pt;
     padding: 6pt;
     border: 0;
-    background-color: darken($grey, 20%);
+    background-color: $nav_button_background;
     float: left;
     min-width: 30pt;
-    border-right: 1pt solid darken($grey, 35%);
+    border-right: 1pt solid $nav_button_divider;
 
     &:last-child {
       border-radius: 0 $general_border_radius $general_border_radius 0;

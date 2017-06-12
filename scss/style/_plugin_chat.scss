@@ -13,7 +13,7 @@
           Contains the icon attributes unique to the message class
           The icon is used to indicate unread messages
       */
-      color: darken($grey, 10%);
+      color: $general_icon_color;
       font-size: 15pt;
       float: right;
 
@@ -26,7 +26,7 @@
     }
     color: $font_colour_information;
     .fa {
-      color: darken($grey, 10%);
+      color: $general_icon_color;
       font-size: 15pt;
       float: right;
     }
