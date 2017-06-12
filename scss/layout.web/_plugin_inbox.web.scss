@@ -2,8 +2,6 @@
 .inboxActivity {
 
   padding-top: $general_padding;
-  padding-left: $general_padding;
-  padding-right: $general_padding;
 
   .inbox {
     /*
@@ -43,6 +41,7 @@
           /*
               Contains the description text attributes unique to the .inbox-info class
           */
+          white-space: pre-wrap;
 
         }
         .inbox-date-time {

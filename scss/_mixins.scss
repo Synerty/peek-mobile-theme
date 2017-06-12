@@ -20,10 +20,10 @@
   padding:6pt;
   font-weight: normal;
   border: 0;
-  background-color: darken($grey,20%);
+  background-color: $general_button_background;
 
   &:hover{
-    background-color: darken($grey,35%);
+    background-color: $general_button_background_hover;
     color: $white;
   }
 }

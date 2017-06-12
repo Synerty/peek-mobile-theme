@@ -3,7 +3,6 @@
   /* Contains the Title Bar classes */
   background-color: $white;
   display: flex;
-
 }
 
 .title-bar-btn {
@@ -18,7 +17,7 @@
   border-radius: 0;
   background-color: $brand;
   margin-right: 0;
-  border-right: 1pt solid darken($brand, 10%);
+  border-right: 1pt solid $brand_compliment;
   border-left: 0;
   float: left;
 }

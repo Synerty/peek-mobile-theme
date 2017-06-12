@@ -61,7 +61,7 @@
         Contains the read more link attributes unique to the .plugin-inbox class
     */
     display: table-cell;
-    background-color: darken($grey, 10%);
+    background-color: $inbox_button_background;
 
     &:hover {
       background-color: $brand;
@@ -101,5 +101,5 @@
 
 //nav tabs active lists
 .tab-content {
-  border-top: 1pt solid darken($grey, 20%);
+  border-top: 1pt solid $general_header_background;
 }
