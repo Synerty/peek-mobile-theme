@@ -2,7 +2,7 @@
   /*
       Contains the chat-list component classes
   */
-  padding-top: $general_padding + $general_padding_nav_bar;
+  padding-top: $general_padding;
 
   .chat-list-messages {
     /*
@@ -35,11 +35,12 @@
   /*
       Contains the msg-list component classes
   */
-
-  $messaging-area-height: 100px;
-  padding-top: $general_padding_nav_bar;
-  // pad out chat-messages-compose form
-  padding-bottom: $messaging-area-height + $general_padding;
+  overflow-y: scroll;
+  max-height: 400pt;
+  min-height: 400pt;
+  padding: $general_padding;
+  margin-right: auto;
+  margin-left: auto;
 
   .chat-messages-list {
     /*
@@ -47,7 +48,23 @@
         Messages.
         Scrolls through the messages with most recent at the bottom.
     */
-    padding: $general_padding;
+    margin-right: -12pt;
+    margin-left: -12pt;
+
+    .chat-messages-details {
+      /*
+          Contains the message details text attributes unique to the
+          message-list class.
+          The message details should not be the focus of attention (text-muted)
+      */
+      width: 100%;
+      float: left;
+      position: relative;
+      min-height: 1pt;
+      padding-right: 12pt;
+      padding-left: 12pt;
+
+    }
 
     .chat-messages-sent {
       /*
@@ -57,9 +74,13 @@
           received class.
           bg-success class applied for a successfully sent message.
       */
+      width: 66.66666667%;
+      float: left;
+      position: relative;
+      min-height: 1pt;
       padding: $general_padding;
       margin-bottom: 5px;
-      margin-left: 10%;
+      margin-right: 10%;
 
     }
     .chat-messages-received {
@@ -70,17 +91,14 @@
           sent class.
           bg-warning class applied for an emergency priority message.
       */
+      margin-left: 33.33333333%;
+      width: 66.66666667%;
+      float: left;
+      position: relative;
+      min-height: 1pt;
       padding: $general_padding;
       margin-bottom: 5px;
       margin-right: 10%;
-
-    }
-    .chat-messages-details {
-      /*
-          Contains the message details text attributes unique to the
-          message-list class.
-          The message details should not be the focus of attention (text-muted)
-      */
 
     }
     .chat-messages-emergency {
@@ -88,6 +106,7 @@
           Contains the emergency priority message text attributes unique to the
           message-list class
       */
+      white-space: pre-wrap
 
     }
     .chat-messages-normal {
@@ -95,47 +114,20 @@
           Contains the normal priority message text attributes unique to the
           message-list class
       */
+      white-space: pre-wrap
 
     }
   }
-  .chat-messages-compose {
+}
+
+.chat-messages-btn-group {
+  padding-top: $general_padding;
+
+  .chat-messages-btn {
     /*
-        Contains the compose message area attributes unique to the
-        chat messages.
-        Fixed to the bottom of the screen.
+        Contains the button attributes unique to the
+        chat-messages-compose class.
     */
-    display: table;
-    width: 100%;
-    position: fixed;
-    bottom: $navigation_header_height + $general_padding;
-    height: $messaging-area-height;
 
-    .chat-messages-new-text {
-      /*
-          Contains the new message text attributes unique to the
-          chat-messages-compose class.
-      */
-      display: table-cell;
-      width: 70%;
-      height: $messaging-area-height;
-      float: left;
-
-    }
-
-    .chat-messages-btn {
-      /*
-          Contains the button attributes unique to the
-          chat-messages-compose class.
-      */
-      display: table-cell;
-      width: 15%;
-      padding: 0px;
-      margin: 0px;
-      line-height: 0px;
-      top: 0px;
-      height: $messaging-area-height;
-      float: left;
-
-    }
   }
 }
