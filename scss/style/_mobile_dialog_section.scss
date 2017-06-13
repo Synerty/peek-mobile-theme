@@ -44,5 +44,11 @@
     &:first-child:last-child {
       border-radius: $general_border_radius;
     }
+    &:disabled {
+      cursor: not-allowed;
+      box-shadow: none;
+      opacity: .65;
+      color: $grey;
+    }
   }
 }
