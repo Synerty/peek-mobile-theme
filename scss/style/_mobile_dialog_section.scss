@@ -1,0 +1,48 @@
+.mobile-dialog {
+  /* Contains the Dialog Mobile Section looks classes unique for mobile devices */
+  border-bottom: 1pt solid $grey;
+  overflow: hidden;
+  background: white;
+
+  .dialog-label {
+    /*
+        Contains the title attributes unique to the Dialog Mobile Section
+    */
+    font-size: 12pt;
+    color: $font_colour_default;
+
+  }
+  .dialog-selector {
+    /*
+        Contains the selector attributes unique to the Dialog Mobile Section
+    */
+
+  }
+  .dialog-action-btn {
+    /*
+        Contains the action button attributes unique to the Dialog Mobile Section
+    */
+    color: $font_colour_button;
+    cursor: pointer;
+    font-size: 11pt;
+    padding: 6pt;
+    border: 0;
+    background-color: $nav_button_background;
+    float: left;
+    min-width: 30pt;
+    border-right: 1pt solid $nav_button_divider;
+
+    &:last-child {
+      border-radius: 0 $general_border_radius $general_border_radius 0;
+      border-right: 0;
+    }
+
+    &:first-child {
+      border-radius: $general_border_radius 0 0 $general_border_radius;
+    }
+
+    &:first-child:last-child {
+      border-radius: $general_border_radius;
+    }
+  }
+}
