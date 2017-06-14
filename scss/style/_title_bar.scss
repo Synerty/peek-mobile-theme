@@ -3,6 +3,7 @@
   /* Contains the Title Bar classes */
   background-color: $white;
   display: flex;
+  z-index: 1001;
 }
 
 .title-bar-btn {

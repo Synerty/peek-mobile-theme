@@ -7,28 +7,9 @@
 
   .nav-section-btn {
     /* Contains the Button attributes unique to the Navigation Section */
-    color: $font_colour_button;
-    cursor: pointer;
-    font-size: 11pt;
-    padding: 6pt;
-    border: 0;
-    background-color: $nav_button_background;
-    float: left;
-    min-width: 30pt;
-    border-right: 1pt solid $nav_button_divider;
 
-    &:last-child {
-      border-radius: 0 $general_border_radius $general_border_radius 0;
-      border-right: 0;
-    }
+    @include button-settings;
 
-    &:first-child {
-      border-radius: $general_border_radius 0 0 $general_border_radius;
-    }
-
-    &:first-child:last-child {
-      border-radius: $general_border_radius;
-    }
   }
 }
 

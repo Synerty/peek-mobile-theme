@@ -38,7 +38,8 @@
   overflow-y: scroll;
   max-height: 400pt;
   min-height: 400pt;
-  padding: $general_padding;
+  padding-top: $general_padding;
+  padding-bottom: $general_padding;
   margin-right: auto;
   margin-left: auto;
 
@@ -48,8 +49,6 @@
         Messages.
         Scrolls through the messages with most recent at the bottom.
     */
-    margin-right: -12pt;
-    margin-left: -12pt;
 
     .chat-messages-details {
       /*
@@ -74,7 +73,7 @@
           received class.
           bg-success class applied for a successfully sent message.
       */
-      width: 66.66666667%;
+      width: 67%;
       float: left;
       position: relative;
       min-height: 1pt;
@@ -91,8 +90,8 @@
           sent class.
           bg-warning class applied for an emergency priority message.
       */
-      margin-left: 33.33333333%;
-      width: 66.66666667%;
+      margin-left: 33%;
+      width: 67%;
       float: left;
       position: relative;
       min-height: 1pt;
