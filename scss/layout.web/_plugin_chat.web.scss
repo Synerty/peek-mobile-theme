@@ -38,7 +38,8 @@
   overflow-y: scroll;
   max-height: 400pt;
   min-height: 400pt;
-  padding: $general_padding;
+  padding-top: $general_padding;
+  padding-bottom: $general_padding;
   margin-right: auto;
   margin-left: auto;
 
@@ -48,8 +49,6 @@
         Messages.
         Scrolls through the messages with most recent at the bottom.
     */
-    margin-right: -12pt;
-    margin-left: -12pt;
 
     .chat-messages-details {
       /*
