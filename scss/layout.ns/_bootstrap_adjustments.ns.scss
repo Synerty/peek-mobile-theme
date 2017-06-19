@@ -24,29 +24,85 @@
   /* Applies the primary background theme */
 
   color: #fff;
-  background-color: #337ab7;
+  background-color: $light_primary;
 }
 
 .bg-success {
   /* Applies the success background theme */
 
-  background-color: #dff0d8;
+  background-color: $light_success;
 }
 
 .bg-info {
   /* Applies the info background theme */
 
-  background-color: #d9edf7;
+  background-color: $light_info;
 }
 
 .bg-warning {
   /* Applies the warning background theme */
 
-  background-color: #fcf8e3;
+  background-color: $light_warning;
 }
 
 .bg-danger {
   /* Applies the danger background theme */
 
-  background-color: #f2dede;
+  background-color: $light_danger;
+}
+
+.btn-primary {
+  /* Applies the primary background theme */
+
+  color: #fff;
+  background-color: $primary;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_primary;
+  }
+}
+
+.btn-success {
+  /* Applies the success background theme */
+
+  background-color: $success;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_success;
+  }
+}
+
+.btn-info {
+  /* Applies the info background theme */
+
+  background-color: $info;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_info;
+  }
+}
+
+.btn-warning {
+  /* Applies the warning background theme */
+
+  background-color: $warning;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_warning;
+  }
+}
+
+.btn-danger {
+  /* Applies the danger background theme */
+
+  background-color: $danger;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_danger;
+  }
 }
