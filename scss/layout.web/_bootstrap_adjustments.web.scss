@@ -49,4 +49,24 @@
   /* Applies the danger background theme */
 
   background-color: #f2dede !important;
+.action-btn {
+  /*
+      Contains the action button attributes
+  */
+
+}
+
+.action-btn-solo {
+  /*
+      Contains the action button attributes for non grouped buttons.
+  */
+  float: none !important;
+
+}
+
+.action-btn-sm {
+  /*
+      Contains the action button attributes unique to the Dialog Mobile Section
+  */
+
 }

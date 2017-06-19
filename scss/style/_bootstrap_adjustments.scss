@@ -44,3 +44,25 @@
   /* Applies the danger background theme */
 
 }
+
+.action-btn {
+  /*
+      Contains the action button attributes unique to the Dialog Mobile Section
+  */
+
+  @include button-settings;
+
+}
+
+.action-btn-sm {
+  /*
+      Contains the action button attributes unique to the Dialog Mobile Section
+  */
+
+  @include button-settings;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+
+}
