@@ -29,7 +29,7 @@ $general_padding_nav_bar: 48pt;
 $general_header_background: darken($grey, 20%);
 $general_button_background: darken($grey, 20%);
 $general_button_background_hover: darken($grey, 35%);
-$general_button_background_disabled: darken($grey, 5%);
+$general_button_background_disabled: lighten($grey, 15%);
 $general_icon_color: darken($grey, 10%);
 
 //colour
@@ -39,7 +39,7 @@ $general_text: $black;
 $fonts_special: arial;
 $font_transform: uppercase;
 $font_colour_default: darken($grey, 40%);
-$font_colour_disabled: darken($grey, 25%);
+$font_colour_disabled: lighten($grey, 5%);
 $font_colour_information: $black;
 $font_colour_button: $white;
 
