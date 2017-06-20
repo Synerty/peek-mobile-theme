@@ -90,7 +90,7 @@ Generic Peek theme Text.
         }
 
 
-.. _other_useful_styles+contextual_backgrounds:
+.. _other_useful_styles_contextual_backgrounds:
 
 Contextual Backgrounds
 ----------------------

@@ -7,7 +7,7 @@
   background-color: transparent;
 }
 
-  @mixin button-settings {
+@mixin button-settings {
 
   color: $font_colour_button;
   cursor: pointer;
