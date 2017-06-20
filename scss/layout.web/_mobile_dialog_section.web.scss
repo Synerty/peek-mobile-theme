@@ -14,4 +14,22 @@
     */
 
   }
+
+  .dialog-action-btn {
+    /*
+        Contains the action button attributes
+    */
+
+  }
+  .btn-group > .dialog-action-btn {
+    position: relative;
+    float: left;
+  }
+
+  .dialog-action-btn-solo {
+    /*
+        Contains the action button attributes for non grouped buttons.
+    */
+
+  }
 }

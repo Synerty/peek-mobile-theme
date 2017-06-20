@@ -10,6 +10,10 @@
     /* Contains the Button attributes unique to the Navigation Section */
 
   }
+  .btn-group > .nav-section-btn {
+    position: relative;
+    float: left;
+  }
 }
 
 .peek-nav-bar-padding {
