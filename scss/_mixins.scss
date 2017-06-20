@@ -7,7 +7,7 @@
   background-color: transparent;
 }
 
-  @mixin button-settings {
+@mixin button-settings {
 
   color: $font_colour_button;
   cursor: pointer;
@@ -15,7 +15,6 @@
   padding: 6pt;
   border: 0;
   background-color: $general_button_background;
-  float: left;
   min-width: 30pt;
 
   &:hover {

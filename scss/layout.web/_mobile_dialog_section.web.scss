@@ -14,10 +14,15 @@
     */
 
   }
+
   .dialog-action-btn {
     /*
-        Contains the action button attributes unique to the Dialog Mobile Section
+        Contains the action button attributes
     */
 
+  }
+  .btn-group > .dialog-action-btn {
+    position: relative;
+    float: left;
   }
 }

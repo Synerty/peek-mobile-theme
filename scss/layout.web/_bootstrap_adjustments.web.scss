@@ -23,30 +23,86 @@
 .bg-primary {
   /* Applies the primary background theme */
 
-  color: #fff !important;
-  background-color: #337ab7 !important;
+  color: $general_text !important;
+  background-color: $light_primary !important;
 }
 
 .bg-success {
   /* Applies the success background theme */
 
-  background-color: #dff0d8 !important;
+  background-color: $light_success !important;
 }
 
 .bg-info {
   /* Applies the info background theme */
 
-  background-color: #d9edf7 !important;
+  background-color: $light_info !important;
 }
 
 .bg-warning {
   /* Applies the warning background theme */
 
-  background-color: #fcf8e3 !important;
+  background-color: $light_warning !important;
 }
 
 .bg-danger {
   /* Applies the danger background theme */
 
-  background-color: #f2dede !important;
+  background-color: $light_danger !important;
+}
+
+.btn-primary {
+  /* Applies the primary button theme */
+
+  color: #fff !important;
+  background-color: $primary !important;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_primary !important;
+  }
+}
+
+.btn-success {
+  /* Applies the success button theme */
+
+  background-color: $success !important;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_success !important;
+  }
+}
+
+.btn-info {
+  /* Applies the info button theme */
+
+  background-color: $info !important;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_info !important;
+  }
+}
+
+.btn-warning {
+  /* Applies the warning button theme */
+
+  background-color: $warning !important;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_warning !important;
+  }
+}
+
+.btn-danger {
+  /* Applies the danger button theme */
+
+  background-color: $danger !important;
+  background-image: none;
+
+  &:hover {
+    background-color: $dark_danger !important;
+  }
 }

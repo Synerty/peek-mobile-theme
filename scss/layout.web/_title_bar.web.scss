@@ -2,15 +2,20 @@
 .peek-title-bar {
   /* Contains the Title Bar classes */
   width: 100%;
-  z-index: 999;
   height: $navigation_header_height; // main header height being set
   position: fixed;
+  display: flex;
+  z-index: 1001;
+  overflow: hidden;
 }
 
 .title-bar-btn {
   /* Contains the button attributes unique to the Title Bar */
   height: $navigation_header_height; //setting height to default header naviation height
   padding: 0 8pt;
+  display: inline-block;
+  position: relative;
+  min-width: 50pt;
 }
 
 .title-bar-title {

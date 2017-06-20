@@ -90,7 +90,7 @@ Generic Peek theme Text.
         }
 
 
-.. _other_useful_styles+contextual_backgrounds:
+.. _other_useful_styles_contextual_backgrounds:
 
 Contextual Backgrounds
 ----------------------
@@ -99,7 +99,7 @@ Set the background of an element to any contextual class.
 
 `Bootstrap Contextual Backgrounds <http://getbootstrap.com/css/#helper-classes-backgrounds>`_
 
-`NativeScript Contextual Backgrounds <https://docs.nativescript.org/ui/theme#contextual-colors>`_
+`NativeScript Contextual Colors <https://docs.nativescript.org/ui/theme#contextual-colors>`_
 
 .. note:: Only :code:`bg-primary` and :code:`bg-danger` exist in the NativeScript
     Styling Infrastructure.  The other classes need their attributes created from
@@ -146,5 +146,52 @@ Set the background of an element to any contextual class.
             background-color: #f2dede;
 
             ...
+
+        }
+
+
+.. _other_useful_styles_contextual_buttons:
+
+Contextual Buttons
+------------------
+
+Modify the button background colour and/or text colour of any button element.
+
+`Bootstrap Contextual Buttons <hhttp://getbootstrap.com/css/#buttons-options>`_
+
+`NativeScript Contextual Colors <https://docs.nativescript.org/ui/theme#contextual-colors>`_
+
+.. note:: These classes need their attributes created from scratch to function in
+NativeScript.
+
+::
+
+        .btn-primary {
+          /* Applies the primary button theme */
+          ...
+
+        }
+
+        .btn-success {
+          /* Applies the success button theme */
+          ...
+
+        }
+
+        .btn-info {
+          /* Applies the info button theme */
+          ...
+
+        }
+
+        .btn-warning {
+          /* Applies the warning button theme */
+          ...
+
+        }
+
+        .btn-danger {
+          /* Applies the danger button theme */
+          ...
 
         }
