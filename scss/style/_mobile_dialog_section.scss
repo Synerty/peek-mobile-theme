@@ -26,17 +26,4 @@
     @include button-settings;
 
   }
-
-  .dialog-action-btn-sm {
-    /*
-        Contains the smaller action button attributes
-    */
-
-    @include button-settings;
-    padding: 4pt 8pt;
-    font-size: 9pt;
-    line-height: 1.5;
-    border-radius: 2pt;
-
-  }
 }
