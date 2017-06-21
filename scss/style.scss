@@ -1,6 +1,6 @@
 @import '_variables';
 @import '_mixins';
-@import 'style/_bootstrap_adjustments';
+@import 'style/_bootstrap_adjustments.scss';
 
 //peek screens
 @import 'style/_title_bar';
@@ -26,13 +26,9 @@ html{
   font-family: $fonts_special;
 }
 
-
-*:focus {outline:none!important;}
-
 .navigation-information{
   border-bottom: 1pt solid darken($grey,20%);
   //margin-bottom: $general_padding;
-
 }
 
 .form-group{
