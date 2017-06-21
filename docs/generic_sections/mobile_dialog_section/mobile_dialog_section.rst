@@ -81,32 +81,43 @@ The Mobile Dialog Section uses Bootstraps `Forms <http://getbootstrap.com/css/#f
 Refer to the `Forms <http://getbootstrap.com/css/#forms>`_ for more information
 about creating Forms using Bootstrap.
 
-Below is the HTML code extract job-trans.component shown in the image at the top of,
+Below is the HTML code extract op-confirm.component shown in the image at the top of,
 :ref:`mobile_dialog_section`: ::
 
-        <div  class="mobile-dialog"
-              [@dialogAnimation]="dialogAnimationState"
+        <div class="mobile-dialog" [@dialogAnimation]="dialogAnimationState"
              (@dialogAnimation.done)="animationDone($event)">
+            <div class="container-fluid">
 
-            <div class="form-group">
-                <label class="dialog-label" for="userIdField">{{inputData.actionName}} Reason
-                    :</label>
-                <select class="form-control dialog-selector" id="userIdField" name="userId"
-                        [(ngModel)]="reasonIndex">
-                    <option [value]="index" *ngFor="let option of lookupOptions; let index=index">
-                        {{option.mobileText}}
-                    </option>
-                </select>
-            </div>
+                <div class="form-group">
+                    <div class="dialog-label"
+                         for="operationDate">Operation Date / Time :
+                    </div>
+                    <input id="operationDate" class="dialog-selector form-control"
+                           [(ngModel)]="inputData.operationDate" ng2-datetime-picker
+                           close-on-select="false"
+                           date-format="DD-MMM-YYYY HH:mm"/>
 
-            <!--BEGIN HANDBACK DIALOG -->
-            <div>
-                <Button class="dialog-action-btn" (click)="confirmClicked(false)">
-                    {{inputData.actionName}}
-                </Button>
+                </div>
+                <div class="form-group">
+                    <div class="dialog-label text-muted">Request Further Instructions :
+                        <button class="dialog-action-btn btn-sm"
+                                (click)="inputData.requestFurtherInstructions=!inputData.requestFurtherInstructions"
+                                [class.btn-success]="inputData.requestFurtherInstructions"
+                                type="button">{{inputData.requestFurtherInstructions ? "Yes" :
+                            "No"}}
+                        </button>
+                    </div>
+                </div>
 
-                <Button class="dialog-action-btn" (click)="cancelClicked(false)">Cancel
-                </Button>
+                <!--BEGIN HANDBACK DIALOG -->
+                <div class="btn-group pull-right">
+                    <Button class="dialog-action-btn" (click)="webConfirmClicked()">
+                        {{inputData.actionName}}
+                    </Button>
+
+                    <Button class="dialog-action-btn" (click)="cancelClicked(false)">Cancel
+                    </Button>
+                </div>
             </div>
         </div>
 
@@ -126,24 +137,46 @@ Refer to the
 `ListPicker <https://docs.nativescript.org/angular/code-samples/ui/listpicker.html#listpicker>`_
 for more information about using NativeScript ListPicker.
 
-Below is the NativeScript code extract job-trans.component: ::
+Below is the NativeScript code extract op-confirm.component: ::
 
         <StackLayout class="mobile-dialog">
-            <StackLayout row="0" col="0" class="input-field"
-                         horizontalAlignment="stretch">
-                <Label class="dialog-label" text="{{inputData.actionName}} Reason:"></Label>
-                <ListPicker #picker class="dialog-selector"
-                                [items]="lookupOptionStrings"
-                                (selectedIndexChange)="reasonIndex = picker.selectedIndex">
-                </ListPicker>
+            <StackLayout class="input-field" horizontalAlignment="stretch">
+
+                <GridLayout rows="auto, auto" columns="auto, auto">
+                    <Label row="0" col="0" colspan="2"
+                           class="dialog-label" text="Operation Date / Time :"></Label>
+                    <!--<GridLayout columns="*,*" rows="auto">-->
+                    <DatePicker class="dialog-selector" row="1" col="0" #datePicker
+                                (loaded)="nsConfigureDate(datePicker)"
+                                (dateChange)="nsDateChanged($event)">
+                    </DatePicker>
+                    <TimePicker class="dialog-selector" row="1" col="1" #timePicker
+                                (loaded)="nsConfigureTime(timePicker)"
+                                (timeChange)="nsTimeChanged($event)">
+
+                    </TimePicker>
+                </GridLayout>
+
+                <!--</GridLayout>-->
+
+                <WrapLayout>
+                    <Label class="dialog-label"
+                           text="Request Further Instructions : " textWrap="true"
+                    ></Label>
+                    <Switch #furtherInstruct
+                            [checked]="inputData.requestFurtherInstructions"
+                            (checkedChange)="inputData.requestFurtherInstructions = furtherInstruct.checked"
+                    ></Switch>
+                </WrapLayout>
             </StackLayout>
 
-            <GridLayout columns="*,*" rows="auto" >
+
+            <GridLayout columns="*,*" rows="auto">
                 <Button class="dialog-action-btn" col="0" [text]="inputData.actionName"
-                        (tap)="confirmClicked(true)"></Button>
+                        (tap)="nsConfirmClicked()"></Button>
                 <Button class="dialog-action-btn" col="1" text="Cancel"
-                        (tap)="cancelClicked(true)">
-                </Button>
+                        (tap)="cancelClicked(true)"></Button>
             </GridLayout>
+
         </StackLayout>
 
