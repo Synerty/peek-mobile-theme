@@ -1,7 +1,5 @@
 .title {
   /* Applies the title theme */
-  margin-bottom: $general_padding * 2;
-  padding: ($general_padding * 2) 0px 0px 0px;
 }
 
 .h1,
@@ -11,61 +9,75 @@
 .h5,
 .h6 {
   /* Applies the heading theme */
-  @include nuke;
-  padding: $general_padding 0px 0px 0px;
 }
 
 .p {
   /* Applies the text theme */
-  padding: $general_padding 0px 0px 0px;
 }
 
 .bg-primary {
   /* Applies the primary background theme */
 
+  color: $general_text;
+  background-color: $light_primary;
 }
 
 .bg-success {
   /* Applies the success background theme */
 
+  background-color: $light_success;
 }
 
 .bg-info {
   /* Applies the info background theme */
 
+  background-color: $light_info;
 }
 
 .bg-warning {
   /* Applies the warning background theme */
 
+  background-color: $light_warning;
 }
 
 .bg-danger {
   /* Applies the danger background theme */
 
+  background-color: $light_danger;
 }
 
 .btn-primary {
   /* Applies the primary button theme */
 
+  color: $general_text;
+  background-color: $primary;
+  background-image: none;
 }
 
 .btn-success {
   /* Applies the success button theme */
 
+  background-color: $success;
+  background-image: none;
 }
 
 .btn-info {
   /* Applies the info button theme */
 
+  background-color: $info;
+  background-image: none;
 }
 
 .btn-warning {
   /* Applies the warning button theme */
 
+  background-color: $warning;
+  background-image: none;
 }
 
 .btn-danger {
   /* Applies the danger button theme */
 
+  background-color: $danger;
+  background-image: none;
 }
