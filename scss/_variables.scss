@@ -35,10 +35,9 @@ $general_icon_color: darken($grey, 10%);
 
 //fonts
 $fonts_special: arial;
-$data_text: $black;
-$information_text: darken($grey, 40%);
+$font_colour_data: $black;
+$font_colour_information: darken($grey, 40%);
 $font_colour_disabled: lighten($grey, 5%);
-$font_colour_information: $black;
 $font_colour_button: $white;
 
 //header

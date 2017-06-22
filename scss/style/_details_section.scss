@@ -7,7 +7,7 @@
         this text will have the text-muted effect
     */
     font-size: 12pt;
-    color: $information_text;
+    color: $font_colour_information;
 
   }
   .details-section-value {
@@ -17,7 +17,7 @@
     */
     font-size: 18pt;
     font-weight: 500;
-    color: $font_colour_information;
+    color: $font_colour_data;
 
   }
 }

@@ -2,7 +2,7 @@
   /* Applies the title theme */
   font-size: 24pt;
   text-align: center;
-  color: $information_text;
+  color: $font_colour_information;
 }
 
 .h1,
@@ -17,7 +17,7 @@
 
 .p {
   /* Applies the text theme */
-  color: $information_text;
+  color: $font_colour_information;
 }
 
 .btn {
@@ -32,7 +32,7 @@
 .bg-primary {
   /* Applies the primary background theme */
 
-  color: $data_text;
+  color: $font_colour_data;
   background-color: $light_primary;
 }
 
