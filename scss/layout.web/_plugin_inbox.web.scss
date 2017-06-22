@@ -61,16 +61,16 @@
           Contains the read more link attributes unique to the .plugin-inbox class
       */
       position: absolute;
-      top: 0px;
-      right: 0px;
-      padding: 0px;
+      top: 0;
+      right: 0;
+      padding: 0;
       height: 100%;
       background-image: url('../images/icon_more.png');
       background-position: center center;
       background-size: 100% auto;
       background-repeat: no-repeat;
       width: 20px;
-      border-radius: 0px;
+      border-radius: 0;
       text-indent: - 9999px;
       overflow: hidden;
 
@@ -81,26 +81,29 @@
 //navigation tabs
 .nav {
 
-  margin: 0px;
+  margin: 0;
 
   &.nav-tabs {
 
     & > li {
-      margin-bottom: 0px;
 
       &.active {
         & > a {
-          @include button-settings;
-          padding: 12px;
-          margin-top: 0px;
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          z-index: 100;
+          font-weight: normal;
+          border: 0;
+          padding: 9pt;
+          margin-top: 0;
         }
       }
 
       & > a {
-        margin-right: 0px;
-        margin-top: 10px;
-        padding: 10px;
-        margin-top: 4px
+        margin-right: 0;
+        padding: 7.5pt;
+        margin-top: 3pt;
       }
     }
   }
