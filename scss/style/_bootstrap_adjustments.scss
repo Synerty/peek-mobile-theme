@@ -20,6 +20,15 @@
   color: $font_colour_default;
 }
 
+.btn {
+  /*
+      Contains the action button attributes unique to the Dialog Mobile Section
+  */
+
+  @include button-settings;
+
+}
+
 .bg-primary {
   /* Applies the primary background theme */
 
