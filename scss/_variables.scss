@@ -4,6 +4,7 @@ $white: #ffffff;
 $black: #000000;
 $brand: #28aae1;
 $brand_compliment: darken(#28aae1, 10%);
+$divider_colour_navigation_section: $grey;
 $primary: #337ab7;
 $light_primary: lighten($primary, 45%);
 $dark_primary: darken($primary, 10%);
@@ -31,8 +32,6 @@ $general_button_background: darken($grey, 20%);
 $general_button_background_hover: darken($grey, 35%);
 $general_button_background_disabled: lighten($grey, 15%);
 $general_icon_color: darken($grey, 10%);
-
-//colour
 
 //fonts
 $fonts_special: arial;
