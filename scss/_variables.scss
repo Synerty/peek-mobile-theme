@@ -33,11 +33,11 @@ $general_button_background_disabled: lighten($grey, 15%);
 $general_icon_color: darken($grey, 10%);
 
 //colour
-$general_text: $black;
 
 //fonts
 $fonts_special: arial;
-$font_colour_default: darken($grey, 40%);
+$data_text: $black;
+$information_text: darken($grey, 40%);
 $font_colour_disabled: lighten($grey, 5%);
 $font_colour_information: $black;
 $font_colour_button: $white;
