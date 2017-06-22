@@ -17,4 +17,20 @@
     margin-top: $general_padding;
     margin-bottom: $general_padding;
   }
+
+  .details-section-text-editor {
+    /*
+        Contains the selector attributes unique to the Dialog Mobile Section
+    */
+    @include editor-ns-layout;
+
+  }
+
+  .details-section-selector-editor {
+    /*
+        Contains the selector attributes unique to the Dialog Mobile Section
+    */
+    @include editor-ns-layout;
+
+  }
 }

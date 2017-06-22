@@ -20,4 +20,20 @@
     color: $font_colour_data;
 
   }
+
+  .details-section-text-editor {
+    /*
+        Contains the selector attributes unique to the Details Section
+    */
+    @include editor-style;
+
+  }
+
+  .details-section-selector {
+    /*
+        Contains the selector attributes unique to the Details Section
+    */
+    @include editor-style;
+
+  }
 }
