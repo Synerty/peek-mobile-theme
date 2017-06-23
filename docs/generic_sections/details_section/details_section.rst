@@ -64,6 +64,20 @@ Section.
 
                 }
             }
+            .details-section-text-editor {
+            /*
+                Contains the selector attributes unique to the Details Section
+            */
+                ...
+
+            }
+            .details-section-selector {
+            /*
+                Contains the selector attributes unique to the Details Section
+            */
+                ...
+
+            }
         }
 
 

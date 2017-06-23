@@ -28,4 +28,22 @@
 
     }
   }
+
+  .details-section-text-editor {
+    /*
+        Contains the text editor attributes unique to the Dialog Mobile Section
+    */
+    @include editor-web-layout;
+
+    height: 58pt;
+
+  }
+
+  .details-section-selector {
+    /*
+        Contains the selector attributes unique to the Dialog Mobile Section
+    */
+    @include editor-web-layout;
+
+  }
 }
