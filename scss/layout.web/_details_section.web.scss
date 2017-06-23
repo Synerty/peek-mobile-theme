@@ -33,22 +33,24 @@
           Contains the editable attributes unique to the .details-section-value class
       */
       @include editable-web-layout;
+    }
 
-      .editable-lg2 {
-        /*
-            increases the editable height to contain two lines of text.
-        */
-        height: 42pt;
+    //Select lists
+    select.editable {
+      height: 26pt;
 
-      }
+    }
 
-      .editable-lg3 {
-        /*
-            increases the editable height to contain three lines of text.
-        */
-        height: 58pt;
+    //Single line inputs
+    input.editable {
+      height: 42pt;
 
-      }
+    }
+
+    //Multi line inputs
+    textarea.editable {
+      height: 42pt;
+
     }
   }
 }
