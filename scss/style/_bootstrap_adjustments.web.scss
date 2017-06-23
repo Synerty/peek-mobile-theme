@@ -1,5 +1,8 @@
 .title {
   /* Applies the title theme */
+  font-size: 24pt;
+  text-align: center;
+  color: $information_text;
 }
 
 .h1,
@@ -9,16 +12,27 @@
 .h5,
 .h6 {
   /* Applies the heading theme */
+  font-family: $fonts_special;
 }
 
 .p {
   /* Applies the text theme */
+  color: $information_text;
+}
+
+.btn {
+  /*
+      Contains the action button attributes unique to the Dialog Mobile Section
+  */
+
+  @include button-settings;
+
 }
 
 .bg-primary {
   /* Applies the primary background theme */
 
-  color: $general_text !important;
+  color: $data_text !important;
   background-color: $light_primary !important;
 }
 
@@ -49,7 +63,6 @@
 .btn-primary {
   /* Applies the primary button theme */
 
-  color: $general_text !important;
   background-color: $primary !important;
   background-image: none !important;
 

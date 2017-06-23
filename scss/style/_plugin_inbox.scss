@@ -88,8 +88,7 @@
 
       & > a {
         font-family: $fonts_special;
-        text-transform: $font_transform;
-        color: lighten($font_colour_default, 10%);
+        color: lighten($information_text, 10%);
         font-size: $section_font_size;
         border: 0;
         border-radius: 0;
