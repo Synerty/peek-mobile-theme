@@ -45,7 +45,7 @@
   }
 }
 
-@mixin editor-web-layout {
+@mixin editable-web-layout {
   display: block;
   width: 100%;
   height: 26pt;
@@ -54,11 +54,11 @@
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-@mixin editor-ns-layout {
+@mixin editable-ns-layout {
 
 }
 
-@mixin editor-style {
+@mixin editable-style {
   font-size: 11pt;
   color: $font_colour_data;
   background-color: #fff;

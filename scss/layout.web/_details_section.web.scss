@@ -27,23 +27,28 @@
       white-space: pre-wrap;
 
     }
-  }
 
-  .details-section-text-editor {
-    /*
-        Contains the text editor attributes unique to the Dialog Mobile Section
-    */
-    @include editor-web-layout;
+    .editable {
+      /*
+          Contains the editable attributes unique to the .details-section-value class
+      */
+      @include editable-web-layout;
 
-    height: 58pt;
+      .editable-lg2 {
+        /*
+            increases the editable height to contain two lines of text.
+        */
+        height: 42pt;
 
-  }
+      }
 
-  .details-section-selector {
-    /*
-        Contains the selector attributes unique to the Dialog Mobile Section
-    */
-    @include editor-web-layout;
+      .editable-lg3 {
+        /*
+            increases the editable height to contain three lines of text.
+        */
+        height: 58pt;
 
+      }
+    }
   }
 }
