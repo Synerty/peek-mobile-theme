@@ -27,23 +27,30 @@
       white-space: pre-wrap;
 
     }
-  }
 
-  .details-section-text-editor {
-    /*
-        Contains the text editor attributes unique to the Dialog Mobile Section
-    */
-    @include editor-web-layout;
+    .editable {
+      /*
+          Contains the editable attributes unique to the .details-section-value class
+      */
+      @include editable-web-layout;
+    }
 
-    height: 58pt;
+    //Select lists
+    select.editable {
+      height: 26pt;
 
-  }
+    }
 
-  .details-section-selector {
-    /*
-        Contains the selector attributes unique to the Dialog Mobile Section
-    */
-    @include editor-web-layout;
+    //Single line inputs
+    input.editable {
+      height: 42pt;
 
+    }
+
+    //Multi line inputs
+    textarea.editable {
+      height: 42pt;
+
+    }
   }
 }

@@ -90,6 +90,23 @@ Generic Peek theme Text.
         }
 
 
+Divider
+-------
+
+The divider is styled as per the peek theme and can be used throughout the peek app.
+
+The <hr> tag defines a thematic break in the HTML app.
+
+The <StackLayout class="hr"> element defines the thematic break in the NativeScript app.
+
+::
+
+        .hr {
+          background-color: $divider_colour_navigation_section;
+
+        }
+
+
 .. _other_useful_styles_contextual_backgrounds:
 
 Contextual Backgrounds
@@ -150,6 +167,26 @@ Set the background of an element to any contextual class.
         }
 
 
+Button
+------
+
+Generic Peek theme button.
+
+`Bootstrap button example <http://getbootstrap.com/components/#btn-groups-single>`_
+
+`NativeScript Button <https://docs.nativescript.org/angular/code-samples/ui/button.html#button>`_
+
+::
+
+        .btn {
+        /*
+            Contains the generic button attributes
+        */
+
+            ...
+
+        }
+
 .. _other_useful_styles_contextual_buttons:
 
 Contextual Buttons
@@ -157,7 +194,7 @@ Contextual Buttons
 
 Modify the button background colour and/or text colour of any button element.
 
-`Bootstrap Contextual Buttons <hhttp://getbootstrap.com/css/#buttons-options>`_
+`Bootstrap Contextual Buttons <http://getbootstrap.com/css/#buttons-options>`_
 
 `NativeScript Contextual Colors <https://docs.nativescript.org/ui/theme#contextual-colors>`_
 

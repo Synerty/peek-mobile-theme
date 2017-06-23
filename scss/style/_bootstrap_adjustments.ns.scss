@@ -20,9 +20,14 @@
   color: $font_colour_information;
 }
 
+.hr {
+  background-color: $divider_colour_navigation_section;
+
+}
+
 .btn {
   /*
-      Contains the action button attributes unique to the Dialog Mobile Section
+      Contains the generic button attributes
   */
 
   @include button-settings;

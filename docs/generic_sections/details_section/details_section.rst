@@ -63,20 +63,27 @@ Section.
                     ...
 
                 }
-            }
-            .details-section-text-editor {
-            /*
-                Contains the selector attributes unique to the Details Section
-            */
-                ...
+                .editable {
+                /*
+                    Contains the editable attributes unique to the .details-section-value class
+                */
+                    ...
+                }
 
-            }
-            .details-section-selector {
-            /*
-                Contains the selector attributes unique to the Details Section
-            */
-                ...
+                //Select lists
+                    ...
 
+                }
+
+                //Single line inputs
+                    ...
+
+                }
+
+                //Multi line inputs
+                    ...
+
+                }
             }
         }
 
