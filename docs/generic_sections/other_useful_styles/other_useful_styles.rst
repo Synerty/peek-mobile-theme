@@ -90,6 +90,23 @@ Generic Peek theme Text.
         }
 
 
+Divider
+-------
+
+The divider is styled as per the peek theme and can be used throughout the peek app.
+
+The <hr> tag defines a thematic break in the HTML app.
+
+The <StackLayout class="hr"> element defines the thematic break in the NativeScript app.
+
+::
+
+        .hr {
+          background-color: $divider_colour_navigation_section;
+
+        }
+
+
 .. _other_useful_styles_contextual_backgrounds:
 
 Contextual Backgrounds
