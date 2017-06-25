@@ -43,24 +43,28 @@
 .bg-success {
   /* Applies the success background theme */
 
+  color: $font_colour_data !important;
   background-color: $light_success !important;
 }
 
 .bg-info {
   /* Applies the info background theme */
 
+  color: $font_colour_data !important;
   background-color: $light_info !important;
 }
 
 .bg-warning {
   /* Applies the warning background theme */
 
+  color: $font_colour_data !important;
   background-color: $light_warning !important;
 }
 
 .bg-danger {
   /* Applies the danger background theme */
 
+  color: $font_colour_data !important;
   background-color: $light_danger !important;
 }
 
