@@ -16,21 +16,30 @@
     */
     margin-top: $general_padding;
     margin-bottom: $general_padding;
-  }
 
-  .details-section-text-editor {
-    /*
-        Contains the selector attributes unique to the Dialog Mobile Section
-    */
-    @include editor-ns-layout;
+    .editable {
+      /*
+          Contains the selector attributes unique to the Dialog Mobile Section
+      */
+      @include editable-ns-layout;
 
-  }
+      //Select lists
+      ListPicker.editable {
+        height: 26pt;
 
-  .details-section-selector-editor {
-    /*
-        Contains the selector attributes unique to the Dialog Mobile Section
-    */
-    @include editor-ns-layout;
+      }
 
+      //Single line inputs
+      TextField.editable {
+        height: 42pt;
+
+      }
+
+      //Multi line inputs
+      TextView.editable {
+        height: 42pt;
+
+      }
+    }
   }
 }

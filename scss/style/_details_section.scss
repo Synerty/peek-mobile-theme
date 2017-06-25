@@ -19,21 +19,12 @@
     font-weight: 500;
     color: $font_colour_data;
 
-  }
+    .editable {
+      /*
+          Contains the editable attributes unique to the .details-section-value class
+      */
+      @include editable-style;
 
-  .details-section-text-editor {
-    /*
-        Contains the selector attributes unique to the Details Section
-    */
-    @include editor-style;
-
-  }
-
-  .details-section-selector {
-    /*
-        Contains the selector attributes unique to the Details Section
-    */
-    @include editor-style;
-
+    }
   }
 }
