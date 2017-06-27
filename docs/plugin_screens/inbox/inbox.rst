@@ -83,57 +83,57 @@ Peek Plugin Active Task.
 ::
 
         .plugin-inbox,
-        .inboxActivity {
+        .pl-inboxActivity {
 
-          .inbox {
+          .pl-inbox {
             /*
                 Contains the style and classes for the inbox container
             */
             ...
 
-            .inbox-item {
+            .pl-inbox-item {
               /*
                   Contains the style and classes for the
               */
               ...
 
-              .inbox-icon {
+              .pl-inbox-icon {
                 /*
-                    Contains the icon attributes unique to the .inbox-item class
+                    Contains the icon attributes unique to the .pl-inbox-item class
                 */
                 ...
 
               }
-              .inbox-info {
+              .pl-inbox-info {
                 /*
-                    Contains the info attributes unique to the .inbox-item class
+                    Contains the info attributes unique to the .pl-inbox-item class
                 */
                 ...
 
-                .inbox-title {
+                .pl-inbox-title {
                   /*
-                      Contains the title text attributes unique to the .inbox-info class
+                      Contains the title text attributes unique to the .pl-inbox-info class
                   */
                   ...
 
                 }
-                .inbox-description {
+                .pl-inbox-description {
                   /*
-                      Contains the description text attributes unique to the .inbox-info class
+                      Contains the description text attributes unique to the .pl-inbox-info class
                   */
                   ...
 
                 }
-                .inbox-date-time {
+                .pl-inbox-date-time {
                   /*
-                      Contains the date and time attributes unique to the .inbox-info class
+                      Contains the date and time attributes unique to the .pl-inbox-info class
                   */
                   ...
 
                 }
               }
             }
-            .btn.inbox-read-more {
+            .btn.pl-inbox-read-more {
               /*
                   Contains the read more link attributes unique to the .plugin-inbox class
               */
