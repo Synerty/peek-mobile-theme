@@ -23,7 +23,7 @@
             Contains the icon attributes unique to the .inbox-item class
         */
         color: $brand;
-        font-size: 1.4em;
+        font-size: 16.8pt;
         display: table-cell;
 
       }
@@ -31,7 +31,7 @@
         /*
             Contains the info attributes unique to the .inbox-item class
         */
-        padding: 0px $general_padding;
+        padding: 0 $general_padding;
 
         .inbox-title {
           /*
@@ -50,29 +50,30 @@
           /*
               Contains the date and time attributes unique to the .inbox-info class
           */
-          margin-bottom: 5px;
-          padding-bottom: 5px;
+          margin-bottom: 3.75pt;
+          padding-bottom: 3.75pt;
 
         }
       }
     }
-    .btn.inbox-read-more {
+    .inbox-read-more {
       /*
           Contains the read more link attributes unique to the .plugin-inbox class
       */
       position: absolute;
-      top: 0px;
-      right: 0px;
-      padding: 0px;
+      top: 0;
+      right: 0;
+      padding: 0;
       height: 100%;
       background-image: url('../images/icon_more.png');
       background-position: center center;
       background-size: 100% auto;
       background-repeat: no-repeat;
-      width: 20px;
-      border-radius: 0px;
-      text-indent: - 9999px;
+      width: 15pt;
+      border-radius: 0;
+      text-indent: - 9999pt;
       overflow: hidden;
+      min-width: 20pt;
 
     }
   }
@@ -81,26 +82,26 @@
 //navigation tabs
 .nav {
 
-  margin: 0px;
+  margin: 0;
 
   &.nav-tabs {
 
     & > li {
-      margin-bottom: 0px;
+      margin-bottom: 0;
 
       &.active {
         & > a {
           @include button-settings;
-          padding: 12px;
-          margin-top: 0px;
+          padding: 9pt;
+          margin-top: 0;
         }
       }
 
       & > a {
-        margin-right: 0px;
-        margin-top: 10px;
-        padding: 10px;
-        margin-top: 4px
+        margin-right: 0;
+        margin-top: 7.5pt;
+        padding: 7.5pt;
+        margin-top: 3pt;
       }
     }
   }
