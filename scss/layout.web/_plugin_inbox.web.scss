@@ -24,7 +24,7 @@
             Contains the icon attributes unique to the .pl-inbox-item class
         */
         color: $brand;
-        font-size: 1.4em;
+        font-size: 16.8pt;
         display: table-cell;
 
       }
@@ -32,7 +32,7 @@
         /*
             Contains the info attributes unique to the .pl-inbox-item class
         */
-        padding: 0px $general_padding;
+        padding: 0 $general_padding;
 
         .pl-inbox-title {
           /*
@@ -51,8 +51,8 @@
           /*
               Contains the date and time attributes unique to the .pl-inbox-info class
           */
-          margin-bottom: 5px;
-          padding-bottom: 5px;
+          margin-bottom: 3.75pt;
+          padding-bottom: 3.75pt;
 
         }
       }
@@ -70,10 +70,11 @@
       background-position: center center;
       background-size: 100% auto;
       background-repeat: no-repeat;
-      width: 20px;
+      width: 15pt;
       border-radius: 0;
-      text-indent: - 9999px;
+      text-indent: - 9999pt;
       overflow: hidden;
+      min-width: 20pt;
 
     }
   }
