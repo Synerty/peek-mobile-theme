@@ -29,7 +29,6 @@
       /*
           Contains the info attributes unique to the .pl-inbox-item class
       */
-      display: table-cell;
       vertical-align: top;
     }
 
@@ -61,7 +60,6 @@
     /*
         Contains the read more link attributes unique to the .plugin-inbox class
     */
-    display: table-cell;
     background-color: $inbox_button_background;
 
     &:hover {
