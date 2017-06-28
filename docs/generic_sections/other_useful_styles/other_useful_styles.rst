@@ -22,7 +22,6 @@ Generic Peek theme Title.
 
         .title {
         /* Applies the title theme */
-
             ...
 
         }
@@ -39,37 +38,31 @@ Generic Headings 1 through to 6.
 
         .h1 {
         /* Applies the heading theme */
-
             ...
 
         }
         .h2 {
         /* Applies the heading theme */
-
             ...
 
         }
         .h3 {
         /* Applies the heading theme */
-
             ...
 
         }
         .h4 {
         /* Applies the heading theme */
-
             ...
 
         }
         .h5 {
         /* Applies the heading theme */
-
             ...
 
         }
         .h6 {
         /* Applies the heading theme */
-
             ...
 
         }
@@ -84,7 +77,6 @@ Generic Peek theme Text.
 
         .p {
         /* Applies the text theme */
-
             ...
 
         }
@@ -102,7 +94,8 @@ The <StackLayout class="hr"> element defines the thematic break in the NativeScr
 ::
 
         .hr {
-          background-color: $divider_colour_navigation_section;
+        /* Applies the line divider theme */
+            ...
 
         }
 
@@ -126,42 +119,26 @@ Set the background of an element to any contextual class.
 
         .bg-primary{
         /* Applies the primary background theme */
-
-            color: #fff;
-            background-color: #337ab7;
-
             ...
 
         }
         .bg-success{
         /* Applies the success background theme */
-
-            background-color: #dff0d8;
-
             ...
 
         }
         .bg-info{
         /* Applies the info background theme */
-
-            background-color: #d9edf7;
-
             ...
 
         }
         .bg-warning{
         /* Applies the warning background theme */
-
-            background-color: #fcf8e3;
-
             ...
 
         }
         .bg-danger{
         /* Applies the danger background theme */
-
-            background-color: #f2dede;
-
             ...
 
         }
@@ -179,10 +156,7 @@ Generic Peek theme button.
 ::
 
         .btn {
-        /*
-            Contains the generic button attributes
-        */
-
+        /*  Contains the generic button attributes */
             ...
 
         }
@@ -204,31 +178,31 @@ NativeScript.
 ::
 
         .btn-primary {
-          /* Applies the primary button theme */
-          ...
+        /* Applies the primary button theme */
+            ...
 
         }
 
         .btn-success {
-          /* Applies the success button theme */
-          ...
+        /* Applies the success button theme */
+            ...
 
         }
 
         .btn-info {
-          /* Applies the info button theme */
-          ...
+        /* Applies the info button theme */
+            ...
 
         }
 
         .btn-warning {
-          /* Applies the warning button theme */
-          ...
+        /* Applies the warning button theme */
+            ...
 
         }
 
         .btn-danger {
-          /* Applies the danger button theme */
-          ...
+        /* Applies the danger button theme */
+            ...
 
         }
