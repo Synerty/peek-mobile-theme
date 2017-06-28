@@ -121,12 +121,14 @@
 
 .chat-messages-btn-group {
   padding-top: $general_padding;
+  float: right;
 
   .chat-messages-btn {
     /*
         Contains the button attributes unique to the
         chat-messages-compose class.
     */
+    float: left;
 
   }
 }
