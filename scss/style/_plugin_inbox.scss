@@ -1,6 +1,4 @@
-.plugin-inbox,
-.pl-inboxActivity,
-.pl-inboxTasks{
+.plugin-inbox {
 
   .pl-inbox {
     /*
@@ -11,8 +9,6 @@
       /*
           Contains the style and classes for the
       */
-      overflow: hidden;
-      display: table;
       border-bottom: 1pt solid $white;
     }
 
@@ -22,14 +18,12 @@
       */
       color: $brand;
       font-size: 15pt;
-      display: table-cell;
     }
 
     .pl-inbox-info {
       /*
           Contains the info attributes unique to the .pl-inbox-item class
       */
-      vertical-align: top;
     }
 
     .pl-inbox-title {
@@ -52,7 +46,6 @@
       */
       font-size: 10.5pt;
       border-bottom: 1pt solid $grey;
-      text-align: right;
     }
   }
 
