@@ -50,6 +50,24 @@ The :code:`.mobile-dialog` class contain the classes specific to a Mobile Dialog
                 ...
 
             }
+
+            .dialog-btn-block {
+            /*
+                Contains the btn block attributes unique to the Dialog Mobile Section
+            */
+                ...
+
+            }
+
+            .dialog-action-btn-group {
+            /*
+                Contains the action button group attributes unique to the Dialog Mobile
+                Section
+            */
+                ...
+
+            }
+
             .dialog-action-btn {
             /*
                 Contains the action button attributes unique to the Mobile Dialog Section
