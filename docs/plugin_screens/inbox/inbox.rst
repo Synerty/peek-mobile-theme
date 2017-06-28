@@ -83,57 +83,58 @@ Peek Plugin Active Task.
 ::
 
         .plugin-inbox,
-        .inboxActivity {
+        .pl-inboxActivity,
+        .pl-inboxTasks {
 
-          .inbox {
+          .pl-inbox {
             /*
                 Contains the style and classes for the inbox container
             */
             ...
 
-            .inbox-item {
+            .pl-inbox-item {
               /*
                   Contains the style and classes for the
               */
               ...
 
-              .inbox-icon {
+              .pl-inbox-icon {
                 /*
-                    Contains the icon attributes unique to the .inbox-item class
+                    Contains the icon attributes unique to the .pl-inbox-item class
                 */
                 ...
 
               }
-              .inbox-info {
+              .pl-inbox-info {
                 /*
-                    Contains the info attributes unique to the .inbox-item class
+                    Contains the info attributes unique to the .pl-inbox-item class
                 */
                 ...
 
-                .inbox-title {
+                .pl-inbox-title {
                   /*
-                      Contains the title text attributes unique to the .inbox-info class
+                      Contains the title text attributes unique to the .pl-inbox-info class
                   */
                   ...
 
                 }
-                .inbox-description {
+                .pl-inbox-description {
                   /*
-                      Contains the description text attributes unique to the .inbox-info class
+                      Contains the description text attributes unique to the .pl-inbox-info class
                   */
                   ...
 
                 }
-                .inbox-date-time {
+                .pl-inbox-date-time {
                   /*
-                      Contains the date and time attributes unique to the .inbox-info class
+                      Contains the date and time attributes unique to the .pl-inbox-info class
                   */
                   ...
 
                 }
               }
             }
-            .btn.inbox-read-more {
+            .pl-inbox-read-more {
               /*
                   Contains the read more link attributes unique to the .plugin-inbox class
               */
@@ -194,13 +195,13 @@ plugin-active-task-client
             <div class="tab-content">
                 <div class="tab-pane active"
                      role="tabpanel"
-                     id="inboxTasks">
+                     id="pl-inboxTasks">
                     <plugin-active-task-task-list></plugin-active-task-task-list>
 
                 </div>
                 <div class="tab-pane"
                      role="tabpanel"
-                     id="inboxActivity">
+                     id="pl-inboxActivity">
                     <plugin-active-task-activity-list></plugin-active-task-activity-list>
 
                 </div>
@@ -214,35 +215,35 @@ plugin-active-task-task-list
 
 ::
 
-        <div class="inbox-tasks">
+        <div class="pl-inbox-tasks">
             <div class="h3"
                  *ngIf="tasks.length === 0">
                 The inbox is empty.
 
             </div>
-            <div class="inbox-item bg-success"
+            <div class="pl-inbox-item bg-success"
                  *ngFor="let task of tasks"
                  (click)="taskClicked(task)">
-                <div class="inbox-icon">
+                <div class="pl-inbox-icon">
                     <i class="fa fa-comment"
                        aria-hidden="true"></i>
 
                 </div>
-                <div class="inbox-info">
-                    <div class="inbox-title">
+                <div class="pl-inbox-info">
+                    <div class="pl-inbox-title">
                         {{task.title}}
 
                     </div>
-                    <div class="inbox-description">
+                    <div class="pl-inbox-description">
                         {{task.description}}
 
                     </div>
-                    <div class="inbox-date-time">
+                    <div class="pl-inbox-date-time">
                         {{timePast(task)}} ago, {{dateTime(task)}}
 
                     </div>
                 </div>
-                <div class="btn inbox-read-more">
+                <div class="pl-inbox-read-more">
                     <i class="fa fa-chevron-right"
                        aria-hidden="true"></i>
 
@@ -256,30 +257,30 @@ plugin-active-task-activity-list
 
 ::
 
-        <div class="inbox-activity">
+        <div class="pl-inbox-activity">
             <div class="message"
                  *ngIf="activities.length === 0">
                 There is no recent activity.
 
             </div>
-            <div class="inbox-item"
+            <div class="pl-inbox-item"
                  *ngFor="let activity of activities"
                  (click)="activityClicked(activity)">
-                <div class="inbox-info">
-                    <div class="inbox-title">
+                <div class="pl-inbox-info">
+                    <div class="pl-inbox-title">
                         {{activity.title}}
 
                     </div>
-                    <div class="inbox-description">
+                    <div class="pl-inbox-description">
                         {{activity.description}}
 
                     </div>
-                    <div class="inbox-date-time">
+                    <div class="pl-inbox-date-time">
                         {{timePast(activity)}} ago, {{dateTime(activity)}}
 
                     </div>
                 </div>
-                <div class="btn inbox-read-more">
+                <div class="pl-inbox-read-more">
                     <i class="fa fa-chevron-right"
                        aria-hidden="true"></i>
 

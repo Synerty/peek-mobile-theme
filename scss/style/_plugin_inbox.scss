@@ -1,12 +1,13 @@
 .plugin-inbox,
-.inboxActivity {
+.pl-inboxActivity,
+.pl-inboxTasks{
 
-  .inbox {
+  .pl-inbox {
     /*
         Contains the style and classes for the inbox container
     */
 
-    .inbox-item {
+    .pl-inbox-item {
       /*
           Contains the style and classes for the
       */
@@ -15,48 +16,48 @@
       border-bottom: 1pt solid $white;
     }
 
-    .inbox-icon {
+    .pl-inbox-icon {
       /*
-          Contains the icon attributes unique to the .inbox-item class
+          Contains the icon attributes unique to the .pl-inbox-item class
       */
       color: $brand;
       font-size: 15pt;
       display: table-cell;
     }
 
-    .inbox-info {
+    .pl-inbox-info {
       /*
-          Contains the info attributes unique to the .inbox-item class
+          Contains the info attributes unique to the .pl-inbox-item class
       */
       display: table-cell;
       vertical-align: top;
     }
 
-    .inbox-title {
+    .pl-inbox-title {
       /*
-          Contains the title text attributes unique to the .inbox-info class
+          Contains the title text attributes unique to the .pl-inbox-info class
       */
       font-size: 12pt;
     }
 
-    .inbox-description {
+    .pl-inbox-description {
       /*
-          Contains the description text attributes unique to the .inbox-info class
+          Contains the description text attributes unique to the .pl-inbox-info class
       */
       font-size: 11pt;
     }
 
-    .inbox-date-time {
+    .pl-inbox-date-time {
       /*
-          Contains the date and time attributes unique to the .inbox-info class
+          Contains the date and time attributes unique to the .pl-inbox-info class
       */
-      font-size: 14px;
-      border-bottom: 1px solid $grey;
+      font-size: 10.5pt;
+      border-bottom: 1pt solid $grey;
       text-align: right;
     }
   }
 
-  .btn.inbox-read-more {
+  .pl-inbox-read-more {
     /*
         Contains the read more link attributes unique to the .plugin-inbox class
     */
