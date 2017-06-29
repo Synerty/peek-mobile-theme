@@ -88,40 +88,31 @@
 
     }
   }
+
   .chat-messages-compose {
     /*
         Contains the compose message area attributes unique to the
         chat messages.
         Fixed to the bottom of the screen.
     */
-    display: table;
-    width: 100%;
-    position: fixed;
-    bottom: $navigation_header_height + $general_padding;
 
     .chat-messages-new-text {
       /*
           Contains the new message text attributes unique to the
           chat-messages-compose class.
       */
-      display: table-cell;
-      width: 70%;
-      float: left;
 
     }
+  }
+}
 
-    .chat-messages-btn {
-      /*
-          Contains the button attributes unique to the
-          chat-messages-compose class.
-      */
-      display: table-cell;
-      width: 15%;
-      padding: 0;
-      margin: 0;
-      line-height: 0;
-      top: 0;
+.chat-messages-btn-group {
 
-    }
+  .chat-messages-btn {
+    /*
+        Contains the button attributes unique to the
+        chat-messages-compose class.
+    */
+
   }
 }
