@@ -23,23 +23,39 @@
       */
       @include editable-ns-layout;
 
-      //Select lists
-      ListPicker.editable {
-        height: 26pt;
-
-      }
-
-      //Single line inputs
-      TextField.editable {
+      .editable-md {
+        /*
+            Contains the height property for the .editable class
+        */
         height: 42pt;
 
       }
 
-      //Multi line inputs
-      TextView.editable {
-        height: 42pt;
+      .editable-lg {
+        /*
+            Contains the height property for the .editable class
+        */
+        height: 58pt;
 
       }
+    }
+
+    //Select lists
+    ListPicker.editable {
+      height: 26pt;
+
+    }
+
+    //Single line inputs
+    TextField.editable {
+      height: 26pt;
+
+    }
+
+    //Multi line inputs
+    TextView.editable {
+      height: 42pt;
+
     }
   }
 }

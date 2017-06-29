@@ -33,6 +33,22 @@
           Contains the editable attributes unique to the .details-section-value class
       */
       @include editable-web-layout;
+
+      .editable-md {
+        /*
+            Contains the height property for the .editable class
+        */
+        height: 42pt;
+
+      }
+
+      .editable-lg {
+        /*
+            Contains the height property for the .editable class
+        */
+        height: 58pt;
+
+      }
     }
 
     //Select lists

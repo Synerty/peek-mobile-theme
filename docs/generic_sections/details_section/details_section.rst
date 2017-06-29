@@ -68,6 +68,22 @@ Section.
                     Contains the editable attributes unique to the .details-section-value class
                 */
                     ...
+
+                    .editable-md {
+                      /*
+                          Contains the height property for the .editable class
+                      */
+                        ...
+
+                    }
+
+                    .editable-lg {
+                      /*
+                          Contains the height property for the .editable class
+                      */
+                        ...
+
+                    }
                 }
 
                 //Select lists
