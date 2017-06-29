@@ -164,15 +164,18 @@ The new-chat component uses generic classes, see :ref:`other_useful_styles`.
               ...
 
             }
+          }
+        }
+        .chat-messages-btn-group {
+            ...
 
-            .chat-messages-btn {
-              /*
-                  Contains the button attributes unique to the
-                  chat-messages-compose class.
-              */
-              ...
+          .chat-messages-btn {
+            /*
+                Contains the button attributes unique to the
+                chat-messages-compose class.
+            */
+            ...
 
-            }
           }
         }
 

@@ -1,6 +1,4 @@
-.plugin-inbox,
-.pl-inboxActivity,
-.pl-inboxTasks {
+.plugin-inbox {
 
   padding-top: $general_padding;
 
@@ -14,16 +12,12 @@
           Contains the style and classes for the
       */
       padding: $general_padding;
-      position: relative;
       width: 100%;
 
       .pl-inbox-icon {
         /*
             Contains the icon attributes unique to the .pl-inbox-item class
         */
-        color: $brand;
-        font-size: 16.8pt;
-        display: table-cell;
 
       }
       .pl-inbox-info {
@@ -51,6 +45,7 @@
           */
           margin-bottom: 3.75pt;
           padding-bottom: 3.75pt;
+          text-align: right;
 
         }
       }
@@ -59,6 +54,7 @@
       /*
           Contains the read more link attributes unique to the .plugin-inbox class
       */
+      width: 5%;
 
     }
   }

@@ -8,11 +8,9 @@
     /*
         Contains the Messages attributes unique to the Chat List
     */
-    margin: 0px $general_padding $general_padding $general_padding;
-    display: block;
-    overflow: hidden;
+    margin: 0 $general_padding $general_padding $general_padding;
     padding: $general_padding;
-    border: 1px solid $grey;
+    border: 1pt solid $grey;
     border-radius: $general_border_radius;
 
     .chat-list-icon {
@@ -36,18 +34,12 @@
       Contains the msg-list component classes
   */
 
-  $messaging-area-height: 100px;
-  padding-top: $general_padding_nav_bar;
-  // pad out chat-messages-compose form
-  padding-bottom: $messaging-area-height + $general_padding;
-
   .chat-messages-list {
     /*
         Attributes for the container of messages, unique to the Chat
         Messages.
         Scrolls through the messages with most recent at the bottom.
     */
-    padding: $general_padding;
 
     .chat-messages-sent {
       /*
@@ -57,9 +49,8 @@
           received class.
           bg-success class applied for a successfully sent message.
       */
-      padding: $general_padding;
-      margin-bottom: 5px;
-      margin-left: 10%;
+      margin-bottom: 5pt;
+      margin-left: 2%;
 
     }
     .chat-messages-received {
@@ -70,9 +61,8 @@
           sent class.
           bg-warning class applied for an emergency priority message.
       */
-      padding: $general_padding;
-      margin-bottom: 5px;
-      margin-right: 10%;
+      margin-bottom: 5pt;
+      margin-right: 2%;
 
     }
     .chat-messages-details {
@@ -98,43 +88,31 @@
 
     }
   }
+
   .chat-messages-compose {
     /*
         Contains the compose message area attributes unique to the
         chat messages.
         Fixed to the bottom of the screen.
     */
-    display: table;
-    width: 100%;
-    position: fixed;
-    bottom: $navigation_header_height + $general_padding;
-    height: $messaging-area-height;
 
     .chat-messages-new-text {
       /*
           Contains the new message text attributes unique to the
           chat-messages-compose class.
       */
-      display: table-cell;
-      width: 70%;
-      height: $messaging-area-height;
-      float: left;
 
     }
+  }
+}
 
-    .chat-messages-btn {
-      /*
-          Contains the button attributes unique to the
-          chat-messages-compose class.
-      */
-      display: table-cell;
-      width: 15%;
-      padding: 0px;
-      margin: 0px;
-      line-height: 0px;
-      top: 0px;
-      height: $messaging-area-height;
+.chat-messages-btn-group {
 
-    }
+  .chat-messages-btn {
+    /*
+        Contains the button attributes unique to the
+        chat-messages-compose class.
+    */
+
   }
 }

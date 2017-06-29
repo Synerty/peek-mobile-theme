@@ -19,9 +19,25 @@
 
   }
 
-  .dialog-action-btn {
+  .dialog-btn-block {
+    /*
+        Contains the btn block attributes unique to the Dialog Mobile Section
+    */
+    margin-bottom: 5pt;
+
+  }
+
+  .dialog-action-btn-group {
     /*
         Contains the action button attributes unique to the Dialog Mobile Section
+    */
+    float: right;
+
+  }
+
+  .dialog-action-btn {
+    /*
+        Contains the action button group attributes unique to the Dialog Mobile Section
     */
 
     @include button-settings;

@@ -1,6 +1,4 @@
-.plugin-inbox,
-.pl-inboxActivity,
-.pl-inboxTasks {
+.plugin-inbox {
 
   padding-top: $general_padding;
   padding-left: $general_padding;
@@ -18,13 +16,13 @@
       padding: $general_padding;
       position: relative;
       width: 100%;
+      overflow: hidden;
+      display: table;
 
       .pl-inbox-icon {
         /*
             Contains the icon attributes unique to the .pl-inbox-item class
         */
-        color: $brand;
-        font-size: 16.8pt;
         display: table-cell;
 
       }
@@ -33,6 +31,7 @@
             Contains the info attributes unique to the .pl-inbox-item class
         */
         padding: 0 $general_padding;
+        vertical-align: top;
 
         .pl-inbox-title {
           /*
@@ -53,6 +52,7 @@
           */
           margin-bottom: 3.75pt;
           padding-bottom: 3.75pt;
+          text-align: right;
 
         }
       }
@@ -66,7 +66,7 @@
       right: 0;
       padding: 0;
       height: 100%;
-      background-image: url('../images/icon_more.png');
+      background-image: url('#{$web_images}icon_more.png');
       background-position: center center;
       background-size: 100% auto;
       background-repeat: no-repeat;

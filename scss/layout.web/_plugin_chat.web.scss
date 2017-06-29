@@ -117,16 +117,34 @@
 
     }
   }
+
+  .chat-messages-compose {
+    /*
+        Contains the compose message area attributes unique to the
+        chat messages.
+        Fixed to the bottom of the screen.
+    */
+
+    .chat-messages-new-text {
+      /*
+          Contains the new message text attributes unique to the
+          chat-messages-compose class.
+      */
+
+    }
+  }
 }
 
 .chat-messages-btn-group {
   padding-top: $general_padding;
+  float: right;
 
   .chat-messages-btn {
     /*
         Contains the button attributes unique to the
         chat-messages-compose class.
     */
+    float: left;
 
   }
 }

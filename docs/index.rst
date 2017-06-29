@@ -13,3 +13,4 @@ The Peek Mobile Theme will style the Peek app built upon :ref:`overview_bootstra
     peek_screens/index_peek_screens
     generic_sections/index_generic_sections
     plugin_screens/index_plugin_screens
+    font_awesome/font_awesome

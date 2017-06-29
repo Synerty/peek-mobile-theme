@@ -48,5 +48,5 @@ $inbox_button_background: darken($grey, 10%);
 $general_button_divider: darken($grey, 35%);
 
 //image asset locations
-$ns_assets: "";
-$web_images: "";
+$ns_assets: "~/assets/";
+$web_images: "~@synerty/peek-mobile-theme/images/";

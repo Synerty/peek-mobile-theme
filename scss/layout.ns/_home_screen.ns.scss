@@ -5,7 +5,7 @@
       Home Screen background is unique and different to other screens
       Cannot use the body tag
   */
-  bottom: 0px;
+  bottom: 0;
   min-height: 100%;
   padding: $general_padding;
 
@@ -14,7 +14,7 @@
         Contains the Button attributes unique to the Home Screen
         Buttons responsively wrap
     */
-    background-image: url("~/assets/button_home_background.png");
+    background-image: url("#{$ns_assets}button_home_background.png");
     margin: $general_padding;
     padding: $general_padding;
     position: relative;
@@ -26,14 +26,14 @@
       */
       width: 100%;
       height: auto;
-      padding-bottom: 40px;
+      padding-bottom: 30pt;
 
     }
     .home-screen-title {
       /* Contains the Button Title attributes unique to the Home Screen */
       position: absolute;
-      left: 0px;
-      bottom: 0px;
+      left: 0;
+      bottom: 0;
       width: 100%;
       padding: $general_padding;
 
@@ -47,11 +47,11 @@
       Home Screen background is unique and different to other screens
       Cannot use the body tag
   */
-  background-image: url('~/assets/home_background.png');
+  background-image: url('#{$ns_assets}home_background.png');
   position: fixed;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
 }
