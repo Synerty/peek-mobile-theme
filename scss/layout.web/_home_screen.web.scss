@@ -13,7 +13,7 @@
         Contains the Button attributes unique to the Home Screen
         Buttons responsively wrap
     */
-    background-image: url("../images/button_home_background.png");
+    background-image: url("#{$web_images}button_home_background.png");
     margin-top: $general_padding*2;
     padding: $general_padding*2;
     position: relative;
@@ -46,7 +46,7 @@
       Home Screen background is unique and different to other screens
       Cannot use the body tag
   */
-  background-image: url('../images/home_background.png');
+  background-image: url('#{$web_images}home_background.png');
   position: fixed;
   left: 0;
   right: 0;
