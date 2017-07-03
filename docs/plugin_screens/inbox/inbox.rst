@@ -82,7 +82,7 @@ Peek Plugin Active Task.
 
 ::
 
-        .plugin-inbox,
+        .pl-inbox,
         .pl-inboxActivity,
         .pl-inboxTasks {
 
@@ -168,7 +168,7 @@ plugin-active-task-client
 
 ::
 
-        <div class="plugin-inbox">
+        <div class="pl-inbox">
 
             <ul class="nav nav-tabs"
                 role="tablist">
