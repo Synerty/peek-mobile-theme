@@ -14,7 +14,7 @@
 
     background-repeat: repeat;
     display: block;
-    border-radius: $general_border_radius + 2pt;
+    border-radius: $general_border_radius + 2.7px;
     font-family: $fonts_special;
     @include box-shadow;
 
@@ -30,7 +30,7 @@
       font-family: $fonts_special;
       color: $white;
       text-align: center;
-      font-size: 15pt;
+      font-size: 20px;
 
     }
 

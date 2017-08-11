@@ -27,7 +27,7 @@
         /*
             Contains the height property for the .editable class
         */
-        height: 42pt;
+        height: 56px;
 
       }
 
@@ -35,26 +35,26 @@
         /*
             Contains the height property for the .editable class
         */
-        height: 58pt;
+        height:  77.3px;
 
       }
     }
 
     //Select lists
     ListPicker.editable {
-      height: 26pt;
+      height: 34.7px;
 
     }
 
     //Single line inputs
     TextField.editable {
-      height: 26pt;
+      height: 34.7px;
 
     }
 
     //Multi line inputs
     TextView.editable {
-      height: 42pt;
+      height: 56px;
 
     }
   }

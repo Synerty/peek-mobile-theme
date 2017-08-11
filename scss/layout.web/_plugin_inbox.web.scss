@@ -50,8 +50,8 @@
           /*
               Contains the date and time attributes unique to the .pl-inbox-info class
           */
-          margin-bottom: 3.75pt;
-          padding-bottom: 3.75pt;
+          margin-bottom:  5px;
+          padding-bottom:  5px;
           text-align: right;
 
         }
@@ -70,11 +70,11 @@
       background-position: center center;
       background-size: 100% auto;
       background-repeat: no-repeat;
-      width: 15pt;
+      width: 20px;
       border-radius: 0;
-      text-indent: - 9999pt;
+      text-indent: - 9999px;
       overflow: hidden;
-      min-width: 20pt;
+      min-width: 26.7px;
 
     }
   }
@@ -97,15 +97,15 @@
           z-index: 100;
           font-weight: normal;
           border: 0;
-          padding: 9pt;
+          padding: 12px;
           margin-top: 0;
         }
       }
 
       & > a {
         margin-right: 0;
-        padding: 7.5pt;
-        margin-top: 3pt;
+        padding: 10px;
+        margin-top: 4px;
       }
     }
   }

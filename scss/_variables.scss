@@ -22,11 +22,11 @@ $light_danger: lighten($danger, 35%);
 $dark_danger: darken($danger, 10%);
 
 //general
-$general_font_size: 12pt;
+$general_font_size: 16px;
 $general_background_color: lighten($grey, 18%);
-$general_padding: 12pt;
-$general_border_radius: 3pt;
-$general_padding_nav_bar: 48pt;
+$general_padding: 16px;
+$general_border_radius: 4px;
+$general_padding_nav_bar: 64px;
 $general_header_background: darken($grey, 20%);
 $general_button_background: darken($grey, 20%);
 $general_button_background_hover: darken($grey, 35%);
@@ -41,7 +41,7 @@ $font_colour_disabled: lighten($grey, 5%);
 $font_colour_button: $white;
 
 //header
-$navigation_header_height: 45pt;
+$navigation_header_height: 60px;
 
 //button
 $inbox_button_background: darken($grey, 10%);

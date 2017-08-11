@@ -36,8 +36,8 @@
       Contains the msg-list component classes
   */
   overflow-y: scroll;
-  max-height: 400pt;
-  min-height: 400pt;
+  max-height:  533.3px;
+  min-height:  533.3px;
   padding-top: $general_padding;
   padding-bottom: $general_padding;
   margin-right: auto;
@@ -59,9 +59,9 @@
       width: 100%;
       float: left;
       position: relative;
-      min-height: 1pt;
-      padding-right: 12pt;
-      padding-left: 12pt;
+      min-height: 1.3px;
+      padding-right: 16px;
+      padding-left: 16px;
 
     }
 
@@ -76,7 +76,7 @@
       width: 67%;
       float: left;
       position: relative;
-      min-height: 1pt;
+      min-height: 1.3px;
       padding: $general_padding;
       margin-bottom: 5px;
       margin-right: 10%;
@@ -94,7 +94,7 @@
       width: 67%;
       float: left;
       position: relative;
-      min-height: 1pt;
+      min-height: 1.3px;
       padding: $general_padding;
       margin-bottom: 5px;
       margin-right: 10%;
