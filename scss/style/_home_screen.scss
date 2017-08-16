@@ -29,7 +29,7 @@
 
   .home-screen-title {
     /* Contains the Button Title attributes unique to the Home Screen */
-    font-size: 32px;
+    font-size: $home_screen_title_font_size;
     color: $white;
     font-weight: bold;
   }
