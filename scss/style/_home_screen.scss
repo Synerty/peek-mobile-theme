@@ -25,15 +25,13 @@
       */
 
     }
-    .home-screen-title {
-      /* Contains the Button Title attributes unique to the Home Screen */
-      font-family: $fonts_special;
-      color: $white;
-      text-align: center;
-      font-size: 20px;
+  }
 
-    }
-
+  .home-screen-title {
+    /* Contains the Button Title attributes unique to the Home Screen */
+    font-size: 32px;
+    color: $white;
+    font-weight: bold;
   }
 }
 

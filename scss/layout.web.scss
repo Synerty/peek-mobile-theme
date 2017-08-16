@@ -1,6 +1,5 @@
 @import '_variables';
 @import '_mixins';
-@import 'layout.web/_bootstrap_adjustments.web';
 
 //peek screens
 @import 'layout.web/_title_bar.web';
@@ -17,6 +16,8 @@
 @import 'layout.web/_information_section.web';
 @import 'layout.web/_details_section.web';
 @import 'layout.web/_tables_section.web';
+
+@import 'layout.web/_bootstrap_adjustments.web';
 
 body,
 html{

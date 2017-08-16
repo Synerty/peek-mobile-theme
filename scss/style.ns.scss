@@ -1,6 +1,5 @@
 @import '_variables';
 @import '_mixins';
-@import 'style/_bootstrap_adjustments.ns';
 
 //peek screens
 @import 'style/_title_bar';
@@ -17,6 +16,8 @@
 @import 'style/_information_section';
 @import 'style/_details_section';
 @import 'style/_tables_section';
+
+@import 'style/_bootstrap_adjustments.ns';
 
 body,
 html{

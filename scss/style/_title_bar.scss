@@ -10,7 +10,7 @@
   cursor: pointer;
   padding: 8px;
   border: 0;
-  font-size: 13.3px;
+  font-size: 32px;
   border-radius: 0;
   background-color: $brand;
   margin-right: 0;
@@ -26,6 +26,7 @@
 
 .title-bar-title {
   /* Contains the title attributes unique to the Title Bar */
+  font-size: 32px;
   color: $black;
   text-align: center;
 }
