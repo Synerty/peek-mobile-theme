@@ -25,13 +25,29 @@ $dark_danger: darken($danger, 10%);
 $general_font_size: 16px;
 $general_background_color: lighten($grey, 18%);
 $general_padding: 16px;
+$general_height: 16px;
+$general_border: 1.3px;
 $general_border_radius: 4px;
-$general_padding_nav_bar: 64px;
+$general_line_height: 1.42857143;
+$general_button_padding: 8px;
+$general_button_min_width: 40px;
 $general_header_background: darken($grey, 20%);
 $general_button_background: darken($grey, 20%);
 $general_button_background_hover: darken($grey, 35%);
 $general_button_background_disabled: lighten($grey, 15%);
 $general_icon_color: darken($grey, 10%);
+
+$general_font_size_0_9: $general_font_size * 0.9;
+$general_font_size_1_25: $general_font_size * 1.25;
+$general_font_size_1_5: $general_font_size * 1.5;
+$general_font_size_2: $general_font_size * 2;
+
+$general_height_2_15: $general_height * 2.15;
+$general_height_2_17: $general_height * 2.17;
+$general_height_3_5: $general_height * 3.5;
+$general_height_4_83: $general_height * 4.83;
+
+$general_padding_2: $general_padding * 2;
 
 //fonts
 $fonts_special: arial;
@@ -39,11 +55,12 @@ $font_colour_data: $black;
 $font_colour_information: darken($grey, 40%);
 $font_colour_disabled: lighten($grey, 5%);
 $font_colour_button: $white;
-$title_bar_font_size: 32px;
-$home_screen_title_font_size: 32px;
 
 //header
 $navigation_header_height: 60px;
+
+//nav bar
+$general_padding_nav_bar: 64px;
 
 //button
 $inbox_button_background: darken($grey, 10%);

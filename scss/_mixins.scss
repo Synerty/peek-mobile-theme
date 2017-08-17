@@ -11,18 +11,18 @@
 
   color: $font_colour_button;
   cursor: pointer;
-  font-size: 14.7px;
-  padding: 8px;
+  font-size: $general_font_size_0_9;
+  padding: $general_button_padding;
   border: 0;
   background-color: $general_button_background;
-  min-width: 40px;
+  min-width: $general_button_min_width;
 
   &:hover {
     background-color: $general_button_background_hover;
     color: $white;
   }
 
-  border-right: 1.3px solid $general_button_divider;
+  border-right: $general_border solid $general_button_divider;
 
   &:last-child {
     border-radius: 0 $general_border_radius $general_border_radius 0;
@@ -48,9 +48,9 @@
 @mixin editable-web-layout {
   display: block;
   width: 100%;
-  height: 34.7px;
+  height: $general_height_2_15;
   padding: 6.7px 12px;
-  line-height: 1.42857143;
+  line-height: $general_line_height;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
@@ -59,12 +59,12 @@
 }
 
 @mixin editable-style {
-  font-size: 14.7px;
+  font-size: $general_font_size_0_9;
   color: $font_colour_data;
   background-color: #fff;
   background-image: none;
-  border: 1.3px solid $grey;
-  border-radius: 4px;
+  border: $general_border solid $grey;
+  border-radius: $general_border_radius;
   box-shadow: inset 0 1.3px 1.3px rgba(0, 0, 0, .075);
 }
 

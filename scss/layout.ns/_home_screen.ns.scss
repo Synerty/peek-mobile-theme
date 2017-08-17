@@ -29,10 +29,19 @@
       padding-bottom: 40px;
 
     }
+    .home-screen-title {
+      /* Contains the Button Title attributes unique to the Home Screen */
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: $general_padding;
+
+    }
   }
-  .home-screen-title {
-    /* Contains the Button Title attributes unique to the Home Screen */
-    margin: 64px;
+  .home-screen-message {
+    /* Contains the message attributes unique to the Home Screen */
+    margin: $general_padding * 4;
 
   }
 }
