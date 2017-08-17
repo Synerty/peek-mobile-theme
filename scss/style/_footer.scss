@@ -1,5 +1,5 @@
 .peek-footer{
-  $section_font_size: 14.7px;
+  $section_font_size: $general_font_size_0_9;
   background-color: $white;
   text-align: center;
   @include box-shadow;

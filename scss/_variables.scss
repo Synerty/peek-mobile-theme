@@ -23,31 +23,41 @@ $dark_danger: darken($danger, 10%);
 
 //general
 $general_font_size: 16px;
-$general_background_color: lighten($grey, 18%);
 $general_padding: 16px;
+$general_margin: 16px;
 $general_height: 16px;
+$general_width: 100px;
 $general_border: 1.3px;
 $general_border_radius: 4px;
-$general_line_height: 1.42857143;
 $general_button_padding: 8px;
 $general_button_min_width: 40px;
+$general_line_height: 1.42857143;
+$general_background_color: lighten($grey, 18%);
 $general_header_background: darken($grey, 20%);
 $general_button_background: darken($grey, 20%);
 $general_button_background_hover: darken($grey, 35%);
 $general_button_background_disabled: lighten($grey, 15%);
 $general_icon_color: darken($grey, 10%);
 
+$general_font_size_0_8: $general_font_size * 0.8;
 $general_font_size_0_9: $general_font_size * 0.9;
 $general_font_size_1_25: $general_font_size * 1.25;
 $general_font_size_1_5: $general_font_size * 1.5;
 $general_font_size_2: $general_font_size * 2;
+$general_font_size_3: $general_font_size * 3;
 
 $general_height_2_15: $general_height * 2.15;
 $general_height_2_17: $general_height * 2.17;
 $general_height_3_5: $general_height * 3.5;
 $general_height_4_83: $general_height * 4.83;
 
+$general_padding_0_5: $general_padding * 0.5;
+$general_padding_1_25: $general_padding * 1.25;
 $general_padding_2: $general_padding * 2;
+
+$general_margin_1_25: $general_margin * 1.25;
+$general_margin_2: $general_margin * 2;
+$general_margin_4: $general_margin * 4;
 
 //fonts
 $fonts_special: arial;
@@ -56,15 +66,38 @@ $font_colour_information: darken($grey, 40%);
 $font_colour_disabled: lighten($grey, 5%);
 $font_colour_button: $white;
 
-//header
-$navigation_header_height: 60px;
+//title bar
+$title_bar_height: 60px;
+$title_bar_button_min_width: 66.7px;
+$title_bar_padding: 10.7px;
+
 
 //nav bar
-$general_padding_nav_bar: 64px;
+$nav_bar_padding_top: 64px;
 
 //button
 $inbox_button_background: darken($grey, 10%);
 $general_button_divider: darken($grey, 35%);
+
+//hr
+$hr_height: 1.3px;
+
+//home screen
+$home_screen_image_padding: 40px;
+
+//inbox
+$inbox_date_time_margin: 5px;
+$inbox_date_time_padding: 5px;
+$inbox_nav_tabs_padding_active: 12px;
+$inbox_nav_tabs_padding: 10px;
+$inbox_nav_tabs_margin: 4px;
+
+//chat
+$chat_messages_margin: 6.7px;
+$chat_messages_min_height: 1.3px;
+
+//mobile dialog
+$mobile_dialog_btn_block_margin: 6.7px;
 
 //image asset locations
 $ns_assets: "~/assets/";

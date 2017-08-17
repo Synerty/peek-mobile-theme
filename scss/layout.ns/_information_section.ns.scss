@@ -15,12 +15,12 @@
         Contains the icon attributes unique to the peek-information-section class
     */
     background-image: url('~/assets/home_background.png');
-    padding: 20px;
+    padding: $general_padding_1_25;
     width: 25%;
     height: 25%;
     border-radius: $general_border_radius;
-    margin-top: $general_padding*2;
-    margin-bottom: $general_padding*2;
+    margin-top: $general_margin_2;
+    margin-bottom: $general_margin_2;
     horizontal-align: center;
     display: block;
   }

@@ -7,7 +7,7 @@
     /*
         Contains the icon attributes unique to the peek-information-section class
     */
-    font-size: 48px;
+    font-size: $general_font_size_3;
     color: $white;
     text-align: center;
   }
@@ -16,7 +16,7 @@
     /*
         Contains the title attributes unique to the peek-information-section class
     */
-    font-size: 32px;
+    font-size: $general_font_size_2;
     text-align: center;
     color: $font_colour_information;
   }
