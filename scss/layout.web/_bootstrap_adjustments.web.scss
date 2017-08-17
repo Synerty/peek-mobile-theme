@@ -1,7 +1,7 @@
 .title {
   /* Applies the title theme */
-  margin-bottom: $general_padding * 2;
-  padding: ($general_padding * 2) 0px 0px 0px;
+  margin-bottom: $general_margin_2;
+  padding: ($general_padding_2) 0 0 0;
 }
 
 .h1,
@@ -12,19 +12,19 @@
 .h6 {
   /* Applies the heading theme */
   @include nuke;
-  padding: $general_padding 0px 0px 0px;
+  padding: $general_padding 0 0 0;
 }
 
 .p {
   /* Applies the text theme */
-  padding: $general_padding 0px 0px 0px;
+  padding: $general_padding 0 0 0;
 }
 
 .hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: $general_margin_1_25;
+  margin-bottom: $general_margin_1_25;
   border: 0;
-  border-top: 1.3px solid;
+  border-top: $hr_height solid;
 }
 
 .bg-primary {

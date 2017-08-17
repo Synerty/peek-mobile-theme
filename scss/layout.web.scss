@@ -29,8 +29,8 @@ html{
 }
 
 .hr{
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 *:focus {outline:none!important;}
@@ -40,14 +40,14 @@ html{
   margin-bottom: $general_padding;
 
   .form-group{
-    padding-top: 0px;
-    margin-bottom: 0px;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 
 }
 
 .form-group{
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-bottom: $general_padding;
   padding-top: $general_padding;
   //color: $black;

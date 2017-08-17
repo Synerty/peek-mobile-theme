@@ -8,13 +8,11 @@
   /* Contains the button attributes unique to the Title Bar */
   color: $white;
   cursor: pointer;
-  padding: 8px;
   border: 0;
   font-size: $general_font_size_2;
   border-radius: 0;
   background-color: $brand;
-  margin-right: 0;
-  border-right: 1.3px solid $brand_compliment;
+  border-right: $general_border solid $brand_compliment;
   border-left: 0;
 }
 
