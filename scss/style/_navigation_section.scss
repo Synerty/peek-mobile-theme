@@ -1,7 +1,7 @@
 //Peek navigation section
 .peek-nav-section {
   /* Contains the Navigation Section attributes */
-  border-bottom: 1pt solid $divider_colour_navigation_section;
+  border-bottom: $general_border solid $divider_colour_navigation_section;
   overflow: hidden;
   background: white;
 

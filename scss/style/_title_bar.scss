@@ -8,13 +8,11 @@
   /* Contains the button attributes unique to the Title Bar */
   color: $white;
   cursor: pointer;
-  padding: 6pt;
   border: 0;
-  font-size: 10pt;
+  font-size: $general_font_size_2;
   border-radius: 0;
   background-color: $brand;
-  margin-right: 0;
-  border-right: 1pt solid $brand_compliment;
+  border-right: $general_border solid $brand_compliment;
   border-left: 0;
 }
 
@@ -26,6 +24,7 @@
 
 .title-bar-title {
   /* Contains the title attributes unique to the Title Bar */
+  font-size: $general_font_size_2;
   color: $black;
   text-align: center;
 }

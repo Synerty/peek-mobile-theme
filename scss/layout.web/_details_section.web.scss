@@ -38,7 +38,7 @@
         /*
             Contains the height property for the .editable class
         */
-        height: 42pt;
+        height: $general_height_3_5;
 
       }
 
@@ -46,26 +46,26 @@
         /*
             Contains the height property for the .editable class
         */
-        height: 58pt;
+        height: $general_height_4_83;
 
       }
     }
 
     //Select lists
     select.editable {
-      height: 26pt;
+      height: $general_height_2_17;
 
     }
 
     //Single line inputs
     input.editable {
-      height: 42pt;
+      height: $general_height_3_5;
 
     }
 
     //Multi line inputs
     textarea.editable {
-      height: 42pt;
+      height: $general_height_3_5;
 
     }
   }

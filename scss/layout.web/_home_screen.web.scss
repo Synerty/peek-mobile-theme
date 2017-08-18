@@ -14,8 +14,8 @@
         Buttons responsively wrap
     */
     background-image: url("#{$web_images}button_home_background.png");
-    margin-top: $general_padding*2;
-    padding: $general_padding*2;
+    margin-top: $general_padding_2;
+    padding: $general_padding_2;
     position: relative;
 
     .home-screen-image {
@@ -25,7 +25,7 @@
       */
       width: 100%;
       height: auto;
-      padding-bottom: 30pt;
+      padding-bottom: $home_screen_image_padding;
 
     }
     .home-screen-title {
@@ -37,6 +37,14 @@
       padding: $general_padding;
 
     }
+  }
+  .home-screen-message {
+    /* Contains the message attributes unique to the Home Screen */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: $general_padding;
+
   }
 }
 

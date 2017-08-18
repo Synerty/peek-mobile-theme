@@ -8,11 +8,11 @@
     /*
         Contains the Messages attributes unique to the Chat List
     */
-    margin: 0px $general_padding $general_padding $general_padding;
+    margin: 0 $general_padding $general_padding $general_padding;
     display: block;
     overflow: hidden;
     padding: $general_padding;
-    border: 1px solid $grey;
+    border: $general_border solid $grey;
     border-radius: $general_border_radius;
 
     .chat-list-icon {
@@ -36,8 +36,8 @@
       Contains the msg-list component classes
   */
   overflow-y: scroll;
-  max-height: 400pt;
-  min-height: 400pt;
+  max-height:  533.3px;
+  min-height:  533.3px;
   padding-top: $general_padding;
   padding-bottom: $general_padding;
   margin-right: auto;
@@ -59,9 +59,9 @@
       width: 100%;
       float: left;
       position: relative;
-      min-height: 1pt;
-      padding-right: 12pt;
-      padding-left: 12pt;
+      min-height: $chat_messages_min_height;
+      padding-right: $general_padding;
+      padding-left: $general_padding;
 
     }
 
@@ -76,9 +76,9 @@
       width: 67%;
       float: left;
       position: relative;
-      min-height: 1pt;
+      min-height: $chat_messages_min_height;
       padding: $general_padding;
-      margin-bottom: 5px;
+      margin-bottom: $chat_messages_margin;
       margin-right: 10%;
 
     }
@@ -94,9 +94,9 @@
       width: 67%;
       float: left;
       position: relative;
-      min-height: 1pt;
+      min-height: $chat_messages_min_height;
       padding: $general_padding;
-      margin-bottom: 5px;
+      margin-bottom: $chat_messages_margin;
       margin-right: 10%;
 
     }

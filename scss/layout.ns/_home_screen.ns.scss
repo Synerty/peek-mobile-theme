@@ -26,7 +26,7 @@
       */
       width: 100%;
       height: auto;
-      padding-bottom: 30pt;
+      padding-bottom: $home_screen_image_padding;
 
     }
     .home-screen-title {
@@ -38,6 +38,11 @@
       padding: $general_padding;
 
     }
+  }
+  .home-screen-message {
+    /* Contains the message attributes unique to the Home Screen */
+    margin: $general_margin_4;
+
   }
 }
 

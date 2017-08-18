@@ -9,7 +9,7 @@
       /*
           Contains the style and classes for the
       */
-      border-bottom: 1pt solid $white;
+      border-bottom: $general_border solid $white;
     }
 
     .pl-inbox-icon {
@@ -17,7 +17,7 @@
           Contains the icon attributes unique to the .pl-inbox-item class
       */
       color: $brand;
-      font-size: 15pt;
+      font-size: $general_font_size_1_25;
     }
 
     .pl-inbox-info {
@@ -30,22 +30,22 @@
       /*
           Contains the title text attributes unique to the .pl-inbox-info class
       */
-      font-size: 12pt;
+      font-size: $general_font_size;
     }
 
     .pl-inbox-description {
       /*
           Contains the description text attributes unique to the .pl-inbox-info class
       */
-      font-size: 11pt;
+      font-size: $general_font_size_0_9;
     }
 
     .pl-inbox-date-time {
       /*
           Contains the date and time attributes unique to the .pl-inbox-info class
       */
-      font-size: 10.5pt;
-      border-bottom: 1pt solid $grey;
+      font-size: $general_font_size_0_9;
+      border-bottom: $general_border solid $grey;
     }
   }
 
@@ -64,7 +64,7 @@
 //navigation tabs
 .nav {
 
-  $section_font_size: 10pt;
+  $section_font_size: $general_font_size_0_9;
 
   &.nav-tabs {
     border-bottom: 0 solid $brand;
@@ -75,7 +75,7 @@
         & > a {
           color: $font_colour_button;
           background-color: $general_button_background;
-          font-size: 9.6pt;
+          font-size: $general_font_size_0_8;
           border-radius: 0;
         }
       }
@@ -83,7 +83,7 @@
       & > a {
         color: #666666;
         background-color: #eee;
-        font-size: 9.6pt;
+        font-size: $general_font_size_0_8;
         border: 0;
         border-radius: 0;
       }
@@ -93,5 +93,5 @@
 
 //nav tabs active lists
 .tab-content {
-  border-top: 1pt solid $general_header_background;
+  border-top: $general_border solid $general_header_background;
 }

@@ -1,7 +1,7 @@
 .title {
   /* Applies the title theme */
-  margin-bottom: $general_padding * 2;
-  padding: ($general_padding * 2) 0px 0px 0px;
+  margin-bottom: $general_margin_2;
+  padding: ($general_padding_2) 0 0 0;
 }
 
 .h1,
@@ -12,16 +12,16 @@
 .h6 {
   /* Applies the heading theme */
   @include nuke;
-  padding: $general_padding 0px 0px 0px;
+  padding: $general_padding 0 0 0;
 }
 
 .p {
   /* Applies the text theme */
-  padding: $general_padding 0px 0px 0px;
+  padding: $general_padding 0 0 0;
 }
 
 .hr {
-  height: 1pt;
+  height: $hr_height;
   width: 100%;
 }
 

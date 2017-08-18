@@ -1,8 +1,8 @@
 .peek-footer{
   position: fixed;
   width: 100%;
-  bottom: 0px;
+  bottom: 0;
   z-index: 899;
-  height: $navigation_header_height;
-  line-height: $navigation_header_height;
+  height: $title_bar_height;
+  line-height: $title_bar_height;
 }

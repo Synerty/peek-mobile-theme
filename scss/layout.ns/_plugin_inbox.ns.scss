@@ -43,8 +43,8 @@
           /*
               Contains the date and time attributes unique to the .pl-inbox-info class
           */
-          margin-bottom: 3.75pt;
-          padding-bottom: 3.75pt;
+          margin-bottom:  $inbox_date_time_margin;
+          padding-bottom:  $inbox_date_time_padding;
           text-align: right;
 
         }
