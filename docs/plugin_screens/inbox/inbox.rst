@@ -1,8 +1,8 @@
 .. _peek_plugin_inbox:
 
-=================
-Peek Plugin Inbox
-=================
+===============================
+Peek Plugin Inbox Style Example
+===============================
 
 Peek Plugin Inbox displays a list of unacknowledged items issued to the logged in user.
 

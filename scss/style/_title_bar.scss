@@ -9,7 +9,7 @@
   color: $white;
   cursor: pointer;
   border: 0;
-  font-size: $general_font_size_2;
+  font-size: $general_font_size;
   border-radius: 0;
   background-color: $brand;
   border-right: $general_border solid $brand_compliment;
@@ -24,7 +24,7 @@
 
 .title-bar-title {
   /* Contains the title attributes unique to the Title Bar */
-  font-size: $general_font_size_2;
+  font-size: $general_font_size;
   color: $black;
   text-align: center;
 }
