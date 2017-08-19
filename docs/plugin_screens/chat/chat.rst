@@ -1,8 +1,8 @@
 .. _peek_plugin_chat:
 
-================
-Peek Plugin Chat
-================
+==============================
+Peek Plugin Chat Style Example
+==============================
 
 Peek Plugin Chat displays active chat sessions and their messages.
 
