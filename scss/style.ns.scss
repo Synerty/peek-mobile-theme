@@ -1,6 +1,5 @@
 @import '_variables';
 @import '_mixins';
-@import 'style/_bootstrap_adjustments.ns';
 
 //peek screens
 @import 'style/_title_bar';
@@ -18,6 +17,8 @@
 @import 'style/_details_section';
 @import 'style/_tables_section';
 
+@import 'style/_bootstrap_adjustments.ns';
+
 body,
 html{
   font-size: $general_font_size;
@@ -27,7 +28,7 @@ html{
 }
 
 .navigation-information{
-  border-bottom: 1pt solid darken($grey,20%);
+  border-bottom: $general_border solid darken($grey,20%);
   //margin-bottom: $general_padding;
 }
 

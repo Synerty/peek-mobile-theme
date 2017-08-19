@@ -1,6 +1,5 @@
 @import '_variables';
 @import '_mixins';
-@import 'layout.ns/_bootstrap_adjustments.ns';
 
 //peek screens
 @import 'layout.ns/_title_bar.ns';
@@ -16,3 +15,5 @@
 //plugin screens
 @import 'layout.ns/_plugin_chat.ns';
 @import 'layout.ns/_plugin_inbox.ns';
+
+@import 'layout.ns/_bootstrap_adjustments.ns';

@@ -11,18 +11,18 @@
 
   color: $font_colour_button;
   cursor: pointer;
-  font-size: 11pt;
-  padding: 6pt;
+  font-size: $general_font_size_0_9;
+  padding: $general_button_padding;
   border: 0;
   background-color: $general_button_background;
-  min-width: 30pt;
+  min-width: $general_button_min_width;
 
   &:hover {
     background-color: $general_button_background_hover;
     color: $white;
   }
 
-  border-right: 1pt solid $general_button_divider;
+  border-right: $general_border solid $general_button_divider;
 
   &:last-child {
     border-radius: 0 $general_border_radius $general_border_radius 0;
@@ -48,9 +48,9 @@
 @mixin editable-web-layout {
   display: block;
   width: 100%;
-  height: 26pt;
-  padding: 5pt 9pt;
-  line-height: 1.42857143;
+  height: $general_height_2_15;
+  padding: 6.7px 12px;
+  line-height: $general_line_height;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
@@ -59,22 +59,21 @@
 }
 
 @mixin editable-style {
-  font-size: 11pt;
+  font-size: $general_font_size_0_9;
   color: $font_colour_data;
   background-color: #fff;
   background-image: none;
-  border: 1pt solid $grey;
-  border-radius: 3pt;
-  box-shadow: inset 0 1pt 1pt rgba(0, 0, 0, .075);
-
+  border: $general_border solid $grey;
+  border-radius: $general_border_radius;
+  box-shadow: inset 0 1.3px 1.3px rgba(0, 0, 0, .075);
 }
 
 @mixin box-shadow {
-  box-shadow: 1pt 2pt 8pt rgba(0, 0, 0, .35);
+  box-shadow: 1.3px 2.7px 10.7px rgba(0, 0, 0, .35);
 }
 
 @mixin inner-shadow($opacity) {
-  box-shadow: inset 1pt 2pt 18pt rgba(0, 0, 0, $opacity);
+  box-shadow: inset 1.3px 2.7px 24px rgba(0, 0, 0, $opacity);
 }
 
 @mixin no-shadow {

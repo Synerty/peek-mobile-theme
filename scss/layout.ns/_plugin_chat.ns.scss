@@ -2,7 +2,7 @@
   /*
       Contains the chat-list component classes
   */
-  padding-top: $general_padding + $general_padding_nav_bar;
+  padding-top: $general_padding + $nav_bar_padding_top;
 
   .chat-list-messages {
     /*
@@ -10,7 +10,7 @@
     */
     margin: 0 $general_padding $general_padding $general_padding;
     padding: $general_padding;
-    border: 1pt solid $grey;
+    border: $general_border solid $grey;
     border-radius: $general_border_radius;
 
     .chat-list-icon {
@@ -49,7 +49,7 @@
           received class.
           bg-success class applied for a successfully sent message.
       */
-      margin-bottom: 5pt;
+      margin-bottom: $chat_messages_margin;
       margin-left: 2%;
 
     }
@@ -61,7 +61,7 @@
           sent class.
           bg-warning class applied for an emergency priority message.
       */
-      margin-bottom: 5pt;
+      margin-bottom: $chat_messages_margin;
       margin-right: 2%;
 
     }

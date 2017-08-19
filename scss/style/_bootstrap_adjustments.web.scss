@@ -1,6 +1,6 @@
 .title {
   /* Applies the title theme */
-  font-size: 24pt;
+  font-size: $general_font_size_2;
   text-align: center;
   color: $font_colour_information;
 }
@@ -36,89 +36,89 @@
 .bg-primary {
   /* Applies the primary background theme */
 
-  color: $font_colour_data !important;
-  background-color: $light_primary !important;
+  color: $font_colour_data;
+  background-color: $light_primary;
 }
 
 .bg-success {
   /* Applies the success background theme */
 
-  color: $font_colour_data !important;
-  background-color: $light_success !important;
+  color: $font_colour_data;
+  background-color: $light_success;
 }
 
 .bg-info {
   /* Applies the info background theme */
 
-  color: $font_colour_data !important;
-  background-color: $light_info !important;
+  color: $font_colour_data;
+  background-color: $light_info;
 }
 
 .bg-warning {
   /* Applies the warning background theme */
 
-  color: $font_colour_data !important;
-  background-color: $light_warning !important;
+  color: $font_colour_data;
+  background-color: $light_warning;
 }
 
 .bg-danger {
   /* Applies the danger background theme */
 
-  color: $font_colour_data !important;
-  background-color: $light_danger !important;
+  color: $font_colour_data;
+  background-color: $light_danger;
 }
 
 .btn-primary {
   /* Applies the primary button theme */
 
-  background-color: $primary !important;
-  background-image: none !important;
+  background-color: $primary;
+  background-image: none;
 
   &:hover {
-    background-color: $dark_primary !important;
+    background-color: $dark_primary;
   }
 }
 
 .btn-success {
   /* Applies the success button theme */
 
-  background-color: $success !important;
-  background-image: none !important;
+  background-color: $success;
+  background-image: none;
 
   &:hover {
-    background-color: $dark_success !important;
+    background-color: $dark_success;
   }
 }
 
 .btn-info {
   /* Applies the info button theme */
 
-  background-color: $info !important;
-  background-image: none !important;
+  background-color: $info;
+  background-image: none;
 
   &:hover {
-    background-color: $dark_info !important;
+    background-color: $dark_info;
   }
 }
 
 .btn-warning {
   /* Applies the warning button theme */
 
-  background-color: $warning !important;
-  background-image: none !important;
+  background-color: $warning;
+  background-image: none;
 
   &:hover {
-    background-color: $dark_warning !important;
+    background-color: $dark_warning;
   }
 }
 
 .btn-danger {
   /* Applies the danger button theme */
 
-  background-color: $danger !important;
-  background-image: none !important;
+  background-color: $danger;
+  background-image: none;
 
   &:hover {
-    background-color: $dark_danger !important;
+    background-color: $dark_danger;
   }
 }
