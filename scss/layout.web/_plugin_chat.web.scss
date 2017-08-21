@@ -20,6 +20,7 @@
           Contains the icon attributes unique to the message class
           The icon is used to indicate unread messages
       */
+      float: right;
 
     }
     .chat-list-title {
@@ -27,6 +28,9 @@
           Contains the topic text attributes unique to the message class
       */
 
+    }
+    .fa {
+      float: right;
     }
   }
 }
@@ -36,8 +40,8 @@
       Contains the msg-list component classes
   */
   overflow-y: scroll;
-  max-height:  533.3px;
-  min-height:  533.3px;
+  max-height: 533.3px;
+  min-height: 533.3px;
   padding-top: $general_padding;
   padding-bottom: $general_padding;
   margin-right: auto;
