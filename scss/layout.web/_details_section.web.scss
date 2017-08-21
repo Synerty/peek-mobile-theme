@@ -38,7 +38,7 @@
         /*
             Contains the height property for the .editable class
         */
-        height: $general_height_3_5;
+        height: $general_height_2;
 
       }
 
@@ -46,7 +46,7 @@
         /*
             Contains the height property for the .editable class
         */
-        height: $general_height_4_83;
+        height: $general_height_3;
 
       }
     }
@@ -59,13 +59,13 @@
 
     //Single line inputs
     input.editable {
-      height: $general_height_3_5;
+      height: $general_height_2;
 
     }
 
     //Multi line inputs
     textarea.editable {
-      height: $general_height_3_5;
+      height: $general_height_2;
 
     }
   }

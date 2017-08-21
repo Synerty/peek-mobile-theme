@@ -11,7 +11,7 @@
 
   color: $font_colour_button;
   cursor: pointer;
-  font-size: $general_font_size_0_9;
+  font-size: $general_font_size_2;
   padding: $general_button_padding;
   border: 0;
   background-color: $general_button_background;
@@ -48,7 +48,7 @@
 @mixin editable-web-layout {
   display: block;
   width: 100%;
-  height: $general_height_2_15;
+  height: $general_height_1;
   padding: 6.7px 12px;
   line-height: $general_line_height;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -59,7 +59,7 @@
 }
 
 @mixin editable-style {
-  font-size: $general_font_size_0_9;
+  font-size: $general_font_size_2;
   color: $font_colour_data;
   background-color: #fff;
   background-image: none;

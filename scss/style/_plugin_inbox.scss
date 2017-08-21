@@ -17,7 +17,7 @@
           Contains the icon attributes unique to the .pl-inbox-item class
       */
       color: $brand;
-      font-size: $general_font_size_1_25;
+      font-size: $general_font_size_3;
     }
 
     .pl-inbox-info {
@@ -37,14 +37,14 @@
       /*
           Contains the description text attributes unique to the .pl-inbox-info class
       */
-      font-size: $general_font_size_0_9;
+      font-size: $general_font_size_2;
     }
 
     .pl-inbox-date-time {
       /*
           Contains the date and time attributes unique to the .pl-inbox-info class
       */
-      font-size: $general_font_size_0_9;
+      font-size: $general_font_size_2;
       border-bottom: $general_border solid $grey;
     }
   }
@@ -64,7 +64,7 @@
 //navigation tabs
 .nav {
 
-  $section_font_size: $general_font_size_0_9;
+  $section_font_size: $general_font_size_2;
 
   &.nav-tabs {
     border-bottom: 0 solid $brand;
@@ -75,7 +75,7 @@
         & > a {
           color: $font_colour_button;
           background-color: $general_button_background;
-          font-size: $general_font_size_0_8;
+          font-size: $general_font_size_1;
           border-radius: 0;
         }
       }
@@ -83,7 +83,7 @@
       & > a {
         color: #666666;
         background-color: #eee;
-        font-size: $general_font_size_0_8;
+        font-size: $general_font_size_1;
         border: 0;
         border-radius: 0;
       }
