@@ -1,0 +1,112 @@
+@mixin nuke {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+@mixin button-settings {
+
+  color: $font_colour_button;
+  cursor: pointer;
+  font-size: $general_font_size_2;
+  padding: $general_button_padding;
+  border: 0;
+  background-color: $general_button_background;
+  min-width: $general_button_min_width;
+
+  &:hover {
+    background-color: $general_button_background_hover;
+    color: $white;
+  }
+
+  border-right: $general_border solid $general_button_divider;
+
+  &:last-child {
+    border-radius: 0 $general_border_radius $general_border_radius 0;
+    border-right: 0;
+  }
+
+  &:first-child {
+    border-radius: $general_border_radius 0 0 $general_border_radius;
+  }
+
+  &:first-child:last-child {
+    border-radius: $general_border_radius;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: $general_button_background_disabled;
+    color: $font_colour_disabled;
+  }
+}
+
+@mixin editable-web-layout {
+  display: block;
+  width: 100%;
+  height: $general_height_1;
+  padding: 6.7px 12px;
+  line-height: $general_line_height;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+@mixin editable-ns-layout {
+
+}
+
+@mixin editable-style {
+  font-size: $general_font_size_2;
+  color: $font_colour_data;
+  background-color: #fff;
+  background-image: none;
+  border: $general_border solid $grey;
+  border-radius: $general_border_radius;
+  box-shadow: inset 0 1.3px 1.3px rgba(0, 0, 0, .075);
+}
+
+@mixin box-shadow {
+  box-shadow: 1.3px 2.7px 10.7px rgba(0, 0, 0, .35);
+}
+
+@mixin inner-shadow($opacity) {
+  box-shadow: inset 1.3px 2.7px 24px rgba(0, 0, 0, $opacity);
+}
+
+@mixin no-shadow {
+  box-shadow: 0 0 0 rgba(0, 0, 0, .0);
+}
+
+//gradients
+@mixin gradient-radial($color_base,$color_faded) {
+  background-color: $color_base;
+  background: $color_base; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, $color_base, $color_faded); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, $color_base, $color_faded); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, $color_base, $color_faded); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, $color_base, $color_faded); /* Standard syntax */
+}
+
+@mixin gradient-linear($color_base,$color_faded) {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($color_base, $color_faded); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($color_base, $color_faded); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($color_base, $color_faded); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($color_base, $color_faded); /* Standard syntax */
+}
+
+//fade overlay
+@mixin rollover-opacity($fade-up-to) {
+  //requires link-rollout
+  opacity: $fade-up-to;
+  @include rollover;
+}
+
+@mixin rollover {
+  transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -webkit-transition: all .35s ease;
+}
