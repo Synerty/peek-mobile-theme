@@ -20,6 +20,7 @@
           Contains the icon attributes unique to the message class
           The icon is used to indicate unread messages
       */
+      float: right;
 
     }
     .chat-list-title {
@@ -27,6 +28,9 @@
           Contains the topic text attributes unique to the message class
       */
 
+    }
+    .fa {
+      float: right;
     }
   }
 }
@@ -36,12 +40,10 @@
       Contains the msg-list component classes
   */
   overflow-y: scroll;
-  max-height:  533.3px;
-  min-height:  533.3px;
-  padding-top: $general_padding_2;
-  padding-bottom: $general_padding_2;
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: $general_padding_1;
+  padding-bottom: $title_bar_height + $general_padding_1 + $general_padding_4;
+  margin-right: 2%;
+  margin-left: 2%;
 
   .chat-messages-list {
     /*
@@ -79,7 +81,6 @@
       min-height: $chat_messages_min_height;
       padding: $general_padding_2;
       margin-bottom: $chat_messages_margin;
-      margin-right: 10%;
 
     }
     .chat-messages-received {
@@ -97,41 +98,34 @@
       min-height: $chat_messages_min_height;
       padding: $general_padding_2;
       margin-bottom: $chat_messages_margin;
-      margin-right: 10%;
 
     }
-    .chat-messages-emergency {
-      /*
-          Contains the emergency priority message text attributes unique to the
-          message-list class
-      */
-      white-space: pre-wrap
-
-    }
-    .chat-messages-normal {
-      /*
-          Contains the normal priority message text attributes unique to the
-          message-list class
-      */
-      white-space: pre-wrap
+    .chat-messages-contents {
 
     }
   }
+}
 
-  .chat-messages-compose {
+.chat-messages-compose {
+  /*
+      Contains the compose message area attributes unique to the
+      chat messages.
+      Fixed to the bottom of the screen.
+  */
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background: $white;
+  padding-top: $general_padding_1;
+  padding-bottom: $title_bar_height + $general_padding_1;
+
+  .chat-messages-new-text {
     /*
-        Contains the compose message area attributes unique to the
-        chat messages.
-        Fixed to the bottom of the screen.
+        Contains the new message text attributes unique to the
+        chat-messages-compose class.
     */
+    height: $general_height_3;
 
-    .chat-messages-new-text {
-      /*
-          Contains the new message text attributes unique to the
-          chat-messages-compose class.
-      */
-
-    }
   }
 }
 
