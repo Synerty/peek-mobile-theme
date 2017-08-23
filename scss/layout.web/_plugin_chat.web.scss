@@ -2,16 +2,16 @@
   /*
       Contains the chat-list component classes
   */
-  padding-top: $general_padding;
+  padding-top: $general_padding_2;
 
   .chat-list-messages {
     /*
         Contains the Messages attributes unique to the Chat List
     */
-    margin: 0 $general_padding $general_padding $general_padding;
+    margin: 0 $general_padding_2 $general_padding_2 $general_padding_2;
     display: block;
     overflow: hidden;
-    padding: $general_padding;
+    padding: $general_padding_2;
     border: $general_border solid $grey;
     border-radius: $general_border_radius;
 
@@ -38,8 +38,8 @@
   overflow-y: scroll;
   max-height:  533.3px;
   min-height:  533.3px;
-  padding-top: $general_padding;
-  padding-bottom: $general_padding;
+  padding-top: $general_padding_2;
+  padding-bottom: $general_padding_2;
   margin-right: auto;
   margin-left: auto;
 
@@ -60,8 +60,8 @@
       float: left;
       position: relative;
       min-height: $chat_messages_min_height;
-      padding-right: $general_padding;
-      padding-left: $general_padding;
+      padding-right: $general_padding_2;
+      padding-left: $general_padding_2;
 
     }
 
@@ -77,7 +77,7 @@
       float: left;
       position: relative;
       min-height: $chat_messages_min_height;
-      padding: $general_padding;
+      padding: $general_padding_2;
       margin-bottom: $chat_messages_margin;
       margin-right: 10%;
 
@@ -95,7 +95,7 @@
       float: left;
       position: relative;
       min-height: $chat_messages_min_height;
-      padding: $general_padding;
+      padding: $general_padding_2;
       margin-bottom: $chat_messages_margin;
       margin-right: 10%;
 
@@ -136,7 +136,7 @@
 }
 
 .chat-messages-btn-group {
-  padding-top: $general_padding;
+  padding-top: $general_padding_2;
   float: right;
 
   .chat-messages-btn {

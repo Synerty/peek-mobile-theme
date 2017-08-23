@@ -14,7 +14,7 @@
           The icon is used to indicate unread messages
       */
       color: $general_icon_color;
-      font-size: $general_font_size_3;
+      font-size: $general_font_size_4;
       float: right;
 
     }
@@ -27,7 +27,7 @@
     color: $font_colour_information;
     .fa {
       color: $general_icon_color;
-      font-size: $general_font_size_3;
+      font-size: $general_font_size_4;
       float: right;
     }
 
@@ -87,7 +87,7 @@
           Contains the emergency priority message text attributes unique to the
           message-list class
       */
-      font-size: $general_font_size_4;
+      font-size: $general_font_size_5;
       border-radius: $general_border_radius;
 
     }
@@ -96,7 +96,7 @@
           Contains the normal priority message text attributes unique to the
           message-list class
       */
-      font-size: $general_font_size_3;
+      font-size: $general_font_size_4;
       border-radius: $general_border_radius;
 
     }

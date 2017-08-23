@@ -6,15 +6,15 @@
 
 .title-bar-btn {
   /* Contains the button attributes unique to the Title Bar */
-  padding: $general_padding_4;
+  padding: $general_padding_5;
   margin-right: 0;
 }
 
 .title-bar-title {
   /* Contains the title attributes unique to the Title Bar */
   vertical-align: center;
-  padding-left: $general_padding;
-  padding-right: $general_padding;
+  padding-left: $general_padding_2;
+  padding-right: $general_padding_2;
 }
 
 .peek-mobile-page-contents {

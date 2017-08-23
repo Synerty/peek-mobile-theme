@@ -2,14 +2,14 @@
   /*
       Contains the chat-list component classes
   */
-  padding-top: $general_padding + $nav_bar_padding_top;
+  padding-top: $general_padding_2 + $nav_bar_padding_top;
 
   .chat-list-messages {
     /*
         Contains the Messages attributes unique to the Chat List
     */
-    margin: 0 $general_padding $general_padding $general_padding;
-    padding: $general_padding;
+    margin: 0 $general_padding_2 $general_padding_2 $general_padding_2;
+    padding: $general_padding_2;
     border: $general_border solid $grey;
     border-radius: $general_border_radius;
 

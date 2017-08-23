@@ -1,6 +1,6 @@
 .peek-details-section {
   /* Contains the Details Section looks classes */
-  margin-top: $general_padding;
+  margin-top: $general_padding_2;
 
   .details-section-title {
     /*
@@ -14,8 +14,8 @@
         Contains the value attributes unique to the Details Section
         text to have the focus of attention
     */
-    margin-top: $general_padding;
-    margin-bottom: $general_padding;
+    margin-top: $general_padding_2;
+    margin-bottom: $general_padding_2;
 
     .editable {
       /*

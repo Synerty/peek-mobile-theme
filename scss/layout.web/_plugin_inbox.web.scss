@@ -1,8 +1,8 @@
 .pl-inbox {
 
-  padding-top: $general_padding;
-  padding-left: $general_padding;
-  padding-right: $general_padding;
+  padding-top: $general_padding_2;
+  padding-left: $general_padding_2;
+  padding-right: $general_padding_2;
 
   .pl-inbox {
     /*
@@ -13,7 +13,7 @@
       /*
           Contains the style and classes for the
       */
-      padding: $general_padding;
+      padding: $general_padding_2;
       position: relative;
       width: 100%;
       overflow: hidden;
@@ -30,7 +30,7 @@
         /*
             Contains the info attributes unique to the .pl-inbox-item class
         */
-        padding: 0 $general_padding;
+        padding: 0 $general_padding_2;
         vertical-align: top;
 
         .pl-inbox-title {

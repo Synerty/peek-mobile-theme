@@ -2,7 +2,7 @@
   /*
       Contains the Information Section classes
   */
-  padding: $general_padding;
+  padding: $general_padding_2;
 
   .information-section-title {
     /*
@@ -15,12 +15,12 @@
         Contains the icon attributes unique to the peek-information-section class
     */
     background-image: url('~/assets/home_background.png');
-    padding: $general_padding_2;
+    padding: $general_padding_3;
     width: 25%;
     height: 25%;
     border-radius: $general_border_radius;
-    margin-top: $general_margin_2;
-    margin-bottom: $general_margin_2;
+    margin-top: $general_margin_3;
+    margin-bottom: $general_margin_3;
     horizontal-align: center;
     display: block;
   }
