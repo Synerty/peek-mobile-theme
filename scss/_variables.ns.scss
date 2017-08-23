@@ -22,11 +22,11 @@ $light_danger: lighten($danger, 35%);
 $dark_danger: darken($danger, 10%);
 
 //general
-$general_width: 100px;
-$general_border: 1.3px;
-$general_border_radius: 4px;
-$general_button_padding: 8px;
-$general_button_min_width: 40px;
+$general_width: 49.1;
+$general_border: 0.6;
+$general_border_radius: 2;
+$general_button_padding: 3.9;
+$general_button_min_width: 19.6;
 $general_line_height: 1.42857143;
 $general_background_color: lighten($grey, 18%);
 $general_header_background: darken($grey, 20%);
@@ -35,28 +35,28 @@ $general_button_background_hover: darken($grey, 35%);
 $general_button_background_disabled: lighten($grey, 15%);
 $general_icon_color: darken($grey, 10%);
 
-$general_font_size_1: 12.8px;
-$general_font_size_2: 14.4px;
-$general_font_size_3: 16px;
-$general_font_size_4: 20px;
-$general_font_size_5: 24px;
-$general_font_size_6: 32px;
-$general_font_size_7: 48px;
+$general_font_size_1: 6.3;
+$general_font_size_2: 7.1;
+$general_font_size_3: 8;
+$general_font_size_4: 9.8;
+$general_font_size_5: 11.8;
+$general_font_size_6: 15.7;
+$general_font_size_7: 23.6;
 
-$general_height_1: 34.4px;
-$general_height_2: 56px;
-$general_height_3: 77.28px;
+$general_height_1: 16.7;
+$general_height_2: 27.5;
+$general_height_3: 37.8;
 
-$general_padding_1: 8px;
-$general_padding_2: 16px;
-$general_padding_3: 20px;
-$general_padding_4: 32px;
-$general_padding_5: 64px;
+$general_padding_1: 3.9;
+$general_padding_2: 8;
+$general_padding_3: 9.8;
+$general_padding_4: 15.7;
+$general_padding_5: 31.4;
 
-$general_margin_1: 16px;
-$general_margin_2: 20px;
-$general_margin_3: 32px;
-$general_margin_4: 64px;
+$general_margin_1: 8;
+$general_margin_2: 9.8;
+$general_margin_3: 15.7;
+$general_margin_4: 31.4;
 
 //fonts
 $fonts_special: arial;
@@ -66,37 +66,37 @@ $font_colour_disabled: lighten($grey, 5%);
 $font_colour_button: $white;
 
 //title bar
-$title_bar_height: 60px;
-$title_bar_button_min_width: 66.7px;
-$title_bar_padding: 10.7px;
+$title_bar_height: 31.4;
+$title_bar_button_min_width: 37.8;
+$title_bar_padding: 5.3;
 
 
 //nav bar
-$nav_bar_padding_top: 64px;
+$nav_bar_padding_top: 31.4;
 
 //button
 $inbox_button_background: darken($grey, 10%);
 $general_button_divider: darken($grey, 35%);
 
 //hr
-$hr_height: 1.3px;
+$hr_height: 0.6;
 
 //home screen
-$home_screen_image_padding: 40px;
+$home_screen_image_padding: 19.6;
 
 //inbox
-$inbox_date_time_margin: 5px;
-$inbox_date_time_padding: 5px;
-$inbox_nav_tabs_padding_active: 12px;
-$inbox_nav_tabs_padding: 10px;
-$inbox_nav_tabs_margin: 4px;
+$inbox_date_time_margin: 2.5;
+$inbox_date_time_padding: 2.5;
+$inbox_nav_tabs_padding_active: 5.9;
+$inbox_nav_tabs_padding: 4.9;
+$inbox_nav_tabs_margin: 2;
 
 //chat
-$chat_messages_margin: 6.7px;
-$chat_messages_min_height: 1.3px;
+$chat_messages_margin: 3.3;
+$chat_messages_min_height: 0.6;
 
 //mobile dialog
-$mobile_dialog_btn_block_margin: 6.7px;
+$mobile_dialog_btn_block_margin: 3.3;
 
 //image asset locations
 $ns_assets: "~/assets/";
