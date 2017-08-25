@@ -2,16 +2,16 @@
   /*
       Contains the chat-list component classes
   */
-  padding-top: $general_padding;
+  padding-top: $general_padding_2;
 
   .chat-list-messages {
     /*
         Contains the Messages attributes unique to the Chat List
     */
-    margin: 0 $general_padding $general_padding $general_padding;
+    margin: 0 $general_padding_2 $general_padding_2 $general_padding_2;
     display: block;
     overflow: hidden;
-    padding: $general_padding;
+    padding: $general_padding_2;
     border: $general_border solid $grey;
     border-radius: $general_border_radius;
 
@@ -40,8 +40,8 @@
       Contains the msg-list component classes
   */
   overflow-y: scroll;
-  padding-top: $general_padding;
-  padding-bottom: $title_bar_height + $general_padding + $general_padding_4;
+  padding-top: $general_padding_1;
+  padding-bottom: $title_bar_height + $general_padding_1 + $general_padding_4;
   margin-right: 2%;
   margin-left: 2%;
 
@@ -62,8 +62,8 @@
       float: left;
       position: relative;
       min-height: $chat_messages_min_height;
-      padding-right: $general_padding;
-      padding-left: $general_padding;
+      padding-right: $general_padding_2;
+      padding-left: $general_padding_2;
 
     }
 
@@ -79,7 +79,7 @@
       float: left;
       position: relative;
       min-height: $chat_messages_min_height;
-      padding: $general_padding;
+      padding: $general_padding_2;
       margin-bottom: $chat_messages_margin;
 
     }
@@ -96,7 +96,7 @@
       float: left;
       position: relative;
       min-height: $chat_messages_min_height;
-      padding: $general_padding;
+      padding: $general_padding_2;
       margin-bottom: $chat_messages_margin;
 
     }
@@ -116,8 +116,8 @@
   position: fixed;
   width: 100%;
   background: $white;
-  padding-top: $general_padding;
-  padding-bottom: $title_bar_height + $general_padding;
+  padding-top: $general_padding_1;
+  padding-bottom: $title_bar_height + $general_padding_1;
 
   .chat-messages-new-text {
     /*
@@ -130,7 +130,7 @@
 }
 
 .chat-messages-btn-group {
-  padding-top: $general_padding;
+  padding-top: $general_padding_2;
   float: right;
 
   .chat-messages-btn {

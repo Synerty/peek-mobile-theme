@@ -1,6 +1,6 @@
 .pl-inbox {
 
-  padding-top: $general_padding;
+  padding-top: $general_padding_2;
 
   .pl-inbox {
     /*
@@ -11,7 +11,7 @@
       /*
           Contains the style and classes for the
       */
-      padding: $general_padding;
+      padding: $general_padding_2;
       width: 100%;
 
       .pl-inbox-icon {
@@ -24,7 +24,7 @@
         /*
             Contains the info attributes unique to the .pl-inbox-item class
         */
-        padding: 0 $general_padding;
+        padding: 0 $general_padding_2;
 
         .pl-inbox-title {
           /*

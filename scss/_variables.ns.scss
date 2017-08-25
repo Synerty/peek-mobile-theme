@@ -1,0 +1,103 @@
+//colours
+$grey: #cccccc;
+$white: #ffffff;
+$black: #000000;
+$brand: #28aae1;
+$brand_compliment: darken(#28aae1, 10%);
+$divider_colour_navigation_section: $grey;
+$primary: #337ab7;
+$light_primary: lighten($primary, 45%);
+$dark_primary: darken($primary, 10%);
+$success: #5cb85c;
+$light_success: lighten($success, 35%);
+$dark_success: darken($success, 10%);
+$info: #5bc0de;
+$light_info: lighten($info, 35%);
+$dark_info: darken($info, 10%);
+$warning: #f0ad4e;
+$light_warning: lighten($warning, 35%);
+$dark_warning: darken($warning, 10%);
+$danger: #d9534f;
+$light_danger: lighten($danger, 35%);
+$dark_danger: darken($danger, 10%);
+
+//general
+$general_width: 100;
+$general_border: 1.3;
+$general_border_radius: 4;
+$general_button_padding: 8;
+$general_button_min_width: 40;
+$general_line_height: 1.42857143;
+$general_background_color: lighten($grey, 18%);
+$general_header_background: darken($grey, 20%);
+$general_button_background: darken($grey, 20%);
+$general_button_background_hover: darken($grey, 35%);
+$general_button_background_disabled: lighten($grey, 15%);
+$general_icon_color: darken($grey, 10%);
+
+$general_font_size_1: 12.8;
+$general_font_size_2: 14.4;
+$general_font_size_3: 16;
+$general_font_size_4: 20;
+$general_font_size_5: 24;
+$general_font_size_6: 32;
+$general_font_size_7: 48;
+
+$general_height_1: 34.4;
+$general_height_2: 56;
+$general_height_3: 77.28;
+
+$general_padding_1: 8;
+$general_padding_2: 16;
+$general_padding_3: 20;
+$general_padding_4: 32;
+$general_padding_5: 64;
+
+$general_margin_1: 16;
+$general_margin_2: 20;
+$general_margin_3: 32;
+$general_margin_4: 64;
+
+//fonts
+$fonts_special: arial;
+$font_colour_data: $black;
+$font_colour_information: darken($grey, 40%);
+$font_colour_disabled: lighten($grey, 5%);
+$font_colour_button: $white;
+
+//title bar
+$title_bar_height: 60;
+$title_bar_button_min_width: 66.7;
+$title_bar_padding: 10.7;
+
+
+//nav bar
+$nav_bar_padding_top: 64;
+
+//button
+$inbox_button_background: darken($grey, 10%);
+$general_button_divider: darken($grey, 35%);
+
+//hr
+$hr_height: 1.3;
+
+//home screen
+$home_screen_image_padding: 40;
+
+//inbox
+$inbox_date_time_margin: 5;
+$inbox_date_time_padding: 5;
+$inbox_nav_tabs_padding_active: 12;
+$inbox_nav_tabs_padding: 10;
+$inbox_nav_tabs_margin: 4;
+
+//chat
+$chat_messages_margin: 6.7;
+$chat_messages_min_height: 1.3;
+
+//mobile dialog
+$mobile_dialog_btn_block_margin: 6.7;
+
+//image asset locations
+$ns_assets: "~/assets/";
+$web_images: "~@synerty/peek-mobile-theme/images/";
