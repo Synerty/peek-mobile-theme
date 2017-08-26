@@ -21,13 +21,21 @@ $danger: #d9534f;
 $light_danger: lighten($danger, 35%);
 $dark_danger: darken($danger, 10%);
 
+// ppi multiplier
+@if variable-exists($ppi_multiplier) {
+  // use the imported scaling value.
+} @else {
+  // set default scaling
+  $ppi_multiplier: 1;
+}
+
 //general
-$general_width: 100;
-$general_border: 1.3;
-$general_border_radius: 4;
+$general_width: 100 * $ppi_multiplier;
+$general_border: 1.3 * $ppi_multiplier;
+$general_border_radius: 4 * $ppi_multiplier;
 $general_button_padding: 8;
-$general_button_min_width: 40;
-$general_line_height: 1.42857143;
+$general_button_min_width: 40 * $ppi_multiplier * $ppi_multiplier;
+$general_line_height: 1.42857143 * $ppi_multiplier;
 $general_background_color: lighten($grey, 18%);
 $general_header_background: darken($grey, 20%);
 $general_button_background: darken($grey, 20%);
@@ -35,28 +43,28 @@ $general_button_background_hover: darken($grey, 35%);
 $general_button_background_disabled: lighten($grey, 15%);
 $general_icon_color: darken($grey, 10%);
 
-$general_font_size_1: 12.8;
-$general_font_size_2: 14.4;
-$general_font_size_3: 16;
-$general_font_size_4: 20;
-$general_font_size_5: 24;
-$general_font_size_6: 32;
-$general_font_size_7: 48;
+$general_font_size_1: 12.8 * $ppi_multiplier;
+$general_font_size_2: 14.4 * $ppi_multiplier;
+$general_font_size_3: 16 * $ppi_multiplier;
+$general_font_size_4: 20 * $ppi_multiplier;
+$general_font_size_5: 24 * $ppi_multiplier;
+$general_font_size_6: 32 * $ppi_multiplier;
+$general_font_size_7: 48 * $ppi_multiplier;
 
-$general_height_1: 34.4;
-$general_height_2: 56;
-$general_height_3: 77.28;
+$general_height_1: 34.4 * $ppi_multiplier;
+$general_height_2: 56 * $ppi_multiplier;
+$general_height_3: 77.28 * $ppi_multiplier;
 
-$general_padding_1: 8;
-$general_padding_2: 16;
-$general_padding_3: 20;
-$general_padding_4: 32;
-$general_padding_5: 64;
+$general_padding_1: 8 * $ppi_multiplier;
+$general_padding_2: 16 * $ppi_multiplier;
+$general_padding_3: 20 * $ppi_multiplier;
+$general_padding_4: 32 * $ppi_multiplier;
+$general_padding_5: 64 * $ppi_multiplier;
 
-$general_margin_1: 16;
-$general_margin_2: 20;
-$general_margin_3: 32;
-$general_margin_4: 64;
+$general_margin_1: 16 * $ppi_multiplier;
+$general_margin_2: 20 * $ppi_multiplier;
+$general_margin_3: 32 * $ppi_multiplier;
+$general_margin_4: 64 * $ppi_multiplier;
 
 //fonts
 $fonts_special: arial;
@@ -67,36 +75,36 @@ $font_colour_button: $white;
 
 //title bar
 $title_bar_height: 60;
-$title_bar_button_min_width: 66.7;
-$title_bar_padding: 10.7;
+$title_bar_button_min_width: 66.7 * $ppi_multiplier;
+$title_bar_padding: 10.7 * $ppi_multiplier;
 
 
 //nav bar
-$nav_bar_padding_top: 64;
+$nav_bar_padding_top: 64 * $ppi_multiplier;
 
 //button
 $inbox_button_background: darken($grey, 10%);
 $general_button_divider: darken($grey, 35%);
 
 //hr
-$hr_height: 1.3;
+$hr_height: 1.3 * $ppi_multiplier;
 
 //home screen
-$home_screen_image_padding: 40;
+$home_screen_image_padding: 40 * $ppi_multiplier;
 
 //inbox
-$inbox_date_time_margin: 5;
-$inbox_date_time_padding: 5;
-$inbox_nav_tabs_padding_active: 12;
-$inbox_nav_tabs_padding: 10;
-$inbox_nav_tabs_margin: 4;
+$inbox_date_time_margin: 5 * $ppi_multiplier;
+$inbox_date_time_padding: 5 * $ppi_multiplier;
+$inbox_nav_tabs_padding_active: 12 * $ppi_multiplier;
+$inbox_nav_tabs_padding: 10 * $ppi_multiplier;
+$inbox_nav_tabs_margin: 4 * $ppi_multiplier;
 
 //chat
-$chat_messages_margin: 6.7;
-$chat_messages_min_height: 1.3;
+$chat_messages_margin: 6.7 * $ppi_multiplier;
+$chat_messages_min_height: 1.3 * $ppi_multiplier;
 
 //mobile dialog
-$mobile_dialog_btn_block_margin: 6.7;
+$mobile_dialog_btn_block_margin: 6.7 * $ppi_multiplier;
 
 //image asset locations
 $ns_assets: "~/assets/";
