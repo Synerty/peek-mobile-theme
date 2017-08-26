@@ -1,8 +1,3 @@
-.. _overview:
-
-========
-Overview
-========
 
 .. image:: ./peek_ios_display_field-switching.png
   :align: center

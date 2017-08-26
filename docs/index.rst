@@ -2,13 +2,13 @@
 Peek Mobile Theme Documentation
 ===============================
 
-The Peek Mobile Theme will style the Peek app built upon :ref:`overview_bootstrap`.
+.. include:: overview.inc
+
 
 .. toctree::
     :maxdepth: 1
-    :caption: Contents:
+    :caption: Documentation Contents
 
-    overview/overview
     design_guidelines/design_guidelines
     peek_screens/index_peek_screens
     generic_sections/index_generic_sections

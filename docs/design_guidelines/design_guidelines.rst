@@ -98,3 +98,28 @@ pixels.  This is the iPhone 5 resolution.
 
 .. note:: The application will function on devices with lower resolution but may not
   display correctly.
+
+
+Style Guide
+-----------
+
+
+Style
+`````
+
+
+Layout
+``````
+
+
+Components
+``````````
+
+
+Patterns
+````````
+
+
+Usability
+`````````
+
