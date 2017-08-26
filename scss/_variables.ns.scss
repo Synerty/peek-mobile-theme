@@ -21,13 +21,7 @@ $danger: #d9534f;
 $light_danger: lighten($danger, 35%);
 $dark_danger: darken($danger, 10%);
 
-// ppi multiplier
-@if variable-exists($ppi_multiplier) {
-  // use the imported scaling value.
-} @else {
-  // set default scaling
-  $ppi_multiplier: 1;
-}
+$ppi_multiplier: 1 !default;
 
 //general
 $general_width: 100 * $ppi_multiplier;
