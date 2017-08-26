@@ -14,8 +14,8 @@
         Buttons responsively wrap
     */
     background-image: url("#{$web_images}button_home_background.png");
-    margin-top: $general_padding_3;
-    padding: $general_padding_3;
+    margin-top: $general_padding_4;
+    padding: $general_padding_4;
     position: relative;
 
     .home-screen-image {
@@ -34,7 +34,7 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      padding: $general_padding;
+      padding: $general_padding_2;
 
     }
   }
@@ -43,7 +43,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    padding: $general_padding;
+    padding: $general_padding_2;
 
   }
 }

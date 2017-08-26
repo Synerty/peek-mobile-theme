@@ -22,8 +22,8 @@
 .title-bar-title {
   /* Contains the title attributes unique to the Title Bar */
   line-height: $title_bar_height;
-  padding-left: $general_padding;
-  padding-right: $general_padding;
+  padding-left: $general_padding_2;
+  padding-right: $general_padding_2;
   float: left;
   margin: auto;
   width: 50%;
@@ -32,5 +32,5 @@
 .peek-mobile-page-contents {
   /* Contains the padding to stop the screens being covered by the title-bar */
   padding-top: $title_bar_height;
-  padding-bottom: $title_bar_height + $general_padding;
+  padding-bottom: $title_bar_height + $general_padding_2;
 }

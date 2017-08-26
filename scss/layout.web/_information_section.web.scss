@@ -3,13 +3,13 @@
       Contains the Information Section classes
   */
 
-  padding: $general_padding;
+  padding: $general_padding_2;
 
   .information-section-title {
     /*
         Contains the title attributes unique to the peek-information-section class
     */
-    padding-bottom: $general_padding;
+    padding-bottom: $general_padding_2;
   }
 
   .information-section-icon {
@@ -18,12 +18,12 @@
     */
     background-image: url('../images/home_background.png');
     @include inner-shadow(0.35);
-    padding: $general_padding_2;
+    padding: $general_padding_3;
     max-width: $general_width;
     height: auto;
     border-radius: $general_border_radius;
-    margin-top: $general_padding_3;
-    margin-bottom: $general_padding_3;
+    margin-top: $general_padding_4;
+    margin-bottom: $general_padding_4;
     margin-left: auto;
     margin-right: auto;
     display: block;

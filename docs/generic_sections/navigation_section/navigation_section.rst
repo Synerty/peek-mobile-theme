@@ -142,33 +142,39 @@ requiring the Nav Bar.
         <GridLayout class="peek-nav-section"
                     rows="auto" columns="auto, *, auto"
                     *ngIf="!confirmDialogShown()">
-            <WrapLayout class="btn-group"
+            <GridLayout rows="auto" columns="auto, auto, auto, auto"
                         row="0" col="0">
                 <Button class="nav-section-btn"
+                        row="0" col="0"
                         text="My Jobs"
                         (tap)="navToMyJobs()"></Button>
                 <Button class="nav-section-btn"
+                        row="0" col="1"
                         text="Job"
                         (tap)="navToJob()"></Button>
                 <Button class="nav-section-btn"
+                        row="0" col="2"
                         text="Operations"
                         (tap)="navToOperations()"></Button>
                 <Button class="nav-section-btn"
+                        row="0" col="3"
                         [text]="Confirm"
                         *ngIf="confirmEnabled()"
                         (tap)="confirmOp()"></Button>
-            </WrapLayout>
-            <WrapLayout class="btn-group"
+            </GridLayout>
+            <GridLayout rows="auto" columns="auto, auto"
                         row="0" col="2">
                 <Button class="nav-section-btn"
+                        row="0" col="0"
                         text="<"
                         [isEnabled]="lastOperationEnabled()"
                         (tap)="navToLastOperation()"></Button>
                 <Button class="nav-section-btn"
+                        row="0" col="1"
                         text=">"
                         [isEnabled]="nextOperationEnabled()"
                         (tap)="navToNextOperation()"></Button>
-            </WrapLayout>
+            </StackLayout>
         </GridLayout>
         <StackLayout class="hr-dark"></StackLayout>
 

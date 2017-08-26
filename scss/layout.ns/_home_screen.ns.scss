@@ -7,7 +7,7 @@
   */
   bottom: 0;
   min-height: 100%;
-  padding: $general_padding;
+  padding: $general_padding_2;
 
   .home-screen-icon {
     /*
@@ -15,8 +15,8 @@
         Buttons responsively wrap
     */
     background-image: url("#{$ns_assets}button_home_background.png");
-    margin: $general_padding;
-    padding: $general_padding;
+    margin: $general_padding_2;
+    padding: $general_padding_2;
     position: relative;
 
     .home-screen-image {
@@ -35,13 +35,13 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      padding: $general_padding;
+      padding: $general_padding_2;
 
     }
   }
   .home-screen-message {
     /* Contains the message attributes unique to the Home Screen */
-    margin: $general_margin_3;
+    margin: $general_margin_4;
 
   }
 }
