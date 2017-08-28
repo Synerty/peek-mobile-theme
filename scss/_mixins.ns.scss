@@ -59,13 +59,9 @@
 }
 
 @mixin editable-style {
-  font-size: $general_font_size_2;
-  color: $font_colour_data;
-  background-color: #fff;
-  background-image: none;
-  border: $general_border solid $grey;
+  border-width: $general_border;
   border-radius: $general_border_radius;
-  box-shadow: inset 0 1.3px 1.3px rgba(0, 0, 0, .075);
+  border-color: $grey;
 }
 
 @mixin box-shadow {
