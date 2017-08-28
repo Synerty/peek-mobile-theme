@@ -161,6 +161,32 @@ Generic Peek theme button.
 
         }
 
+
+.. _font_awesome_icons:
+
+Font Awesome Icons in Buttons
+-----------------------------
+
+`Font Awesome <http://fontawesome.io>`_
+
+Web app example: ::
+
+        <button class="details-section-btn"
+                (click)="editClicked()"
+                *ngIf="!updateMode">
+            <fa name="pencil"></fa> Edit
+        </button>
+
+
+NativeScript app example: ::
+
+        <Button class="btn fa"
+                text="{{'fa-pencil' | fonticon }} Edit"
+                (tap)="editClicked()"
+                *ngIf="!updateMode">
+        </Button>
+
+
 .. _other_useful_styles_contextual_buttons:
 
 Contextual Buttons
