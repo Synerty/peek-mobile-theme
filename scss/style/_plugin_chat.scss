@@ -101,6 +101,9 @@
         chat-messages-compose class.
     */
 
+      border-width: $general_border;
+      border-radius: $general_border_radius;
+      border-color: $grey;
   }
 }
 

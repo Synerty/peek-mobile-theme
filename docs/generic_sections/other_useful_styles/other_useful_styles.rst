@@ -18,7 +18,7 @@ Title
 
 Generic Peek theme Title.
 
-::
+ ::
 
         .title {
         /* Applies the title theme */
@@ -34,7 +34,7 @@ Generic Headings 1 through to 6.
 
 `Bootstrap Headings <http://getbootstrap.com/css/#type-headings>`_
 
-::
+ ::
 
         .h1 {
         /* Applies the heading theme */
@@ -73,7 +73,7 @@ Text
 
 Generic Peek theme Text.
 
-::
+ ::
 
         .p {
         /* Applies the text theme */
@@ -91,7 +91,7 @@ The <hr> tag defines a thematic break in the HTML app.
 
 The <StackLayout class="hr"> element defines the thematic break in the NativeScript app.
 
-::
+ ::
 
         .hr {
         /* Applies the line divider theme */
@@ -115,7 +115,7 @@ Set the background of an element to any contextual class.
     Styling Infrastructure.  The other classes need their attributes created from
     scratch to function in NativeScript.
 
-::
+ ::
 
         .bg-primary{
         /* Applies the primary background theme */
@@ -153,7 +153,7 @@ Generic Peek theme button.
 
 `NativeScript Button <https://docs.nativescript.org/angular/code-samples/ui/button.html#button>`_
 
-::
+ ::
 
         .btn {
         /*  Contains the generic button attributes */
@@ -162,29 +162,7 @@ Generic Peek theme button.
         }
 
 
-.. _font_awesome_icons:
-
-Font Awesome Icons in Buttons
------------------------------
-
-`Font Awesome <http://fontawesome.io>`_
-
-Web app example: ::
-
-        <button class="details-section-btn"
-                (click)="editClicked()"
-                *ngIf="!updateMode">
-            <fa name="pencil"></fa> Edit
-        </button>
-
-
-NativeScript app example: ::
-
-        <Button class="btn fa"
-                text="{{'fa-pencil' | fonticon }} Edit"
-                (tap)="editClicked()"
-                *ngIf="!updateMode">
-        </Button>
+For using Icons in buttons see :ref:`font_awesome_icons_in_buttons`
 
 
 .. _other_useful_styles_contextual_buttons:
@@ -199,9 +177,9 @@ Modify the button background colour and/or text colour of any button element.
 `NativeScript Contextual Colors <https://docs.nativescript.org/ui/theme#contextual-colors>`_
 
 .. note:: These classes need their attributes created from scratch to function in
-NativeScript.
+    NativeScript.
 
-::
+Contextual button classes: ::
 
         .btn-primary {
         /* Applies the primary button theme */
@@ -232,3 +210,4 @@ NativeScript.
             ...
 
         }
+
