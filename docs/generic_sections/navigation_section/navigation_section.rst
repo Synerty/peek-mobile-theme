@@ -51,10 +51,45 @@ Navigation Section.
             /* Contains the Button attributes unique to the Navigation Section */
             ...
 
+            &:hover {
+              /* pseudo-selectors are not supported in NativeScript */
+              ...
+
+            }
+
+            &:last-child {
+              /* pseudo-selectors are not supported in NativeScript */
+              ...
+
+            }
+
+            &:first-child {
+              /* pseudo-selectors are not supported in NativeScript */
+              ...
+
+            }
+
+            &:first-child:last-child {
+              /* pseudo-selectors are not supported in NativeScript */
+             ...
+
+            }
+
+            &:disabled {
+              /* pseudo-selectors are not supported in NativeScript */
+              ...
+
+            }
           }
           .nav-section-btn-divider {
             /* Contains the button divider attributes unique to the Navigation Section */
             ...
+
+          }
+          .nav-section-btn-disabled {
+            /* Contains the button disabled attributes unique to the Navigation Section */
+            ...
+
           }
         }
       }
@@ -85,6 +120,9 @@ HTML
 The :code:`peek-nav-section` is to be included before the code of the plugin screen
 requiring the Nav Bar.
 
+The :code:`nav-section-btn-divider` and :code:`nav-section-btn-disabled` classes are not required in the **Web app**.
+Their attributes are handled by *pseudo-selectors* of :code:`nav-section-btn`.
+
  ::
 
         <div class="peek-nav-section" *ngIf="!confirmDialogShown()">
@@ -92,13 +130,13 @@ requiring the Nav Bar.
                 The following 'div' groups button to the left of the Nav Bar.
                 Can contain one to many buttons
             -->
-            <div class="btn-group pull-left" role="group">
-                <Button class="nav-section-btn nav-section-btn-divider"
+            <div class="btn-group" role="group">
+                <Button class="nav-section-btn"
                         role="group"
                         (click)="navToMyJobs()">
                     My Jobs
                 </Button>
-                <Button class="nav-section-btn nav-section-btn-divider"
+                <Button class="nav-section-btn"
                         role="group"
                         (click)="navToJob()">
                     Job
@@ -114,19 +152,19 @@ requiring the Nav Bar.
                 The following 'div' groups button to the right of the Nav Bar.
                 Can contain one to many buttons
             -->
-            <div class="btn-group pull-right" role="group">
-                <button class="nav-section-btn nav-section-btn-divider"
+            <div class="btn-group pull-right"
+                 role="group">
+                <button class="nav-section-btn"
                         role="group"
                         [disabled]="!lastOperationEnabled()"
                         (click)="navToLastOperation()">
-                    &lt;
+                    <fa name="arrow-left"></fa>
                 </button>
                 <button class="nav-section-btn"
-                        [class.nav-section-btn-divider]="confirmEnabled()"
                         role="group"
                         [disabled]="!nextOperationEnabled()"
                         (click)="navToNextOperation()">
-                    &gt;
+                    <fa name="arrow-right"></fa>
                 </button>
 
                 <!-- CONFIRM THE OPERATION -->
@@ -170,24 +208,24 @@ requiring the Nav Bar.
                         row="0" col="2"
                         text="Operations"
                         (tap)="navToOperations()"></Button>
-                <Button class="nav-section-btn"
-                        row="0" col="3"
-                        [text]="Confirm"
-                        *ngIf="confirmEnabled()"
-                        (tap)="confirmOp()"></Button>
             </GridLayout>
             <GridLayout class="btn-group"
                         rows="auto" columns="auto, auto"
                         row="0" col="2">
                 <Button class="nav-section-btn nav-section-btn-divider"
                         row="0" col="0"
-                        text="<"
-                        [isEnabled]="lastOperationEnabled()"
-                        (tap)="navToLastOperation()"></Button>
-                <Button class="nav-section-btn"
+                        [text]="Confirm"
+                        *ngIf="confirmEnabled()"
+                        (tap)="confirmOp()"></Button>
+                <Button class="nav-section-btn nav-section-btn-divider fa"
+                        [class.nav-section-btn-disabled]="!lastOperationEnabled()"
                         row="0" col="1"
-                        text=">"
-                        [isEnabled]="nextOperationEnabled()"
+                        text="{{'fa-arrow-left' | fonticon }} "
+                        (tap)="navToLastOperation()"></Button>
+                <Button class="nav-section-btn fa"
+                        [class.nav-section-btn-disabled]="!nextOperationEnabled()"
+                        row="0" col="2"
+                        text="{{'fa-arrow-right' | fonticon }} "
                         (tap)="navToNextOperation()"></Button>
             </GridLayout>
         </GridLayout>
