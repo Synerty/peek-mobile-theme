@@ -36,23 +36,34 @@ Classes
 The :code:`.peek-nav-section` class contains the looks classes specific to the
 Navigation Section.
 
-::
+ ::
 
-        .peek-nav-section{
+      //Peek navigation section
+      .peek-nav-section {
         /* Contains the Navigation Section attributes */
+        ...
+
+        .btn-group {
+          /* Contains the attributes unique to the Navigation Section */
           ...
 
-          .nav-section-btn{
-          /* Contains the Button attributes unique to the Navigation Section */
+          .nav-section-btn {
+            /* Contains the Button attributes unique to the Navigation Section */
             ...
 
           }
+          .nav-section-btn-divider {
+            /* Contains the button divider attributes unique to the Navigation Section */
+            ...
+          }
         }
+      }
 
-        .peek-nav-bar-padding {
+      .peek-nav-bar-padding {
         /* Provides padding for the screen under the Navigation Section */
-          ...
-        }
+        ...
+
+      }
 
 
 SCSS Files
@@ -74,7 +85,7 @@ HTML
 The :code:`peek-nav-section` is to be included before the code of the plugin screen
 requiring the Nav Bar.
 
-::
+ ::
 
         <div class="peek-nav-section" *ngIf="!confirmDialogShown()">
             <!--
@@ -82,12 +93,12 @@ requiring the Nav Bar.
                 Can contain one to many buttons
             -->
             <div class="btn-group pull-left" role="group">
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider"
                         role="group"
                         (click)="navToMyJobs()">
                     My Jobs
                 </Button>
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider"
                         role="group"
                         (click)="navToJob()">
                     Job
@@ -104,13 +115,14 @@ requiring the Nav Bar.
                 Can contain one to many buttons
             -->
             <div class="btn-group pull-right" role="group">
-                <button class="nav-section-btn"
+                <button class="nav-section-btn nav-section-btn-divider"
                         role="group"
                         [disabled]="!lastOperationEnabled()"
                         (click)="navToLastOperation()">
                     &lt;
                 </button>
                 <button class="nav-section-btn"
+                        [class.nav-section-btn-divider]="confirmEnabled()"
                         role="group"
                         [disabled]="!nextOperationEnabled()"
                         (click)="navToNextOperation()">
@@ -131,28 +143,30 @@ requiring the Nav Bar.
 
         </div>
 
+
 NativeScript
 ------------
 
 The :code:`peek-nav-section` is to be included before the code of the plugin screen
 requiring the Nav Bar.
 
-::
+ ::
 
         <GridLayout class="peek-nav-section"
                     rows="auto" columns="auto, *, auto"
                     *ngIf="!confirmDialogShown()">
-            <GridLayout rows="auto" columns="auto, auto, auto, auto"
+            <GridLayout class="btn-group"
+                        rows="auto" columns="auto, auto, auto, auto"
                         row="0" col="0">
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider"
                         row="0" col="0"
                         text="My Jobs"
                         (tap)="navToMyJobs()"></Button>
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider"
                         row="0" col="1"
                         text="Job"
                         (tap)="navToJob()"></Button>
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider"
                         row="0" col="2"
                         text="Operations"
                         (tap)="navToOperations()"></Button>
@@ -162,9 +176,10 @@ requiring the Nav Bar.
                         *ngIf="confirmEnabled()"
                         (tap)="confirmOp()"></Button>
             </GridLayout>
-            <GridLayout rows="auto" columns="auto, auto"
+            <GridLayout class="btn-group"
+                        rows="auto" columns="auto, auto"
                         row="0" col="2">
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider"
                         row="0" col="0"
                         text="<"
                         [isEnabled]="lastOperationEnabled()"
@@ -174,7 +189,7 @@ requiring the Nav Bar.
                         text=">"
                         [isEnabled]="nextOperationEnabled()"
                         (tap)="navToNextOperation()"></Button>
-            </StackLayout>
+            </GridLayout>
         </GridLayout>
         <StackLayout class="hr-dark"></StackLayout>
 
