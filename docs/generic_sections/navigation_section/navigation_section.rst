@@ -36,23 +36,69 @@ Classes
 The :code:`.peek-nav-section` class contains the looks classes specific to the
 Navigation Section.
 
-::
+ ::
 
-        .peek-nav-section{
+      //Peek navigation section
+      .peek-nav-section {
         /* Contains the Navigation Section attributes */
+        ...
+
+        .btn-group {
+          /* Contains the attributes unique to the Navigation Section */
           ...
 
-          .nav-section-btn{
-          /* Contains the Button attributes unique to the Navigation Section */
+          .nav-section-btn {
+            /* Contains the Button attributes unique to the Navigation Section */
+            ...
+
+            &:hover {
+              /* pseudo-selectors are not supported in NativeScript */
+              ...
+
+            }
+
+            &:last-child {
+              /* pseudo-selectors are not supported in NativeScript */
+              ...
+
+            }
+
+            &:first-child {
+              /* pseudo-selectors are not supported in NativeScript */
+              ...
+
+            }
+
+            &:first-child:last-child {
+              /* pseudo-selectors are not supported in NativeScript */
+             ...
+
+            }
+
+            &:disabled {
+              /* pseudo-selectors are not supported in NativeScript */
+              ...
+
+            }
+          }
+          .nav-section-btn-divider {
+            /* Contains the button divider attributes unique to the Navigation Section */
+            ...
+
+          }
+          .nav-section-btn-disabled {
+            /* Contains the button disabled attributes unique to the Navigation Section */
             ...
 
           }
         }
+      }
 
-        .peek-nav-bar-padding {
+      .peek-nav-bar-padding {
         /* Provides padding for the screen under the Navigation Section */
-          ...
-        }
+        ...
+
+      }
 
 
 SCSS Files
@@ -74,14 +120,17 @@ HTML
 The :code:`peek-nav-section` is to be included before the code of the plugin screen
 requiring the Nav Bar.
 
-::
+The :code:`nav-section-btn-divider` and :code:`nav-section-btn-disabled` classes are not required in the **Web app**.
+Their attributes are handled by *pseudo-selectors* of :code:`nav-section-btn`.
+
+ ::
 
         <div class="peek-nav-section" *ngIf="!confirmDialogShown()">
             <!--
                 The following 'div' groups button to the left of the Nav Bar.
                 Can contain one to many buttons
             -->
-            <div class="btn-group pull-left" role="group">
+            <div class="btn-group" role="group">
                 <Button class="nav-section-btn"
                         role="group"
                         (click)="navToMyJobs()">
@@ -103,18 +152,19 @@ requiring the Nav Bar.
                 The following 'div' groups button to the right of the Nav Bar.
                 Can contain one to many buttons
             -->
-            <div class="btn-group pull-right" role="group">
+            <div class="btn-group pull-right"
+                 role="group">
                 <button class="nav-section-btn"
                         role="group"
                         [disabled]="!lastOperationEnabled()"
                         (click)="navToLastOperation()">
-                    &lt;
+                    <fa name="arrow-left"></fa>
                 </button>
                 <button class="nav-section-btn"
                         role="group"
                         [disabled]="!nextOperationEnabled()"
                         (click)="navToNextOperation()">
-                    &gt;
+                    <fa name="arrow-right"></fa>
                 </button>
 
                 <!-- CONFIRM THE OPERATION -->
@@ -131,50 +181,53 @@ requiring the Nav Bar.
 
         </div>
 
+
 NativeScript
 ------------
 
 The :code:`peek-nav-section` is to be included before the code of the plugin screen
 requiring the Nav Bar.
 
-::
+ ::
 
         <GridLayout class="peek-nav-section"
                     rows="auto" columns="auto, *, auto"
                     *ngIf="!confirmDialogShown()">
-            <GridLayout rows="auto" columns="auto, auto, auto, auto"
+            <GridLayout class="btn-group"
+                        rows="auto" columns="auto, auto, auto, auto"
                         row="0" col="0">
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider"
                         row="0" col="0"
                         text="My Jobs"
                         (tap)="navToMyJobs()"></Button>
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider"
                         row="0" col="1"
                         text="Job"
                         (tap)="navToJob()"></Button>
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider"
                         row="0" col="2"
                         text="Operations"
                         (tap)="navToOperations()"></Button>
-                <Button class="nav-section-btn"
-                        row="0" col="3"
+            </GridLayout>
+            <GridLayout class="btn-group"
+                        rows="auto" columns="auto, auto"
+                        row="0" col="2">
+                <Button class="nav-section-btn nav-section-btn-divider"
+                        row="0" col="0"
                         [text]="Confirm"
                         *ngIf="confirmEnabled()"
                         (tap)="confirmOp()"></Button>
-            </GridLayout>
-            <GridLayout rows="auto" columns="auto, auto"
-                        row="0" col="2">
-                <Button class="nav-section-btn"
-                        row="0" col="0"
-                        text="<"
-                        [isEnabled]="lastOperationEnabled()"
-                        (tap)="navToLastOperation()"></Button>
-                <Button class="nav-section-btn"
+                <Button class="nav-section-btn nav-section-btn-divider fa"
+                        [class.nav-section-btn-disabled]="!lastOperationEnabled()"
                         row="0" col="1"
-                        text=">"
-                        [isEnabled]="nextOperationEnabled()"
+                        text="{{'fa-arrow-left' | fonticon }} "
+                        (tap)="navToLastOperation()"></Button>
+                <Button class="nav-section-btn fa"
+                        [class.nav-section-btn-disabled]="!nextOperationEnabled()"
+                        row="0" col="2"
+                        text="{{'fa-arrow-right' | fonticon }} "
                         (tap)="navToNextOperation()"></Button>
-            </StackLayout>
+            </GridLayout>
         </GridLayout>
         <StackLayout class="hr-dark"></StackLayout>
 
