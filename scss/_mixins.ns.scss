@@ -16,6 +16,23 @@
   border: 0;
   background-color: $general_button_background;
   min-width: $general_button_min_width;
+  border-right-width: $general_border;
+  border-color: $general_button_divider;
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  &:first-child:last-child {
+    border-right: 0;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: $general_button_background_disabled;
+    color: $font_colour_disabled;
+  }
 
 }
 
