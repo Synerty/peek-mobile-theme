@@ -16,8 +16,11 @@
   border: 0;
   background-color: $general_button_background;
   min-width: $general_button_min_width;
-  border-right-width: $general_border;
-  border-color: $general_button_divider;
+
+  // TODO: NativeScript pseudo-selectors.
+  // Add the right border divider when NativeScript supports pseudo-selectors: last-child, first-child.
+  //border-right-width: $general_border;
+  //border-color: $general_button_divider;
 
   &:last-child {
     border-right: 0;
