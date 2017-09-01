@@ -15,14 +15,13 @@
   padding: $general_button_padding;
   border: 0;
   background-color: $general_button_background;
+  border-right: $general_border solid $general_button_divider;
   min-width: $general_button_min_width;
 
   &:hover {
     background-color: $general_button_background_hover;
     color: $white;
   }
-
-  border-right: $general_border solid $general_button_divider;
 
   &:last-child {
     border-radius: 0 $general_border_radius $general_border_radius 0;

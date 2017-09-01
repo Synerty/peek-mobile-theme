@@ -188,6 +188,13 @@ NativeScript
 The :code:`peek-nav-section` is to be included before the code of the plugin screen
 requiring the Nav Bar.
 
+The :code:`nav-section-btn-divider` and :code:`nav-section-btn-disabled` classes are **required** in the
+*NativeScript* app.  *Pseudo-selectors* applied in the **SCSS** are not supported by *NativeScript*.
+
+:code:`nav-section-btn-divider` will set the right side border of the button.
+
+:code:`nav-section-btn-disabled` applies the disabled styling.
+
  ::
 
         <GridLayout class="peek-nav-section"
