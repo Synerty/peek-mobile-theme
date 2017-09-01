@@ -1,83 +1,69 @@
 .pl-inbox {
+  /*
+        Contains the style and classes for the inbox container
+  */
 
   padding-top: $general_padding_2;
   padding-left: $general_padding_2;
   padding-right: $general_padding_2;
 
-  .pl-inbox {
+  .pl-inbox-item {
     /*
-          Contains the style and classes for the inbox container
+        Contains the style and classes for the
     */
+    padding: $general_padding_2 $general_padding_4 $general_padding_2 $general_padding_2;
 
-    .pl-inbox-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: table;
+
+    .pl-inbox-icon {
       /*
-          Contains the style and classes for the
+          Contains the icon attributes unique to the .pl-inbox-item class
       */
-      padding: $general_padding_2;
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      display: table;
+      display: table-cell;
 
-      .pl-inbox-icon {
-        /*
-            Contains the icon attributes unique to the .pl-inbox-item class
-        */
-        display: table-cell;
-
-      }
-      .pl-inbox-info {
-        /*
-            Contains the info attributes unique to the .pl-inbox-item class
-        */
-        padding: 0 $general_padding_2;
-        vertical-align: top;
-
-        .pl-inbox-title {
-          /*
-              Contains the title text attributes unique to the .pl-inbox-info class
-          */
-
-        }
-        .pl-inbox-description {
-          /*
-              Contains the description text attributes unique to the .pl-inbox-info class
-          */
-          white-space: pre-wrap;
-
-        }
-        .pl-inbox-date-time {
-          /*
-              Contains the date and time attributes unique to the .pl-inbox-info class
-          */
-          margin-bottom:  $inbox_date_time_margin;
-          padding-bottom:  $inbox_date_time_padding;
-          text-align: right;
-
-        }
-      }
     }
-    .pl-inbox-read-more {
+    .pl-inbox-info {
       /*
-          Contains the read more link attributes unique to the .plugin-inbox class
+          Contains the info attributes unique to the .pl-inbox-item class
       */
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 0;
-      height: 100%;
-      background-image: url('#{$web_images}icon_more.png');
-      background-position: center center;
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      width: 20px;
-      border-radius: 0;
-      text-indent: - 9999px;
-      overflow: hidden;
-      min-width: 26.7px;
+      padding: 0 $general_padding_2;
+      vertical-align: top;
 
+      .pl-inbox-title {
+        /*
+            Contains the title text attributes unique to the .pl-inbox-info class
+        */
+
+      }
+      .pl-inbox-description {
+        /*
+            Contains the description text attributes unique to the .pl-inbox-info class
+        */
+        white-space: pre-wrap;
+
+      }
+      .pl-inbox-date-time {
+        /*
+            Contains the date and time attributes unique to the .pl-inbox-info class
+        */
+        float: right;
+
+      }
     }
   }
+
+  .pl-inbox-read-more {
+    /*
+        Contains the read more link attributes unique to the .plugin-inbox class
+    */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    
 }
 
 //navigation tabs

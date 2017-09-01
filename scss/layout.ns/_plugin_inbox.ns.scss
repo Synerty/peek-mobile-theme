@@ -1,61 +1,61 @@
 .pl-inbox {
+  /*
+        Contains the style and classes for the inbox container
+  */
 
   padding-top: $general_padding_2;
 
-  .pl-inbox {
+  .pl-inbox-item {
     /*
-          Contains the style and classes for the inbox container
+        Contains the style and classes for the
+    */
+    padding: $general_padding_2;
+    width: 100%;
+
+    .pl-inbox-icon {
+      /*
+          Contains the icon attributes unique to the .pl-inbox-item class
+      */
+      padding-right: $general_padding_1;
+
+    }
+    .pl-inbox-info {
+      /*
+          Contains the info attributes unique to the .pl-inbox-item class
+      */
+      padding: 0 $general_padding_2;
+
+      .pl-inbox-title {
+        /*
+            Contains the title text attributes unique to the .pl-inbox-info class
+        */
+
+      }
+      .pl-inbox-description {
+        /*
+            Contains the description text attributes unique to the .pl-inbox-info class
+        */
+        white-space: pre-wrap;
+
+      }
+      .pl-inbox-date-time {
+        /*
+            Contains the date and time attributes unique to the .pl-inbox-info class
+        */
+
+      }
+    }
+  }
+  .pl-inbox-read-more {
+    /*
+        Contains the read more link attributes unique to the .plugin-inbox class
     */
 
-    .pl-inbox-item {
-      /*
-          Contains the style and classes for the
-      */
-      padding: $general_padding_2;
-      width: 100%;
+    border-radius: $general_border_radius;
+    margin-left: $general_margin_1;
 
-      .pl-inbox-icon {
-        /*
-            Contains the icon attributes unique to the .pl-inbox-item class
-        */
+    width: 5%;
+    height: 100%;
 
-      }
-      .pl-inbox-info {
-        /*
-            Contains the info attributes unique to the .pl-inbox-item class
-        */
-        padding: 0 $general_padding_2;
-
-        .pl-inbox-title {
-          /*
-              Contains the title text attributes unique to the .pl-inbox-info class
-          */
-
-        }
-        .pl-inbox-description {
-          /*
-              Contains the description text attributes unique to the .pl-inbox-info class
-          */
-          white-space: pre-wrap;
-
-        }
-        .pl-inbox-date-time {
-          /*
-              Contains the date and time attributes unique to the .pl-inbox-info class
-          */
-          margin-bottom:  $inbox_date_time_margin;
-          padding-bottom:  $inbox_date_time_padding;
-          text-align: right;
-
-        }
-      }
-    }
-    .pl-inbox-read-more {
-      /*
-          Contains the read more link attributes unique to the .plugin-inbox class
-      */
-      width: 5%;
-
-    }
   }
 }
