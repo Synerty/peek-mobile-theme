@@ -7,23 +7,21 @@
 
   .pl-inbox-item {
     /*
-        Contains the style and classes for the
+        Contains the style and classes for each inbox item
     */
-    padding: $general_padding_2;
-    width: 100%;
 
     .pl-inbox-icon {
       /*
           Contains the icon attributes unique to the .pl-inbox-item class
       */
-      padding-right: $general_padding_1;
+      padding: $general_padding_2;
 
     }
     .pl-inbox-info {
       /*
           Contains the info attributes unique to the .pl-inbox-item class
       */
-      padding: 0 $general_padding_2;
+      padding: $general_padding_2;
 
       .pl-inbox-title {
         /*
@@ -50,12 +48,7 @@
     /*
         Contains the read more link attributes unique to the .plugin-inbox class
     */
-
     border-radius: $general_border_radius;
-    margin-left: $general_margin_1;
-
-    width: 5%;
-    height: 100%;
 
   }
 }
