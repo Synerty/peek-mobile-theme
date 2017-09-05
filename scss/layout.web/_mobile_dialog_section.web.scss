@@ -8,6 +8,16 @@
     */
 
   }
+
+  .dialog-value {
+    /*
+        Contains the value attributes unique to the Dialog Mobile Section
+    */
+    padding: $general_padding_1;
+    margin-right: $general_margin_1;
+    margin-bottom: $general_margin_1;
+
+  }
   .dialog-selector {
     /*
         Contains the selector attributes unique to the Dialog Mobile Section
@@ -27,6 +37,7 @@
     /*
         Contains the action button group attributes unique to the Dialog Mobile Section
     */
+    float: right;
 
   }
 

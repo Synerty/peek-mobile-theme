@@ -1,10 +1,22 @@
 .mobile-dialog {
   /* Contains the Dialog Mobile Section looks classes unique for mobile devices */
+  padding: $general_padding_2;
 
   .dialog-label {
     /*
         Contains the title attributes unique to the Dialog Mobile Section
     */
+    padding: $general_padding_1;
+
+  }
+
+  .dialog-value {
+    /*
+        Contains the value attributes unique to the Dialog Mobile Section
+    */
+    padding: $general_padding_1;
+    margin-right: $general_margin_1;
+    margin-bottom: $general_margin_1;
 
   }
   .dialog-selector {
