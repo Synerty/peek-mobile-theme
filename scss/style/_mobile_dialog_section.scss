@@ -11,6 +11,17 @@
     color: $font_colour_information;
 
   }
+
+  .dialog-value {
+    /*
+        Contains the value attributes unique to the Dialog Mobile Section
+    */
+    font-size: $general_font_size_3;
+    font-weight: 500;
+    color: $font_colour_data;
+    border-radius: $general_border_radius;
+
+  }
   .dialog-selector {
     /*
         Contains the selector attributes unique to the Dialog Mobile Section
@@ -31,8 +42,8 @@
     /*
         Contains the action button attributes unique to the Dialog Mobile Section
     */
-    float: right;
-
+    margin: $general_margin_1;
+    border-radius: $general_border_radius;
   }
 
   .dialog-action-btn {
@@ -42,5 +53,19 @@
 
     @include button-settings;
 
+  }
+
+  .dialog-action-btn-divider {
+    /* Contains the button divider attributes unique to the Dialog Mobile Section */
+    border-right-width: $general_border;
+    border-color: $general_button_divider;
+
+  }
+
+  .dialog-action-btn-disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: $general_button_background_disabled;
+    color: $font_colour_disabled;
   }
 }
