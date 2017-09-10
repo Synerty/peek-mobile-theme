@@ -236,5 +236,5 @@ The :code:`nav-section-btn-divider` and :code:`nav-section-btn-disabled` classes
                         (tap)="navToNextOperation()"></Button>
             </GridLayout>
         </GridLayout>
-        <StackLayout class="hr-dark"></StackLayout>
+        <StackLayout class="hr"></StackLayout>
 
