@@ -1,7 +1,7 @@
 {
-  "name": "@synerty/peek-mobile-theme",
+  "name": "@synerty/peek-theme",
   "version": "0.0.21",
-  "description": "Theme for the Peek Mobile service",
+  "description": "Theme for the Peek",
   "main": "index.js",
   "directories": {
     "example": "examples"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.synerty.com/peek/peek-mobile-theme.git"
+    "url": "ssh://git@stash.synerty.com/peek/peek-theme.git"
   },
   "author": "Synerty Pty Ltd <contact@synerty.com> (https://www.synerty.com)",
   "license": "MIT"
