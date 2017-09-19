@@ -1,6 +1,6 @@
-===============================
-Peek Mobile Theme Documentation
-===============================
+========================
+Peek Theme Documentation
+========================
 
 .. include:: overview.inc
 

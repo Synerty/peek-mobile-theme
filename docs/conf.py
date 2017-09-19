@@ -21,7 +21,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-__project__ = 'PEEK Mobile Theme'
+__project__ = 'PEEK Theme'
 __copyright__ = '2016, Synerty'
 __author__ = 'Synerty'
 __version__ = '0.0.0'
