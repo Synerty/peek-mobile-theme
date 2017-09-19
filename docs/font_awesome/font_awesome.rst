@@ -14,7 +14,11 @@ These are reference names to the unicode.
 WEB Syntax
 ----------
 
-To create the 'unlink' icon used in the title-bar: .. rst-class:: fa fa-unlink
+To create the 'unlink' icon used in the title-bar:
+
+.. rst-class:: fa fa-fontawesome fa-unlink
+
+|
 
 This is the syntax used in angular: ::
 
@@ -32,7 +36,11 @@ This is the result in the browser: ::
           </fa>
 
 
-To create the 'comment-o' icon as used in the Peek Chat plugin: .. rst-class:: fa fa-comment-o
+To create the 'comment-o' icon as used in the Peek Chat plugin:
+
+.. rst-class:: fa fa-fontawesome fa-comment-o
+
+|
 
 This is the syntax used in angular: ::
 
@@ -84,14 +92,22 @@ inverse      Boolean            true | false                            Yes
 NativeScript Syntax
 -------------------
 
-To create the 'unlink' icon used in the title-bar: .. rst-class::  fa fa-unlink
+To create the 'unlink' icon used in the title-bar:
+
+.. rst-class:: fa fa-fontawesome fa-unlink
+
+|
 
  ::
 
         <Label *ngIf="!vortexIsOnline" class="fa" [text]="'fa-unlink' | fonticon"></Label>
 
 
-To create the 'comment-o' icon as used in the Peek Chat plugin: .. rst-class::  fa fa-comment-o
+To create the 'comment-o' icon as used in the Peek Chat plugin:
+
+.. rst-class:: fa fa-fontawesome fa-comment-o
+
+|
 
  ::
 
