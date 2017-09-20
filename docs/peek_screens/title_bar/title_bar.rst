@@ -50,7 +50,7 @@ The :code:`.peek-title-bar` class contains the classes specific to the Title Bar
 
             }
         }
-        .peek-mobile-page-contents{
+        .peek-page-contents{
         /* Contains the padding to stop the screens being covered by the title-bar */
             ...
 
