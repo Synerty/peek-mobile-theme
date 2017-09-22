@@ -81,6 +81,7 @@
 
     }
     .chat-messages-contents {
+      white-space: pre-wrap;
       color: $font_colour_data;
       font-size: $general_font_size_3;
 
