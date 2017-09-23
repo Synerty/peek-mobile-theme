@@ -21,7 +21,7 @@
 }
 
 .hr {
-  background-color: $divider_colour_navigation_section;
+  background-color: $general_section_divider;
 
 }
 
@@ -40,35 +40,35 @@
   /* Applies the primary background theme */
 
   color: $font_colour_data;
-  background-color: $light_primary;
+  background-color: $primary_light;
 }
 
 .bg-success {
   /* Applies the success background theme */
 
   color: $font_colour_data;
-  background-color: $light_success;
+  background-color: $success_light;
 }
 
 .bg-info {
   /* Applies the info background theme */
 
   color: $font_colour_data;
-  background-color: $light_info;
+  background-color: $info_light;
 }
 
 .bg-warning {
   /* Applies the warning background theme */
 
   color: $font_colour_data;
-  background-color: $light_warning;
+  background-color: $warning_light;
 }
 
 .bg-danger {
   /* Applies the danger background theme */
 
   color: $font_colour_data;
-  background-color: $light_danger;
+  background-color: $danger_light;
 }
 
 .btn-primary {

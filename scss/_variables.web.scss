@@ -1,38 +1,53 @@
 //colours
-$grey: #cccccc;
+$grey: #9e9e9e;
 $white: #ffffff;
 $black: #000000;
-$brand: #28aae1;
-$brand_compliment: darken(#28aae1, 10%);
-$divider_colour_navigation_section: $grey;
-$primary: #337ab7;
-$light_primary: lighten($primary, 45%);
-$dark_primary: darken($primary, 10%);
-$success: #5cb85c;
-$light_success: lighten($success, 35%);
-$dark_success: darken($success, 10%);
-$info: #5bc0de;
-$light_info: lighten($info, 35%);
-$dark_info: darken($info, 10%);
-$warning: #f0ad4e;
-$light_warning: lighten($warning, 35%);
-$dark_warning: darken($warning, 10%);
-$danger: #d9534f;
-$light_danger: lighten($danger, 35%);
-$dark_danger: darken($danger, 10%);
+$brand: #26abe2;
+$brand_light: #6eddff;
+$brand_dark: #007cb0;
+$secondary: #9e9e9e;
+$secondary_light: #cfcfcf;
+$secondary_dark: #707070;
 
-//general
+$primary: #337ab7;
+$primary_light: lighten($primary, 45%);
+$primary_dark: darken($primary, 10%);
+$success: #5cb85c;
+$success_light: lighten($success, 35%);
+$success_dark: darken($success, 10%);
+$info: #5bc0de;
+$info_light: lighten($info, 35%);
+$info_dark: darken($info, 10%);
+$warning: #f0ad4e;
+$warning_light: lighten($warning, 35%);
+$warning_dark: darken($warning, 10%);
+$danger: #d9534f;
+$danger_light: lighten($danger, 35%);
+$danger_dark: darken($danger, 10%);
+
+$general_background_color: $secondary_light;
+$general_header_background: $secondary;
+$general_section_divider: $secondary_dark;
+$general_button_background: $secondary;
+$general_button_background_hover: $secondary_dark;
+$general_button_background_disabled: $secondary_light;
+$general_button_divider: $secondary_dark;
+$general_icon_color: $secondary_dark;
+$inbox_button_background: $secondary;
+
+//fonts
+$fonts_special: arial;
+$font_colour_data: $black;
+$font_colour_information: $secondary_dark;
+$font_colour_disabled: $secondary;
+$font_colour_button: $white;
+
+//sizes
 $general_border: 1.3px;
 $general_border_radius: 4px;
 $general_button_padding: 8px;
 $general_button_min_width: 40px;
 $general_line_height: 1.42857143;
-$general_background_color: lighten($grey, 18%);
-$general_header_background: darken($grey, 20%);
-$general_button_background: darken($grey, 20%);
-$general_button_background_hover: darken($grey, 35%);
-$general_button_background_disabled: lighten($grey, 15%);
-$general_icon_color: darken($grey, 10%);
 
 $general_width_1: 100px;
 $general_width_2: 250px;
@@ -60,13 +75,6 @@ $general_margin_2: 20px;
 $general_margin_3: 32px;
 $general_margin_4: 64px;
 
-//fonts
-$fonts_special: arial;
-$font_colour_data: $black;
-$font_colour_information: darken($grey, 40%);
-$font_colour_disabled: lighten($grey, 5%);
-$font_colour_button: $white;
-
 //title bar
 $title_bar_height: 60px;
 $title_bar_button_min_width: 66.7px;
@@ -80,10 +88,6 @@ $mobile_footer_bar_padding: 10.7px;
 
 //nav bar
 $nav_bar_padding_top: 64px;
-
-//button
-$inbox_button_background: darken($grey, 10%);
-$general_button_divider: darken($grey, 35%);
 
 //hr
 $hr_height: 1.3px;
