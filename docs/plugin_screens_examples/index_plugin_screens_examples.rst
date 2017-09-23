@@ -1,6 +1,6 @@
-==============
-Plugin Screens
-==============
+=======================
+Plugin Screens Examples
+=======================
 
 This section describes the styling of the public plugin displays.
 
