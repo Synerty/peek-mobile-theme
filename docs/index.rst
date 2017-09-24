@@ -18,4 +18,4 @@ Peek Theme Documentation
     other_useful_styles/other_useful_styles
     font_awesome/font_awesome
     peek_screen_examples/index_peek_screen_examples
-    plugin_screen_examples/index_plugin_screens_examples
+    plugin_screen_examples/index_plugin_screen_examples
