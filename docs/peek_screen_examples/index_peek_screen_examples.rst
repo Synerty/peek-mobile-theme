@@ -1,6 +1,6 @@
-============
-Peek Screens
-============
+====================
+Peek Screen Examples
+====================
 
 This section describes the styling of the built in peek platform displays.
 

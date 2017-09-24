@@ -10,7 +10,6 @@ Peek Theme Documentation
     :caption: Documentation Contents
 
     style_guide/style_guide
-    peek_screens/index_peek_screens
     navigation_section/navigation_section
     mobile_dialog_section/mobile_dialog_section
     information_section/information_section
@@ -18,4 +17,5 @@ Peek Theme Documentation
     tables_section/tables_section
     other_useful_styles/other_useful_styles
     font_awesome/font_awesome
-    plugin_screens_examples/index_plugin_screens_examples
+    peek_screen_examples/index_peek_screen_examples
+    plugin_screen_examples/index_plugin_screens_examples
