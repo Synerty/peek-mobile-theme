@@ -30,14 +30,6 @@
 
   }
 
-  .dialog-btn-block {
-    /*
-        Contains the btn block attributes unique to the Dialog Mobile Section
-    */
-    margin-bottom: $mobile_dialog_btn_block_margin;
-
-  }
-
   .dialog-action-btn-group {
     /*
         Contains the action button attributes unique to the Dialog Mobile Section
@@ -52,6 +44,20 @@
     */
 
     @include button-settings;
+
+  }
+
+  .dialog-btn-block {
+    /*
+        Contains the btn block attributes unique to the Dialog Mobile Section
+    */
+    .dialog-action-btn {
+      /*
+          Contains the action button attributes unique to the Dialog Mobile Section
+      */
+      border-radius: $general_border_radius;
+
+    }
 
   }
 
