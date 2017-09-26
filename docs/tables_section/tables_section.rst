@@ -138,33 +138,39 @@ Below is the NativeScript code extract of table header and two rows from
                     <Label class="th" row="0" col="2" text="Status"></Label>
                 </GridLayout>
 
-                <ListView class="td"
-                          [items]="jobs">
-                    <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
-                        <StackLayout
-                                [class.odd]="odd" [class.even]="even"
-                                [class.bg-primary]="item.fieldStatus.isActive"
-                                [class.bg-info]="item.fieldStatus.isAccepted"
-                                [class.bg-success]="item.fieldStatus.isDispatched"
-                                (tap)="jobClicked(item)">
-                            <GridLayout rows="2*,2*,*" columns="2*, 3*, 2*">
-                                <!-- Details -->
-                                <Label row="0" col="0"
-                                       [text]="item.jobNumber"></Label>
-                                <Label row="0" col="1"
-                                       [text]="item.scheduledDate | date:'HH:mm EE dd-MMM'"></Label>
-                                <Label row="0" col="2"
-                                       [text]="item.fieldStatus.niceName"></Label>
-                                <!-- Description -->
-                                <Label row="1" col="0" colSpan="3"
-                                       [text]="item.jobName" textWrap="true"></Label>
-                                <!-- Spacer -->
-                                <Label row="2" col="0" text=""></Label>
+                <GridLayout rows="*" columns="*">
+                    <ListView class="td"
+                              [items]="jobs">
+                        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+                            <StackLayout
+                                    [class.odd]="odd" [class.even]="even"
+                                    [class.bg-primary]="item.fieldStatus.isActive"
+                                    [class.bg-info]="item.fieldStatus.isAccepted"
+                                    [class.bg-success]="item.fieldStatus.isDispatched"
+                                    (tap)="jobClicked(item)">
+                                <GridLayout rows="2*,2*,*" columns="2*, 3*, 2*">
+                                    <!-- Details -->
+                                    <Label row="0" col="0"
+                                           [text]="item.jobNumber"></Label>
+                                    <Label row="0" col="1"
+                                           [text]="item.scheduledDate | date:'HH:mm EE dd-MMM'"></Label>
+                                    <Label row="0" col="2"
+                                           [text]="item.fieldStatus.niceName"></Label>
+                                    <!-- Description -->
+                                    <Label row="1" col="0" colSpan="3"
+                                           [text]="item.jobName" textWrap="true"></Label>
+                                    <!-- Spacer -->
+                                    <Label row="2" col="0" text=""></Label>
 
-                            </GridLayout>
-                        </StackLayout>
-                    </ng-template>
-                </ListView>
+                                </GridLayout>
+                            </StackLayout>
+                        </ng-template>
+                    </ListView>
+                </GridLayout>
             </StackLayout>
         </StackLayout>
 
+
+.. note:: For the ListView to fill the screen space it is required to be the child of a GridLayout.
+   Star mode for GridLayout row and column means that child ListView will expand to fill the gap left from other
+   elements in the screen.
