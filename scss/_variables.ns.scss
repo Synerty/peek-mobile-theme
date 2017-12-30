@@ -12,19 +12,19 @@ $secondary_light: #cfcfcf;
 $secondary_dark: #707070;
 
 $primary: #337ab7;
-$primary_light: lighten($primary, 45%);
+$primary_light: lighten($primary, 30%);
 $primary_dark: darken($primary, 10%);
 $success: #5cb85c;
-$success_light: lighten($success, 35%);
+$success_light: lighten($success, 20%);
 $success_dark: darken($success, 10%);
 $info: #5bc0de;
-$info_light: lighten($info, 35%);
+$info_light: lighten($info, 20%);
 $info_dark: darken($info, 10%);
 $warning: #f0ad4e;
-$warning_light: lighten($warning, 35%);
+$warning_light: lighten($warning, 20%);
 $warning_dark: darken($warning, 10%);
 $danger: #d9534f;
-$danger_light: lighten($danger, 35%);
+$danger_light: lighten($danger, 20%);
 $danger_dark: darken($danger, 10%);
 
 $general_background_color: $secondary_light;
@@ -46,9 +46,9 @@ $font_colour_button: $white;
 
 //general
 $general_border: 1.3 * $ppi_multiplier;
-$general_border_radius: 4 * $ppi_multiplier;
+$general_border_radius: 0 * $ppi_multiplier;
 $general_button_padding: 8;
-$general_button_min_width: 40 * $ppi_multiplier * $ppi_multiplier;
+$general_button_min_width: 100 * $ppi_multiplier * $ppi_multiplier;
 $general_line_height: 1.42857143 * $ppi_multiplier;
 
 $general_width_1: 100 * $ppi_multiplier;
