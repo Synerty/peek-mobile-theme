@@ -33,6 +33,7 @@
           Contains the editable attributes unique to the .details-section-value class
       */
       @include editable-web-layout;
+      border-radius: $general_border_radius;
 
       .editable-md {
         /*

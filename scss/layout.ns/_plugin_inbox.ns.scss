@@ -9,6 +9,7 @@
     /*
         Contains the style and classes for each inbox item
     */
+    border-radius: $general_border_radius;
 
     .pl-inbox-icon {
       /*
@@ -48,7 +49,7 @@
     /*
         Contains the read more link attributes unique to the .plugin-inbox class
     */
-    border-radius: $general_border_radius;
+    /* border-radius: $general_border_radius;  TODO: temporarily removed from NS app */
 
   }
 }

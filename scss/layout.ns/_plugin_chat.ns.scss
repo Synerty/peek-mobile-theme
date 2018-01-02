@@ -70,6 +70,7 @@
       min-height: $chat_messages_min_height;
       padding: $general_padding_1;
       margin-bottom: $chat_messages_margin;
+      border-radius: $general_border_radius * 4;
 
     }
     .chat-messages-received {
@@ -83,6 +84,7 @@
       min-height: $chat_messages_min_height;
       padding: $general_padding_1;
       margin-bottom: $chat_messages_margin;
+      border-radius: $general_border_radius * 4;
 
     }
     .chat-messages-contents {
@@ -106,6 +108,7 @@
         chat-messages-compose class.
     */
     height: 50;
+    border-radius: $general_border_radius;
 
   }
 }
