@@ -101,6 +101,33 @@ Section.
 
                 }
             }
+
+            .details-section-btn {
+              /*
+                  Contains the generic button attributes unique to the .peek-details-section class
+              */
+                ...
+
+            }
+
+            .btn-group {
+
+                .details-section-btn {
+                  /*
+                    Contains the generic button attributes inside a .btn-group unique to the .peek-details-section class
+                  */
+                    ...
+
+                }
+
+                .details-section-btn-divider-left {
+                  /*
+                    Contains the button divider attributes inside a .btn-group unique to the .peek-details-section class
+                  */
+                    ...
+
+                }
+            }
         }
 
 
