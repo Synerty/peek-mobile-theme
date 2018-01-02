@@ -25,6 +25,15 @@
   width: 100%;
 }
 
+.btn {
+  /*
+      Contains the generic button attributes
+  */
+
+  border-radius: $general_border_radius;
+
+}
+
 .bg-primary {
   /* Applies the primary background theme */
 

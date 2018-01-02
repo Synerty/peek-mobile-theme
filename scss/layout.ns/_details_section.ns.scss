@@ -22,6 +22,7 @@
           Contains the selector attributes unique to the Dialog Mobile Section
       */
       @include editable-ns-layout;
+      border-radius: $general_border_radius;
 
       .editable-md {
         /*
