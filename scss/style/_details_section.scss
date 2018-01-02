@@ -29,4 +29,30 @@
     border-color: $grey;
 
   }
+
+    .details-section-btn {
+      /*
+          Contains the generic button attributes
+      */
+
+      @include button-settings;
+
+    }
+
+  .btn-group {
+
+    .details-section-btn {
+      /*
+          Contains the generic button attributes inside a group
+      */
+
+    }
+
+    .details-section-btn-divider-left {
+      /* Contains the button divider attributes (NOT required in web app)*/
+      border-left-width: $general_border;
+      border-color: $general_button_divider;
+
+    }
+  }
 }

@@ -69,4 +69,31 @@
 
     }
   }
+
+    .details-section-btn {
+      /*
+          Contains the generic button attributes
+      */
+
+
+    }
+
+  .btn-group {
+    /* Contains the attributes unique to the Details Section */
+      position: relative;
+      float: left;
+
+    .details-section-btn {
+      /*
+          Contains the generic button attributes inside a group
+      */
+      float: left;
+
+    }
+
+    .details-section-btn-divider-left {
+      /* Contains the button divider attributes */
+
+    }
+  }
 }
