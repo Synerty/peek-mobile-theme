@@ -7,22 +7,28 @@ $brand_light: #6eddff;
 $brand_dark: #007cb0;
 $secondary: #9e9e9e;
 $secondary_light: #cfcfcf;
+$secondary_tr: lighten($secondary_light, 15%);;
 $secondary_dark: #707070;
 
 $primary: #337ab7;
 $primary_light: lighten($primary, 30%);
+$primary_tr: lighten($primary, 20%);
 $primary_dark: darken($primary, 10%);
 $success: #5cb85c;
 $success_light: lighten($success, 20%);
+$success_tr: lighten($success, 10%);
 $success_dark: darken($success, 10%);
 $info: #5bc0de;
 $info_light: lighten($info, 20%);
+$info_tr: lighten($info, 10%);
 $info_dark: darken($info, 10%);
 $warning: #f0ad4e;
 $warning_light: lighten($warning, 20%);
+$warning_tr: lighten($warning, 10%);
 $warning_dark: darken($warning, 10%);
 $danger: #d9534f;
 $danger_light: lighten($danger, 20%);
+$danger_tr: lighten($danger, 10%);
 $danger_dark: darken($danger, 10%);
 
 $general_background_color: $secondary_light;

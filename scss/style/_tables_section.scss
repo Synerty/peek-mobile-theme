@@ -11,6 +11,7 @@
     /* Contains the table row attributes unique to the .table class */
 
   }
+
   .th {
     /* Contains the table head cell attributes unique to the .table class */
     background-color: $general_header_background;
@@ -18,10 +19,24 @@
     font-family: $fonts_special;
     border-bottom: 0;
     font-size: $general_font_size_4;
+    font-weight: 500;
+    text-align: center;
 
   }
+
+  .th-divider {
+    /* Contains the table header divider attributes unique to the Tables Section */
+    border-top-width: $general_border;
+    border-color: $general_button_divider;
+
+  }
+
   .td {
     /* Contains the table row cell attributes unique to the .table class */
+    font-size: $general_font_size_5;
+    font-weight: 500;
     color: $font_colour_data;
+    text-align: center;
+    
   }
 }
