@@ -34,39 +34,70 @@
 
 }
 
+.bg-odd {
+  /* Applies the table even rows background theme */
+  background-color: $secondary_tr;
+
+}
+
 .bg-primary {
   /* Applies the primary background theme */
-
   color: $font_colour_data;
   background-color: $primary_light;
+
+  .bg-odd {
+    /* Applies the table even rows background theme */
+    background-color: $primary_tr;
+
+  }
 }
 
 .bg-success {
   /* Applies the success background theme */
-
   color: $font_colour_data;
   background-color: $success_light;
+
+  .bg-odd {
+    /* Applies the table even rows background theme */
+    background-color: $success_tr;
+
+  }
 }
 
 .bg-info {
   /* Applies the info background theme */
-
   color: $font_colour_data;
   background-color: $info_light;
+
+  .bg-odd {
+    /* Applies the table even rows background theme */
+    background-color: $info_tr;
+
+  }
 }
 
 .bg-warning {
   /* Applies the warning background theme */
-
   color: $font_colour_data;
   background-color: $warning_light;
+
+  .bg-odd {
+    /* Applies the table even rows background theme */
+    background-color: $warning_tr;
+
+  }
 }
 
 .bg-danger {
   /* Applies the danger background theme */
-
   color: $font_colour_data;
   background-color: $danger_light;
+
+  .bg-odd {
+    /* Applies the table even rows background theme */
+    background-color: $danger_tr;
+
+  }
 }
 
 .btn-primary {

@@ -117,6 +117,13 @@ Set the background of an element to any contextual class.
 
  ::
 
+
+        .bg-odd {
+        /* Applies the table odd rows background theme */
+            ...
+
+        }
+
         .bg-primary{
         /* Applies the primary background theme */
             ...
