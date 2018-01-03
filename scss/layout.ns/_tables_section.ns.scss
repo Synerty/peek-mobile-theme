@@ -20,6 +20,8 @@
 
   .td {
     /* Contains the table row cell attributes unique to the .table class */
+    padding-top: $general_padding_1 / 2;
+    padding-bottom: $general_padding_1 / 2;
 
   }
 }
