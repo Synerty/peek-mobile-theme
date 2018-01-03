@@ -9,6 +9,7 @@
 
 @mixin button-settings {
 
+  text-align: center;
   color: $font_colour_button;
   cursor: pointer;
   font-size: $general_font_size_2;

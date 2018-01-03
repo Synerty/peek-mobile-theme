@@ -32,13 +32,19 @@
     /*
         Contains the action button group attributes unique to the Dialog Mobile Section
     */
+    .dialog-action-btn-divider {
+      /* Contains the button divider attributes unique to the Navigation Section */
+      border-right-width: $general_border;
+      border-color: $general_button_divider;
 
+    }
   }
   .dialog-action-btn {
     /*
         Contains the action button attributes unique to the Dialog Mobile Section
     */
-
+    padding-top: $general_padding_3;
+    padding-bottom: $general_padding_3;
   }
 
   .dialog-btn-block {

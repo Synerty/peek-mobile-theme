@@ -128,6 +128,13 @@ Section.
 
                 }
             }
+
+            .details-section-btn-disabled {
+            /*
+                Contains the button disabled attributes .peek-details-section class
+            */
+
+            }
         }
 
 

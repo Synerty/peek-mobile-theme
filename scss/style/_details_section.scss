@@ -54,4 +54,11 @@
 
     }
   }
+
+  .details-section-btn-disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: $general_button_background_disabled;
+    color: $font_colour_disabled;
+  }
 }
