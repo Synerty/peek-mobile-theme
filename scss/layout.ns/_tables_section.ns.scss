@@ -11,11 +11,15 @@
   }
   .th {
     /* Contains the table head cell attributes unique to the .table class */
-    padding-top: $general_padding_1;
-    padding-bottom: $general_padding_1;
+    padding-top: $general_padding_2;
+    padding-bottom: $general_padding_2;
+
   }
+
   .td {
     /* Contains the table row cell attributes unique to the .table class */
+    padding-top: $general_padding_2;
+    padding-bottom: $general_padding_2;
 
   }
 }
