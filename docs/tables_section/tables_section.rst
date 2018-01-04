@@ -58,6 +58,15 @@ Section.
             ...
 
           }
+
+          .bg-odd {
+          /* 
+            Applies the table even rows background theme
+            This class also exists inside the .bg-... classes found in :ref:`other_useful_styles`.
+          */
+              ...
+
+          }
         }
 
 
@@ -83,7 +92,7 @@ Below is the HTML code extract of table header and two rows from
 :ref:`tables_section`: ::
 
         <div class="peek-tables-section">
-            <div class="table table-striped">
+            <div class="table">
                 <thead>
                 <tr class="tr">
                     <th class="th">ID</th>
@@ -94,25 +103,29 @@ Below is the HTML code extract of table header and two rows from
                 </thead>
                 <tbody>
                 <tr class="tr"
+                    *ngFor="let item of incidents; odd as odd"
                     [class.bg-primary]="item.fieldStatus.isActive"
                     [class.bg-warning]="item.fieldStatus.isDispatched"
                     [class.bg-success]="item.fieldStatus.isAccepted"
-                    *ngFor="let item of jobs"
                     (click)="jobClicked(item)">
-                    <td class="td">
+                    <td class="td"
+                        [class.bg-odd]="odd" [class.bg-even]="even">
                         {{item.jobNumber}}
 
                     </td>
-                    <td class="td">
+                    <td class="td"
+                        [class.bg-odd]="odd" [class.bg-even]="even">
                         {{item.jobName}}
 
                     </td>
-                    <td class="td">
+                    <td class="td"
+                        [class.bg-odd]="odd" [class.bg-even]="even">
                         {{item.scheduledDate
                         | date:'HH:mm EE dd-MMM'}}
 
                     </td>
-                    <td class="td">
+                    <td class="td"
+                        [class.bg-odd]="odd" [class.bg-even]="even">
                         {{item.fieldStatus.niceName}}
 
                     </td>
@@ -132,36 +145,37 @@ Below is the NativeScript code extract of table header and two rows from
 
         <StackLayout class="peek-tables-section">
             <StackLayout class="table">
-                <GridLayout class="tr" rows="auto" columns="2*, 3*, 2*">
+                <GridLayout rows="auto" columns="2*, 3*, 2*">
                     <Label class="th" row="0" col="0" text="Job"></Label>
                     <Label class="th" row="0" col="1" text="Scheduled"></Label>
                     <Label class="th" row="0" col="2" text="Status"></Label>
                 </GridLayout>
 
                 <GridLayout rows="*" columns="*">
-                    <ListView class="td"
-                              [items]="jobs">
+                    <ListView [items]="jobs">
                         <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
                             <StackLayout
-                                    [class.odd]="odd" [class.even]="even"
                                     [class.bg-primary]="item.fieldStatus.isActive"
                                     [class.bg-info]="item.fieldStatus.isAccepted"
                                     [class.bg-success]="item.fieldStatus.isDispatched"
                                     (tap)="jobClicked(item)">
-                                <GridLayout rows="2*,2*,*" columns="2*, 3*, 2*">
+                                <GridLayout rows="2*,2*,*" columns="2*, 3*, 2*"
+                                            class="tr"
+                                            [class.bg-odd]="odd" [class.bg-even]="even">
                                     <!-- Details -->
                                     <Label row="0" col="0"
+                                           class="td"
                                            [text]="item.jobNumber"></Label>
                                     <Label row="0" col="1"
+                                           class="td"
                                            [text]="item.scheduledDate | date:'HH:mm EE dd-MMM'"></Label>
                                     <Label row="0" col="2"
+                                           class="td"
                                            [text]="item.fieldStatus.niceName"></Label>
                                     <!-- Description -->
                                     <Label row="1" col="0" colSpan="3"
+                                            class="td"
                                            [text]="item.jobName" textWrap="true"></Label>
-                                    <!-- Spacer -->
-                                    <Label row="2" col="0" text=""></Label>
-
                                 </GridLayout>
                             </StackLayout>
                         </ng-template>

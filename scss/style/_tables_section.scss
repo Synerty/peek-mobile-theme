@@ -39,4 +39,13 @@
     text-align: center;
     
   }
+
+  .bg-odd {
+    /* 
+      Applies the table even rows background theme
+      This class also exists inside the .bg-... classes.
+    */
+    background-color: $secondary_tr;
+  
+  }
 }
