@@ -21,8 +21,7 @@
 }
 
 .hr {
-  background-color: $general_section_divider;
-
+  border-color: $general_section_divider;
 }
 
 .btn {
@@ -39,11 +38,11 @@
   color: $font_colour_data;
   background-color: $primary_light;
 
-  .bg-odd {
-    /* Applies the table even rows background theme */
-    background-color: $primary_tr;
+}
+.bg-primary.bg-odd {
+  /* Applies the table even rows background theme */
+  background-color: $primary_tr;
 
-  }
 }
 
 .bg-success {
@@ -51,11 +50,11 @@
   color: $font_colour_data;
   background-color: $success_light;
 
-  .bg-odd {
-    /* Applies the table even rows background theme */
-    background-color: $success_tr;
+}
+.bg-success.bg-odd {
+  /* Applies the table even rows background theme */
+  background-color: $success_tr;
 
-  }
 }
 
 .bg-info {
@@ -63,11 +62,11 @@
   color: $font_colour_data;
   background-color: $info_light;
 
-  .bg-odd {
-    /* Applies the table even rows background theme */
-    background-color: $info_tr;
+}
+.bg-info.bg-odd {
+  /* Applies the table even rows background theme */
+  background-color: $info_tr;
 
-  }
 }
 
 .bg-warning {
@@ -75,11 +74,11 @@
   color: $font_colour_data;
   background-color: $warning_light;
 
-  .bg-odd {
-    /* Applies the table even rows background theme */
-    background-color: $warning_tr;
+}
+.bg-warning.bg-odd {
+  /* Applies the table even rows background theme */
+  background-color: $warning_tr;
 
-  }
 }
 
 .bg-danger {
@@ -87,11 +86,11 @@
   color: $font_colour_data;
   background-color: $danger_light;
 
-  .bg-odd {
+}
+.bg-danger.bg-odd {
     /* Applies the table even rows background theme */
     background-color: $danger_tr;
 
-  }
 }
 
 .btn-primary {
@@ -99,6 +98,10 @@
 
   background-color: $primary;
   background-image: none;
+
+  &:hover {
+    background-color: $primary_dark;
+  }
 }
 
 .btn-success {
@@ -106,6 +109,10 @@
 
   background-color: $success;
   background-image: none;
+
+  &:hover {
+    background-color: $success_dark;
+  }
 }
 
 .btn-info {
@@ -113,6 +120,10 @@
 
   background-color: $info;
   background-image: none;
+
+  &:hover {
+    background-color: $info_dark;
+  }
 }
 
 .btn-warning {
@@ -120,6 +131,10 @@
 
   background-color: $warning;
   background-image: none;
+
+  &:hover {
+    background-color: $warning_dark;
+  }
 }
 
 .btn-danger {
@@ -127,4 +142,8 @@
 
   background-color: $danger;
   background-image: none;
+
+  &:hover {
+    background-color: $danger_dark;
+  }
 }
