@@ -1,0 +1,40 @@
+//Peek tabs section
+.peek-tabs-section {
+  /* Contains the Tabs Section attributes */
+  border-bottom: $general_border solid $general_section_divider;
+  overflow: hidden;
+  background: white;
+
+  .btn-group {
+    /* Contains the attributes unique to the Tabs Section */
+
+    .tabs-section-btn {
+      /* Contains the Button attributes unique to the Tabs Section */
+
+      @include button-settings;
+
+    }
+    .tabs-section-btn-divider {
+      /* Contains the button divider attributes unique to the Tabs Section */
+      border-right-width: $general_border;
+      border-color: $general_button_divider;
+
+    }
+    .tabs-section-btn-disabled {
+      cursor: not-allowed;
+      box-shadow: none;
+      background-color: $general_button_background_disabled;
+      color: $font_colour_disabled;
+    }
+  }
+
+  //nav tabs active lists
+  .tab-content {
+    border-top: $general_border solid $general_section_divider;
+  }
+}
+
+.peek-tabs-bar-padding {
+  /* Provides padding for the screen under the Tabs Section */
+
+}

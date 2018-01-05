@@ -11,6 +11,7 @@ Peek Theme Documentation
 
     style_guide/style_guide
     navigation_section/navigation_section
+    tabs_section/tabs_section
     mobile_dialog_section/mobile_dialog_section
     information_section/information_section
     details_section/details_section
