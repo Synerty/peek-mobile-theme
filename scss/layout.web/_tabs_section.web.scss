@@ -1,16 +1,16 @@
 //Peek Tabs section
 .peek-tabs-section {
   /* Contains the Tabs Section attributes */
-  padding: $general_padding_2;
+  padding-top: $general_padding_2;
+  padding-left: $general_padding_2;
   width: 100%;
   position: fixed;
   z-index: 899;
 
   .btn-group {
     /* Contains the attributes unique to the Tabs Section */
-      position: relative;
-      float: left;
-      border-radius: $general_border_radius;
+    position: relative;
+    float: left;
 
     .tabs-section-btn {
       /* Contains the Button attributes unique to the Tabs Section */

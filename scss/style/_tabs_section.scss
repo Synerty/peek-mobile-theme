@@ -13,6 +13,24 @@
 
       @include button-settings;
 
+      margin-top: $general_margin_1 / 4;
+      border-right: 0;
+
+      &:last-child {
+        border-radius: 0;
+      }
+
+      &:first-child {
+        border-radius: 0;
+      }
+
+    }
+    .tabs-section-btn.active {
+      /* Contains the Button attributes for the active tab unique to the Tabs Section */
+      margin-top: 0;
+      padding: $general_button_padding * 1.25;
+      color: $font_colour_button;
+      background-color: $primary;
     }
     .tabs-section-btn-divider {
       /* Contains the button divider attributes unique to the Tabs Section */
@@ -21,16 +39,12 @@
 
     }
     .tabs-section-btn-disabled {
+      /* Contains the button disabled attributes unique to the Tabs Section */
       cursor: not-allowed;
       box-shadow: none;
       background-color: $general_button_background_disabled;
       color: $font_colour_disabled;
     }
-  }
-
-  //nav tabs active lists
-  .tab-content {
-    border-top: $general_border solid $general_section_divider;
   }
 }
 
