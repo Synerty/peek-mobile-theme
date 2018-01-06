@@ -26,7 +26,7 @@
 
     }
     .tabs-section-btn.active {
-
+      /* Contains the Button attributes for the active tab unique to the Tabs Section */
       margin-top: 0;
       padding: $general_button_padding * 1.25;
       color: $font_colour_button;
@@ -45,11 +45,6 @@
       background-color: $general_button_background_disabled;
       color: $font_colour_disabled;
     }
-  }
-
-  //nav tabs active lists
-  .tab-content {
-    border-top: $general_border solid $general_section_divider;
   }
 }
 

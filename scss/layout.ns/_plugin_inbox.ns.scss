@@ -3,12 +3,13 @@
         Contains the style and classes for the inbox container
   */
 
-  padding-top: $general_padding_2;
+  padding-top: $general_padding_1;
 
   .pl-inbox-item {
     /*
         Contains the style and classes for each inbox item
     */
+    margin: 0 $general_margin_1 $general_margin_1/2 $general_margin_1;
     border-radius: $general_border_radius;
 
     .pl-inbox-icon {
