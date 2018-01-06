@@ -1,7 +1,7 @@
 //Peek Tabs section
 .peek-tabs-section {
   /* Contains the Tabs Section attributes */
-  padding: $general_padding_2;
+  padding: $general_padding_2 $general_padding_2 $general_padding_2 0;
   width: 100%;
   position: fixed;
   z-index: 899;
@@ -23,5 +23,4 @@
 
 .peek-tabs-bar-padding {
   /* Provides padding for the screen under the Tabs Section */
-  padding-top: $tabs_bar_padding_top;
 }
