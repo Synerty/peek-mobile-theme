@@ -14,10 +14,10 @@
       @include button-settings;
 
       margin-top: $general_margin_1 / 4;
-      border-right: 0;
 
       &:last-child {
         border-radius: 0;
+        border-right: 0;
       }
 
       &:first-child {
