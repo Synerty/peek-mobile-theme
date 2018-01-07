@@ -14,6 +14,8 @@
       @include button-settings;
 
       margin-top: $general_margin_1 / 4;
+      border-bottom-width: $general_border;
+      border-color: $general_button_divider;
 
       &:last-child {
         border-radius: 0;
@@ -31,6 +33,7 @@
       padding: $general_button_padding * 1.25;
       color: $font_colour_button;
       background-color: $primary;
+      border-bottom-width: 0;
     }
     .tabs-section-btn-divider {
       /* Contains the button divider attributes unique to the Tabs Section */
