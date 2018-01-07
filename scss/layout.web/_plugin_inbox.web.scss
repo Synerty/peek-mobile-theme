@@ -2,15 +2,13 @@
   /*
         Contains the style and classes for the inbox container
   */
-
-  padding-left: $general_padding_2;
-  padding-right: $general_padding_2;
+    margin: 0 $general_margin_1/8 0 $general_margin_1/8;
 
   .pl-inbox-item {
     /*
         Contains the style and classes for each inbox item
     */
-    padding: $general_padding_2 $general_padding_4 $general_padding_2 $general_padding_2;
+    padding: $general_padding_2 $general_padding_2 $general_padding_2 $general_padding_2;
 
     position: relative;
     width: 100%;
@@ -59,41 +57,11 @@
     /*
         Contains the read more link attributes unique to the .plugin-inbox class
     */
+    margin: $general_margin_1;
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
 
-  }
-}
-
-//navigation tabs
-.nav {
-
-  margin: 0;
-
-  &.nav-tabs {
-
-    & > li {
-
-      &.active {
-        & > a {
-          cursor: pointer;
-          display: inline-block;
-          position: relative;
-          z-index: 100;
-          font-weight: normal;
-          border: 0;
-          padding: $inbox_nav_tabs_padding_active;
-          margin-top: 0;
-        }
-      }
-
-      & > a {
-        margin-right: 0;
-        padding: $inbox_nav_tabs_padding;
-        margin-top: $inbox_nav_tabs_margin;
-      }
-    }
   }
 }

@@ -54,43 +54,5 @@
         Contains the read more link attributes unique to the .plugin-inbox class
     */
 
-    @include button-settings;
-
-    border-right: none;
-    background-color: $inbox_button_background;
-
-    &:hover {
-      background-color: $brand;
-    }
-  }
-}
-
-//navigation tabs
-.nav {
-
-  $section_font_size: $general_font_size_2;
-
-  &.nav-tabs {
-    border-bottom: 0 solid $brand;
-
-    & > li {
-
-      &.active {
-        & > a {
-          color: $font_colour_button;
-          background-color: $general_button_background;
-          font-size: $general_font_size_1;
-          border-radius: 0;
-        }
-      }
-
-      & > a {
-        color: #666666;
-        background-color: #eee;
-        font-size: $general_font_size_1;
-        border: 0;
-        border-radius: 0;
-      }
-    }
   }
 }

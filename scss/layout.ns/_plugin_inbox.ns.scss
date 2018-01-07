@@ -3,13 +3,11 @@
         Contains the style and classes for the inbox container
   */
 
-  padding-top: $general_padding_1;
-
   .pl-inbox-item {
     /*
         Contains the style and classes for each inbox item
     */
-    margin: 0 $general_margin_1 $general_margin_1/2 $general_margin_1;
+    margin: 0 $general_margin_1/4 0 $general_margin_1/4;
     border-radius: $general_border_radius;
 
     .pl-inbox-icon {
@@ -51,6 +49,7 @@
         Contains the read more link attributes unique to the .plugin-inbox class
     */
     /* border-radius: $general_border_radius;  TODO: temporarily removed from NS app */
+    margin-right: $general_margin_1;
 
   }
 }
