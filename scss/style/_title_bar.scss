@@ -22,6 +22,13 @@
   }
 }
 
+.title-bar-btn-divider {
+  /* Contains the button divider attributes unique to the Navigation Section */
+  border-left-width: $general_border;
+  border-color: $brand_dark;
+
+}
+
 .title-bar-title {
   /* Contains the title attributes unique to the Title Bar */
   font-size: $general_font_size_3;

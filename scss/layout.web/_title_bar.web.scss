@@ -9,26 +9,34 @@
   overflow: hidden;
 }
 
-.title-bar-btn {
-  /* Contains the button attributes unique to the Title Bar */
-  height: $title_bar_height; //setting height to default header naviation height
-  padding: $general_padding_1;
-  margin-right: 0;
-  display: inline-block;
+.btn-group {
+  /* Contains the attributes unique to the Navigation Section */
   position: relative;
-  min-width: $title_bar_button_min_width;
-}
-
-.title-bar-title {
-  /* Contains the title attributes unique to the Title Bar */
-  line-height: $title_bar_height;
-  padding-left: $general_padding_2;
-  padding-right: $general_padding_2;
   float: left;
-  margin: auto;
-  width: 50%;
+  border-radius: $general_border_radius;
+
+  .title-bar-btn {
+    /* Contains the button attributes unique to the Title Bar */
+    height: $title_bar_height; //setting height to default header naviation height
+    padding: $general_padding_1;
+    margin-right: 0;
+    display: inline-block;
+    position: relative;
+    min-width: $title_bar_button_min_width;
+    float: left;
+  }
 }
 
-.peek-page-contents {
-  /* Contains the padding to stop the screens being covered by the title-bar */
-}
+  .title-bar-title {
+    /* Contains the title attributes unique to the Title Bar */
+    line-height: $title_bar_height;
+    padding-left: $general_padding_2;
+    padding-right: $general_padding_2;
+    float: left;
+    margin: auto;
+    width: 50%;
+  }
+
+  .peek-page-contents {
+    /* Contains the padding to stop the screens being covered by the title-bar */
+  }
