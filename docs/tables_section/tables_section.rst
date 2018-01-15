@@ -92,7 +92,7 @@ Below is the HTML code extract of table header and two rows from
 :ref:`tables_section`: ::
 
         <div class="peek-tables-section">
-            <div class="table">
+            <table class="table">
                 <thead>
                 <tr class="tr">
                     <th class="th">ID</th>
@@ -131,7 +131,7 @@ Below is the HTML code extract of table header and two rows from
                     </td>
                 </tr>
                 </tbody>
-            </div>
+            </table>
         </div>
 
 
