@@ -24,21 +24,22 @@
       @include editable-ns-layout;
       border-radius: $general_border_radius;
 
-      .editable-md {
-        /*
-            Contains the height property for the .editable class
-        */
-        height: $general_height_2;
+    }
 
-      }
+    .editable.editable-md {
+      /*
+          Contains the height property for the .editable class
+      */
+      height: $general_height_2;
 
-      .editable-lg {
-        /*
-            Contains the height property for the .editable class
-        */
-        height: $general_height_3;
+    }
 
-      }
+    .editable.editable-lg {
+      /*
+          Contains the height property for the .editable class
+      */
+      height: $general_height_3;
+
     }
 
     //Select lists
