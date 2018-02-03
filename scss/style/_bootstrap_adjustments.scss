@@ -33,6 +33,13 @@
 
 }
 
+.bg-secondary {
+  /* Applies the primary background theme */
+  color: $font_colour_data;
+  background-color: $secondary_light;
+
+}
+
 .bg-primary {
   /* Applies the primary background theme */
   color: $font_colour_data;
