@@ -35,21 +35,22 @@
       @include editable-web-layout;
       border-radius: $general_border_radius;
 
-      .editable-md {
-        /*
-            Contains the height property for the .editable class
-        */
-        height: $general_height_2;
+    }
 
-      }
+    .editable.editable-md {
+      /*
+          Contains the height property for the .editable class
+      */
+      height: $general_height_2;
 
-      .editable-lg {
-        /*
-            Contains the height property for the .editable class
-        */
-        height: $general_height_3;
+    }
 
-      }
+    .editable.editable-lg {
+      /*
+          Contains the height property for the .editable class
+      */
+      height: $general_height_3;
+
     }
 
     //Select lists
@@ -60,29 +61,28 @@
 
     //Single line inputs
     input.editable {
-      height: $general_height_2;
+      height: $general_height_1;
 
     }
 
     //Multi line inputs
     textarea.editable {
-      height: $general_height_2;
+      height: $general_height_1;
 
     }
   }
 
-    .details-section-btn {
-      /*
-          Contains the generic button attributes
-      */
+  .details-section-btn {
+    /*
+        Contains the generic button attributes
+    */
 
-
-    }
+  }
 
   .btn-group {
     /* Contains the attributes unique to the Details Section */
-      position: relative;
-      float: left;
+    position: relative;
+    float: left;
 
     .details-section-btn {
       /*

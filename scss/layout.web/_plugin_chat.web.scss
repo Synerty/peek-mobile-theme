@@ -12,6 +12,7 @@
     display: block;
     overflow: hidden;
     padding: $general_padding_2;
+    padding-bottom: $general_padding_2 - $general_margin_1/4;
     border: $general_border solid $grey;
     border-radius: $general_border_radius;
 
@@ -27,8 +28,11 @@
       /*
           Contains the topic text attributes unique to the message class
       */
+      float: left;
       padding: $general_padding_1;
       margin-right: $general_margin_1/4;
+      margin-bottom: $general_margin_1/4;
+      border: $general_border solid $grey;
 
     }
     .fa {
