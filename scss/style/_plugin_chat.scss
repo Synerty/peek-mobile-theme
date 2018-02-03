@@ -21,10 +21,11 @@
       /*
           Contains the topic text attributes unique to the message class
       */
+      color: $font_colour_data;
+      background-color: $success_light;
+      border-radius: $general_border_radius;
 
     }
-    color: $font_colour_data;
-    background-color: $success_light;
 
     .fa {
       color: $general_icon_color;
