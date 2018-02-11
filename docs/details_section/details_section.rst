@@ -65,25 +65,10 @@ Section.
                 }
                 .editable {
                 /*
-                    Contains the editable attributes unique to the .details-section-value class
+                    Contains the editable attributes of one line of text unique to the .details-section-value class
                 */
                     ...
 
-                    .editable-md {
-                      /*
-                          Contains the height property for the .editable class
-                      */
-                        ...
-
-                    }
-
-                    .editable-lg {
-                      /*
-                          Contains the height property for the .editable class
-                      */
-                        ...
-
-                    }
                 }
 
                 //Select lists
@@ -97,6 +82,22 @@ Section.
                 }
 
                 //Multi line inputs
+                    ...
+
+                }
+
+                .editable-md {
+                  /*
+                      Contains the editable attributes of two lines of text unique to the .details-section-value class
+                  */
+                    ...
+
+                }
+
+                .editable-lg {
+                  /*
+                      Contains the editable attributes of three lines of text unique to the .details-section-value class
+                  */
                     ...
 
                 }

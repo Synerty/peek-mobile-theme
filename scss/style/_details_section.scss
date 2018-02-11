@@ -24,8 +24,23 @@
     /*
         Contains the editable attributes unique to the .details-section-value class
     */
-    border-width: $general_border;
-    border-color: $grey;
+    @include editable;
+
+  }
+
+  .editable-md {
+    /*
+        Contains the height property for the .editable class
+    */
+    @include editable;
+
+  }
+
+  .editable-lg {
+    /*
+        Contains the height property for the .editable class
+    */
+    @include editable;
 
   }
 

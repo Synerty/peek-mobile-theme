@@ -33,22 +33,23 @@
           Contains the editable attributes unique to the .details-section-value class
       */
       @include editable-web-layout;
-      border-radius: $general_border_radius;
 
     }
 
-    .editable.editable-md {
+    .editable-md {
       /*
           Contains the height property for the .editable class
       */
+      @include editable-web-layout;
       height: $general_height_2;
 
     }
 
-    .editable.editable-lg {
+    .editable-lg {
       /*
           Contains the height property for the .editable class
       */
+      @include editable-web-layout;
       height: $general_height_3;
 
     }
