@@ -21,7 +21,8 @@
           Contains the icon attributes unique to the message class
           The icon is used to indicate unread messages
       */
-      float: right;
+      float: left;
+      margin-right: $general_margin_1;
 
     }
     .chat-list-title {
