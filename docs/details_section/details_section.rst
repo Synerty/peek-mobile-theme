@@ -119,6 +119,13 @@ Section.
                     ...
 
                 }
+                .details-section-btn.active {
+                  /*
+                    Contains the Button attributes for the active button unique to the Details Section
+                  */
+                    ...
+
+                }
 
                 .details-section-btn-divider-left {
                   /*
