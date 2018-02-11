@@ -40,17 +40,13 @@
 
 }
 
-@mixin editable-web-layout {
-  display: block;
-  width: 100%;
-  height: $general_height_1;
-  padding: 6.7px 12px;
-  line-height: $general_line_height;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+@mixin editable {
+  border-width: $general_border;
+  border-color: $grey;
 }
 
 @mixin editable-ns-layout {
-
+  border-radius: $general_border_radius;
 }
 
 @mixin editable-style {

@@ -22,23 +22,6 @@
           Contains the selector attributes unique to the Dialog Mobile Section
       */
       @include editable-ns-layout;
-      border-radius: $general_border_radius;
-
-    }
-
-    .editable.editable-md {
-      /*
-          Contains the height property for the .editable class
-      */
-      height: $general_height_2;
-
-    }
-
-    .editable.editable-lg {
-      /*
-          Contains the height property for the .editable class
-      */
-      height: $general_height_3;
 
     }
 
@@ -57,6 +40,24 @@
     //Multi line inputs
     TextView.editable {
       height: $general_height_2;
+
+    }
+
+    .editable-md {
+      /*
+          Contains the height property for the .editable class
+      */
+      @include editable-ns-layout;
+      height: $general_height_2;
+
+    }
+
+    .editable-lg {
+      /*
+          Contains the height property for the .editable class
+      */
+      @include editable-ns-layout;
+      height: $general_height_3;
 
     }
   }
