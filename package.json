@@ -1,6 +1,6 @@
 {
   "name": "@synerty/peek-theme",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Theme for the Peek service",
   "main": "index.js",
   "directories": {
